@@ -1,0 +1,56 @@
+.headerContainer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  background-color: var(--blue-800);
+  border-bottom: 1px solid var(--blue-300);
+
+  section {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 20px;
+    height: 58px;
+  }
+
+  h1 {
+    font-weight: 500;
+  }
+}
+
+.headerNav {
+  color: var(--gray-200);
+
+  a {
+    font-size: 1.125rem;
+
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+
+  a + a {
+    margin-left: 24px;
+  }
+}
+
+.headerActivePage {
+  color: var(--white);
+  font-weight: 600;
+}

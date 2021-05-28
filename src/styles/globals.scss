@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFFFFF;
+
+  --gray-100: #E5E5E5;
+  --gray-200: #C4C4CE;
+
+  --blue-300: #767DAE;
+  --blue-500: #27418C;
+  --blue-800: #0F1D45;
+}
+
+html {
+  overflow-y: overlay;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--blue-800);
+  color: var(--gray-100);
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
