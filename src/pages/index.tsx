@@ -23,13 +23,21 @@ export default function Home() {
           
           <aside>
             <div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate ipsum venenatis vestibulum, tincidunt consequat est quis ut nulla. Integer gravida tellus leo morbi felis. Neque, facilisi et adipiscing posuere. Diam porttitor a risus iaculis mauris viverra dis. Ultrices pretium eu donec nam euismod ornare. Mattis et aenean mi amet, pharetra. Viverra aliquet euismod:</p>
+              <p>Integrando pesquisadores de diferentes áreas do conhecimento, o LODESTAR realiza pesquisa, desenvolvimento e inovação para os avanços da exploração espacial.</p>
+              <p>O setor aeroespacial tem o potencial de fornecer contribuições significativas para as tendências tecnológicas, e seus desafios sociais e ambientais por meio de uma combinação de rigor analítico, relevância empírica e implementação prática. Tais contribuições dependem do desenvolvimento de soluções aplicáveis no mundo real, e da formação de recursos humanos de base tecnológica.</p>
+              <p>Nesse contexto, as contribuições do grupo de pesquisa estão focadas em sete áreas correlacionadas:</p>
 
-              <ul>
-                <li>aliquam amet dictum sit diam elit, velit. Eget metus hac quis dui. Leo bibendum sapien tempor, amet eget. Egestas vestibulum sit vulputate neque, dignissim. Fermentum lectus ullamcorper. Vitae sodales egestas vitae sed leo, id morbi.</li>
-                <li>Suspendisse duis dui elementum vulputate turpis luctus mauris imperdiet nullam. Rhoncus, molestie malesuada velit vestibulum malesuada diam. </li>
-                <li>Duis odio sit et pellentesque sed sed tellus. In at odio a diam eget molestie aliquam faucibus. Non a risus risus scelerisque tempus, sit sit urna. Vitae at tempor diam.</li>
-              </ul>
+              <ol type="I">
+                <li>missões de CubeSats;</li>
+                <li>determinação e controle de atitude;</li>
+                <li>simulador de pequenos satélites;</li>
+                <li>sistemas de navegação via satélite;</li>
+                <li>plataformas estratosféricas;</li>
+                <li>segurança cibernética e telecomunicação;</li>
+                <li>sistemas embarcados.</li>
+              </ol>
+
+              <p>De forma ampla, o grupo investiga as potencialidades da nova era espacial para o desenvolvimento sustentável.</p>
             </div>
             
             <img src="/lodestar_logo.webp" alt="Lodestar" />

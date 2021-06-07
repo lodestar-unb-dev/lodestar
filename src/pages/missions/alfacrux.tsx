@@ -38,7 +38,7 @@ export default function AlfaCrux() {
         </section>
 
         <section className={styles.alfacruxWhy}>
-            <h2>Why the name AlfaCrux?</h2>
+            <h2>Behind the Name: The Meaning of AlfaCrux</h2>
          
             <p>The name Alfa Crux is after the Alpha Crucis star, the brightest star in the southern constellation Crux (the Southern Cross), and among the brightest stars in the sky. The motivation to choose Alfa Crux as the mission’s name comes from the fact that the Southern Cross is the best-known constellation of those we can see in the southern hemisphere. It has a special importance in navigation and orientation, being known since the ancient Greeks time.</p>
             <p>The Alpha Crucis star appears in the Brazilian flag, and in the Brazilian coat of arms. It is a synonymous of guide, reference, and consequently responsibility and excellence. In this sense, it summarizes the general goals of this space mission: become a reference of excellence and dedication, and an example to be followed as an approach for the advance of the space activities in the new space era.</p>

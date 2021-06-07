@@ -45,12 +45,21 @@
 
       p {
         font-size: 20px;
+        line-height: 30px;
       }
 
-      ul {
+      p + p {
         margin-top: 20px;
+      }
+
+      ol {
+        margin: 20px 0;
         margin-left: 30px;
         font-size: 20px;
+
+        li + li {
+          margin-top: 5px;
+        }
       }
     }
   }
