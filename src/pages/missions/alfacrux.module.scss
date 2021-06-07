@@ -1,0 +1,235 @@
+.alfacruxBanner {
+  background-image: url("/satellite_banner.webp");
+  background-size: cover;
+  height: 480px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    position: absolute;
+    height: 480px;
+    width: 100%;
+    background-color: rgba(0, 10, 40, 0.2);
+  }
+
+  img {
+    height: 305px;
+    z-index: 1;
+  }
+}
+
+.alfacruxBio {
+  background-color: var(--blue-900);
+
+  padding: 50px 0;
+
+  div {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 60px;
+      margin-bottom: 50px;
+
+      text-align: center;
+    }
+
+    aside {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      div {
+        text-align: justify;
+
+        p {
+          font-size: 18px;
+        }
+
+        p + p {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    img {
+      margin-left: 50px;
+      width: 45%;
+    }
+  }
+}
+
+.alfacruxWhy {
+  max-width: 1120px;
+  padding: 50px 20px;
+  margin: 0 auto;
+
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 50px;
+
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  p + p {
+    margin-top: 20px;
+  }
+}
+
+.alfacruxGallery {
+  background-color: var(--blue-900);
+
+  padding: 50px 0;
+
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 50px;
+
+    text-align: center;
+  }
+
+  > div {
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    button::before {
+      color:white !important;
+    }
+
+    img {
+      height: 230px;
+      width: 300px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+}
+
+.alfacruxRadioAmateur {
+  max-width: 1120px;
+  padding: 50px 20px;
+  margin: 0 auto;
+
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 50px;
+
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    aside {
+      p {
+        font-size: 22px;
+        color: var(--gray-100);
+      }
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: var(--gray-100);
+        width: fit-content;
+
+        margin-top: 40px;
+        padding-left: 16px;
+        border-radius: 6px;
+        border: 0;
+
+        transition: filter 0.2s;
+
+        &:hover {
+          filter: brightness(1.1);
+        }
+
+        span {
+          font-size: 20px;
+          font-weight: 600;
+          color: var(--green-500);
+        }
+
+        div {
+          margin-left: 20px;
+          padding: 18px 20px;
+
+          background-color: var(--green-500);
+          color: var(--gray-100);
+
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.alfacruxRecentActivities {
+  background-color: var(--blue-900);
+
+  padding: 50px 0;
+
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 50px;
+
+    text-align: center;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    div {
+      max-width: 510px;
+  
+      border-radius: 6px;
+      background-color: var(--white);
+  
+      iframe {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+  
+      aside {
+        padding: 20px;
+        color: var(--blue-800);
+  
+        h3 {
+          font-weight: 600;
+          font-size: 18px;
+  
+          margin-bottom: 12px;
+        }
+  
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
