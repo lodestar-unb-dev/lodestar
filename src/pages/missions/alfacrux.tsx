@@ -20,10 +20,7 @@ export default function AlfaCrux() {
       <Header />
       
       <main>
-        <section role="banner" className={styles.alfacruxBanner}>
-          <div />
-          <img src="/alfacrux_logo.webp" alt="AlfaCrux" />
-        </section>
+        <section role="banner" className={styles.alfacruxBanner} />
 
         <section className={styles.alfacruxBio}>
           <div>

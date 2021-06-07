@@ -1,24 +1,8 @@
 .alfacruxBanner {
-  background-image: url("/satellite_banner.webp");
+  background-image: url("/alfacrux_banner2.webp");
   background-size: cover;
+  background-position: center;
   height: 480px;
-
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  div {
-    position: absolute;
-    height: 480px;
-    width: 100%;
-    background-color: rgba(0, 10, 40, 0.2);
-  }
-
-  img {
-    height: 305px;
-    z-index: 1;
-  }
 }
 
 .alfacruxBio {
