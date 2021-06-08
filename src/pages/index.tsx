@@ -15,7 +15,11 @@ export default function Home() {
       <main>
         <section role="banner" className={styles.homeBanner}>
           <div />
-          <h3>INTEGRATING KNOWLEDGE<br/>& INNOVATING IN THE<br/>AEROSPACE SECTOR</h3>
+          
+          <aside>
+            <h3>INTEGRATING KNOWLEDGE<br/>& INNOVATING IN THE<br/>AEROSPACE SECTOR</h3>
+            <img src="/lodestar_logo.webp" alt="Lodestar Logo" />
+          </aside>
         </section>
 
         <section className={styles.homeObjectives}>
@@ -25,6 +29,9 @@ export default function Home() {
             <div>
               <p>Integrando pesquisadores de diferentes áreas do conhecimento, o LODESTAR realiza pesquisa, desenvolvimento e inovação para os avanços da exploração espacial.</p>
               <p>O setor aeroespacial tem o potencial de fornecer contribuições significativas para as tendências tecnológicas, e seus desafios sociais e ambientais por meio de uma combinação de rigor analítico, relevância empírica e implementação prática. Tais contribuições dependem do desenvolvimento de soluções aplicáveis no mundo real, e da formação de recursos humanos de base tecnológica.</p>
+            </div>
+            
+            <div>
               <p>Nesse contexto, as contribuições do grupo de pesquisa estão focadas em sete áreas correlacionadas:</p>
 
               <ol type="I">
@@ -39,8 +46,6 @@ export default function Home() {
 
               <p>De forma ampla, o grupo investiga as potencialidades da nova era espacial para o desenvolvimento sustentável.</p>
             </div>
-            
-            <img src="/lodestar_logo.webp" alt="Lodestar" />
           </aside>
         </section>
 
