@@ -1,7 +1,7 @@
 import { Header } from '../components/Header';
 import Link from 'next/link';
 
-import styles from './missions.module.scss';
+import styles from './projects.module.scss';
 import { Footer } from '../components/Footer';
 
 export default function Missions() {
