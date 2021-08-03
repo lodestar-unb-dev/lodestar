@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
 
-  div {
+  > div {
     position: absolute;
     height: 480px;
     width: 100%;
@@ -17,7 +17,6 @@
   aside {
     display: flex;
     flex: 1;
-    align-items: center;
     justify-content: space-between;
 
     max-width: 1120px;
@@ -26,107 +25,160 @@
 
     z-index: 1;
 
-    h3 {
-      color: var(--black-5);
-      font-weight: bold;
-      font-size: 50px;
-      text-align: left;
+    div {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-between;
+      align-items: flex-start;
+
+      h1 {
+        color: var(--black-5);
+        font-weight: 500;
+        font-size: 72px;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        color: var(--black-5);
+        font-weight: 400;
+        font-size: 56px;
+      }
     }
   
     img {
-      max-width: 300px;
+      max-width: 316px;
     }
   }
 }
 
-.homeObjectives {
-  max-width: 1120px;
-  margin: 50px auto 0;
-  padding: 0 20px;
-
-  h2 {
-    text-align: center;
-
-    font-weight: 600;
-    font-size: 40px;
-    margin-bottom: 50px;
-  }
-
-  aside {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    div {
-      text-align: justify;
-      flex: 1;
-
-      p {
-        font-size: 18px;
-        line-height: 26px;
-      }
-
-      p + p {
-        margin-top: 20px;
-      }
-
-      ol {
-        margin: 20px 0;
-        margin-left: 30px;
-        font-size: 18px;
-        line-height: 26px;
-      }
-    }
-
-    div + div {
-      margin-left: 50px;
-    }
-  }
-
-  img {
-    margin-left: 100px;
-    width: 400px;
-  }
-}
-
-.homeMissions {
-  background-color: var(--black-10);
-  margin-top: 50px;
-
-  div {
-    color: var(--blue-dark);
-
+.homeProject {
+  section {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 50px 20px;
-  
-    h2 {
-      font-weight: 600;
-      font-size: 40px;
-      margin-bottom: 50px;
+    padding: 80px 20px;
 
-      text-align: center;
-    }
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
 
-    div {
+    > aside {
       display: flex;
-      align-items: center;
-      justify-content: space-evenly;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
 
-      a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        font-size: 30px;
+      h2 {
+        font-size: 40px;
         font-weight: 500;
+        text-transform: uppercase;
 
-        img {
-          height: 180px;
-          margin-bottom: 32px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--black-10);
+      }
+
+      div {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+
+        aside {
+          display: flex;
+          align-items: center;
+
+          svg {
+            margin-right: 20px;
+          }
+        }
+
+        aside + aside {
+          margin-left: 80px;
         }
       }
+
+      a {
+        background-color: var(--green);
+        border-radius: 12px;
+        margin-top: 50px;
+        padding: 20px 50px;
+
+        text-transform: uppercase;
+        transition: .2s;
+      }
+    } 
+    
+    img {
+      flex: 0.75;
+    }
+  }
+}
+
+.homeProjectSpaceMission {
+  section {
+    img {
+      margin-bottom: -112px;
+    }
+
+    a:hover {
+      background-color: var(--green-dark);
+    }
+  }
+}
+
+.homeProjectSmallSAT {
+  background-color: var(--black-5);
+  
+  section {
+
+    > aside {
+      align-items: flex-end;
+      color: var(--blue-dark);
+
+      p {
+        text-align: right;
+        color: var(--blue);
+      }
+
+      div {
+        color: var(--blue);
+      }
+
+      a {
+        background-color: var(--blue);
+        color: var(--black-5);
+
+        &:hover {
+          background-color: var(--blue-dark);
+        }
+      }
+    }
+
+    img {
+      margin-right: 185px;
+    }
+  }
+}
+
+.homeProjectHighAltitudeBallooning {
+  background-color: var(--green);
+
+  section {
+    aside a {
+      background-color: var(--black-5);
+      color: var(--blue);
+
+      &:hover {
+        background-color: var(--black-25);
+      }
+    }
+
+    img {
+      margin-left: 272px;
     }
   }
 }

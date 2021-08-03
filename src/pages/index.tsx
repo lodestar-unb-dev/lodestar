@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FiBox, FiHardDrive, FiDroplet } from 'react-icons/fi';
 
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
@@ -17,59 +18,106 @@ export default function Home() {
           <div />
           
           <aside>
-            <h3>INTEGRATING KNOWLEDGE<br/>& INNOVATING IN THE<br/>AEROSPACE SECTOR</h3>
+            <div>
+              <h1>Lodestar</h1>
+              <h3>INTEGRATING KNOWLEDGE<br/>& INNOVATING IN THE<br/>AEROSPACE SECTOR</h3>
+            </div>
+
             <img src="/lodestar_logo.webp" alt="Lodestar Logo" />
           </aside>
         </section>
 
-        <section className={styles.homeObjectives}>
-          <h2>Objectives</h2>
-          
-          <aside>
-            <div>
-              <p>Integrando pesquisadores de diferentes áreas do conhecimento, o LODESTAR realiza pesquisa, desenvolvimento e inovação para os avanços da exploração espacial.</p>
-              <p>O setor aeroespacial tem o potencial de fornecer contribuições significativas para as tendências tecnológicas, e seus desafios sociais e ambientais por meio de uma combinação de rigor analítico, relevância empírica e implementação prática. Tais contribuições dependem do desenvolvimento de soluções aplicáveis no mundo real, e da formação de recursos humanos de base tecnológica.</p>
-            </div>
-            
-            <div>
-              <p>Nesse contexto, as contribuições do grupo de pesquisa estão focadas em sete áreas correlacionadas:</p>
+        <div className={`${styles.homeProject} ${styles.homeProjectSpaceMission}`}>
+          <section>
+            <aside>
+              <h2>Space Missions</h2>
 
-              <ol type="I">
-                <li>missões de CubeSats;</li>
-                <li>determinação e controle de atitude;</li>
-                <li>simulador de pequenos satélites;</li>
-                <li>sistemas de navegação via satélite;</li>
-                <li>plataformas estratosféricas;</li>
-                <li>segurança cibernética e telecomunicação;</li>
-                <li>sistemas embarcados.</li>
-              </ol>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tortor id sed vitae, sit amet scelerisque dictumst dolor.
+                Porttitor dui a condimentum quis posuere malesuada velit.
+              </p>
 
-              <p>De forma ampla, o grupo investiga as potencialidades da nova era espacial para o desenvolvimento sustentável.</p>
-            </div>
-          </aside>
-        </section>
-
-        <section className={styles.homeMissions}>
-          <div>
-            <h2>Missions</h2>
-
-            <div>
-              <Link href='/projects/alfacrux'>
-                <a>
-                  <img src="/alfacrux_logo.webp" alt="AlfaCrux" />
+              <div>
+                <aside>
+                  <FiBox />
                   <span>AlfaCrux</span>
-                </a>
-              </Link>
-              
-              <Link href='/projects/wormsail'>
+                </aside>
+
+                <aside>
+                  <FiBox />
+                  <span>WormSail</span>
+                </aside>
+              </div>
+
+              <Link href="/projects">
                 <a>
-                  <img src="/wormsail_logo.webp" alt="Wormsail" />
-                  <span>Wormsail</span>
+                  Saber mais
                 </a>
               </Link>
-            </div>
-          </div>
-        </section>
+            </aside>
+
+            <img src="/space_missions_icon.svg" alt="space missions icon" />
+          </section>
+        </div>
+
+        <div className={`${styles.homeProject} ${styles.homeProjectSmallSAT}`}>
+          <section>
+            <img src="/small_sat_simulator_icon.svg" alt="small sat simulator icon" />
+
+            <aside>
+              <h2>Small SAT Simulator</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tortor id sed vitae, sit amet scelerisque dictumst dolor.
+                Porttitor dui a condimentum quis posuere malesuada velit.
+              </p>
+
+              <div>
+                <aside>
+                  <FiHardDrive />
+                  <span>Tortor</span>
+                </aside>
+              </div>
+
+              <Link href="/projects">
+                <a>
+                  Saber mais
+                </a>
+              </Link>
+            </aside>
+          </section>
+        </div>
+
+        <div className={`${styles.homeProject} ${styles.homeProjectHighAltitudeBallooning}`}>
+          <section>
+            <aside>
+              <h2>High-altitude ballooning</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tortor id sed vitae, sit amet scelerisque dictumst dolor.
+                Porttitor dui a condimentum quis posuere malesuada velit.
+              </p>
+
+              <div>
+                <aside>
+                  <FiDroplet />
+                  <span>Porttitor</span>
+                </aside>
+              </div>
+
+              <Link href="/projects">
+                <a>
+                  Saber mais
+                </a>
+              </Link>
+            </aside>
+
+            <img src="/high_altitude_ballooning_icon.svg" alt="high altitude ballooning icon" />
+          </section>
+        </div>
       </main>
 
       <Footer />

@@ -7,7 +7,6 @@ import { Header } from "../../components/Header";
 
 import styles from './alfacrux.module.scss';
 
-
 export default function AlfaCrux() {
   const settings: Settings = {
     dots: true,
