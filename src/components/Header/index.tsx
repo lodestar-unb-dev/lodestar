@@ -10,20 +10,19 @@ export function Header ({ activePage }: HeaderProps) {
   return (
     <header className={styles.headerContainer}>
       <section>
-        <div className={styles.headerLogo}>
-          <img src="/logo.webp" alt="logo" />
-          <h1>LODESTAR UnB</h1>
-        </div>
-
         <nav className={styles.headerNav}>
           <Link href='/'>
             <a className={activePage === 'home' ? styles.headerActivePage : ''}>Home</a>
           </Link>
 
-          <Link href='/missions'>
-            <a className={activePage === 'missions' ? styles.headerActivePage : ''}>Missions</a>
+          <Link href='/projects'>
+            <a className={activePage === 'projects' ? styles.headerActivePage : ''}>Projects</a>
           </Link>
+        </nav>
 
+        <img className={styles.headerLogo} src="/favicon.png" alt="icon" />
+
+        <nav className={styles.headerNav}>
           <Link href='/about'>
             <a className={activePage === 'about' ? styles.headerActivePage : ''}>About</a>
           </Link>

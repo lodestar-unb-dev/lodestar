@@ -19,17 +19,7 @@
 }
 
 .headerLogo {
-  display: flex;
-  align-items: center;
-
-  img {
-    margin-right: 20px;
-    height: 58px;
-  }
-
-  h1 {
-    font-weight: 500;
-  }
+    height: 36px;
 }
 
 .headerNav {
@@ -46,7 +36,7 @@
   }
 
   a + a {
-    margin-left: 24px;
+    margin-left: 60px;
   }
 }
 
