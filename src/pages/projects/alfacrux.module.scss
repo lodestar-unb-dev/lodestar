@@ -6,7 +6,7 @@
 }
 
 .alfacruxBio {
-  background-color: var(--blue-900);
+  background-color: #00244B;
 
   padding: 50px 0;
 
@@ -74,7 +74,7 @@
 }
 
 .alfacruxGallery {
-  background-color: var(--blue-900);
+  background-color: #00244B;
 
   padding: 50px 0;
 
@@ -126,7 +126,7 @@
       p {
         font-size: 22px;
         line-height: 32px;
-        color: var(--gray-100);
+        color: var(--black-5);
       }
 
       a {
@@ -134,7 +134,7 @@
         justify-content: space-between;
         align-items: center;
 
-        background-color: var(--gray-100);
+        background-color: var(--black-5);
         width: fit-content;
 
         margin-top: 40px;
@@ -151,15 +151,15 @@
         span {
           font-size: 20px;
           font-weight: 600;
-          color: var(--green-500);
+          color: var(--green);
         }
 
         div {
           margin-left: 20px;
           padding: 18px 20px;
 
-          background-color: var(--green-500);
-          color: var(--gray-100);
+          background-color: var(--green);
+          color: var(--black-5);
 
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
@@ -170,7 +170,7 @@
 }
 
 .alfacruxRecentActivities {
-  background-color: var(--blue-900);
+  background-color: #00244B;
 
   padding: 50px 0;
 
@@ -195,7 +195,7 @@
       max-width: 510px;
   
       border-radius: 6px;
-      background-color: var(--white);
+      background-color: var(--black-5);
   
       iframe {
         border-top-left-radius: 5px;
@@ -204,7 +204,7 @@
   
       aside {
         padding: 20px;
-        color: var(--blue-800);
+        color: var(--blue-dark);
   
         h3 {
           font-weight: 600;

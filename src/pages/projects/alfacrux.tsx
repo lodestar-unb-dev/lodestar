@@ -89,7 +89,7 @@ export default function AlfaCrux() {
               <p>Do you want to communicate with AlfaCrux?</p>
               <p>Then click the button bellow for more info!</p>
 
-              <Link href="/missions/alfacrux/radio">
+              <Link href="/projects/alfacrux/radio">
                 <a>
                   <span>Radio amateur info</span>
                   <div>

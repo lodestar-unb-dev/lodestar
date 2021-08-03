@@ -4,8 +4,8 @@
   top: 0;
   z-index: 2;
 
-  background-color: var(--blue-800);
-  border-bottom: 1px solid var(--blue-300);
+  background-color: var(--blue-dark);
+  border-bottom: 1px solid var(--blue-light);
 
   section {
     max-width: 1120px;
@@ -23,7 +23,7 @@
 }
 
 .headerNav {
-  color: var(--gray-200);
+  color: var(--black-25);
 
   a {
     font-size: 1.125rem;
@@ -31,7 +31,7 @@
     transition: color 0.2s;
 
     &:hover {
-      color: var(--white);
+      color: var(--black-5);
     }
   }
 
@@ -41,6 +41,6 @@
 }
 
 .headerActivePage {
-  color: var(--white);
+  color: var(--black-5);
   font-weight: 600;
 }

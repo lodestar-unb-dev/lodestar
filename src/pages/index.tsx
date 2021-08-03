@@ -54,14 +54,14 @@ export default function Home() {
             <h2>Missions</h2>
 
             <div>
-              <Link href='/missions/alfacrux'>
+              <Link href='/projects/alfacrux'>
                 <a>
                   <img src="/alfacrux_logo.webp" alt="AlfaCrux" />
                   <span>AlfaCrux</span>
                 </a>
               </Link>
               
-              <Link href='/missions/wormsail'>
+              <Link href='/projects/wormsail'>
                 <a>
                   <img src="/wormsail_logo.webp" alt="Wormsail" />
                   <span>Wormsail</span>

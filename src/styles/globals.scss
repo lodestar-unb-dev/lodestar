@@ -5,17 +5,20 @@
 }
 
 :root {
-  --white: #FFFFFF;
+  --black-100: #1D1D1D;
+  --black-75: #5D5D5D;
+  --black-50: #989898;
+  --black-25: #D0D0D0;
+  --black-10: #EEEEEE;
+  --black-5: #F5F5F5;
 
-  --gray-100: #E5E5E5;
-  --gray-200: #C4C4CE;
+  --blue-dark: #002A59;
+  --blue: #003A7A;
+  --blue-light: #014FA5;
 
-  --blue-300: #767DAE;
-  --blue-500: #27418C;
-  --blue-800: #0F1D45;
-  --blue-900: #0A1840;
-
-  --green-500: #056839;
+  --green-dark: #00581E;
+  --green: #00822D;
+  --green-light: #00AB3B;
 }
 
 html {
@@ -35,8 +38,8 @@ html {
 }
 
 body {
-  background: var(--blue-800);
-  color: var(--gray-100);
+  background: var(--blue-dark);
+  color: var(--black-5);
 }
 
 body, input, textarea, select, button {
