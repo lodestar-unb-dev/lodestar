@@ -16,7 +16,7 @@
     padding: 0 20px;
 
     h1 {
-      font-weight: 700;
+      font-weight: 500;
       font-size: 60px;
       margin-bottom: 50px;
 
@@ -55,7 +55,7 @@
   margin: 0 auto;
 
   h2 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 40px;
     margin-bottom: 50px;
 
@@ -79,7 +79,7 @@
   padding: 50px 0;
 
   h2 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 40px;
     margin-bottom: 50px;
 
@@ -110,7 +110,7 @@
   margin: 0 auto;
 
   h2 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 40px;
     margin-bottom: 50px;
 
@@ -126,7 +126,7 @@
       p {
         font-size: 22px;
         line-height: 32px;
-        color: var(--black-5);
+        color: #F5F5F5;
       }
 
       a {
@@ -134,7 +134,7 @@
         justify-content: space-between;
         align-items: center;
 
-        background-color: var(--black-5);
+        background-color: #F5F5F5;
         width: fit-content;
 
         margin-top: 40px;
@@ -150,16 +150,16 @@
 
         span {
           font-size: 20px;
-          font-weight: 600;
-          color: var(--green);
+          font-weight: 500;
+          color: #00822D;
         }
 
         div {
           margin-left: 20px;
           padding: 18px 20px;
 
-          background-color: var(--green);
-          color: var(--black-5);
+          background-color: #00822D;
+          color: #F5F5F5;
 
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
@@ -175,7 +175,7 @@
   padding: 50px 0;
 
   h2 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 40px;
     margin-bottom: 50px;
 
@@ -207,7 +207,7 @@
         color: var(--blue-dark);
   
         h3 {
-          font-weight: 600;
+          font-weight: 500;
           font-size: 18px;
   
           margin-bottom: 12px;

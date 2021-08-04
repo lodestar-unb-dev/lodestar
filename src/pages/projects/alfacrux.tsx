@@ -1,10 +1,13 @@
 import Slider, { Settings } from "react-slick";
 import { FiInfo } from 'react-icons/fi';
 import Link from 'next/link';
+import { useTheme } from 'styled-components';
 
 import styles from './alfacrux.module.scss';
 
 export default function AlfaCrux() {
+  const theme = useTheme();
+
   const settings: Settings = {
     dots: true,
     infinite: true,
@@ -13,7 +16,7 @@ export default function AlfaCrux() {
 
   return (
     <>
-      <main>
+      <main style={{ backgroundColor: theme.colors.blueDark }} >
         <section role="banner" className={styles.alfacruxBanner} />
 
         <section className={styles.alfacruxBio}>
