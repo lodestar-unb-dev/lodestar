@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
-import styles from './styles.module.scss';
+import {
+  HeaderContainer,
+  HeaderLogo,
+  HeaderLink
+} from './styles';
 
 interface HeaderProps {
   activePage: string;
@@ -8,30 +12,30 @@ interface HeaderProps {
 
 export function Header ({ activePage }: HeaderProps) {
   return (
-    <header className={styles.headerContainer}>
+    <HeaderContainer>
       <section>
-        <nav className={styles.headerNav}>
+        <nav>
           <Link href='/'>
-            <a className={activePage === '/' ? styles.headerActivePage : ''}>Home</a>
+            <HeaderLink active={activePage === '/'}>Home</HeaderLink>
           </Link>
 
           <Link href='/projects'>
-            <a className={activePage.search(new RegExp('^/projects')) !== -1 ? styles.headerActivePage : ''}>Projects</a>
+            <HeaderLink active={activePage.search(new RegExp('^/projects')) !== -1}>Projects</HeaderLink>
           </Link>
         </nav>
 
-        <img className={styles.headerLogo} src="/favicon.png" alt="icon" />
+        <HeaderLogo src="/favicon.png" alt="icon" />
 
-        <nav className={styles.headerNav}>
+        <nav>
           <Link href='/about'>
-            <a className={activePage === '/about' ? styles.headerActivePage : ''}>About</a>
+            <HeaderLink active={activePage === '/about'}>About</HeaderLink>
           </Link>
 
           <Link href='/contact'>
-            <a className={activePage === '/contact' ? styles.headerActivePage : ''}>Contact</a>
+            <HeaderLink active={activePage === '/contact'}>Contact</HeaderLink>
           </Link>
         </nav>
       </section>
-    </header>
+    </HeaderContainer>
   )
 }
