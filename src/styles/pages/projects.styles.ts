@@ -1,5 +1,9 @@
-.missionsBanner {
+import styled from 'styled-components';
+
+export const MissionsBanner = styled.section`
   background-color: var(--black-5);
+
+  height: 90vh;
 
   div {
     color: var(--blue-dark);
@@ -7,7 +11,7 @@
     max-width: 1120px;
     margin: 0 auto;
     padding: 50px 20px;
-  
+
     h2 {
       font-weight: 600;
       font-size: 40px;
@@ -36,5 +40,5 @@
         }
       }
     }
-  }
 }
+`;
