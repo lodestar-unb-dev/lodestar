@@ -1,6 +1,6 @@
 import { Layout } from '../components/Layout';
 
-import { Container } from './contact.styles';
+import { Container } from '../styles/pages/contact.styles';
 
 export default function Contact() {
   return (

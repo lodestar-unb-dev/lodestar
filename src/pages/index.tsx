@@ -8,7 +8,7 @@ import {
   HomeProjectSpaceMission,
   HomeProjectSmallSAT,
   HomeProjectHighAltitudeBallooning
-} from './home.styles';
+} from '../styles/pages/home.styles';
 
 export default function Home() {
   return (

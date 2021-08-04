@@ -4,7 +4,7 @@ import { TeamMemberCard } from '../components/TeamMemberCard';
 import {
   Container,
   TeamMembersContainer
-} from './about.styles';
+} from '../styles/pages/about.styles';
 
 export default function About() {
   const teamMembers = [
