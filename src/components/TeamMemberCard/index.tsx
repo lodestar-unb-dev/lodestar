@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
-import styles from './styles.module.scss';
+import {
+  Container  
+} from './styles';
 
 interface Props {
   index: number;
@@ -16,25 +18,25 @@ type ColorNumber = 0 | 1 | 2;
 export function TeamMemberCard({ index, name, bio, imageUrl, organization, lattesUrl }: Props) {
   const colorNumber = (index + 1) % 3 as ColorNumber;
   const colors = {
-    0: styles.blackBackground,
-    1: styles.blueBackground,
-    2: styles.greenBackground,
+    0: 'black',
+    1: 'blue',
+    2: 'green',
   }
   
   return (
     <Link href={lattesUrl}>
-      <a className={styles.container}>
+      <Container highlightColor={colors[colorNumber]}>
         <section>
           <h3>{ name }</h3>
-          <span className={colors[colorNumber]}>{ organization }</span>
+          <span>{ organization }</span>
         </section>
 
         <img src={ imageUrl } alt={`${name} photo`} />
 
-        <div className={colors[colorNumber]}>
+        <div>
           { bio }
         </div>
-      </a>
+      </Container>
     </Link>
   )
 }
