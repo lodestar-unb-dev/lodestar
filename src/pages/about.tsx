@@ -1,5 +1,4 @@
-import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
+import { Layout } from '../components/Layout';
 import { TeamMemberCard } from '../components/TeamMemberCard';
 
 import styles from './about.module.scss';
@@ -79,11 +78,7 @@ export default function About() {
   ]
 
   return (
-    <>
-      <Header
-        activePage="about"
-      />
-      
+    <Layout>
       <main className={styles.container}>
         <section className={styles.teamMembersContainer}>
           <header>
@@ -102,8 +97,6 @@ export default function About() {
           </div>
         </section>
       </main>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }

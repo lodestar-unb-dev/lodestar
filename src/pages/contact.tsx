@@ -1,14 +1,12 @@
-import { Header } from '../components/Header';
-
+import { Layout } from '../components/Layout';
 import styles from './contact.module.scss';
 
 export default function Contact() {
   return (
-    <>
-      <Header
-        activePage="contact"
-      />
-      <h1>Contact</h1>
-  </>
+    <Layout>
+      <main style={{ backgroundColor: 'var(--blue-dark)', height: '100vh' }}>
+        <h1>Contact</h1>
+      </main>
+    </Layout>
   )
 }

@@ -2,9 +2,6 @@ import Slider, { Settings } from "react-slick";
 import { FiInfo } from 'react-icons/fi';
 import Link from 'next/link';
 
-import { Footer } from "../../components/Footer";
-import { Header } from "../../components/Header";
-
 import styles from './alfacrux.module.scss';
 
 export default function AlfaCrux() {
@@ -16,8 +13,6 @@ export default function AlfaCrux() {
 
   return (
     <>
-      <Header />
-      
       <main>
         <section role="banner" className={styles.alfacruxBanner} />
 
@@ -143,8 +138,6 @@ export default function AlfaCrux() {
             </section>
         </section>
       </main>
-
-      <Footer />
     </>
   )
 }

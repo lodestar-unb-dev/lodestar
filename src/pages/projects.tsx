@@ -1,16 +1,12 @@
-import { Header } from '../components/Header';
 import Link from 'next/link';
 
+import { Layout } from '../components/Layout';
+
 import styles from './projects.module.scss';
-import { Footer } from '../components/Footer';
 
 export default function Missions() {
   return (
-    <>
-      <Header
-        activePage="projects"
-      />
-      
+    <Layout>
       <section className={styles.missionsBanner}>
           <div>
             <h2>Missions</h2>
@@ -32,6 +28,6 @@ export default function Missions() {
             </div>
           </div>
         </section>  
-  </>
+  </Layout>
   )
 }

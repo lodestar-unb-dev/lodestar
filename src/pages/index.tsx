@@ -1,19 +1,14 @@
 import Link from 'next/link';
 import { FiBox, FiHardDrive, FiDroplet } from 'react-icons/fi';
 
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import { Layout } from '../components/Layout';
 
 import styles from './home.module.scss';
 
 export default function Home() {
   return (
-    <>
-      <Header
-        activePage="home"
-      />
-
-      <main>
+    <Layout>
+      <main style={{ background: 'var(--blue-dark)' }}>
         <section role="banner" className={styles.homeBanner}>
           <div />
           
@@ -119,8 +114,6 @@ export default function Home() {
           </section>
         </div>
       </main>
-
-      <Footer />
-    </>
+    </Layout>
   )
 }

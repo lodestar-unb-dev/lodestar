@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './styles.module.scss';
 
 interface HeaderProps {
-  activePage?: string;
+  activePage: string;
 }
 
 export function Header ({ activePage }: HeaderProps) {
@@ -12,11 +12,11 @@ export function Header ({ activePage }: HeaderProps) {
       <section>
         <nav className={styles.headerNav}>
           <Link href='/'>
-            <a className={activePage === 'home' ? styles.headerActivePage : ''}>Home</a>
+            <a className={activePage === '/' ? styles.headerActivePage : ''}>Home</a>
           </Link>
 
           <Link href='/projects'>
-            <a className={activePage === 'projects' ? styles.headerActivePage : ''}>Projects</a>
+            <a className={activePage.search(new RegExp('^/projects')) !== -1 ? styles.headerActivePage : ''}>Projects</a>
           </Link>
         </nav>
 
@@ -24,11 +24,11 @@ export function Header ({ activePage }: HeaderProps) {
 
         <nav className={styles.headerNav}>
           <Link href='/about'>
-            <a className={activePage === 'about' ? styles.headerActivePage : ''}>About</a>
+            <a className={activePage === '/about' ? styles.headerActivePage : ''}>About</a>
           </Link>
 
           <Link href='/contact'>
-            <a className={activePage === 'contact' ? styles.headerActivePage : ''}>Contact</a>
+            <a className={activePage === '/contact' ? styles.headerActivePage : ''}>Contact</a>
           </Link>
         </nav>
       </section>
