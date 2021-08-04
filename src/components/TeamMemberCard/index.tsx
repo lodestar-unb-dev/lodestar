@@ -15,9 +15,11 @@ interface Props {
 
 type ColorNumber = 0 | 1 | 2;
 
+type Colors = 'black' | 'blue' | 'green';
+
 export function TeamMemberCard({ index, name, bio, imageUrl, organization, lattesUrl }: Props) {
   const colorNumber = (index + 1) % 3 as ColorNumber;
-  const colors = {
+  const colors: Record<number, Colors> = {
     0: 'black',
     1: 'blue',
     2: 'green',
