@@ -1,9 +1,11 @@
-.container {
-  background-color: var(--black-10);
-  color: var(--blue);
-}
+import styled from 'styled-components';
 
-.teamMembersContainer {
+export const Container = styled.div`
+  background-color: ${props => props.theme.colors.black10};
+  color: ${props => props.theme.colors.blue};
+`;
+
+export const TeamMembersContainer = styled.section`
   max-width: 1120px;
   padding: 100px 20px 85px;
   margin: 0 auto;
@@ -21,7 +23,7 @@
       font-size: 56px;
       text-transform: uppercase;
       margin-bottom: 24px;
-      color: var(--blue-dark);
+      color: ${props => props.theme.colors.blueDark};
     }
 
     p {
@@ -34,4 +36,4 @@
     grid-template-columns: repeat(auto-fill, minmax(334px, 1fr));
     row-gap: 30px;
   }
-}
+`;

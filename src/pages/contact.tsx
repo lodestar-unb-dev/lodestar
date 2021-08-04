@@ -1,12 +1,13 @@
 import { Layout } from '../components/Layout';
-import styles from './contact.module.scss';
+
+import { Container } from './contact.styles';
 
 export default function Contact() {
   return (
     <Layout>
-      <main style={{ backgroundColor: 'var(--blue-dark)', height: '100vh' }}>
+      <Container>
         <h1>Contact</h1>
-      </main>
+      </Container>
     </Layout>
   )
 }

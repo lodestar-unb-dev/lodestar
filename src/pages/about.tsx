@@ -1,7 +1,10 @@
 import { Layout } from '../components/Layout';
 import { TeamMemberCard } from '../components/TeamMemberCard';
 
-import styles from './about.module.scss';
+import {
+  Container,
+  TeamMembersContainer
+} from './about.styles';
 
 export default function About() {
   const teamMembers = [
@@ -79,8 +82,8 @@ export default function About() {
 
   return (
     <Layout>
-      <main className={styles.container}>
-        <section className={styles.teamMembersContainer}>
+      <Container>
+        <TeamMembersContainer>
           <header>
             <h2>Our team members</h2>
             <p>The project team is entirely composed of professors, servers and students from UnB, also counting on the participation of external collaborators.</p>
@@ -95,8 +98,8 @@ export default function About() {
               />
             ))}
           </div>
-        </section>
-      </main>
+        </TeamMembersContainer>
+      </Container>
     </Layout>
   )
 }
