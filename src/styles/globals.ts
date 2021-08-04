@@ -32,7 +32,7 @@ body, input, textarea, select, button {
   font: 400 1rem 'Barlow', sans-serif;
 }
 
-button {
+button, a {
   cursor: pointer;
 }
 
