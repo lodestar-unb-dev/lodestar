@@ -26,7 +26,7 @@ export function TeamMemberCard({ index, name, bio, imageUrl, organization, latte
   }
   
   return (
-    <Link href={lattesUrl}>
+    <Link href={lattesUrl} passHref>
       <Container highlightColor={colors[colorNumber]}>
         <section>
           <h3>{ name }</h3>

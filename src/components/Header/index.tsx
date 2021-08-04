@@ -15,11 +15,11 @@ export function Header ({ activePage }: HeaderProps) {
     <HeaderContainer>
       <section>
         <nav>
-          <Link href='/'>
+          <Link href='/' passHref>
             <HeaderLink active={activePage === '/'}>Home</HeaderLink>
           </Link>
 
-          <Link href='/projects'>
+          <Link href='/projects' passHref>
             <HeaderLink active={activePage.search(new RegExp('^/projects')) !== -1}>Projects</HeaderLink>
           </Link>
         </nav>
@@ -27,11 +27,11 @@ export function Header ({ activePage }: HeaderProps) {
         <HeaderLogo src="/favicon.png" alt="icon" />
 
         <nav>
-          <Link href='/about'>
+          <Link href='/about' passHref>
             <HeaderLink active={activePage === '/about'}>About</HeaderLink>
           </Link>
 
-          <Link href='/contact'>
+          <Link href='/contact' passHref>
             <HeaderLink active={activePage === '/contact'}>Contact</HeaderLink>
           </Link>
         </nav>
