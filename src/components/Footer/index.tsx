@@ -1,9 +1,9 @@
-import styles from './styles.module.scss';
+import { Container } from './styles';
 
 export function Footer() {
   return (
-    <footer className={styles.footerContainer}>
+    <Container>
       <span>@2021 LODESTAR UnB</span>
-    </footer>
+    </Container>
   )
 }
