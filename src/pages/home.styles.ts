@@ -1,4 +1,6 @@
-.homeBanner {
+import styled from 'styled-components';
+
+export const HomeBanner = styled.section`
   background-image: url("/home_banner.webp");
   background-size: cover;
   height: 480px;
@@ -50,9 +52,9 @@
       max-width: 316px;
     }
   }
-}
+`;
 
-.homeProject {
+const HomeProject = styled.div`
   section {
     max-width: 1120px;
     margin: 0 auto;
@@ -79,7 +81,7 @@
       p {
         font-size: 24px;
         font-weight: 400;
-        color: var(--black-10);
+        color: ${props => props.theme.colors.black10};
       }
 
       div {
@@ -102,7 +104,7 @@
       }
 
       a {
-        background-color: var(--green);
+        background-color: ${props => props.theme.colors.green};
         border-radius: 12px;
         margin-top: 50px;
         padding: 20px 50px;
@@ -116,44 +118,46 @@
       flex: 0.75;
     }
   }
-}
+`;
 
-.homeProjectSpaceMission {
+export const HomeProjectSpaceMission = styled(HomeProject)`
+  background-color: ${props => props.theme.colors.blueDark};
+  
   section {
     img {
       margin-bottom: -112px;
     }
 
     a:hover {
-      background-color: var(--green-dark);
+      background-color: ${props => props.theme.colors.greenDark};
     }
   }
-}
+`;
 
-.homeProjectSmallSAT {
-  background-color: var(--black-5);
+export const HomeProjectSmallSAT = styled(HomeProject)`
+  background-color: ${props => props.theme.colors.black5};
   
   section {
 
     > aside {
       align-items: flex-end;
-      color: var(--blue-dark);
+      color: ${props => props.theme.colors.blueDark};
 
       p {
         text-align: right;
-        color: var(--blue);
+        color: ${props => props.theme.colors.blue};
       }
 
       div {
-        color: var(--blue);
+        color: ${props => props.theme.colors.blue};
       }
 
       a {
-        background-color: var(--blue);
-        color: var(--black-5);
+        background-color: ${props => props.theme.colors.blue};
+        color: ${props => props.theme.colors.black5};
 
         &:hover {
-          background-color: var(--blue-dark);
+          background-color: ${props => props.theme.colors.blueDark};
         }
       }
     }
@@ -162,18 +166,18 @@
       margin-right: 185px;
     }
   }
-}
+`;
 
-.homeProjectHighAltitudeBallooning {
-  background-color: var(--green);
+export const HomeProjectHighAltitudeBallooning = styled(HomeProject)`
+  background-color: ${props => props.theme.colors.green};
 
   section {
     aside a {
-      background-color: var(--black-5);
-      color: var(--blue);
+      background-color: ${props => props.theme.colors.black5};
+      color: ${props => props.theme.colors.blue};
 
       &:hover {
-        background-color: var(--black-25);
+        background-color: ${props => props.theme.colors.black25};
       }
     }
 
@@ -181,4 +185,4 @@
       margin-left: 272px;
     }
   }
-}
+`;
