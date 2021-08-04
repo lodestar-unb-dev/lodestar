@@ -12,14 +12,6 @@ const variants = {
 }
 
 export function Layout ({ children }: Props) {
-  const routeBackgroundColor = {
-    "/": "var(--blue-dark)",
-    "/projects": "var(--black-5)",
-    "/about": "var(--black-5)",
-    "/contact": "var(--blue-dark)",
-  }
-  const router = useRouter();
-  
   return (
       <motion.main
         initial="hidden"

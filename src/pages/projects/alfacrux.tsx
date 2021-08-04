@@ -2,8 +2,16 @@ import Slider, { Settings } from "react-slick";
 import { FiInfo } from 'react-icons/fi';
 import Link from 'next/link';
 import { useTheme } from 'styled-components';
+import { Layout } from "../../components/Layout";
 
-import styles from './alfacrux.module.scss';
+import {
+  AlfacruxBanner,
+  AlfacruxBio,
+  AlfacruxGallery,
+  AlfacruxRadioAmateur,
+  AlfacruxRecentActivities,
+  AlfacruxWhy
+} from '../../styles/pages/projects/alfacrux.styles';
 
 export default function AlfaCrux() {
   const theme = useTheme();
@@ -15,11 +23,11 @@ export default function AlfaCrux() {
   };
 
   return (
-    <>
+    <Layout>
       <main style={{ backgroundColor: theme.colors.blueDark }} >
-        <section role="banner" className={styles.alfacruxBanner} />
+        <AlfacruxBanner role="banner" />
 
-        <section className={styles.alfacruxBio}>
+        <AlfacruxBio>
           <div>
             <h1>AlfaCrux Mission</h1>
             
@@ -32,16 +40,16 @@ export default function AlfaCrux() {
               <img src="/alfacrux_render.webp" alt="Alfacrux render" />
             </aside>
           </div>
-        </section>
+        </AlfacruxBio>
 
-        <section className={styles.alfacruxWhy}>
+        <AlfacruxWhy>
             <h2>Behind the Name: The Meaning of AlfaCrux</h2>
          
             <p>The name Alfa Crux is after the Alpha Crucis star, the brightest star in the southern constellation Crux (the Southern Cross), and among the brightest stars in the sky. The motivation to choose Alfa Crux as the mission’s name comes from the fact that the Southern Cross is the best-known constellation of those we can see in the southern hemisphere. It has a special importance in navigation and orientation, being known since the ancient Greeks time.</p>
             <p>The Alpha Crucis star appears in the Brazilian flag, and in the Brazilian coat of arms. It is a synonymous of guide, reference, and consequently responsibility and excellence. In this sense, it summarizes the general goals of this space mission: become a reference of excellence and dedication, and an example to be followed as an approach for the advance of the space activities in the new space era.</p>
-        </section>
+        </AlfacruxWhy>
 
-        <section className={styles.alfacruxGallery}>
+        <AlfacruxGallery>
             <h2>Gallery</h2>  
 
             <Slider {...settings}>
@@ -76,9 +84,9 @@ export default function AlfaCrux() {
                 <img src="/gallery/Antenna_mounting_2.webp" alt="First image" />
               </div>
             </Slider>
-        </section>
+        </AlfacruxGallery>
 
-        <section className={styles.alfacruxRadioAmateur}>
+        <AlfacruxRadioAmateur>
           <h2>Radio Amateurs</h2>
 
           <div>
@@ -99,9 +107,9 @@ export default function AlfaCrux() {
             <img src="/radio_amateur.webp" alt="Radio Amateur" />
 
           </div>
-        </section>
+        </AlfacruxRadioAmateur>
 
-        <section className={styles.alfacruxRecentActivities}>
+        <AlfacruxRecentActivities>
             <h2>Recent Activities</h2>  
 
             <section>
@@ -139,8 +147,8 @@ export default function AlfaCrux() {
                 </aside>
               </div>
             </section>
-        </section>
+        </AlfacruxRecentActivities>
       </main>
-    </>
+    </Layout>
   )
 }

@@ -1,11 +1,13 @@
-.alfacruxBanner {
+import styled from 'styled-components';
+
+export const AlfacruxBanner = styled.section`
   background-image: url("/alfacrux_banner.webp");
   background-size: cover;
   background-position: center;
   height: 480px;
-}
+`;
 
-.alfacruxBio {
+export const AlfacruxBio = styled.section`
   background-color: #00244B;
 
   padding: 50px 0;
@@ -47,9 +49,9 @@
       width: 45%;
     }
   }
-}
+`;
 
-.alfacruxWhy {
+export const AlfacruxWhy = styled.section`
   max-width: 1120px;
   padding: 50px 20px;
   margin: 0 auto;
@@ -71,9 +73,9 @@
   p + p {
     margin-top: 20px;
   }
-}
+`;
 
-.alfacruxGallery {
+export const AlfacruxGallery = styled.section`
   background-color: #00244B;
 
   padding: 50px 0;
@@ -102,9 +104,9 @@
       border-radius: 4px;
     }
   }
-}
+`;
 
-.alfacruxRadioAmateur {
+export const AlfacruxRadioAmateur = styled.section`
   max-width: 1120px;
   padding: 50px 20px;
   margin: 0 auto;
@@ -167,9 +169,9 @@
       }
     }
   }
-}
+`;
 
-.alfacruxRecentActivities {
+export const AlfacruxRecentActivities = styled.section`
   background-color: #00244B;
 
   padding: 50px 0;
@@ -193,26 +195,26 @@
 
     div {
       max-width: 510px;
-  
+
       border-radius: 6px;
       background-color: #F5F5F5;
-  
+
       iframe {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
       }
-  
+
       aside {
         padding: 20px;
         color: #00244B;
-  
+
         h3 {
           font-weight: 500;
           font-size: 18px;
-  
+
           margin-bottom: 12px;
         }
-  
+
         p {
           font-size: 14px;
           line-height: 22px;
@@ -220,4 +222,4 @@
       }
     }
   }
-}
+`;
