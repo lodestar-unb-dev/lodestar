@@ -82,7 +82,7 @@ export default function About() {
     },
     {
       name: 'Leonardo Aguayo',
-      organization: 'FGA/UnB',
+      organization: 'ENE/UnB',
       imageUrl: '/teamMembers/leonardoAguayo.webp',
       role: 'Professor',
       researchArea: 'Telecommunication',
@@ -90,7 +90,7 @@ export default function About() {
     },
     {
       name: 'Marcelo Karam',
-      organization: 'CPD/UnB',
+      organization: 'STI/UnB',
       imageUrl: '/teamMembers/marceloKaram.webp',
       role: 'Stafft',
       researchArea: 'Data Security',
@@ -98,7 +98,7 @@ export default function About() {
     },
     {
       name: 'Rogério Sousa',
-      organization: 'CPD  /UnB',
+      organization: 'STI/UnB',
       imageUrl: '/teamMembers/rogerioSousa.webp',
       role: 'Stafft',
       researchArea: 'Data Security',
