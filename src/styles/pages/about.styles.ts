@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 export const TeamMembersContainer = styled.section`
   max-width: 1120px;
-  padding: 100px 20px 85px;
+  padding: 80px 20px 85px;
   margin: 0 auto;
 
   display: flex;
