@@ -92,7 +92,7 @@ export default function About() {
       name: 'Marcelo Karam',
       organization: 'STI/UnB',
       imageUrl: '/teamMembers/marceloKaram.webp',
-      role: 'Stafft',
+      role: 'Staff',
       researchArea: 'Data Security',
       lattesUrl: 'http://lattes.cnpq.br/0017208558479044'
     },
@@ -100,7 +100,7 @@ export default function About() {
       name: 'Rogério Sousa',
       organization: 'STI/UnB',
       imageUrl: '/teamMembers/rogerioSousa.webp',
-      role: 'Stafft',
+      role: 'Staff',
       researchArea: 'Data Security',
       lattesUrl: 'http://lattes.cnpq.br/1249648187708650'
     }
@@ -112,7 +112,7 @@ export default function About() {
         <TeamMembersContainer>
           <header>
             <h2>Our team members</h2>
-            <p>The project team is composed of professors, stafft and students from UnB, also counting on the participation of external collaborators.</p>
+            <p>The project team is composed of professors, staff and students from UnB, also counting on the participation of external collaborators.</p>
           </header>
 
           <div>
