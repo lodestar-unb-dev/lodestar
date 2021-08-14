@@ -9,7 +9,8 @@ interface Props {
   name: string;
   organization: string;
   imageUrl: string;
-  bio: string;
+  role: string;
+  researchArea: string;
   lattesUrl: string;
 }
 
@@ -17,7 +18,7 @@ type ColorNumber = 0 | 1 | 2;
 
 type Colors = 'black' | 'blue' | 'green';
 
-export function TeamMemberCard({ index, name, bio, imageUrl, organization, lattesUrl }: Props) {
+export function TeamMemberCard({ index, name, role, researchArea, imageUrl, organization, lattesUrl }: Props) {
   const colorNumber = (index + 1) % 3 as ColorNumber;
   const colors: Record<number, Colors> = {
     0: 'black',
@@ -36,7 +37,9 @@ export function TeamMemberCard({ index, name, bio, imageUrl, organization, latte
         <img src={ imageUrl } alt={`${name} photo`} />
 
         <div>
-          { bio }
+          <strong>{ role }</strong>
+          <br/>
+          <strong>Research Area: </strong><span>{ researchArea }</span>
         </div>
       </Container>
     </Link>
