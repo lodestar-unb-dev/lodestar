@@ -102,7 +102,7 @@ export default function About() {
       imageUrl: '/teamMembers/rogerioSousa.webp',
       role: 'Stafft',
       researchArea: 'Data Security',
-      lattesUrl: ''
+      lattesUrl: 'http://lattes.cnpq.br/1249648187708650'
     }
   ]
 
