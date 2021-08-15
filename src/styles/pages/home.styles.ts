@@ -63,6 +63,7 @@ const HomeProject = styled.div`
     display: flex;
     flex: 1;
     justify-content: space-between;
+    gap: 80px;
 
     > aside {
       display: flex;
@@ -113,10 +114,6 @@ const HomeProject = styled.div`
         text-transform: uppercase;
         transition: .2s;
       }
-    } 
-    
-    img {
-      flex: 0.75;
     }
   }
 `;
@@ -124,11 +121,7 @@ const HomeProject = styled.div`
 export const HomeProjectSpaceMission = styled(HomeProject)`
   background-color: ${props => props.theme.colors.blueDark};
   
-  section {
-    img {
-      margin-bottom: -112px;
-    }
-
+  section { 
     a:hover {
       background-color: ${props => props.theme.colors.greenDark};
     }
@@ -161,10 +154,6 @@ export const HomeProjectSmallSAT = styled(HomeProject)`
         }
       }
     }
-
-    img {
-      margin-right: 185px;
-    }
   }
 `;
 
@@ -179,10 +168,6 @@ export const HomeProjectHighAltitudeBallooning = styled(HomeProject)`
       &:hover {
         background-color: ${props => props.theme.colors.black25};
       }
-    }
-
-    img {
-      margin-left: 272px;
     }
   }
 `;

@@ -11,7 +11,7 @@ const variants = {
   visible: { opacity: 1 }
 }
 
-export function Layout ({ children }: Props) {
+export function Layout ({ children, ...rest }: Props) {
   return (
       <motion.main
         initial="hidden"
@@ -19,6 +19,7 @@ export function Layout ({ children }: Props) {
         exit="hidden"
         variants={variants}
         transition={{ duration: .3 }}
+        {...rest}
       >
         {children}
       </motion.main>
