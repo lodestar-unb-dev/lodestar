@@ -31,10 +31,10 @@ export default function Contact() {
             </li>
 
             <li>
-              <Link href="tel:+556131075656" passHref>
+              <Link href="tel:+556131075556" passHref>
                 <a>
                   <FiPhone size={20} />
-                  <span>+55 61 3107-5656</span>
+                  <span>+55 61 3107-5556</span>
                 </a>
               </Link>
             </li>
