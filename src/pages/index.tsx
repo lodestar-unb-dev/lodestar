@@ -106,7 +106,7 @@ export default function Home() {
             <div>
               <aside>
                 <FiHardDrive />
-                <span>Tortor</span>
+                <span>Simulator</span>
               </aside>
             </div>
 
