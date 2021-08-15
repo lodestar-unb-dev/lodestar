@@ -82,6 +82,7 @@ const HomeProject = styled.div`
         font-size: 24px;
         font-weight: 400;
         color: ${props => props.theme.colors.black10};
+        text-align: justify;
       }
 
       div {
@@ -144,7 +145,6 @@ export const HomeProjectSmallSAT = styled(HomeProject)`
       color: ${props => props.theme.colors.blueDark};
 
       p {
-        text-align: right;
         color: ${props => props.theme.colors.blue};
       }
 
