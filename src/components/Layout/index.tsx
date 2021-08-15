@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react'
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/router'
 
 type Props = {
     children: ReactNode
@@ -18,7 +17,7 @@ export function Layout ({ children, ...rest }: Props) {
         animate="visible"
         exit="hidden"
         variants={variants}
-        transition={{ duration: .3 }}
+        transition={{ duration: 0.3 }}
         {...rest}
       >
         {children}

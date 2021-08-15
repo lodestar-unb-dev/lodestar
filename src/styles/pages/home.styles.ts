@@ -35,15 +35,12 @@ export const HomeBanner = styled.section`
       align-items: flex-start;
 
       h1 {
-        color: var(--black-5);
         font-weight: 500;
         font-size: 72px;
         text-transform: uppercase;
       }
 
       h3 {
-        color: var(--black-5);
-        font-weight: 400;
         font-size: 56px;
       }
     }
