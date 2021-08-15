@@ -29,7 +29,7 @@ export default function Home() {
       <HomeProjectSpaceMission>
         <section>
           <aside>
-            <h2>Space Missions</h2>
+            <h2>Space Missions Engineering</h2>
 
             <p>
             Aiming to develop skills for the planning, analysis, and design of space missions, 
