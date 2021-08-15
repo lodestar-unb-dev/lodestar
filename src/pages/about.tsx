@@ -3,6 +3,7 @@ import { TeamMemberCard } from '../components/TeamMemberCard';
 
 import {
   Container,
+  Overview,
   TeamMembersContainer
 } from '../styles/pages/about.styles';
 
@@ -109,6 +110,29 @@ export default function About() {
   return (
     <Layout>
       <Container>
+        <Overview>
+          <header>
+            <h2>Overview</h2>
+
+            <p>The Laboratory of Simulation and Control of Aerospace Systems, 
+              <strong> LODESTAR</strong>, is located at the University of Brasilia, Brazil, and 
+              currently is structured in three main divisions of research and 
+              technological development: <strong>Space Missions, Small Sat Simulator, 
+              and High-Altitude Scientific Ballooning</strong>. Its infrastructure is 
+              currently divided in three main environments, organized in a total 
+              area of approximately 100 m^2, consisting of a place for hardware 
+              and firmware development, a satellite command and control ground 
+              station, a satellite laser ranging system, a satellite 
+              hardware-in-the-loop simulation system, in addition to venues for 
+              meetings and developments for the LODESTAR team and its partners.
+            </p>
+
+            <strong>
+              Welcome to the place where the theory meets the practice, and news ideas face the rigorous standards of evidence!
+            </strong>
+          </header>
+        </Overview>
+
         <TeamMembersContainer>
           <header>
             <h2>Our team members</h2>
