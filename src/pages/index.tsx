@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import { FiBox, FiHardDrive, FiDroplet } from 'react-icons/fi';
 
 import { Layout } from '../components/Layout';
+import { NoScrollLink } from '../components/NoScrollLink';
 
 import {
   HomeBanner,
@@ -64,11 +64,11 @@ export default function Home() {
               </aside>
             </div>
 
-            <Link href="/projects">
+            <NoScrollLink href="/projects">
               <a>
                 More info
               </a>
-            </Link>
+            </NoScrollLink>
           </aside>
 
           <img src="/space_missions_icon.svg" alt="space missions icon" />
@@ -110,11 +110,11 @@ export default function Home() {
               </aside>
             </div>
 
-            <Link href="/projects">
+            <NoScrollLink href="/projects">
               <a>
                 More info
               </a>
-            </Link>
+            </NoScrollLink>
           </aside>
         </section>
       </HomeProjectSmallSAT>
@@ -161,11 +161,11 @@ export default function Home() {
               </aside>
             </div>
 
-            <Link href="/projects">
+            <NoScrollLink href="/projects">
               <a>
                 More info
               </a>
-            </Link>
+            </NoScrollLink>
           </aside>
 
           <img src="/high_altitude_ballooning_icon.svg" alt="high altitude ballooning icon" />

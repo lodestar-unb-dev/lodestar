@@ -13,7 +13,7 @@ export const RadioBanner = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
 
     max-width: 1120px;
     margin: 0 auto;

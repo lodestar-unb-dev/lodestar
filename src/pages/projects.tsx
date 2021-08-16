@@ -1,6 +1,5 @@
 import Link from 'next/link';
-
-import { Layout } from '../components/Layout';
+import { NoScrollLink } from '../components/NoScrollLink';
 
 import {
   Container,
@@ -45,9 +44,9 @@ export default function Projects() {
               Come and be part of it!
             </p>
 
-            <Link href="/projects/alfacrux" passHref>
+            <NoScrollLink href="/projects/alfacrux" passHref>
               <a>Check More</a>
-            </Link>
+            </NoScrollLink>
           </div>
         </article>
 
@@ -106,9 +105,13 @@ export default function Projects() {
               GLEE website!
             </p>
 
-            <Link href="https://www.glee2023.org/" passHref>
-              <a>Check More</a>
-            </Link>
+            <a 
+              href="https://www.glee2023.org/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Check More
+            </a>
           </div>
         </article>
       </SpaceMissionProject>
@@ -173,9 +176,13 @@ export default function Projects() {
               spherical cameras.
             </p>
 
-            <Link href="https://www.youtube.com/channel/UCDbPHM1djZ8KOvkJh46NqRA" passHref>
-              <a>Check More</a>
-            </Link>
+            <a
+              href="https://www.youtube.com/channel/UCDbPHM1djZ8KOvkJh46NqRA"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Check More
+            </a>
           </div>
         </article>
 
@@ -212,9 +219,13 @@ export default function Projects() {
               were a great success! Check this adventure and come to be a partner! 
             </p>
 
-            <Link href="https://www.facebook.com/projetokuaray" passHref>
-              <a>Check More</a>
-            </Link>
+            <a
+              href="https://www.facebook.com/projetokuaray"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Check More
+            </a>
           </div>
         </article>
       </HighAltitudeBallooningProject>
