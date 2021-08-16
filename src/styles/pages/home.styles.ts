@@ -84,7 +84,6 @@ const HomeProject = styled.div`
       }
 
       p {
-        font-size: 24px;
         color: ${props => props.theme.colors.black10};
         text-align: justify;
       }
