@@ -120,7 +120,7 @@ export default function About() {
               technological development: <strong>Space Missions, Small Sat Simulator, 
               and High-Altitude Scientific Ballooning</strong>. Its infrastructure is 
               currently divided in three main environments, organized in a total 
-              area of approximately 100 m^2, consisting of a place for hardware 
+              area of approximately 100 m<sup>2</sup>, consisting of a place for hardware 
               and firmware development, a satellite command and control ground 
               station, a satellite laser ranging system, a satellite 
               hardware-in-the-loop simulation system, in addition to venues for 

@@ -35,6 +35,7 @@ export const RadioBanner = styled.section`
 
       p {
         line-height: 140%;
+        text-align: justify;
       }
 
       p + p {

@@ -101,7 +101,7 @@ export default function Projects() {
               The Great Lunar Expedition for Everyone, GLEE 2023, is a mission 
               to the surface of the Moon that will conduct science and test 
               technology with hundreds of 5-gram LunaSats built by students 
-              from all around the world. LODESTAR is proud to be one of the 
+              from all around the world. The LODESTAR is proud to be one of the 
               organizations currently involved. Check more information on the 
               GLEE website!
             </p>

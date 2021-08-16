@@ -125,7 +125,7 @@ export default function Home() {
             <h2>High-altitude ballooning</h2>
 
             <p>
-            Aware of the importance and fundamental role of using 
+            Being aware of the importance and fundamental role of using 
             scientific balloons floating in the stratosphere for space science 
             research and technological development, 
             the LODESTAR High-Altitude Ballooning division has been developing a 

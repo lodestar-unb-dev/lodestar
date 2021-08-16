@@ -81,7 +81,7 @@ export default function AlfacruxRadio() {
             </p>
 
             <p>
-              In addition any radio amateur is invited to receive the satellite 
+              In addition, any radio amateur is invited to receive the satellite 
               telemetry and share it at his will and cooperate in the 
               SDR experiments. Instruction for decoding the telemetry data packets 
               will be available soon.
