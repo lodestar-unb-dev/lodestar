@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
 import { NoScrollLink } from '../components/NoScrollLink';
 
 import {
@@ -11,6 +12,23 @@ import {
 } from '../styles/pages/projects.styles';
 
 export default function Projects() {
+  useEffect(() => {
+    const path = window.location.hash
+    if (path && path.includes("#")) {
+      setTimeout(() => {
+        const id = path.replace("#", "")
+        const el = window.document.getElementById(id)
+        const r = el?.getBoundingClientRect()
+        if (r) {
+          window.top.scroll({
+            top: pageYOffset + r.top -73,
+            behavior: "smooth",
+          })
+        }
+      }, 600)
+    }
+  }, [])
+
   return (
     <Container>
       <ProjectsHeader>
@@ -22,7 +40,7 @@ export default function Projects() {
         </p>
       </ProjectsHeader>  
 
-      <SpaceMissionProject>
+      <SpaceMissionProject id="space-missions">
         <h3>Space Missions</h3>
 
         <article>
@@ -116,7 +134,7 @@ export default function Projects() {
         </article>
       </SpaceMissionProject>
 
-      <SmallSATSimulatorProject>
+      <SmallSATSimulatorProject id="small-sat-simulator">
         <h3>Small SAT Simulator</h3>
 
         <article>
@@ -148,7 +166,7 @@ export default function Projects() {
         </article>
       </SmallSATSimulatorProject>
 
-      <HighAltitudeBallooningProject>
+      <HighAltitudeBallooningProject id="high-altitude-ballooning">
         <h3>High-altitude Ballooning</h3>
 
         <article>

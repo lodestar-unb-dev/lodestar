@@ -68,7 +68,7 @@ export default function Home() {
               </aside>
             </div>
 
-            <NoScrollLink href="/projects">
+            <NoScrollLink href="/projects#space-missions">
               <a>
                 More info
               </a>
@@ -114,7 +114,7 @@ export default function Home() {
               </aside>
             </div>
 
-            <NoScrollLink href="/projects">
+            <NoScrollLink href="/projects#small-sat-simulator">
               <a>
                 More info
               </a>
@@ -165,7 +165,7 @@ export default function Home() {
               </aside>
             </div>
 
-            <NoScrollLink href="/projects">
+            <NoScrollLink href="/projects#high-altitude-ballooning">
               <a>
                 More info
               </a>
