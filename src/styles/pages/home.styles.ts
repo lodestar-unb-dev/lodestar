@@ -11,7 +11,8 @@ export const HomeBanner = styled.section`
 
   > div {
     position: absolute;
-    height: 480px;
+    min-height: 480px;
+    height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(0, 42, 89, 0), rgba(0, 42, 89, 1));
   }
@@ -32,6 +33,7 @@ export const HomeBanner = styled.section`
       display: flex;
       flex-direction: column;
       justify-content: center;
+      gap: 40px;
 
       h1 {
         font-weight: 500;
@@ -40,24 +42,10 @@ export const HomeBanner = styled.section`
         margin-left: -5px;
       }
 
-      > div {
+      h3 {
         color: ${({ theme }) => theme.colors.black10};
-        
-        h4 {
-          margin-top: 20px;
-          text-transform: uppercase;
-        }
-
-        h3 {
-          margin-top: 80px;
-          /* text-transform: uppercase; */
-          text-align: justify;
-          font-size: 24px;
-
-          & + h3 {
-            margin-top: 40px;
-          }
-        }
+        font-size: 40px;
+        text-transform: uppercase;
       }
     }
   

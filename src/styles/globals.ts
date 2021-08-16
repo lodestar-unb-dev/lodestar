@@ -30,6 +30,9 @@ body {
 
 body, input, textarea, select, button {
   font: 300 1.125rem 'Barlow', sans-serif;
+}
+
+p {
   line-height: 140%;
 }
 
