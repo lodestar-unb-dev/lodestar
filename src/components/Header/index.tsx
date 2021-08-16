@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { NoScrollLink } from '../NoScrollLink';
 
 import {
   HeaderContainer,
@@ -15,25 +15,25 @@ export function Header ({ activePage }: HeaderProps) {
     <HeaderContainer>
       <section>
         <nav>
-          <Link href='/' passHref>
+          <NoScrollLink href='/' passHref>
             <HeaderLink active={activePage === '/'}>Home</HeaderLink>
-          </Link>
+          </NoScrollLink>
 
-          <Link href='/projects' passHref>
+          <NoScrollLink href='/projects' passHref>
             <HeaderLink active={activePage.search(new RegExp('^/projects')) !== -1}>Projects</HeaderLink>
-          </Link>
+          </NoScrollLink>
         </nav>
 
         <HeaderLogo src="/favicon.png" alt="icon" />
 
         <nav>
-          <Link href='/about' passHref>
+          <NoScrollLink href='/about' passHref>
             <HeaderLink active={activePage === '/about'}>About</HeaderLink>
-          </Link>
+          </NoScrollLink>
 
-          <Link href='/contact' passHref>
+          <NoScrollLink href='/contact' passHref>
             <HeaderLink active={activePage === '/contact'}>Contact</HeaderLink>
-          </Link>
+          </NoScrollLink>
         </nav>
       </section>
     </HeaderContainer>

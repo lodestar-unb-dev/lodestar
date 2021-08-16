@@ -5,9 +5,38 @@ export const Container = styled.div`
   color: ${props => props.theme.colors.blue};
 `;
 
+export const Overview = styled.section`
+  background-color: ${props => props.theme.colors.black5};
+
+  header {
+    max-width: 1120px;
+    padding: 80px 20px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    h2 {
+      font-size: 56px;
+      text-transform: uppercase;
+      color: ${props => props.theme.colors.blue};
+    }
+
+    p {
+      text-align: center;
+    }
+
+    strong {
+      font-weight: 500;
+    }
+  }
+`;
+
 export const TeamMembersContainer = styled.section`
   max-width: 1120px;
-  padding: 80px 20px 85px;
+  padding: 80px 20px;
   margin: 0 auto;
 
   display: flex;
@@ -19,15 +48,10 @@ export const TeamMembersContainer = styled.section`
     margin-bottom: 100px;
 
     h2 {
-      font-weight: 400;
       font-size: 56px;
       text-transform: uppercase;
-      margin-bottom: 24px;
-      color: ${props => props.theme.colors.blueDark};
-    }
-
-    p {
-      font-size: 18px;
+      margin-bottom: 48px;
+      color: ${props => props.theme.colors.blue};
     }
   }
 

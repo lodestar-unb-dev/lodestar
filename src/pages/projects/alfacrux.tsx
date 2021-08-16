@@ -1,8 +1,9 @@
 import Slider, { Settings } from "react-slick";
-import { FiInfo } from 'react-icons/fi';
-import Link from 'next/link';
+import { FiRss } from 'react-icons/fi';
 import { useTheme } from 'styled-components';
+
 import { Layout } from "../../components/Layout";
+import { NoScrollLink } from "../../components/NoScrollLink";
 
 import {
   AlfacruxBanner,
@@ -25,20 +26,54 @@ export default function AlfaCrux() {
   return (
     <Layout>
       <main style={{ backgroundColor: theme.colors.blueDark }} >
-        <AlfacruxBanner role="banner" />
+        <AlfacruxBanner role="banner">
+          <div />
+          
+          <img src="/alfacrux_logo.webp" alt="AlfaCrux Logo" />
+        </AlfacruxBanner>
 
         <AlfacruxBio>
           <div>
-            <h1>AlfaCrux Mission</h1>
+            <h2>The AlfaCrux mission</h2>
             
-            <aside>
-              <div>
-                <p>The AlfaCrux mission is an educational and technological in orbit demonstration of narrowband communication solutions for Internet of Things (IoT) applications mainly in regions with low infrastructure, forest environments and countryside.</p>
-                <p>The mission, supported by the Fundação de Apoio a Pesquisa do Distrito Federal (FAPDF) and the Brazilian Space Agency (AEB), will also study the effects of the space weather on satellite communications in equatorial latitudes, and provide a study case of possible applications in the agribusiness.</p>
-              </div>
+              <aside>
+                <p>
+                  Financed by the Government of the Federal District of Brazil 
+                  through the Federal District Research Support Foundation (FAPDF), 
+                  the AlfaCrux is a radio amateur and educational mission to 
+                  provide a hands-on experience to students and professors in the 
+                  complete process of developing and operating a space mission. 
+                  Specifically, the team will design, operate, and observe the 
+                  behavior and performance of the AlfaCrux CubeSat in a space 
+                  environment. Moreover, they will learn about radio electronics, 
+                  antennas, digital communications, and radio amateur activities. 
+                  As an additional goal, MSc. and PhD students from Electrical, 
+                  Mechatronics, Mechanics, Production and Aerospace Engineering 
+                  will test and demonstrate in orbit software defined radio 
+                  experiments to perform ionospheric scintillation analysis and a 
+                  data collect system from sensors in the ground.
+                </p>
+
+                <img src="/satellite_banner.webp" alt="Alfacrux render" />
+              </aside>
               
-              <img src="/alfacrux_render.webp" alt="Alfacrux render" />
-            </aside>
+              <p>
+                The package routing solution will allow forwarding of received messages back 
+                to Earth to support communication and messaging between radio 
+                amateurs (digital QSO), store it on-board, and transmit it to the 
+                ground station. Data collected will be available through internet 
+                and can be used for several applications: study of different 
+                methods for low-data rate communication, characterization of 
+                interference sources, atmospheric propagation effects, 
+                communication capability in terms of data rate, and link 
+                performance in terms of bit error date (BER) and signal to noise 
+                ratio (SNR). Finally, all the passages will be monitored 
+                through the LODESTAR command and control ground station with the 
+                support from the amateur radio community. 
+                The telemetry information will be shared to the radio amateurs 
+                and networks before launch. The AlfaCrux is planned to be 
+                launched in Q1 2022 (date and local TBD) into a SSO at 550km.
+              </p>
           </div>
         </AlfacruxBio>
 
@@ -94,17 +129,17 @@ export default function AlfaCrux() {
               <p>Do you want to communicate with AlfaCrux?</p>
               <p>Then click the button bellow for more info!</p>
 
-              <Link href="/projects/alfacrux/radio">
+              <NoScrollLink href="/projects/alfacrux/radio">
                 <a>
                   <span>Radio amateur info</span>
                   <div>
-                    <FiInfo />
+                    <FiRss />
                   </div>
                 </a>
-              </Link>
+              </NoScrollLink>
             </aside>
 
-            <img src="/radio_amateur.webp" alt="Radio Amateur" />
+            <img src="/radio_amateur.svg" alt="Radio Amateur" />
 
           </div>
         </AlfacruxRadioAmateur>

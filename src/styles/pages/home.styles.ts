@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HomeBanner = styled.section`
   background-image: url("/home_banner.webp");
   background-size: cover;
-  height: 480px;
+  min-height: 480px;
 
   position: relative;
   display: flex;
@@ -11,7 +11,8 @@ export const HomeBanner = styled.section`
 
   > div {
     position: absolute;
-    height: 480px;
+    min-height: 480px;
+    height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(0, 42, 89, 0), rgba(0, 42, 89, 1));
   }
@@ -20,31 +21,31 @@ export const HomeBanner = styled.section`
     display: flex;
     flex: 1;
     justify-content: space-between;
+    gap: 80px;
 
     max-width: 1120px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 80px 20px;
 
     z-index: 1;
 
-    div {
+    > div {
       display: flex;
       flex-direction: column;
-
-      justify-content: space-between;
-      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
 
       h1 {
-        color: var(--black-5);
         font-weight: 500;
         font-size: 72px;
         text-transform: uppercase;
+        margin-left: -5px;
       }
 
       h3 {
-        color: var(--black-5);
-        font-weight: 400;
-        font-size: 56px;
+        color: ${({ theme }) => theme.colors.black10};
+        font-size: 40px;
+        text-transform: uppercase;
       }
     }
   
@@ -63,6 +64,7 @@ const HomeProject = styled.div`
     display: flex;
     flex: 1;
     justify-content: space-between;
+    gap: 80px;
 
     > aside {
       display: flex;
@@ -79,9 +81,8 @@ const HomeProject = styled.div`
       }
 
       p {
-        font-size: 24px;
-        font-weight: 400;
         color: ${props => props.theme.colors.black10};
+        text-align: justify;
       }
 
       div {
@@ -108,14 +109,11 @@ const HomeProject = styled.div`
         border-radius: 12px;
         margin-top: 50px;
         padding: 20px 50px;
+        font-weight: 500;
 
         text-transform: uppercase;
         transition: .2s;
       }
-    } 
-    
-    img {
-      flex: 0.75;
     }
   }
 `;
@@ -123,11 +121,7 @@ const HomeProject = styled.div`
 export const HomeProjectSpaceMission = styled(HomeProject)`
   background-color: ${props => props.theme.colors.blueDark};
   
-  section {
-    img {
-      margin-bottom: -112px;
-    }
-
+  section { 
     a:hover {
       background-color: ${props => props.theme.colors.greenDark};
     }
@@ -144,7 +138,6 @@ export const HomeProjectSmallSAT = styled(HomeProject)`
       color: ${props => props.theme.colors.blueDark};
 
       p {
-        text-align: right;
         color: ${props => props.theme.colors.blue};
       }
 
@@ -161,10 +154,6 @@ export const HomeProjectSmallSAT = styled(HomeProject)`
         }
       }
     }
-
-    img {
-      margin-right: 185px;
-    }
   }
 `;
 
@@ -179,10 +168,6 @@ export const HomeProjectHighAltitudeBallooning = styled(HomeProject)`
       &:hover {
         background-color: ${props => props.theme.colors.black25};
       }
-    }
-
-    img {
-      margin-left: 272px;
     }
   }
 `;

@@ -4,62 +4,75 @@ export const AlfacruxBanner = styled.section`
   background-image: url("/alfacrux_banner.webp");
   background-size: cover;
   background-position: center;
-  height: 480px;
+  min-height: 500px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  > div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    max-width: 100px;
+  }
 `;
 
 export const AlfacruxBio = styled.section`
-  background-color: #00244B;
-
-  padding: 50px 0;
+  background-color: ${({ theme }) => theme.colors.blueDarker };;
+  padding: 80px 0;
 
   div {
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 20px;
 
-    h1 {
-      font-weight: 500;
-      font-size: 60px;
-      margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 
-      text-align: center;
+    h2 {
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+
+    p {
+      line-height: 140%;
+      text-align: justify;
     }
 
     aside {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
-
-      div {
-        text-align: justify;
-
-        p {
-          font-size: 18px;
-          line-height: 26px;
-        }
-
-        p + p {
-          margin-top: 20px;
-        }
-      }
+      gap: 60px;
     }
 
     img {
-      margin-left: 50px;
       width: 45%;
+      border-radius: 8px;
     }
   }
 `;
 
 export const AlfacruxWhy = styled.section`
   max-width: 1120px;
-  padding: 50px 20px;
+  padding: 80px 20px;
   margin: 0 auto;
 
   h2 {
-    font-weight: 500;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 
     text-align: center;
   }
@@ -76,14 +89,14 @@ export const AlfacruxWhy = styled.section`
 `;
 
 export const AlfacruxGallery = styled.section`
-  background-color: #00244B;
+  background-color: ${({ theme }) => theme.colors.blueDarker };;
 
-  padding: 50px 0;
+  padding: 80px 0;
 
   h2 {
-    font-weight: 500;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 
     text-align: center;
   }
@@ -108,13 +121,13 @@ export const AlfacruxGallery = styled.section`
 
 export const AlfacruxRadioAmateur = styled.section`
   max-width: 1120px;
-  padding: 50px 20px;
+  padding: 80px 20px;
   margin: 0 auto;
 
   h2 {
-    font-weight: 500;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 
     text-align: center;
   }
@@ -140,7 +153,7 @@ export const AlfacruxRadioAmateur = styled.section`
         width: fit-content;
 
         margin-top: 40px;
-        padding-left: 16px;
+        padding-left: 20px;
         border-radius: 6px;
         border: 0;
 
@@ -158,7 +171,7 @@ export const AlfacruxRadioAmateur = styled.section`
 
         div {
           margin-left: 20px;
-          padding: 18px 20px;
+          padding: 20px;
 
           background-color: #00822D;
           color: #F5F5F5;
@@ -172,14 +185,14 @@ export const AlfacruxRadioAmateur = styled.section`
 `;
 
 export const AlfacruxRecentActivities = styled.section`
-  background-color: #00244B;
+  background-color: ${({ theme }) => theme.colors.blueDarker };;
 
-  padding: 50px 0;
+  padding: 80px 0;
 
   h2 {
-    font-weight: 500;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 
     text-align: center;
   }
@@ -206,7 +219,7 @@ export const AlfacruxRecentActivities = styled.section`
 
       aside {
         padding: 20px;
-        color: #00244B;
+        color: ${({ theme }) => theme.colors.blueDarker };;
 
         h3 {
           font-weight: 500;

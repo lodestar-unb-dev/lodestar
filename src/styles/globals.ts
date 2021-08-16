@@ -29,11 +29,20 @@ body {
 }
 
 body, input, textarea, select, button {
-  font: 400 1rem 'Barlow', sans-serif;
+  font: 300 1.125rem 'Barlow', sans-serif;
+}
+
+p {
+  line-height: 140%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
 
 button {
   cursor: pointer;
+  border: 0;
 }
 
 a {

@@ -21,16 +21,14 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
 
     h2 {
-      font-weight: 400;
       text-transform: uppercase;
       font-size: 56px;
     }
 
     p {
-      margin-top: 24px;
-      font-weight: 400;
       font-size: 18px;
     }
   }
