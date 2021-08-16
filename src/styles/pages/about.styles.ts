@@ -10,21 +10,21 @@ export const Overview = styled.section`
 
   header {
     max-width: 1120px;
-    padding: 80px 20px 85px;
+    padding: 80px 20px;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
 
     h2 {
       font-size: 56px;
       text-transform: uppercase;
-      color: ${props => props.theme.colors.blueDark};
+      color: ${props => props.theme.colors.blue};
     }
 
     p {
+      margin-top: 48px;
       text-align: center;
     }
 
@@ -36,7 +36,7 @@ export const Overview = styled.section`
 
 export const TeamMembersContainer = styled.section`
   max-width: 1120px;
-  padding: 80px 20px 85px;
+  padding: 80px 20px;
   margin: 0 auto;
 
   display: flex;
@@ -50,8 +50,8 @@ export const TeamMembersContainer = styled.section`
     h2 {
       font-size: 56px;
       text-transform: uppercase;
-      margin-bottom: 24px;
-      color: ${props => props.theme.colors.blueDark};
+      margin-bottom: 48px;
+      color: ${props => props.theme.colors.blue};
     }
   }
 

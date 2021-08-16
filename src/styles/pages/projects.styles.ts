@@ -23,15 +23,13 @@ export const ProjectsHeader = styled.header`
   align-items: center;
 
   h2 {
-    font-weight: 400;
     text-transform: uppercase;
     font-size: 56px;
-    color: ${({ theme }) => theme.colors.blueDark};
+    color: ${({ theme }) => theme.colors.blue};
   }
 
   p {
-    margin-top: 24px;
-    font-weight: 400;
+    margin-top: 48px;
     color: ${({ theme }) => theme.colors.blue};
   }
 `;

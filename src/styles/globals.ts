@@ -29,7 +29,8 @@ body {
 }
 
 body, input, textarea, select, button {
-  font: 400 1.125rem 'Barlow', sans-serif;
+  font: 300 1.125rem 'Barlow', sans-serif;
+  line-height: 140%;
 }
 
 h1, h2, h3, h4, h5, h6 {

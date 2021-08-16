@@ -25,7 +25,6 @@ export const Container = styled.a<ContainerProps>`
     margin: 30px 0 0 30px;
 
     h3 {
-      font-weight: 400;
       font-size: 32px;
 
       margin-bottom: 10px;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HomeBanner = styled.section`
   background-image: url("/home_banner.webp");
   background-size: cover;
-  height: 480px;
+  min-height: 480px;
 
   position: relative;
   display: flex;
@@ -20,18 +20,18 @@ export const HomeBanner = styled.section`
     display: flex;
     flex: 1;
     justify-content: space-between;
+    gap: 80px;
 
     max-width: 1120px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 80px 20px;
 
     z-index: 1;
 
-    div {
+    > div {
       display: flex;
       flex-direction: column;
 
-      justify-content: space-between;
       align-items: flex-start;
 
       h1 {
@@ -40,8 +40,15 @@ export const HomeBanner = styled.section`
         text-transform: uppercase;
       }
 
-      h3 {
-        font-size: 56px;
+      > div h3 {
+        margin-top: 32px;
+        text-transform: uppercase;
+        text-align: justify;
+        font-size: 24px;
+
+        & + h3 {
+          margin-top: 40px;
+        }
       }
     }
   
@@ -78,7 +85,6 @@ const HomeProject = styled.div`
 
       p {
         font-size: 24px;
-        font-weight: 400;
         color: ${props => props.theme.colors.black10};
         text-align: justify;
       }

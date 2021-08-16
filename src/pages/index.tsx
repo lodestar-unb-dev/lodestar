@@ -19,7 +19,11 @@ export default function Home() {
         <aside>
           <div>
             <h1>Lodestar</h1>
-            <h3>INTEGRATING KNOWLEDGE<br/>& INNOVATING IN THE<br/>AEROSPACE SECTOR</h3>
+
+            <div>
+              <h3>Integrating knowledge &amp; innovating in the aerospace sector.</h3>
+              <h3 style={{ fontWeight: 500 }}>Welcome to the place where the theory meets the practice, and news ideas face the rigorous standards of evidence!</h3>
+            </div>
           </div>
 
           <img src="/lodestar_logo.webp" alt="Lodestar Logo" />
