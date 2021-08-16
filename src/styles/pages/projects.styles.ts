@@ -21,6 +21,7 @@ export const ProjectsHeader = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 
   h2 {
     text-transform: uppercase;
@@ -29,7 +30,6 @@ export const ProjectsHeader = styled.header`
   }
 
   p {
-    margin-top: 48px;
     color: ${({ theme }) => theme.colors.blue};
   }
 `;

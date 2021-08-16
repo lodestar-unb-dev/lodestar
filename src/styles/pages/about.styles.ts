@@ -16,6 +16,7 @@ export const Overview = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 24px;
 
     h2 {
       font-size: 56px;
@@ -24,7 +25,6 @@ export const Overview = styled.section`
     }
 
     p {
-      margin-top: 48px;
       text-align: center;
     }
 

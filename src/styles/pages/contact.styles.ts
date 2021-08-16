@@ -29,7 +29,6 @@ export const Container = styled.div`
     }
 
     p {
-      margin-top: 24px;
       font-size: 18px;
     }
   }
