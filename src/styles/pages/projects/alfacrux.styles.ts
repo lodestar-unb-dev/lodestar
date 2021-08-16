@@ -4,7 +4,6 @@ export const AlfacruxBanner = styled.section`
   background-image: url("/alfacrux_banner.webp");
   background-size: cover;
   background-position: center;
-  padding: 80px 0;
   min-height: 500px;
 
   position: relative;
@@ -18,15 +17,12 @@ export const AlfacruxBanner = styled.section`
     background-color: rgba(0, 0, 0, 0.2);
   }
 
-  aside {
-    max-width: 1120px;
-    width: 100%;
-    padding: 0 20px;
-    margin: auto auto 0;
-
-    img {
-      max-width: 200px;
-    }
+  img {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    max-width: 100px;
   }
 `;
 

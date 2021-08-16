@@ -29,9 +29,7 @@ export default function AlfaCrux() {
         <AlfacruxBanner role="banner">
           <div />
           
-          <aside>
-            <img src="/alfacrux_logo.webp" alt="AlfaCrux Logo" />
-          </aside>
+          <img src="/alfacrux_logo.webp" alt="AlfaCrux Logo" />
         </AlfacruxBanner>
 
         <AlfacruxBio>
@@ -73,8 +71,8 @@ export default function AlfaCrux() {
                 through the LODESTAR command and control ground station with the 
                 support from the amateur radio community. 
                 The telemetry information will be shared to the radio amateurs 
-                and networks before launch. It is planned to be launch in 
-                Q1 2022 (date and local TBD) into a SSO at 550km.
+                and networks before launch. The AlfaCrux is planned to be 
+                launched in Q1 2022 (date and local TBD) into a SSO at 550km.
               </p>
           </div>
         </AlfacruxBio>

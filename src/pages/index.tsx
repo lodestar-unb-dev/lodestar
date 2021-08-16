@@ -21,7 +21,7 @@ export default function Home() {
             <h1>Lodestar</h1>
 
             <div>
-              <h3>Integrating knowledge &amp; innovating in the aerospace sector.</h3>
+              <h4>Integrating knowledge &amp; innovating in the aerospace sector.</h4>
               <h3 style={{ fontWeight: 500 }}>Welcome to the place where the theory meets the practice, and news ideas face the rigorous standards of evidence!</h3>
             </div>
           </div>

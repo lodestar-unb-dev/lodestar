@@ -32,6 +32,7 @@ export const HeaderLink = styled.a<HeaderNavProps>`
   color: ${props => props.theme.colors.black25};
 
   font-size: 1.125rem;
+  font-weight: 400;
 
   transition: color 0.2s;
 

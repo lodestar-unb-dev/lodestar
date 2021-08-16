@@ -31,23 +31,32 @@ export const HomeBanner = styled.section`
     > div {
       display: flex;
       flex-direction: column;
-
-      align-items: flex-start;
+      justify-content: center;
 
       h1 {
         font-weight: 500;
         font-size: 72px;
         text-transform: uppercase;
+        margin-left: -5px;
       }
 
-      > div h3 {
-        margin-top: 32px;
-        text-transform: uppercase;
-        text-align: justify;
-        font-size: 24px;
+      > div {
+        color: ${({ theme }) => theme.colors.black10};
+        
+        h4 {
+          margin-top: 20px;
+          text-transform: uppercase;
+        }
 
-        & + h3 {
-          margin-top: 40px;
+        h3 {
+          margin-top: 80px;
+          /* text-transform: uppercase; */
+          text-align: justify;
+          font-size: 24px;
+
+          & + h3 {
+            margin-top: 40px;
+          }
         }
       }
     }
@@ -112,6 +121,7 @@ const HomeProject = styled.div`
         border-radius: 12px;
         margin-top: 50px;
         padding: 20px 50px;
+        font-weight: 500;
 
         text-transform: uppercase;
         transition: .2s;

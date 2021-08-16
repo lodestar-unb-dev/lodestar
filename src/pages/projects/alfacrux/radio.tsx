@@ -42,8 +42,8 @@ function CommingSoon() {
       style={{
         flexDirection: "row",
         justifyContent: "center",
-        paddingTop: 87,
-        paddingBottom: 87
+        paddingTop: 92,
+        paddingBottom: 91
       }}
     >
       <FiTool/>
@@ -81,10 +81,11 @@ export default function AlfacruxRadio() {
             </p>
 
             <p>
-              In addition, any radio amateur is invited to receive the satellite 
-              telemetry and share it at his will and cooperate in the 
-              SDR experiments. Instruction for decoding the telemetry data packets 
-              will be available soon.
+              In addition, any radio amateur is invited to receive the 
+              satellite telemetry and share it and also cooperate in 
+              the SDR experiments. Instruction for decoding the telemetry 
+              data packets, and a form to enter the information, will be 
+              available soon in this website.
             </p>
 
             <p>
