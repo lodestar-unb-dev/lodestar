@@ -7,8 +7,8 @@ type ContainerProps = {
 export const Container = styled.a<ContainerProps>`
   display: flex;
   flex-direction: column;
-  max-width: 334px;
-  min-width: 334px;
+  max-width: 20.875rem;
+  min-width: 20.875rem;
   background-color: ${props => props.theme.colors.black5};
   
   justify-self: center;
@@ -25,7 +25,7 @@ export const Container = styled.a<ContainerProps>`
     margin: 30px 0 0 30px;
 
     h3 {
-      font-size: 32px;
+      font-size: 2rem;
 
       margin-bottom: 10px;
     }
@@ -55,8 +55,8 @@ export const Container = styled.a<ContainerProps>`
     margin-left: auto;
     margin-top: -30px;
 
-    width: 240px;
-    height: 240px;
+    width: 15rem;
+    height: 15rem;
 
     object-fit: cover;
     object-position: top;

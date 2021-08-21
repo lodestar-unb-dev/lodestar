@@ -19,7 +19,7 @@ export const Overview = styled.section`
     gap: 24px;
 
     h2 {
-      font-size: 56px;
+      font-size: 3.5rem;
       text-transform: uppercase;
       color: ${props => props.theme.colors.blue};
     }
@@ -48,7 +48,7 @@ export const TeamMembersContainer = styled.section`
     margin-bottom: 100px;
 
     h2 {
-      font-size: 56px;
+      font-size: 3.5rem;
       text-transform: uppercase;
       margin-bottom: 48px;
       color: ${props => props.theme.colors.blue};

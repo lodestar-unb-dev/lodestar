@@ -25,7 +25,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const HeaderLogo = styled.img`
-  height: 36px;
+  height: 2.25rem;
 `;
 
 export const HeaderLink = styled.a<HeaderNavProps>`

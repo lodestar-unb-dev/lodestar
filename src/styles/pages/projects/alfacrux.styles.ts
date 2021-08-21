@@ -4,7 +4,7 @@ export const AlfacruxBanner = styled.section`
   background-image: url("/alfacrux_banner.webp");
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 31.25rem;
 
   position: relative;
   display: flex;
@@ -41,7 +41,7 @@ export const AlfacruxBio = styled.section`
     gap: 40px;
 
     h2 {
-      font-size: 40px;
+      font-size: 2.5rem;
       text-transform: uppercase;
     }
 
@@ -70,7 +70,7 @@ export const AlfacruxWhy = styled.section`
   margin: 0 auto;
 
   h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     text-transform: uppercase;
 
@@ -79,7 +79,6 @@ export const AlfacruxWhy = styled.section`
 
   p {
     text-align: center;
-    font-size: 18px;
     line-height: 26px;
   }
 
@@ -94,7 +93,7 @@ export const AlfacruxGallery = styled.section`
   padding: 80px 0;
 
   h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     text-transform: uppercase;
 
@@ -111,8 +110,8 @@ export const AlfacruxGallery = styled.section`
     }
 
     img {
-      height: 230px;
-      width: 300px;
+      height: 14.375rem;
+      width: 18.75rem;
       object-fit: cover;
       border-radius: 4px;
     }
@@ -125,7 +124,7 @@ export const AlfacruxRadioAmateur = styled.section`
   margin: 0 auto;
 
   h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     text-transform: uppercase;
 
@@ -139,7 +138,7 @@ export const AlfacruxRadioAmateur = styled.section`
 
     aside {
       p {
-        font-size: 22px;
+        font-size: 1.375rem;
         line-height: 32px;
         color: #F5F5F5;
       }
@@ -164,7 +163,7 @@ export const AlfacruxRadioAmateur = styled.section`
         }
 
         span {
-          font-size: 20px;
+          font-size: 1.25rem;
           font-weight: 500;
           color: #00822D;
         }
@@ -190,7 +189,7 @@ export const AlfacruxRecentActivities = styled.section`
   padding: 80px 0;
 
   h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     text-transform: uppercase;
 
@@ -207,7 +206,7 @@ export const AlfacruxRecentActivities = styled.section`
     margin: 0 auto;
 
     div {
-      max-width: 510px;
+      max-width: 31.875rem;
 
       border-radius: 6px;
       background-color: #F5F5F5;
@@ -223,13 +222,12 @@ export const AlfacruxRecentActivities = styled.section`
 
         h3 {
           font-weight: 500;
-          font-size: 18px;
 
           margin-bottom: 12px;
         }
 
         p {
-          font-size: 14px;
+          font-size: 0.875rem;
           line-height: 22px;
         }
       }

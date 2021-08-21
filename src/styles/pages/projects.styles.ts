@@ -25,7 +25,7 @@ export const ProjectsHeader = styled.header`
 
   h2 {
     text-transform: uppercase;
-    font-size: 56px;
+    font-size: 3.5rem;
     color: ${({ theme }) => theme.colors.blue};
   }
 
@@ -43,7 +43,7 @@ export const Project = styled.section`
   gap: 60px;
 
   h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform: uppercase;
   }
 
@@ -67,7 +67,7 @@ export const Project = styled.section`
     }
 
     img {
-      max-height: 200px;
+      max-height: 12.5rem;
     }
 
     div {
@@ -79,7 +79,7 @@ export const Project = styled.section`
 
       h4 {
         font-weight: 500;
-        font-size: 24px;
+        font-size: 1.5rem;
       }
 
       a {

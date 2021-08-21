@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: ${props => props.theme.colors.black10};
   height: 90vh;
-  min-height: 600px;
+  min-height: 37.5rem;
 
   display: flex;
   flex: 1;
@@ -25,11 +25,7 @@ export const Container = styled.div`
 
     h2 {
       text-transform: uppercase;
-      font-size: 56px;
-    }
-
-    p {
-      font-size: 18px;
+      font-size: 3.5rem;
     }
   }
 
@@ -56,7 +52,7 @@ export const Container = styled.div`
         }
 
         span {
-          max-width: 450px;
+          max-width: 28.125rem;
         }
       }
 

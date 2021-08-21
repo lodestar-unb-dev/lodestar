@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HomeBanner = styled.section`
   background-image: url("/home_banner.webp");
   background-size: cover;
-  min-height: 480px;
+  min-height: 30rem;
 
   position: relative;
   display: flex;
@@ -11,7 +11,7 @@ export const HomeBanner = styled.section`
 
   > div {
     position: absolute;
-    min-height: 480px;
+    min-height: 30rem;
     height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(0, 42, 89, 0), rgba(0, 42, 89, 1));
@@ -37,20 +37,20 @@ export const HomeBanner = styled.section`
 
       h1 {
         font-weight: 500;
-        font-size: 72px;
+        font-size: 4.5rem;
         text-transform: uppercase;
         margin-left: -5px;
       }
 
       h3 {
         color: ${({ theme }) => theme.colors.black10};
-        font-size: 40px;
+        font-size: 2.5rem;
         text-transform: uppercase;
       }
     }
   
     img {
-      max-width: 316px;
+      max-width: 19.75rem;
     }
   }
 `;
@@ -73,7 +73,7 @@ const HomeProject = styled.div`
       align-items: flex-start;
 
       h2 {
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 500;
         text-transform: uppercase;
 

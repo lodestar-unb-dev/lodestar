@@ -20,13 +20,13 @@ export const RadioBanner = styled.section`
     padding: 0 20px;
 
     img {
-      max-height: 200px;
+      max-height: 12.5rem;
       width: fit-content;
     }
 
     h2 {
       text-transform: uppercase;
-      font-size: 56px;
+      font-size: 3.5rem;
     }
 
     div {
@@ -59,7 +59,7 @@ export const RadioInfo = styled.section`
 
   h3 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   nav {
@@ -67,7 +67,7 @@ export const RadioInfo = styled.section`
     gap: 60px;
 
     button {
-      font-size: 24px;
+      font-size: 1.5rem;
       padding: 10px;
       border-radius: 12px;
       
