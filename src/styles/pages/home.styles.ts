@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const HomeBanner = styled.section`
   background-image: url("/home_banner.webp");
   background-size: cover;
-  min-height: 30rem;
 
   position: relative;
   display: flex;
@@ -11,7 +10,6 @@ export const HomeBanner = styled.section`
 
   > div {
     position: absolute;
-    min-height: 30rem;
     height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(0, 42, 89, 0), rgba(0, 42, 89, 1));
@@ -21,6 +19,7 @@ export const HomeBanner = styled.section`
     display: flex;
     flex: 1;
     justify-content: space-between;
+    align-items: center;
     gap: 80px;
 
     max-width: 1120px;
@@ -51,6 +50,37 @@ export const HomeBanner = styled.section`
   
     img {
       max-width: 19.75rem;
+    }
+
+    @media(max-width: 960px) {
+      gap: 0;
+
+      > div {
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+      
+      img {
+        max-width: 15rem;
+      }
+    }
+
+    @media(max-width: 560px) {
+      flex-direction: column;
+      padding: 40px 20px;
+
+      > div {
+        text-align: center;
+      }
+
+      img {
+        display: none;
+      }
     }
   }
 `;
@@ -89,6 +119,7 @@ const HomeProject = styled.div`
         margin-top: 40px;
         display: flex;
         align-items: center;
+        gap: 80px;
 
         aside {
           display: flex;
@@ -97,10 +128,6 @@ const HomeProject = styled.div`
           svg {
             margin-right: 20px;
           }
-        }
-
-        aside + aside {
-          margin-left: 80px;
         }
       }
 
@@ -113,6 +140,34 @@ const HomeProject = styled.div`
 
         text-transform: uppercase;
         transition: .2s;
+      }
+    }
+  }
+
+  @media(max-width: 960px) {      
+    section {
+      > aside {
+        div {
+          gap: 40px;
+        }
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  @media(max-width: 560px) {
+    section {
+      padding: 40px 20px;
+
+      > aside {
+        div {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+        }
       }
     }
   }
