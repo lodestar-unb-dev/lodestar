@@ -34,7 +34,7 @@ export const HeaderContainer = styled.header`
     }
   }
 
-  @media (max-width: 540px) {
+  @media (max-width: 560px) {
     section {
       justify-content: center;
       gap: 30px;
