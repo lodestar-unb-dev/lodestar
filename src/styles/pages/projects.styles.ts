@@ -8,7 +8,11 @@ type DividerProps = {
 export const Container = styled(Layout)`
   background-color: ${({ theme }) => theme.colors.black10};
 
-  padding: 80px 0 0;
+  padding-top: 80px;
+
+  @media(max-width: 560px) {
+    padding-top: 40px;  
+  }  
 `;
 
 export const ProjectsHeader = styled.header`
@@ -31,6 +35,10 @@ export const ProjectsHeader = styled.header`
 
   p {
     color: ${({ theme }) => theme.colors.blue};
+  }
+
+  @media(max-width: 560px) {
+    padding-bottom: 40px;  
   }
 `;
 
@@ -99,6 +107,19 @@ export const Project = styled.section`
 
         transition: 0.2s;
       }
+    }
+  }
+
+  @media(max-width: 560px) {
+    padding: 40px 0;
+    gap: 30px;
+
+    h3 {
+      text-align: center;
+    }
+
+    article img {
+      display: none;
     }
   }
 `;
