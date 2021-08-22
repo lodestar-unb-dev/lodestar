@@ -66,7 +66,7 @@ export const Container = styled.div`
   }
 
   @media(max-width: 960px) {
-    height: auto;
+    min-height: 600px;
 
     section {
       flex-direction: column;
