@@ -23,7 +23,7 @@ export const RadioBanner = styled.section`
 
     img {
       max-height: 12.5rem;
-      width: fit-content;
+      width: auto;
     }
 
     h2 {
