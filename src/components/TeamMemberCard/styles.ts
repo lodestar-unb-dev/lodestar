@@ -82,4 +82,34 @@ export const Container = styled.a<ContainerProps>`
       background-color: ${props => props.theme.colors.blue};
     `}
   }
+
+  @media(max-width: 560px) {
+    max-width: 16rem;
+    min-width: 16rem;
+
+    section {
+      margin: 10px 10px 0 10px;
+
+      h3 {
+        font-size: 1.75rem;
+      }
+
+      span {
+        padding: 7px;
+        font-size: 0.875rem;
+      }
+    }
+
+    img {
+      margin: 10px auto 0;
+
+      width: 12rem;
+      height: 12rem;
+    }
+
+    div {
+      padding: 10px;
+      font-size: 1rem;
+    }
+  }
 `;
