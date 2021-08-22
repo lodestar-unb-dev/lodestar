@@ -19,17 +19,29 @@ export const Overview = styled.section`
     gap: 24px;
 
     h2 {
-      font-size: 56px;
+      font-size: 3.5rem;
       text-transform: uppercase;
       color: ${props => props.theme.colors.blue};
     }
 
     p {
-      text-align: center;
+      text-align: justify;
     }
 
     strong {
+      text-align: justify;
       font-weight: 500;
+    }
+  }
+
+  @media(max-width: 560px) {
+    header {
+      align-items: flex-start;
+      padding: 40px 20px;
+
+      h2 {
+        font-size: 2.5rem;
+      }
     }
   }
 `;
@@ -48,7 +60,7 @@ export const TeamMembersContainer = styled.section`
     margin-bottom: 100px;
 
     h2 {
-      font-size: 56px;
+      font-size: 3.5rem;
       text-transform: uppercase;
       margin-bottom: 48px;
       color: ${props => props.theme.colors.blue};
@@ -59,5 +71,23 @@ export const TeamMembersContainer = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(334px, 1fr));
     row-gap: 30px;
+  }
+
+  @media(max-width: 560px) {
+    padding: 40px 20px;
+
+    header {
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+      }
+    }
+
+    > div {
+      grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
+      row-gap: 15px;
+    }
   }
 `;

@@ -21,6 +21,26 @@ export default function AlfaCrux() {
     dots: true,
     infinite: true,
     slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
   };
 
   return (
@@ -87,38 +107,40 @@ export default function AlfaCrux() {
         <AlfacruxGallery>
             <h2>Gallery</h2>  
 
-            <Slider {...settings}>
-              <div>
-                <img src="/gallery/GS_mounting.webp" alt="First image" />
-              </div>
-              <div>
-                <img src="/gallery/Magnetorquer_assembly_4.webp" alt="First image" />
-              </div>
-              <div>
-                <img src="/gallery/Magnetorquer_assembly_1.webp" alt="First image" />
-              </div>
-              <div>
-                <img src="/gallery/Magnetorquer_assembly_2.webp" alt="First image" />
-              </div>
-              <div>
-                <img src="/gallery/Magnetorquer_assembly_3.webp" alt="First image" />
-              </div>
-              <div>
-                <img src="/gallery/Magnetorquer_assembly_5.webp" alt="First image" />
-              </div>
-              <div>
-                <img src="/gallery/GS_command_test.webp" alt="First image" />
-              </div>
-              <div>
-                <img src="/gallery/GS_arriving.webp" alt="First image" />
-              </div>
-              <div>
-                <img src="/gallery/GS_Moon.webp" alt="First image" />
-              </div>
-              <div>
-                <img src="/gallery/Antenna_mounting_2.webp" alt="First image" />
-              </div>
-            </Slider>
+            <div>
+              <Slider {...settings}>
+                <div>
+                  <img src="/gallery/GS_mounting.webp" alt="First image" />
+                </div>
+                <div>
+                  <img src="/gallery/Magnetorquer_assembly_4.webp" alt="First image" />
+                </div>
+                <div>
+                  <img src="/gallery/Magnetorquer_assembly_1.webp" alt="First image" />
+                </div>
+                <div>
+                  <img src="/gallery/Magnetorquer_assembly_2.webp" alt="First image" />
+                </div>
+                <div>
+                  <img src="/gallery/Magnetorquer_assembly_3.webp" alt="First image" />
+                </div>
+                <div>
+                  <img src="/gallery/Magnetorquer_assembly_5.webp" alt="First image" />
+                </div>
+                <div>
+                  <img src="/gallery/GS_command_test.webp" alt="First image" />
+                </div>
+                <div>
+                  <img src="/gallery/GS_arriving.webp" alt="First image" />
+                </div>
+                <div>
+                  <img src="/gallery/GS_Moon.webp" alt="First image" />
+                </div>
+                <div>
+                  <img src="/gallery/Antenna_mounting_2.webp" alt="First image" />
+                </div>
+              </Slider>
+            </div>
         </AlfacruxGallery>
 
         <AlfacruxRadioAmateur>

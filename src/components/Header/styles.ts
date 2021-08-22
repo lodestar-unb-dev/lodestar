@@ -21,11 +21,33 @@ export const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    nav {
+      display: flex;
+      gap: 60px;
+    }
+  }
+
+  @media(max-width: 960px) {
+    section nav {
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    section {
+      justify-content: center;
+      gap: 30px;
+
+      img {
+        display: none;
+      }
+    }
   }
 `;
 
 export const HeaderLogo = styled.img`
-  height: 36px;
+  height: 2.25rem;
 `;
 
 export const HeaderLink = styled.a<HeaderNavProps>`
@@ -43,9 +65,5 @@ export const HeaderLink = styled.a<HeaderNavProps>`
 
   &:hover {
     color: ${props => props.theme.colors.black5};
-  }
-
-  & + a {
-    margin-left: 60px;
   }
 `;

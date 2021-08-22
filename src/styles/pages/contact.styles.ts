@@ -3,19 +3,20 @@ import styled from 'styled-components';
 export const Container = styled.div`
   background-color: ${props => props.theme.colors.black10};
   height: 90vh;
-  min-height: 600px;
+  min-height: 37.5rem;
 
   display: flex;
   flex: 1;
   flex-direction: column;
 
-  padding: 80px 20px;
+  padding: 80px 0;
   color: ${props => props.theme.colors.blue};
 
   header {
     margin: 0 auto;
     max-width: 1120px;
     width: 100%;
+    padding: 0 20px;
     
     display: flex;
     flex-direction: column;
@@ -25,11 +26,7 @@ export const Container = styled.div`
 
     h2 {
       text-transform: uppercase;
-      font-size: 56px;
-    }
-
-    p {
-      font-size: 18px;
+      font-size: 3.5rem;
     }
   }
 
@@ -53,15 +50,58 @@ export const Container = styled.div`
         svg {
           color: ${props => props.theme.colors.blueDark};
           margin-right: 16px;
+          flex-shrink: 0;
         }
 
         span {
-          max-width: 450px;
+          max-width: 28.125rem;
+          text-align: justify;
         }
       }
 
       li + li {
         margin-top: 20px;
+      }
+    }
+  }
+
+  @media(max-width: 960px) {
+    min-height: 600px;
+
+    section {
+      flex-direction: column;
+      gap: 40px;
+
+      aside, iframe {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @media(max-width: 560px) {
+    padding: 40px 0;
+
+    header {
+      align-items: flex-start;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    section {
+      margin-top: 40px;
+      flex-direction: column;
+      gap: 40px;
+
+      ul li span {
+        max-width: unset;
+      }
+
+      aside, iframe {
+        width: 100%;
+        height: auto;
       }
     }
   }
