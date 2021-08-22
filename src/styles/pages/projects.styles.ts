@@ -35,10 +35,16 @@ export const ProjectsHeader = styled.header`
 
   p {
     color: ${({ theme }) => theme.colors.blue};
+    text-align: justify;
   }
 
   @media(max-width: 560px) {
-    padding-bottom: 40px;  
+    padding-bottom: 40px;
+    align-items: flex-start;
+
+    h2 {
+      font-size: 2.5rem;
+    }
   }
 `;
 
@@ -116,10 +122,17 @@ export const Project = styled.section`
 
     h3 {
       text-align: center;
+      font-size: 2rem;
     }
 
-    article img {
-      display: none;
+    article {
+      div a, div span {
+        padding: 16px;
+      }
+
+      img {
+        display: none;
+      }
     }
   }
 `;
