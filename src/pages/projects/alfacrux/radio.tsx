@@ -107,7 +107,8 @@ export default function AlfacruxRadio() {
           <button
             style={{
               backgroundColor: activeFilter === 0 ? theme.colors.blue : theme.colors.black0,
-              color: activeFilter === 0 ? theme.colors.black5 : theme.colors.blue
+              color: activeFilter === 0 ? theme.colors.black5 : theme.colors.blue,
+              fontWeight: activeFilter === 0 ? 500 : 400
             }}
             onClick={() => handleFilterChange(0)}
           >
@@ -117,7 +118,8 @@ export default function AlfacruxRadio() {
           <button
             style={{
               backgroundColor: activeFilter === 1 ? theme.colors.green : theme.colors.black0,
-              color: activeFilter === 1 ? theme.colors.black5 : theme.colors.blue
+              color: activeFilter === 1 ? theme.colors.black5 : theme.colors.blue,
+              fontWeight: activeFilter === 1 ? 500 : 400
             }}
             onClick={() => handleFilterChange(1)}
           >
@@ -127,7 +129,8 @@ export default function AlfacruxRadio() {
           <button
             style={{
               backgroundColor: activeFilter === 2 ? theme.colors.black100 : theme.colors.black0,
-              color: activeFilter === 2 ? theme.colors.black5 : theme.colors.blue
+              color: activeFilter === 2 ? theme.colors.black5 : theme.colors.blue,
+              fontWeight: activeFilter === 2 ? 500 : 400
             }}
             onClick={() => handleFilterChange(2)}
           >
@@ -137,7 +140,8 @@ export default function AlfacruxRadio() {
           <button
             style={{
               backgroundColor: activeFilter === 3 ? theme.colors.blue : theme.colors.black0,
-              color: activeFilter === 3 ? theme.colors.black5 : theme.colors.blue
+              color: activeFilter === 3 ? theme.colors.black5 : theme.colors.blue,
+              fontWeight: activeFilter === 3 ? 500 : 400
             }}
             onClick={() => handleFilterChange(3)}
           >
