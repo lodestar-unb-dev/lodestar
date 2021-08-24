@@ -132,6 +132,48 @@ export default function Projects() {
             </a>
           </div>
         </article>
+
+        <Divider dividerColor="blue" />
+
+        <article>
+          <img src="/glonass_logo.webp" alt="Glonass logo" />
+
+          <div>
+            <h4>
+              Glonass
+            </h4>
+
+            <p>
+              The LODESTAR Satellite Laser Ranging (SLR) station is a Russian system 
+              collocated with a GNSS receiver with the first ranging session performed 
+              in May 2014. The system consists of a monostatic telescope setup with a 
+              Gregorian refractor of 0.25 m aperture. The laser system consists of a 
+              Nd:YAG laser at 532 nm wavelength with a pulse energy of 2.5 mJ, a typical 
+              pulse width of 200 ps and a repetition rate of 300 Hz. The system is 
+              tracking all satellites up to GNSS satellites under daylight conditions. 
+              On August 2018 the NASA International Laser Ranging Service (ILRS) 
+              accepted the station as a contributing system to the ILRS network. 
+              Considering the impact of the SLR technique in the establishment of the 
+              Global Geodetic Reference Frame and the Global Geodetic Observing System, 
+              improvements at technical level are essential for consolidating the 
+              regional network, which includes the human resources capabilities. 
+              It is the first permanent SLR station in Brazil and the LODESTAR team 
+              is proud to be coordinating it in the last years with the recognition of 
+              its contribution for the LARGE-4 mission of the ILRS, as well as 
+              professional approach, high standard project management and significant 
+              contribution to the GNSS Glonass spacecraft laser tracking.
+            </p>
+
+            
+            <a 
+              href="https://ilrs.gsfc.nasa.gov/network/stations/active/BRAL_station_info.html" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Check More
+            </a>
+          </div>
+        </article>
       </SpaceMissionProject>
 
       <SmallSATSimulatorProject id="small-sat-simulator">
