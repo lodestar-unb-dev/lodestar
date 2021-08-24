@@ -63,6 +63,11 @@ export default function Home() {
                 <FiBox />
                 <span>Glee</span>
               </aside>
+
+              <aside>
+                <FiBox />
+                <span>Glonass</span>
+              </aside>
             </div>
 
             <NoScrollLink href="/projects#space-missions">
