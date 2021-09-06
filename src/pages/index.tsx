@@ -70,7 +70,7 @@ interface HomeProps {
 }
 
 export default function Home({ 
-  homePrismicDocument
+  homePrismicDocument,
 }: HomeProps) {
 
   if (!homePrismicDocument) {
@@ -220,13 +220,19 @@ export default function Home({
   )
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<HomeProps> = async ({
+  previewData
+}) => {
+  const correctlyTypedPreviewData = previewData as { ref: string } | null;
+  
   const prismic = getPrismicClient();
-  const homeResponse = await prismic.getSingle('home', {});
+  const homeResponse = await prismic.getSingle('home', {
+    ref: correctlyTypedPreviewData?.ref ? correctlyTypedPreviewData.ref : ''
+  });
 
   return {
     props: {
-      homePrismicDocument: homeResponse?.data ?? null
+      homePrismicDocument: homeResponse?.data ?? null,
     }
   }
 }

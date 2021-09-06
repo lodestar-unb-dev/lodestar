@@ -12,6 +12,7 @@ import { Footer } from '../components/Footer';
 
 import { GlobalStyles } from "../styles/globals";
 import { theme } from "../styles/theme";
+import { ExitPreviewButton } from "../components/ExitPreviewButton";
 
 function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
   useEffect(() => {
@@ -39,6 +40,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         >
           <Component {...pageProps} key={router.pathname} />
         </AnimatePresence>
+        <ExitPreviewButton />
         <Footer />
       </ThemeProvider>
     </>
