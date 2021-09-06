@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-export const HomeBanner = styled.section`
-  background-image: url("/home_banner.webp");
+interface HomeBannerProps {
+  bgImageUrl: string;
+}
+
+export const HomeBanner = styled.section<HomeBannerProps>`
+  background-image: url(${({ bgImageUrl }) => bgImageUrl});
   background-size: cover;
 
   position: relative;
@@ -37,14 +41,12 @@ export const HomeBanner = styled.section`
       h1 {
         font-weight: 500;
         font-size: 4.5rem;
-        text-transform: uppercase;
         margin-left: -5px;
       }
 
       h3 {
         color: ${({ theme }) => theme.colors.black10};
         font-size: 2.5rem;
-        text-transform: uppercase;
       }
     }
   
@@ -113,6 +115,10 @@ const HomeProject = styled.div`
       p {
         color: ${props => props.theme.colors.black10};
         text-align: justify;
+
+        & + p {
+          margin-top: 1rem;
+        }
       }
 
       div {

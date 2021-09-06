@@ -1,7 +1,10 @@
+import { GetStaticProps } from 'next';
 import { FiBox, FiHardDrive, FiDroplet } from 'react-icons/fi';
+import PrismicDOM from 'prismic-dom';
 
 import { Layout } from '../components/Layout';
 import { NoScrollLink } from '../components/NoScrollLink';
+import { getPrismicClient } from '../services/prismic';
 
 import {
   HomeBanner,
@@ -10,64 +13,135 @@ import {
   HomeProjectHighAltitudeBallooning
 } from '../styles/pages/home.styles';
 
-export default function Home() {
+interface HomePrismicDocument {
+  title: string;
+  subtitle: string;
+  banner_logo: {
+    dimensions: {
+      width: number;
+      height: number;
+    };
+    alt: string;
+    url: string;
+  };
+  banner_background: {
+    dimensions: {
+      width: number;
+      height: number;
+    };
+    alt: string;
+    url: string;
+  };
+  space_missions_title: string;
+  space_missions_description: 
+    {
+      type: string;
+      text: string;
+    }[];
+  space_missions_projects: 
+    {
+      space_missions_project_name: string;
+    }[]
+  ;
+  small_sat_simulator_title: string;
+  small_sat_simulator_description: 
+    {
+      type: string;
+      text: string;
+    }[];
+  small_sat_simulator_projects: 
+      {
+          small_sat_simulator_project_name: string;
+      }[];
+  high_altitude_ballooning_title: string;
+  high_altitude_ballooning_description: 
+    {
+      type: string;
+      text: string;
+    }[];
+  high_altitude_ballooning_projects: 
+    {
+        high_altitude_ballooning_project_name: string;
+    }[];
+}
+
+interface HomeProps {
+  homePrismicDocument: HomePrismicDocument | null;
+}
+
+export default function Home({ 
+  homePrismicDocument
+}: HomeProps) {
+
+  if (!homePrismicDocument) {
+    return (
+      <div
+        style={{
+          color: 'black',
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center' 
+        }}
+      >Erro no carregamento das informações.</div>
+    )
+  }
+
+  const {
+    title,
+    subtitle,
+    banner_logo,
+    banner_background,
+    space_missions_title,
+    space_missions_description,
+    space_missions_projects,
+    small_sat_simulator_title,
+    small_sat_simulator_description,
+    small_sat_simulator_projects,
+    high_altitude_ballooning_title,
+    high_altitude_ballooning_description,
+    high_altitude_ballooning_projects
+  } = homePrismicDocument;
+
   return (
     <Layout>
-      <HomeBanner role="banner">
+      <HomeBanner 
+        role="banner"
+        bgImageUrl={banner_background.url}
+      >
         <div />
         
         <aside>
           <div>
-            <h1>Lodestar</h1>
+            <h1>{title}</h1>
 
-            <h3>Integrating knowledge<br/>&amp; innovating in the<br/>aerospace sector.</h3>
+            <h3 dangerouslySetInnerHTML={{
+              __html: PrismicDOM.RichText.asHtml(subtitle)
+            }} />
           </div>
 
-          <img src="/lodestar_logo.webp" alt="Lodestar Logo" />
+          <img src={banner_logo.url} alt={banner_logo.alt} />
         </aside>
       </HomeBanner>
 
       <HomeProjectSpaceMission>
         <section>
           <aside>
-            <h2>Space Missions</h2>
+            <h2>{space_missions_title}</h2>
 
-            <p>
-            Aiming to develop skills for the planning, analysis, and design of space missions, 
-            in addition to ensuring access to space for its team and partners, 
-            the LODESTAR Space Mission division is responsible for the research and 
-            technological development in the field of space mission management, analysis and 
-            design of small satellites, systems engineering, agile methodologies, 
-            global navigation satellite systems, space weather, control, telecommunications, 
-            cyber space security, operation, command and control, as well as hardware and 
-            firmware development for space applications.
-            </p>
-            <br/>
-            <p>
-            We kindly invite you to take a moment 
-            of your time and check our recent activities and achievements!
-            </p>
+            <article 
+              dangerouslySetInnerHTML={{
+                __html: PrismicDOM.RichText.asHtml(space_missions_description)
+              }}
+            />
 
             <div>
-              <aside>
-                <FiBox />
-                <span>AlfaCrux</span>
-              </aside>
-
-              <aside>
-                <FiBox />
-                <span>WormSail</span>
-              </aside>
-
-              <aside>
-                <FiBox />
-                <span>Glee</span>
-              </aside>
-
-              <aside>
-                <FiBox />
-                <span>Glonass</span>
-              </aside>
+              {space_missions_projects.map(({space_missions_project_name}) => (
+                <aside key={space_missions_project_name}>
+                  <FiBox />
+                  <span>{space_missions_project_name}</span>
+                </aside>
+              ))}
             </div>
 
             <NoScrollLink href="/projects#space-missions">
@@ -86,34 +160,21 @@ export default function Home() {
           <img src="/small_sat_simulator_icon.svg" alt="small sat simulator icon" />
 
           <aside>
-            <h2>Small SAT Simulator</h2>
+            <h2>{small_sat_simulator_title}</h2>
 
-            <p>
-            It is well known that one critical step in a space project 
-            life cycle is to demonstrate the qualification of design and 
-            performance to meet the requirements at the specified levels.
-            </p>
-            <br/>
-            <p>
-            In this context, the LODESTAR Small Sat Simulator division was 
-            created with the aim of providing infrastructure and methods for 
-            validation testing to measure product performance and functions 
-            under a representative environment. It is focused on safety-critical 
-            and mission-critical features in system, subsystem, and 
-            equipment levels.
-            </p>
-            <br/>
-            <p>
-            The main application currently under development 
-            is dedicated to attitude determination and control of small satellites, 
-            take a moment to check it, and welcome to be part of it!
-            </p>
+            <article
+              dangerouslySetInnerHTML={{
+                __html: PrismicDOM.RichText.asHtml(small_sat_simulator_description)
+              }}
+            />
 
             <div>
-              <aside>
-                <FiHardDrive />
-                <span>Simulator</span>
-              </aside>
+              {small_sat_simulator_projects.map(({small_sat_simulator_project_name}) => (
+                <aside key={small_sat_simulator_project_name}>
+                  <FiHardDrive />
+                  <span>{small_sat_simulator_project_name}</span>
+                </aside>
+              ))}
             </div>
 
             <NoScrollLink href="/projects#small-sat-simulator">
@@ -128,43 +189,21 @@ export default function Home() {
       <HomeProjectHighAltitudeBallooning>
         <section>
           <aside>
-            <h2>High-altitude ballooning</h2>
+            <h2>{high_altitude_ballooning_title}</h2>
 
-            <p>
-            Being aware of the importance and fundamental role of using 
-            scientific balloons floating in the stratosphere for space science 
-            research and technological development, 
-            the LODESTAR High-Altitude Ballooning division has been developing a 
-            modular platform for high altitudes applications.
-            </p>
-            <br/>
-            <p>
-            The platform is carried to high altitudes using a free-flying, 
-            low-cost rubber balloon enabling wide range observations. 
-            In its current version, the platform is manufactured in accordance 
-            with the CubeSat standard using rapid proto-type technologies and 
-            exploiting current technological advances such as miniaturization of 
-            electronic components and devices.
-            </p>
-            <br/>
-            <p>
-            For the LODESTAR team it 
-            represents a low-cost tool for conducting validation tests, 
-            educational activities, and experiments in a near-Earth environment. 
-            Come and check what is going on at the 
-            LODESTAR High-Altitude Ballooning division!
-            </p>
+            <article 
+              dangerouslySetInnerHTML={{
+                __html: PrismicDOM.RichText.asHtml(high_altitude_ballooning_description)
+              }}
+            />
 
             <div>
-              <aside>
-                <FiDroplet />
-                <span>LAICAnSat</span>
-              </aside>
-
-              <aside>
-                <FiDroplet />
-                <span>Kuaray</span>
-              </aside>
+              {high_altitude_ballooning_projects.map(({high_altitude_ballooning_project_name}) => (
+                <aside key={high_altitude_ballooning_project_name}>
+                  <FiDroplet />
+                  <span>{high_altitude_ballooning_project_name}</span>
+                </aside>
+              ))}
             </div>
 
             <NoScrollLink href="/projects#high-altitude-ballooning">
@@ -179,4 +218,15 @@ export default function Home() {
       </HomeProjectHighAltitudeBallooning>
     </Layout>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const prismic = getPrismicClient();
+  const homeResponse = await prismic.getSingle('home', {});
+
+  return {
+    props: {
+      homePrismicDocument: homeResponse?.data ?? null
+    }
+  }
 }
