@@ -90,7 +90,6 @@ export const RadioInfo = styled.section`
   nav {
     display: flex;
     gap: 60px;
-    overflow: scroll;
 
     button {
       font-size: 1.5rem;
