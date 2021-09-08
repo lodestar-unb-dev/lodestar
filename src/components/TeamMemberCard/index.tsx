@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import {
   Container  
 } from './styles';
@@ -27,21 +25,24 @@ export function TeamMemberCard({ index, name, role, researchArea, imageUrl, orga
   }
   
   return (
-    <Link href={lattesUrl} passHref>
-      <Container highlightColor={colors[colorNumber]}>
-        <section>
-          <h3>{ name }</h3>
-          <span>{ organization }</span>
-        </section>
+    <Container 
+      highlightColor={colors[colorNumber]}
+      href={lattesUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <section>
+        <h3>{ name }</h3>
+        <span>{ organization }</span>
+      </section>
 
-        <img src={ imageUrl } alt={`${name} photo`} />
+      <img src={ imageUrl } alt={`${name} photo`} />
 
-        <div>
-          <strong>{ role }</strong>
-          <br/>
-          <strong>Research Area: </strong><span>{ researchArea }</span>
-        </div>
-      </Container>
-    </Link>
+      <div>
+        <strong>{ role }</strong>
+        <br/>
+        <strong>Research Area: </strong><span>{ researchArea }</span>
+      </div>
+    </Container>
   )
 }
