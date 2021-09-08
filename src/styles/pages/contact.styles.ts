@@ -25,7 +25,6 @@ export const Container = styled.div`
     gap: 24px;
 
     h2 {
-      text-transform: uppercase;
       font-size: 3.5rem;
     }
   }

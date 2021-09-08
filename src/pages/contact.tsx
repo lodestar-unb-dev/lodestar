@@ -1,51 +1,89 @@
+import { GetStaticProps } from 'next';
 import Link from 'next/link';
 import { FiMail, FiYoutube, FiPhone, FiMapPin } from 'react-icons/fi';
 
 import { Layout } from '../components/Layout';
+import { getPrismicClient } from '../services/prismic';
 
 import { Container } from '../styles/pages/contact.styles';
 
-export default function Contact() {
+interface ContactPrismicDocument {
+  title: string;
+  subtitle: string;
+  location: string;
+  email: string;
+  phone: string;
+  youtube_title: string;
+  youtube_link: string;
+}
+
+interface ContactProps {
+  contactPrismicDocument: ContactPrismicDocument | null;
+}
+
+export default function Contact({ contactPrismicDocument }: ContactProps) {
+  if (!contactPrismicDocument) {
+    return (
+      <div
+        style={{
+          color: 'black',
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center' 
+        }}
+      >Erro no carregamento das informações.</div>
+    )
+  }
+
+  const { email, location, phone, subtitle, title, youtube_link, youtube_title } = contactPrismicDocument;
+
   return (
     <Layout>
       <Container>
         <header>
-          <h2>Our contact</h2>
-          <p>Want to say something to us? Feel free to get in touch or visit.</p>
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
         </header>
 
         <section>
           <ul>
             <li>
               <FiMapPin size={20} />
-              <span>Laboratório de Simulação e Controle de Sistemas Aeroespaciais (LODESTAR), SG 11, UnB área 1</span>
+              <span>{location}</span>
             </li>
 
             <li>
-              <Link href="mailto:lodestar@aerospace.unb.br" passHref>
-                <a>
-                  <FiMail size={20} />
-                  <span>lodestar@aerospace.unb.br</span>
-                </a>
-              </Link>
+              <a
+                href={`mailto:${email}`}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FiMail size={20} />
+                <span>{email}</span>
+              </a>
             </li>
 
             <li>
-              <Link href="tel:+556131075556" passHref>
-                <a>
-                  <FiPhone size={20} />
-                  <span>+55 61 3107-5556</span>
-                </a>
-              </Link>
+              <a
+                href={`tel:+${phone.replace(/\D/g,'')}`}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FiPhone size={20} />
+                <span>{phone}</span>
+              </a>
             </li>
 
             <li>
-              <Link href="https://www.youtube.com/channel/UCkbKnVEH-IkNNB87Kn6CUtg" passHref>
-                <a>
-                  <FiYoutube size={20} />
-                  <span>LODESTAR - UnB</span>
-                </a>
-              </Link>
+              <a
+                href={youtube_link}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FiYoutube size={20} />
+                <span>{youtube_title}</span>
+              </a>
             </li>
           </ul>
 
@@ -65,4 +103,21 @@ export default function Contact() {
       </Container>
     </Layout>
   )
+}
+
+export const getStaticProps: GetStaticProps<ContactProps> = async ({
+  previewData
+}) => {
+  const correctlyTypedPreviewData = previewData as { ref: string } | null;
+  
+  const prismic = getPrismicClient();
+  const contactResponse = await prismic.getSingle('co', {
+    ref: correctlyTypedPreviewData?.ref ? correctlyTypedPreviewData.ref : ''
+  });
+
+  return {
+    props: {
+      contactPrismicDocument: contactResponse?.data ?? null,
+    }
+  }
 }
