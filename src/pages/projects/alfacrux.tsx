@@ -149,7 +149,10 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
   return (
     <Layout>
       <main style={{ backgroundColor: theme.colors.blueDark }} >
-        <AlfacruxBanner role="banner">
+        <AlfacruxBanner 
+          role="banner"
+          bgImageUrl={banner_image.url}
+        >
           <div />
           
           <img src={alfacrux_logo.url} alt="AlfaCrux Logo" />

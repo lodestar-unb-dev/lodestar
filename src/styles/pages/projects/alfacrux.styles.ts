@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-export const AlfacruxBanner = styled.section`
-  background-image: url("/alfacrux_banner.webp");
+interface AlfacruxBannerProps {
+  bgImageUrl: string;
+}
+
+export const AlfacruxBanner = styled.section<AlfacruxBannerProps>`
+  background-image: url(${({ bgImageUrl }) => bgImageUrl});
   background-size: cover;
   background-position: center;
   min-height: 31.25rem;
