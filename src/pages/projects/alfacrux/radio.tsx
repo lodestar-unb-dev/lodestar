@@ -146,9 +146,7 @@ export default function AlfacruxRadio({ alfacruxRadioPrismicDocument }: Alfacrux
     'sdr': sdr_info,
     'ttc': ttc_info
   }
-
-  console.log(info[activeFilter])
-
+  
   return (
     <Layout>
       <RadioBanner 
