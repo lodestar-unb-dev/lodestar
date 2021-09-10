@@ -33,6 +33,8 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         <Header
           activePage={router.pathname}
         />
+        <ExitPreviewButton />
+
         <AnimatePresence
           exitBeforeEnter
           initial={false}
@@ -40,7 +42,9 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         >
           <Component {...pageProps} key={router.pathname} />
         </AnimatePresence>
+
         <ExitPreviewButton />
+
         <Footer />
       </ThemeProvider>
     </>
