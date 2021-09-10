@@ -175,7 +175,6 @@ export default function AlfacruxRadio({ alfacruxRadioPrismicDocument }: Alfacrux
             style={{
               backgroundColor: activeFilter === 'basic' ? theme.colors.blue : theme.colors.black0,
               color: activeFilter === 'basic' ? theme.colors.black5 : theme.colors.blue,
-              fontWeight: activeFilter === 'basic' ? 500 : 400
             }}
             onClick={() => handleFilterChange('basic')}
           >
@@ -186,7 +185,6 @@ export default function AlfacruxRadio({ alfacruxRadioPrismicDocument }: Alfacrux
             style={{
               backgroundColor: activeFilter === 'sdr' ? theme.colors.green : theme.colors.black0,
               color: activeFilter === 'sdr' ? theme.colors.black5 : theme.colors.blue,
-              fontWeight: activeFilter === 'sdr' ? 500 : 400
             }}
             onClick={() => handleFilterChange('sdr')}
           >
@@ -197,7 +195,6 @@ export default function AlfacruxRadio({ alfacruxRadioPrismicDocument }: Alfacrux
             style={{
               backgroundColor: activeFilter === 'ham' ? theme.colors.black100 : theme.colors.black0,
               color: activeFilter === 'ham' ? theme.colors.black5 : theme.colors.blue,
-              fontWeight: activeFilter === 'ham' ? 500 : 400
             }}
             onClick={() => handleFilterChange('ham')}
           >
@@ -208,7 +205,6 @@ export default function AlfacruxRadio({ alfacruxRadioPrismicDocument }: Alfacrux
             style={{
               backgroundColor: activeFilter === 'ttc' ? theme.colors.blue : theme.colors.black0,
               color: activeFilter === 'ttc' ? theme.colors.black5 : theme.colors.blue,
-              fontWeight: activeFilter === 'ttc' ? 500 : 400
             }}
             onClick={() => handleFilterChange('ttc')}
           >
@@ -220,7 +216,7 @@ export default function AlfacruxRadio({ alfacruxRadioPrismicDocument }: Alfacrux
           exitBeforeEnter
         >
           { info[activeFilter].length > 0 ? (
-            <Info key="info" data={info[activeFilter]} />
+            <Info key={activeFilter} data={info[activeFilter]} />
           ) : (
             <CommingSoon key="commingSoon" />
           ) }

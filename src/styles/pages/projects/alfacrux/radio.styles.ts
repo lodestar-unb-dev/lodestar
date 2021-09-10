@@ -97,6 +97,7 @@ export const RadioInfo = styled.section`
       font-size: 1.5rem;
       padding: 10px;
       border-radius: 12px;
+      font-weight: 500;
       
       transition: 0.4s;
     }
