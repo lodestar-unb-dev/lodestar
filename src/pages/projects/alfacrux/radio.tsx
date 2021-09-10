@@ -2,16 +2,24 @@ import { useState } from "react"
 import { useTheme } from "styled-components";
 import { FiTool } from 'react-icons/fi';
 import { AnimatePresence, motion } from "framer-motion";
+import PrismicDOM from 'prismic-dom';
+import { GetStaticProps } from "next";
 
 import { Layout } from "../../../components/Layout"
 import { RadioBanner, RadioInfo } from "../../../styles/pages/projects/alfacrux/radio.styles"
+import { getPrismicClient } from "../../../services/prismic";
 
 const variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 }
 }
 
-function BasicInfo() {
+function Info({ data }: { 
+  data: {
+    key: string;
+    value: string;
+  }[]
+}) {
   return (
     <motion.div
       initial="hidden"
@@ -20,13 +28,11 @@ function BasicInfo() {
       variants={variants}
       transition={{ duration: 0.4 }}
     >
-      <p><strong>Radio Frequency Band</strong>: UHF</p>
-
-      <p><strong>Downlink/Uplink Central Frequency</strong>: 437.000 MHz (to be coordinate)</p> 
-
-      <p><strong>Modulations</strong>: GMSK, GFSK, 1200 baud AFSK/FM</p>
-
-      <p><strong>Protocols</strong>: s-ALOHA, H2.0, AX.25</p>
+      {data.map(item => (
+        <p key={item.key}>
+          <strong>{item.key}</strong>: {item.value}
+        </p>
+      ))}
     </motion.div>
   )
 }
@@ -52,98 +58,159 @@ function CommingSoon() {
   )
 }
 
-export default function AlfacruxRadio() {
-  const [activeFilter, setActiveFilter] = useState(0);
+interface AlfacruxRadioPrismicDocument {
+  banner_image: {
+    dimensions: {
+      width: number;
+      height: number;
+    };
+    alt: string;
+    url: string;
+  };
+  alfacrux_logo: {
+    dimensions: {
+      width: number;
+      height: number;
+    };
+    alt: string;
+    url: string;
+  };
+  title: string;
+  description: {
+    type: string;
+    text: string;
+  }[];
+  radio_info_title: string;
+  basic_info: {
+    key: string;
+    value: string;
+  }[];
+  sdr_info: {
+    key: string;
+    value: string;
+  }[];
+  ham_info: {
+    key: string;
+    value: string;
+  }[];
+  ttc_info: {
+    key: string;
+    value: string;
+  }[];
+}
+
+interface AlfacruxRadioProps {
+  alfacruxRadioPrismicDocument: AlfacruxRadioPrismicDocument | null;
+}
+
+export default function AlfacruxRadio({ alfacruxRadioPrismicDocument }: AlfacruxRadioProps) {
+  const [activeFilter, setActiveFilter] = useState<'basic' | 'ham' | 'sdr' | 'ttc'>('basic');
   const theme = useTheme();
 
-  function handleFilterChange(filterNumber: number) {
+  function handleFilterChange(filterNumber: 'basic' | 'ham' | 'sdr' | 'ttc') {
     if (filterNumber === activeFilter)
       return;
 
     setActiveFilter(filterNumber);
   }
 
+  if (!alfacruxRadioPrismicDocument) {
+    return (
+      <div
+        style={{
+          color: 'black',
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center' 
+        }}
+      >Erro no carregamento das informações.</div>
+    )
+  }
+
+  const {
+    title,
+    banner_image,
+    alfacrux_logo,
+    basic_info,
+    description,
+    ham_info,
+    radio_info_title,
+    sdr_info,
+    ttc_info
+  } = alfacruxRadioPrismicDocument;
+
+  const info = {
+    'basic': basic_info,
+    'ham': ham_info,
+    'sdr': sdr_info,
+    'ttc': ttc_info
+  }
+
+  console.log(info[activeFilter])
+
   return (
     <Layout>
-      <RadioBanner role="banner">        
+      <RadioBanner 
+        role="banner"
+        bgImageUrl={banner_image.url}
+      >        
         <article>
-          <img src="/alfacrux_logo.webp" alt="AlfaCrux logo" />
-          <h2>Radio Amateur</h2>
+          <img src={alfacrux_logo.url} alt={alfacrux_logo.alt} />
+          <h2>{title}</h2>
 
-          <div>
-            <p>
-              AlfaCrux operates on the amateur radio frequencies in the UHF band.
-            </p>
-            
-            <p>
-              It hosts a digipeater which can be accessed by any radioamateur. 
-              Instructions for the use of the digipeater will be available soon.
-            </p>
-
-            <p>
-              In addition, any radio amateur is invited to receive the 
-              satellite telemetry and share it and also cooperate in 
-              the SDR experiments. Instruction for decoding the telemetry 
-              data packets, and a form to enter the information, will be 
-              available soon in this website.
-            </p>
-
-            <p>
-              Data received by the radio-amateur community around the world 
-              will be collected and sorted along with data downloaded by the 
-              Ground Station of the Laboratory of Simulation and Control of 
-              Aerospace Systems, LODESTAR, University of Brasilia, UnB. 
-              All the data will be available for free consultation online and 
-              all the contributors will be acknowledged.
-            </p>
-          </div>
+          <div 
+            dangerouslySetInnerHTML={{
+              __html: PrismicDOM.RichText.asHtml(description)
+            }}
+          />
         </article>
       </RadioBanner>
     
       <RadioInfo>
-        <h3>Radio Info</h3>
+        <h3>{radio_info_title}</h3>
 
         <nav>
           <button
             style={{
-              backgroundColor: activeFilter === 0 ? theme.colors.blue : theme.colors.black0,
-              color: activeFilter === 0 ? theme.colors.black5 : theme.colors.blue,
-              fontWeight: activeFilter === 0 ? 500 : 400
+              backgroundColor: activeFilter === 'basic' ? theme.colors.blue : theme.colors.black0,
+              color: activeFilter === 'basic' ? theme.colors.black5 : theme.colors.blue,
+              fontWeight: activeFilter === 'basic' ? 500 : 400
             }}
-            onClick={() => handleFilterChange(0)}
+            onClick={() => handleFilterChange('basic')}
           >
             Basic
           </button>
 
           <button
             style={{
-              backgroundColor: activeFilter === 1 ? theme.colors.green : theme.colors.black0,
-              color: activeFilter === 1 ? theme.colors.black5 : theme.colors.blue,
-              fontWeight: activeFilter === 1 ? 500 : 400
+              backgroundColor: activeFilter === 'sdr' ? theme.colors.green : theme.colors.black0,
+              color: activeFilter === 'sdr' ? theme.colors.black5 : theme.colors.blue,
+              fontWeight: activeFilter === 'sdr' ? 500 : 400
             }}
-            onClick={() => handleFilterChange(1)}
+            onClick={() => handleFilterChange('sdr')}
           >
             SDR Experiments
           </button>
 
           <button
             style={{
-              backgroundColor: activeFilter === 2 ? theme.colors.black100 : theme.colors.black0,
-              color: activeFilter === 2 ? theme.colors.black5 : theme.colors.blue,
-              fontWeight: activeFilter === 2 ? 500 : 400
+              backgroundColor: activeFilter === 'ham' ? theme.colors.black100 : theme.colors.black0,
+              color: activeFilter === 'ham' ? theme.colors.black5 : theme.colors.blue,
+              fontWeight: activeFilter === 'ham' ? 500 : 400
             }}
-            onClick={() => handleFilterChange(2)}
+            onClick={() => handleFilterChange('ham')}
           >
             Ham radio digipeater
           </button>
 
           <button
             style={{
-              backgroundColor: activeFilter === 3 ? theme.colors.blue : theme.colors.black0,
-              color: activeFilter === 3 ? theme.colors.black5 : theme.colors.blue,
-              fontWeight: activeFilter === 3 ? 500 : 400
+              backgroundColor: activeFilter === 'ttc' ? theme.colors.blue : theme.colors.black0,
+              color: activeFilter === 'ttc' ? theme.colors.black5 : theme.colors.blue,
+              fontWeight: activeFilter === 'ttc' ? 500 : 400
             }}
-            onClick={() => handleFilterChange(3)}
+            onClick={() => handleFilterChange('ttc')}
           >
             TTC
           </button>
@@ -152,8 +219,8 @@ export default function AlfacruxRadio() {
         <AnimatePresence
           exitBeforeEnter
         >
-          { activeFilter === 0 ? (
-            <BasicInfo key="basic" />
+          { info[activeFilter].length > 0 ? (
+            <Info key="info" data={info[activeFilter]} />
           ) : (
             <CommingSoon key="commingSoon" />
           ) }
@@ -162,4 +229,21 @@ export default function AlfacruxRadio() {
       </RadioInfo>
     </Layout>
   )
+}
+
+export const getStaticProps: GetStaticProps<AlfacruxRadioProps> = async ({
+  previewData
+}) => {
+  const correctlyTypedPreviewData = previewData as { ref: string } | null;
+  
+  const prismic = getPrismicClient();
+  const alfacruxRadioResponse = await prismic.getSingle('alfacrux_radio_amateur', {
+    ref: correctlyTypedPreviewData?.ref ? correctlyTypedPreviewData.ref : ''
+  });
+
+  return {
+    props: {
+      alfacruxRadioPrismicDocument: alfacruxRadioResponse?.data ?? null,
+    }
+  }
 }

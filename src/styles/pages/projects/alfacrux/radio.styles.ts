@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-export const RadioBanner = styled.section`
-  background-image: url("/radio_amateur_banner.webp");
+interface RadioBannerProps {
+  bgImageUrl: string;
+}
+
+export const RadioBanner = styled.section<RadioBannerProps>`
+  background-image: url(${({ bgImageUrl }) => bgImageUrl});
   background-size: cover;
   background-position: right;
 
@@ -27,7 +31,6 @@ export const RadioBanner = styled.section`
     }
 
     h2 {
-      text-transform: uppercase;
       font-size: 3.5rem;
     }
 
@@ -83,7 +86,6 @@ export const RadioInfo = styled.section`
   color: ${({ theme }) => theme.colors.blue};
 
   h3 {
-    text-transform: uppercase;
     font-size: 2.5rem;
   }
 
