@@ -1,6 +1,7 @@
 import Slider, { Settings } from "react-slick";
 import { FiRss } from 'react-icons/fi';
 import { useTheme } from 'styled-components';
+import PrismicDOM from 'prismic-dom';
 
 import { Layout } from "../../components/Layout";
 import { NoScrollLink } from "../../components/NoScrollLink";
@@ -13,8 +14,110 @@ import {
   AlfacruxRecentActivities,
   AlfacruxWhy
 } from '../../styles/pages/projects/alfacrux.styles';
+import { GetStaticProps } from "next";
+import { getPrismicClient } from "../../services/prismic";
 
-export default function AlfaCrux() {
+interface AlfacruxPrismicDocument {
+  banner_image: {
+    dimensions: {
+      width: number;
+      height: number;
+    };
+    alt: string;
+    url: string;
+  };
+  alfacrux_logo: {
+    dimensions: {
+      width: number;
+      height: number;
+    };
+    alt: string;
+    url: string;
+  };
+  about_title: string;
+  left_description: {
+    type: string;
+    text: string;
+  }[];
+  right_image: {
+    dimensions: {
+      width: number;
+      height: number;
+    };
+    alt: string;
+    url: string;
+  };
+  bottom_description: {
+    type: string;
+    text: string;
+  }[];
+  why_title: string;
+  why_description: {
+    type: string;
+    text: string;
+  }[];
+  gallery_title: string;
+  gallery_images: {
+    image: {
+      dimensions: {
+        width: number;
+        height: number;
+      };
+      alt: string;
+      url: string;
+    };
+  }[];
+  radio_amateurs_title: string;
+  radio_amateurs_cta: {
+    type: string;
+    text: string;
+  }[];
+  radio_amateurs_button: string;
+  recent_activities_title: string;
+  recent_activities_cards: {
+    youtube_video_url: string;
+    title: string;
+    description: string;
+  }[];
+}
+
+interface AlfacruxProps {
+  alfacruxPrismicDocument: AlfacruxPrismicDocument | null;
+}
+
+export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
+  if (!alfacruxPrismicDocument) {
+    return (
+      <div
+        style={{
+          color: 'black',
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center' 
+        }}
+      >Erro no carregamento das informações.</div>
+    )
+  }
+
+  const {
+    about_title,
+    alfacrux_logo,
+    banner_image,
+    bottom_description,
+    gallery_images,
+    gallery_title,
+    left_description,
+    radio_amateurs_button,
+    radio_amateurs_cta,
+    radio_amateurs_title,
+    recent_activities_cards,
+    recent_activities_title,
+    right_image,
+    why_description,
+    why_title
+  } = alfacruxPrismicDocument;
+
   const theme = useTheme();
 
   const settings: Settings = {
@@ -46,114 +149,75 @@ export default function AlfaCrux() {
   return (
     <Layout>
       <main style={{ backgroundColor: theme.colors.blueDark }} >
-        <AlfacruxBanner role="banner">
+        <AlfacruxBanner 
+          role="banner"
+          bgImageUrl={banner_image.url}
+        >
           <div />
           
-          <img src="/alfacrux_logo.webp" alt="AlfaCrux Logo" />
+          <img src={alfacrux_logo.url} alt="AlfaCrux Logo" />
         </AlfacruxBanner>
 
         <AlfacruxBio>
           <div>
-            <h2>The AlfaCrux mission</h2>
+            <h2>{about_title}</h2>
             
               <aside>
-                <p>
-                  Financed by the Government of the Federal District of Brazil 
-                  through the Federal District Research Support Foundation (FAPDF), 
-                  the AlfaCrux is a radio amateur and educational mission to 
-                  provide a hands-on experience to students and professors in the 
-                  complete process of developing and operating a space mission. 
-                  Specifically, the team will design, operate, and observe the 
-                  behavior and performance of the AlfaCrux CubeSat in a space 
-                  environment. Moreover, they will learn about radio electronics, 
-                  antennas, digital communications, and radio amateur activities. 
-                  As an additional goal, MSc. and PhD students from Electrical, 
-                  Mechatronics, Mechanics, Production and Aerospace Engineering 
-                  will test and demonstrate in orbit software defined radio 
-                  experiments to perform ionospheric scintillation analysis and a 
-                  data collect system from sensors in the ground.
-                </p>
+                <div 
+                  dangerouslySetInnerHTML={{
+                    __html: PrismicDOM.RichText.asHtml(left_description)
+                  }}
+                />
 
-                <img src="/satellite_banner.webp" alt="Alfacrux render" />
+                <img src={right_image.url} alt="Alfacrux render" />
               </aside>
               
-              <p>
-                The package routing solution will allow forwarding of received messages back 
-                to Earth to support communication and messaging between radio 
-                amateurs (digital QSO), store it on-board, and transmit it to the 
-                ground station. Data collected will be available through internet 
-                and can be used for several applications: study of different 
-                methods for low-data rate communication, characterization of 
-                interference sources, atmospheric propagation effects, 
-                communication capability in terms of data rate, and link 
-                performance in terms of bit error date (BER) and signal to noise 
-                ratio (SNR). Finally, all the passages will be monitored 
-                through the LODESTAR command and control ground station with the 
-                support from the amateur radio community. 
-                The telemetry information will be shared to the radio amateurs 
-                and networks before launch. The AlfaCrux is planned to be 
-                launched in Q1 2022 (date and local TBD) into a SSO at 550km.
-              </p>
+              <div 
+                dangerouslySetInnerHTML={{
+                  __html: PrismicDOM.RichText.asHtml(bottom_description)
+                }}
+              />
           </div>
         </AlfacruxBio>
 
         <AlfacruxWhy>
-            <h2>Behind the Name: The Meaning of AlfaCrux</h2>
+            <h2>{why_title}</h2>
          
-            <p>The name Alfa Crux is after the Alpha Crucis star, the brightest star in the southern constellation Crux (the Southern Cross), and among the brightest stars in the sky. The motivation to choose Alfa Crux as the mission’s name comes from the fact that the Southern Cross is the best-known constellation of those we can see in the southern hemisphere. It has a special importance in navigation and orientation, being known since the ancient Greeks time.</p>
-            <p>The Alpha Crucis star appears in the Brazilian flag, and in the Brazilian coat of arms. It is a synonymous of guide, reference, and consequently responsibility and excellence. In this sense, it summarizes the general goals of this space mission: become a reference of excellence and dedication, and an example to be followed as an approach for the advance of the space activities in the new space era.</p>
+            <div 
+              dangerouslySetInnerHTML={{
+                __html: PrismicDOM.RichText.asHtml(why_description)
+              }}
+            />
         </AlfacruxWhy>
 
         <AlfacruxGallery>
-            <h2>Gallery</h2>  
+            <h2>{gallery_title}</h2>  
 
             <div>
               <Slider {...settings}>
-                <div>
-                  <img src="/gallery/GS_mounting.webp" alt="First image" />
-                </div>
-                <div>
-                  <img src="/gallery/Magnetorquer_assembly_4.webp" alt="First image" />
-                </div>
-                <div>
-                  <img src="/gallery/Magnetorquer_assembly_1.webp" alt="First image" />
-                </div>
-                <div>
-                  <img src="/gallery/Magnetorquer_assembly_2.webp" alt="First image" />
-                </div>
-                <div>
-                  <img src="/gallery/Magnetorquer_assembly_3.webp" alt="First image" />
-                </div>
-                <div>
-                  <img src="/gallery/Magnetorquer_assembly_5.webp" alt="First image" />
-                </div>
-                <div>
-                  <img src="/gallery/GS_command_test.webp" alt="First image" />
-                </div>
-                <div>
-                  <img src="/gallery/GS_arriving.webp" alt="First image" />
-                </div>
-                <div>
-                  <img src="/gallery/GS_Moon.webp" alt="First image" />
-                </div>
-                <div>
-                  <img src="/gallery/Antenna_mounting_2.webp" alt="First image" />
-                </div>
+                {gallery_images.map(({ image }) => (
+                  <div key={image.url}>
+                    <img src={image.url} alt={image.alt} />
+                  </div>
+                ))}
               </Slider>
             </div>
         </AlfacruxGallery>
 
         <AlfacruxRadioAmateur>
-          <h2>Radio Amateurs</h2>
+          <h2>{radio_amateurs_title}</h2>
 
           <div>
             <aside>
-              <p>Do you want to communicate with AlfaCrux?</p>
-              <p>Then click the button bellow for more info!</p>
+              <div 
+                dangerouslySetInnerHTML={{
+                  __html: PrismicDOM.RichText.asHtml(radio_amateurs_cta)
+                }}
+              />
 
               <NoScrollLink href="/projects/alfacrux/radio">
                 <a>
-                  <span>Radio amateur info</span>
+                  <span>{radio_amateurs_button}</span>
                   <div>
                     <FiRss />
                   </div>
@@ -167,45 +231,47 @@ export default function AlfaCrux() {
         </AlfacruxRadioAmateur>
 
         <AlfacruxRecentActivities>
-            <h2>Recent Activities</h2>  
+            <h2>{recent_activities_title}</h2>  
 
             <section>
-              <div>
-                <iframe 
-                  width="510" 
-                  height="380" 
-                  src="https://www.youtube.com/embed/ayb5y8QK8IU" 
-                  title="YouTube video player" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen 
-                />
-                
-                <aside>
-                  <h3>Magnetic Model example</h3>
-                  <p>Assembly, validation and test of the magnetic actuation system developed by the LODESTAR team within the AlfaCrux space mission activities.</p>
-                </aside>
-              </div>
+              {recent_activities_cards.map(recent_activity => (
+                <div key={recent_activity.youtube_video_url}>
+                  <iframe 
+                    width="510" 
+                    height="380" 
+                    src={recent_activity.youtube_video_url} 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen 
+                  />
 
-              <div>
-                <iframe 
-                  width="510" 
-                  height="380" 
-                  src="https://www.youtube.com/embed/cKL3KxRqOWc" 
-                  title="YouTube video player" 
-                  frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowFullScreen 
-                />
-                
-                <aside>
-                  <h3>Magnetorquer Flight Model</h3>
-                  <p>Protoflight model of the magnetic actuation system developed by the LODESTAR team.</p>
-                </aside>
-              </div>
+                  <aside>
+                    <h3>{recent_activity.title}</h3>
+                    <p>{recent_activity.description}</p>
+                  </aside>
+                </div>
+              ))}
             </section>
         </AlfacruxRecentActivities>
       </main>
     </Layout>
   )
+}
+
+export const getStaticProps: GetStaticProps<AlfacruxProps> = async ({
+  previewData
+}) => {
+  const correctlyTypedPreviewData = previewData as { ref: string } | null;
+  
+  const prismic = getPrismicClient();
+  const alfacruxResponse = await prismic.getSingle('alfacrux', {
+    ref: correctlyTypedPreviewData?.ref ? correctlyTypedPreviewData.ref : ''
+  });
+
+  return {
+    props: {
+      alfacruxPrismicDocument: alfacruxResponse?.data ?? null,
+    }
+  }
 }

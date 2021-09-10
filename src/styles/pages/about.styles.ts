@@ -20,12 +20,15 @@ export const Overview = styled.section`
 
     h2 {
       font-size: 3.5rem;
-      text-transform: uppercase;
       color: ${props => props.theme.colors.blue};
     }
 
     p {
       text-align: justify;
+
+      & + p {
+        margin-top: 1rem;
+      }
     }
 
     strong {
@@ -61,7 +64,6 @@ export const TeamMembersContainer = styled.section`
 
     h2 {
       font-size: 3.5rem;
-      text-transform: uppercase;
       margin-bottom: 48px;
       color: ${props => props.theme.colors.blue};
     }

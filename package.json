@@ -8,8 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@prismicio/client": "^5.1.0",
     "framer-motion": "^4.1.17",
     "next": "10.2.3",
+    "prismic-dom": "^2.2.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
@@ -20,6 +22,7 @@
   "devDependencies": {
     "@types/gtag.js": "^0.0.7",
     "@types/node": "^15.6.1",
+    "@types/prismic-dom": "^2.1.1",
     "@types/react": "^17.0.8",
     "@types/react-slick": "^0.23.4",
     "@types/styled-components": "^5.1.11",

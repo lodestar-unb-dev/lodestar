@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
-export const AlfacruxBanner = styled.section`
-  background-image: url("/alfacrux_banner.webp");
+interface AlfacruxBannerProps {
+  bgImageUrl: string;
+}
+
+export const AlfacruxBanner = styled.section<AlfacruxBannerProps>`
+  background-image: url(${({ bgImageUrl }) => bgImageUrl});
   background-size: cover;
   background-position: center;
   min-height: 31.25rem;
@@ -46,7 +50,6 @@ export const AlfacruxBio = styled.section`
     h2 {
       font-size: 2.5rem;
       margin-bottom: 40px;
-      text-transform: uppercase;
     }
 
     p {
@@ -108,7 +111,6 @@ export const AlfacruxWhy = styled.section`
   h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    text-transform: uppercase;
 
     text-align: center;
   }
@@ -141,7 +143,6 @@ export const AlfacruxGallery = styled.section`
   h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    text-transform: uppercase;
 
     text-align: center;
   }
@@ -186,12 +187,11 @@ export const AlfacruxRadioAmateur = styled.section`
   h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    text-transform: uppercase;
 
     text-align: center;
   }
 
-  div {
+  > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -284,21 +284,24 @@ export const AlfacruxRecentActivities = styled.section`
   h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    text-transform: uppercase;
     padding: 0 20px;
 
     text-align: center;
   }
 
   section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
 
     max-width: 1120px;
     padding: 0 20px;
     margin: 0 auto;
+
+    @media(max-width: 960px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
 
     div {
       max-width: 510px;

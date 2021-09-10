@@ -28,7 +28,6 @@ export const ProjectsHeader = styled.header`
   gap: 24px;
 
   h2 {
-    text-transform: uppercase;
     font-size: 3.5rem;
     color: ${({ theme }) => theme.colors.blue};
   }
@@ -36,6 +35,9 @@ export const ProjectsHeader = styled.header`
   p {
     color: ${({ theme }) => theme.colors.blue};
     text-align: justify;
+    & + p {
+      margin-top: 1rem;
+    }
   }
 
   @media(max-width: 560px) {
@@ -58,7 +60,6 @@ export const Project = styled.section`
 
   h3 {
     font-size: 2.5rem;
-    text-transform: uppercase;
   }
 
   article {
@@ -84,12 +85,16 @@ export const Project = styled.section`
       max-height: 12.5rem;
     }
 
-    div {
+    > div {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       text-align: justify;
       gap: 24px;
+
+      div p + p {
+        margin-top: 1rem;
+      }
 
       h4 {
         font-weight: 500;
