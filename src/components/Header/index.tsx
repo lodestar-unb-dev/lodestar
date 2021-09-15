@@ -22,6 +22,10 @@ export function Header ({ activePage }: HeaderProps) {
           <NoScrollLink href='/projects' passHref>
             <HeaderLink active={activePage.search(new RegExp('^/projects')) !== -1}>Projects</HeaderLink>
           </NoScrollLink>
+
+          <NoScrollLink href='/call_sign' passHref>
+            <HeaderLink active={activePage.search(new RegExp('^/call_sign')) !== -1}>Call Sign</HeaderLink>
+          </NoScrollLink>
         </nav>
 
         <HeaderLogo src="/favicon.png" alt="icon" />
