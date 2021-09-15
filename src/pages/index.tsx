@@ -216,6 +216,19 @@ export default function Home({
           <img src="/high_altitude_ballooning_icon.svg" alt="high altitude ballooning icon" />
         </section>
       </HomeProjectHighAltitudeBallooning>
+    
+      <div
+        style={{
+          height: '900px'
+        }}
+      >
+      <iframe 
+        src="https://164.41.109.69/lodestar/map.php" 
+        frameBorder="0"
+        width="100%"
+        height="100%"
+      />
+      </div>
     </Layout>
   )
 }
