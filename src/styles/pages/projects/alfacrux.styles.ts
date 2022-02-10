@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-interface AlfacruxBannerProps {
+interface AlfaCruxBannerProps {
   bgImageUrl: string;
 }
 
-export const AlfacruxBanner = styled.section<AlfacruxBannerProps>`
+export const AlfaCruxBanner = styled.section<AlfaCruxBannerProps>`
   background-image: url(${({ bgImageUrl }) => bgImageUrl});
   background-size: cover;
   background-position: center;
@@ -34,7 +34,7 @@ export const AlfacruxBanner = styled.section<AlfacruxBannerProps>`
   }
 `;
 
-export const AlfacruxBio = styled.section`
+export const AlfaCruxBio = styled.section`
   background-color: ${({ theme }) => theme.colors.blueDarker };
   padding: 80px 0;
 
@@ -103,7 +103,7 @@ export const AlfacruxBio = styled.section`
   }
 `;
 
-export const AlfacruxWhy = styled.section`
+export const AlfaCruxWhy = styled.section`
   background-color: ${({ theme }) => theme.colors.black0 };
   color: ${({ theme }) => theme.colors.blueDarker };
 
@@ -159,7 +159,7 @@ export const AlfacruxWhy = styled.section`
   }
 `;
 
-export const AlfacruxGallery = styled.section`
+export const AlfaCruxGallery = styled.section`
   background-color: ${({ theme }) => theme.colors.blueDarker };;
 
   padding: 80px 0;
@@ -203,7 +203,7 @@ export const AlfacruxGallery = styled.section`
   }
 `;
 
-export const AlfacruxRadioAmateur = styled.section`
+export const AlfaCruxRadioAmateur = styled.section`
   background-color: ${({ theme }) => theme.colors.blueDarker };;
 
   > div {
@@ -304,7 +304,7 @@ export const AlfacruxRadioAmateur = styled.section`
   }
 `;
 
-export const AlfacruxRecentActivities = styled.section`
+export const AlfaCruxRecentActivities = styled.section`
   padding: 80px 0;
 
   h2 {
@@ -385,7 +385,7 @@ export const AlfacruxRecentActivities = styled.section`
   }
 `;
 
-export const AlfacruxAcknowledgments = styled.section`
+export const AlfaCruxAcknowledgments = styled.section`
   background-color: ${({ theme }) => theme.colors.black0 };
   color: ${({ theme }) => theme.colors.blueDarker };
 

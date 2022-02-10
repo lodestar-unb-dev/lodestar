@@ -7,18 +7,18 @@ import { Layout } from "../../components/Layout";
 import { NoScrollLink } from "../../components/NoScrollLink";
 
 import {
-  AlfacruxBanner,
-  AlfacruxBio,
-  AlfacruxGallery,
-  AlfacruxRadioAmateur,
-  AlfacruxRecentActivities,
-  AlfacruxWhy,
-  AlfacruxAcknowledgments
+  AlfaCruxBanner,
+  AlfaCruxBio,
+  AlfaCruxGallery,
+  AlfaCruxRadioAmateur,
+  AlfaCruxRecentActivities,
+  AlfaCruxWhy,
+  AlfaCruxAcknowledgments
 } from "../../styles/pages/projects/alfacrux.styles";
 import { GetStaticProps } from "next";
 import { getPrismicClient } from "../../services/prismic";
 
-interface AlfacruxPrismicDocument {
+interface AlfaCruxPrismicDocument {
   banner_image: {
     dimensions: {
       width: number;
@@ -136,11 +136,11 @@ interface AlfacruxPrismicDocument {
   }[];
 }
 
-interface AlfacruxProps {
-  alfacruxPrismicDocument: AlfacruxPrismicDocument | null;
+interface AlfaCruxProps {
+  alfacruxPrismicDocument: AlfaCruxPrismicDocument | null;
 }
 
-export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
+export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
   if (!alfacruxPrismicDocument) {
     return (
       <div
@@ -215,13 +215,13 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
   return (
     <Layout>
       <main style={{ backgroundColor: theme.colors.blueDark }}>
-        <AlfacruxBanner role="banner" bgImageUrl={banner_image.url}>
+        <AlfaCruxBanner role="banner" bgImageUrl={banner_image.url}>
           <div />
 
           <img src={alfacrux_logo.url} alt="AlfaCrux Logo" />
-        </AlfacruxBanner>
+        </AlfaCruxBanner>
 
-        <AlfacruxBio>
+        <AlfaCruxBio>
           <div>
             <h2>{about_title}</h2>
 
@@ -232,7 +232,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
                 }}
               />
 
-              <img src={right_image.url} alt="Alfacrux render" />
+              <img src={right_image.url} alt="AlfaCrux render" />
             </aside>
 
             <div
@@ -241,9 +241,9 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
               }}
             />
           </div>
-        </AlfacruxBio>
+        </AlfaCruxBio>
 
-        <AlfacruxWhy>
+        <AlfaCruxWhy>
           <div>
             <h2>{why_title}</h2>
 
@@ -256,9 +256,9 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
               <img src="/exploded_view_alfacrux.png" alt="" />
             </div>
           </div>
-        </AlfacruxWhy>
+        </AlfaCruxWhy>
 
-        <AlfacruxRadioAmateur>
+        <AlfaCruxRadioAmateur>
           <div>
             <h2>{radio_amateurs_title}</h2>
 
@@ -283,9 +283,9 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
               <img src="/radio_amateur.svg" alt="Radio Amateur" />
             </div>
           </div>
-        </AlfacruxRadioAmateur>
+        </AlfaCruxRadioAmateur>
 
-        <AlfacruxRecentActivities>
+        <AlfaCruxRecentActivities>
           <h2>{recent_activities_title}</h2>
 
           <section>
@@ -322,9 +322,9 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
                 }}>Check More Videos <FiYoutube size={22} /></a>
             </NoScrollLink>
           </section>
-        </AlfacruxRecentActivities>
+        </AlfaCruxRecentActivities>
 
-        <AlfacruxGallery>
+        <AlfaCruxGallery>
           <h2>{gallery_title}</h2>
 
           <div>
@@ -340,7 +340,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
           </div>
 
           <div style={{ marginTop: 50 }}>
-            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Magnetic actuation's project, assemble, implementation and tests</h3>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>AlfaCrux's integration Campaign, tests and validation</h3>
 
             <Slider {...settings}>
               {ac_gallery_images.map(({ image }) => (
@@ -352,7 +352,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
           </div>
 
           <div style={{ marginTop: 50 }}>
-            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Alfacrux's integration Campaign, tests and validation</h3>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Magnetic actuation's project, assemble, implementation and tests</h3>
 
             <Slider {...settings}>
               {ma_gallery_images.map(({ image }) => (
@@ -362,9 +362,9 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
               ))}
             </Slider>
           </div>
-        </AlfacruxGallery>
+        </AlfaCruxGallery>
 
-        <AlfacruxAcknowledgments>
+        <AlfaCruxAcknowledgments>
           <h2>Acknowledgments</h2>
 
           <div style={{ marginTop: 60, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -396,13 +396,13 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
               ))}
             </div>
           </div>
-        </AlfacruxAcknowledgments>
+        </AlfaCruxAcknowledgments>
       </main>
     </Layout>
   );
 }
 
-export const getStaticProps: GetStaticProps<AlfacruxProps> = async ({
+export const getStaticProps: GetStaticProps<AlfaCruxProps> = async ({
   previewData,
 }) => {
   const correctlyTypedPreviewData = previewData as { ref: string } | null;

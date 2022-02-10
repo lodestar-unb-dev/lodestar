@@ -58,7 +58,7 @@ function CommingSoon() {
   )
 }
 
-interface AlfacruxRadioPrismicDocument {
+interface AlfaCruxRadioPrismicDocument {
   banner_image: {
     dimensions: {
       width: number;
@@ -99,11 +99,11 @@ interface AlfacruxRadioPrismicDocument {
   }[];
 }
 
-interface AlfacruxRadioProps {
-  alfacruxRadioPrismicDocument: AlfacruxRadioPrismicDocument | null;
+interface AlfaCruxRadioProps {
+  alfacruxRadioPrismicDocument: AlfaCruxRadioPrismicDocument | null;
 }
 
-export default function AlfacruxRadio({ alfacruxRadioPrismicDocument }: AlfacruxRadioProps) {
+export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCruxRadioProps) {
   const [activeFilter, setActiveFilter] = useState<'basic' | 'ham' | 'sdr' | 'ttc'>('basic');
   const theme = useTheme();
 
@@ -225,7 +225,7 @@ export default function AlfacruxRadio({ alfacruxRadioPrismicDocument }: Alfacrux
   )
 }
 
-export const getStaticProps: GetStaticProps<AlfacruxRadioProps> = async ({
+export const getStaticProps: GetStaticProps<AlfaCruxRadioProps> = async ({
   previewData
 }) => {
   const correctlyTypedPreviewData = previewData as { ref: string } | null;
