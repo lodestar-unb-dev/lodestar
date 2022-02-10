@@ -1,7 +1,7 @@
 import Slider, { Settings } from "react-slick";
-import { FiRss } from 'react-icons/fi';
-import { useTheme } from 'styled-components';
-import PrismicDOM from 'prismic-dom';
+import { FiRss, FiYoutube } from "react-icons/fi";
+import { useTheme } from "styled-components";
+import PrismicDOM from "prismic-dom";
 
 import { Layout } from "../../components/Layout";
 import { NoScrollLink } from "../../components/NoScrollLink";
@@ -12,8 +12,9 @@ import {
   AlfacruxGallery,
   AlfacruxRadioAmateur,
   AlfacruxRecentActivities,
-  AlfacruxWhy
-} from '../../styles/pages/projects/alfacrux.styles';
+  AlfacruxWhy,
+  AlfacruxAcknowledgments
+} from "../../styles/pages/projects/alfacrux.styles";
 import { GetStaticProps } from "next";
 import { getPrismicClient } from "../../services/prismic";
 
@@ -57,7 +58,27 @@ interface AlfacruxPrismicDocument {
     text: string;
   }[];
   gallery_title: string;
-  gallery_images: {
+  gs_gallery_images: {
+    image: {
+      dimensions: {
+        width: number;
+        height: number;
+      };
+      alt: string;
+      url: string;
+    };
+  }[];
+  ac_gallery_images: {
+    image: {
+      dimensions: {
+        width: number;
+        height: number;
+      };
+      alt: string;
+      url: string;
+    };
+  }[];
+  ma_gallery_images: {
     image: {
       dimensions: {
         width: number;
@@ -79,6 +100,40 @@ interface AlfacruxPrismicDocument {
     title: string;
     description: string;
   }[];
+  title: string;
+  first_subsection_title: string;
+  second_subsection_title: string;
+  third_subsection_title: string;
+  first_subsection_images: {
+    image: {
+      dimensions: {
+        width: number;
+        height: number;
+      };
+      alt: string;
+      url: string;
+    };
+  }[];
+  second_subsection_images: {
+    image: {
+      dimensions: {
+        width: number;
+        height: number;
+      };
+      alt: string;
+      url: string;
+    };
+  }[];
+  third_subsection_images: {
+    image: {
+      dimensions: {
+        width: number;
+        height: number;
+      };
+      alt: string;
+      url: string;
+    };
+  }[];
 }
 
 interface AlfacruxProps {
@@ -90,14 +145,16 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
     return (
       <div
         style={{
-          color: 'black',
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center' 
+          color: "black",
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
-      >Erro no carregamento das informações.</div>
-    )
+      >
+        Erro no carregamento das informações.
+      </div>
+    );
   }
 
   const {
@@ -105,7 +162,9 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
     alfacrux_logo,
     banner_image,
     bottom_description,
-    gallery_images,
+    gs_gallery_images,
+    ac_gallery_images,
+    ma_gallery_images,
     gallery_title,
     left_description,
     radio_amateurs_button,
@@ -115,7 +174,14 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
     recent_activities_title,
     right_image,
     why_description,
-    why_title
+    why_title,
+    title,
+    first_subsection_title,
+    second_subsection_title,
+    third_subsection_title,
+    first_subsection_images,
+    second_subsection_images,
+    third_subsection_images
   } = alfacruxPrismicDocument;
 
   const theme = useTheme();
@@ -131,8 +197,8 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 560,
@@ -140,138 +206,215 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfacruxProps) {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
-      }
-    ]
+          dots: false,
+        },
+      },
+    ],
   };
 
   return (
     <Layout>
-      <main style={{ backgroundColor: theme.colors.blueDark }} >
-        <AlfacruxBanner 
-          role="banner"
-          bgImageUrl={banner_image.url}
-        >
+      <main style={{ backgroundColor: theme.colors.blueDark }}>
+        <AlfacruxBanner role="banner" bgImageUrl={banner_image.url}>
           <div />
-          
+
           <img src={alfacrux_logo.url} alt="AlfaCrux Logo" />
         </AlfacruxBanner>
 
         <AlfacruxBio>
           <div>
             <h2>{about_title}</h2>
-            
-              <aside>
-                <div 
-                  dangerouslySetInnerHTML={{
-                    __html: PrismicDOM.RichText.asHtml(left_description)
-                  }}
-                />
 
-                <img src={right_image.url} alt="Alfacrux render" />
-              </aside>
-              
-              <div 
+            <aside>
+              <div
                 dangerouslySetInnerHTML={{
-                  __html: PrismicDOM.RichText.asHtml(bottom_description)
+                  __html: PrismicDOM.RichText.asHtml(left_description),
                 }}
               />
+
+              <img src={right_image.url} alt="Alfacrux render" />
+            </aside>
+
+            <div
+              dangerouslySetInnerHTML={{
+                __html: PrismicDOM.RichText.asHtml(bottom_description),
+              }}
+            />
           </div>
         </AlfacruxBio>
 
         <AlfacruxWhy>
-            <h2>{why_title}</h2>
-         
-            <div 
-              dangerouslySetInnerHTML={{
-                __html: PrismicDOM.RichText.asHtml(why_description)
-              }}
-            />
-        </AlfacruxWhy>
-
-        <AlfacruxGallery>
-            <h2>{gallery_title}</h2>  
-
-            <div>
-              <Slider {...settings}>
-                {gallery_images.map(({ image }) => (
-                  <div key={image.url}>
-                    <img src={image.url} alt={image.alt} />
-                  </div>
-                ))}
-              </Slider>
-            </div>
-        </AlfacruxGallery>
-
-        <AlfacruxRadioAmateur>
-          <h2>{radio_amateurs_title}</h2>
-
           <div>
-            <aside>
-              <div 
+            <h2>{why_title}</h2>
+
+            <div style={{ display: 'flex' }}>
+              <div
                 dangerouslySetInnerHTML={{
-                  __html: PrismicDOM.RichText.asHtml(radio_amateurs_cta)
+                  __html: PrismicDOM.RichText.asHtml(why_description),
                 }}
               />
+              <img src="/exploded_view_alfacrux.png" alt="" />
+            </div>
+          </div>
+        </AlfacruxWhy>
 
-              <NoScrollLink href="/projects/alfacrux/radio">
-                <a>
-                  <span>{radio_amateurs_button}</span>
-                  <div>
-                    <FiRss />
-                  </div>
-                </a>
-              </NoScrollLink>
-            </aside>
+        <AlfacruxRadioAmateur>
+          <div>
+            <h2>{radio_amateurs_title}</h2>
 
-            <img src="/radio_amateur.svg" alt="Radio Amateur" />
+            <div>
+              <aside>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: PrismicDOM.RichText.asHtml(radio_amateurs_cta),
+                  }}
+                />
 
+                <NoScrollLink href="/projects/alfacrux/radio">
+                  <a>
+                    <span>{radio_amateurs_button}</span>
+                    <div>
+                      <FiRss />
+                    </div>
+                  </a>
+                </NoScrollLink>
+              </aside>
+
+              <img src="/radio_amateur.svg" alt="Radio Amateur" />
+            </div>
           </div>
         </AlfacruxRadioAmateur>
 
         <AlfacruxRecentActivities>
-            <h2>{recent_activities_title}</h2>  
+          <h2>{recent_activities_title}</h2>
 
-            <section>
-              {recent_activities_cards.map(recent_activity => (
-                <div key={recent_activity.youtube_video_url}>
-                  <iframe 
-                    width="510" 
-                    height="380" 
-                    src={recent_activity.youtube_video_url} 
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen 
-                  />
+          <section>
+            {recent_activities_cards.map((recent_activity) => (
+              <div key={recent_activity.youtube_video_url}>
+                <iframe
+                  width="400"
+                  height="210"
+                  src={recent_activity.youtube_video_url}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
 
-                  <aside>
-                    <h3>{recent_activity.title}</h3>
-                    <p>{recent_activity.description}</p>
-                  </aside>
+                <aside>
+                  <h3>{recent_activity.title}</h3>
+                  <p>{recent_activity.description}</p>
+                </aside>
+              </div>
+            ))}
+
+            <NoScrollLink href='https://www.youtube.com/channel/UCkbKnVEH-IkNNB87Kn6CUtg' passHref>
+              <a style={{ 
+                backgroundColor: '#F5F5F5',
+                color: '#00244B',
+                borderRadius: 5,
+                padding: '14px 10px',
+                fontWeight: 'bold',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 10,
+                cursor: 'pointer',
+                }}>Check More Videos <FiYoutube size={22} /></a>
+            </NoScrollLink>
+          </section>
+        </AlfacruxRecentActivities>
+
+        <AlfacruxGallery>
+          <h2>{gallery_title}</h2>
+
+          <div>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Ground Station's assemble and installation</h3>
+
+            <Slider {...settings}>
+              {gs_gallery_images.map(({ image }) => (
+                <div key={image.url}>
+                  <img src={image.url} alt={image.alt} />
                 </div>
               ))}
-            </section>
-        </AlfacruxRecentActivities>
+            </Slider>
+          </div>
+
+          <div style={{ marginTop: 50 }}>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Magnetic actuation's project, assemble, implementation and tests</h3>
+
+            <Slider {...settings}>
+              {ac_gallery_images.map(({ image }) => (
+                <div key={image.url}>
+                  <img src={image.url} alt={image.alt} />
+                </div>
+              ))}
+            </Slider>
+          </div>
+
+          <div style={{ marginTop: 50 }}>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Alfacrux's integration Campaign, tests and validation</h3>
+
+            <Slider {...settings}>
+              {ma_gallery_images.map(({ image }) => (
+                <div key={image.url}>
+                  <img src={image.url} alt={image.alt} />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </AlfacruxGallery>
+
+        <AlfacruxAcknowledgments>
+          <h2>Acknowledgments</h2>
+
+          <div style={{ marginTop: 60, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <h3 style={{ marginBottom: 60 }}>{first_subsection_title}</h3>
+
+            <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
+              {first_subsection_images.map(({ image }) => (
+                <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+              ))}
+            </div>
+          </div>
+
+          <div style={{ marginTop: 60, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <h3 style={{ marginBottom: 60 }}>{second_subsection_title}</h3>
+
+            <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
+              {second_subsection_images.map(({ image }) => (
+                <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+              ))}
+            </div>
+          </div>
+
+          <div style={{ marginTop: 60, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <h3 style={{ marginBottom: 60 }}>{third_subsection_title}</h3>
+
+            <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
+              {third_subsection_images.map(({ image }) => (
+                <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+              ))}
+            </div>
+          </div>
+        </AlfacruxAcknowledgments>
       </main>
     </Layout>
-  )
+  );
 }
 
 export const getStaticProps: GetStaticProps<AlfacruxProps> = async ({
-  previewData
+  previewData,
 }) => {
   const correctlyTypedPreviewData = previewData as { ref: string } | null;
-  
+
   const prismic = getPrismicClient();
-  const alfacruxResponse = await prismic.getSingle('alfacrux', {
-    ref: correctlyTypedPreviewData?.ref ? correctlyTypedPreviewData.ref : ''
+  const alfacruxResponse = await prismic.getSingle("alfacrux", {
+    ref: correctlyTypedPreviewData?.ref ? correctlyTypedPreviewData.ref : "",
   });
 
   return {
     props: {
       alfacruxPrismicDocument: alfacruxResponse?.data ?? null,
-    }
-  }
-}
+    },
+  };
+};

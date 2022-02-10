@@ -35,7 +35,7 @@ export const AlfacruxBanner = styled.section<AlfacruxBannerProps>`
 `;
 
 export const AlfacruxBio = styled.section`
-  background-color: ${({ theme }) => theme.colors.blueDarker };;
+  background-color: ${({ theme }) => theme.colors.blueDarker };
   padding: 80px 0;
 
   div {
@@ -104,33 +104,57 @@ export const AlfacruxBio = styled.section`
 `;
 
 export const AlfacruxWhy = styled.section`
-  max-width: 1120px;
-  padding: 80px 20px;
-  margin: 0 auto;
+  background-color: ${({ theme }) => theme.colors.black0 };
+  color: ${({ theme }) => theme.colors.blueDarker };
 
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-
-    text-align: center;
-  }
-
-  p {
-    text-align: justify;
-    line-height: 26px;
-  }
-
-  p + p {
-    margin-top: 20px;
-  }
-
-  @media(max-width: 560px) {
-    padding: 40px 20px;
+  > div {
+    max-width: 1120px;
+    padding: 80px 20px;
+    margin: 0 auto;
 
     h2 {
-      text-align: left;
-      font-size: 2rem;
-      margin-bottom: 24px;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+
+      text-align: center;
+    }
+
+    > div {
+      p {
+        text-align: justify;
+        line-height: 26px;
+      }
+
+      p + p {
+        margin-top: 20px;
+      }
+
+      img {
+        margin-left: 80px;
+        max-height: 500px;
+      }
+
+      @media(max-width: 960px) {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 40px;
+
+        img {
+          margin-left: 0;
+          max-width: 360px;
+        }
+      }
+
+      @media(max-width: 560px) {
+        padding: 40px 20px;
+
+        h2 {
+          text-align: left;
+          font-size: 2rem;
+          margin-bottom: 24px;
+        }
+      }
     }
   }
 `;
@@ -180,105 +204,107 @@ export const AlfacruxGallery = styled.section`
 `;
 
 export const AlfacruxRadioAmateur = styled.section`
-  max-width: 1120px;
-  padding: 80px 20px;
-  margin: 0 auto;
-
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-
-    text-align: center;
-  }
+  background-color: ${({ theme }) => theme.colors.blueDarker };;
 
   > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    aside {
-      p {
-        font-size: 1.375rem;
-        line-height: 32px;
-        color: #F5F5F5;
-      }
-
-      a {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        background-color: #F5F5F5;
-        width: fit-content;
-
-        margin-top: 40px;
-        padding-left: 20px;
-        border-radius: 6px;
-        border: 0;
-
-        transition: filter 0.2s;
-
-        &:hover {
-          filter: brightness(1.1);
-        }
-
-        span {
-          font-size: 1.25rem;
-          font-weight: 500;
-          color: #00822D;
-        }
-
-        div {
-          margin-left: 20px;
-          padding: 20px;
-
-          background-color: #00822D;
-          color: #F5F5F5;
-
-          border-top-right-radius: 5px;
-          border-bottom-right-radius: 5px;
-        }
-      }
-    }
-
-    img {
-      width: 100%;
-      max-width: 439px;
-    }
-  }
-
-  @media(max-width: 960px) {
-    div {
-      flex-direction: column-reverse;
-      align-items: center;
-      gap: 40px;
-
-      aside {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  }
-
-  @media(max-width: 560px) {
-    padding: 40px 20px;
+    max-width: 1120px;
+    padding: 80px 20px;
+    margin: 0 auto;
 
     h2 {
-      text-align: left;
-      font-size: 2rem;
-      margin-bottom: 24px;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+
+      text-align: center;
     }
 
-    div aside p {
-      font-size: 1.25rem;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      aside {
+        p {
+          font-size: 1.375rem;
+          line-height: 32px;
+          color: #F5F5F5;
+        }
+
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          background-color: #F5F5F5;
+          width: fit-content;
+
+          margin-top: 40px;
+          padding-left: 20px;
+          border-radius: 6px;
+          border: 0;
+
+          transition: filter 0.2s;
+
+          &:hover {
+            filter: brightness(1.1);
+          }
+
+          span {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #00822D;
+          }
+
+          div {
+            margin-left: 20px;
+            padding: 20px;
+
+            background-color: #00822D;
+            color: #F5F5F5;
+
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        max-width: 439px;
+      }
+    }
+
+    @media(max-width: 960px) {
+      div {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+
+        aside {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+
+    @media(max-width: 560px) {
+      padding: 40px 20px;
+
+      h2 {
+        text-align: left;
+        font-size: 2rem;
+        margin-bottom: 24px;
+      }
+
+      div aside p {
+        font-size: 1.25rem;
+      }
     }
   }
 `;
 
 export const AlfacruxRecentActivities = styled.section`
-  background-color: ${({ theme }) => theme.colors.blueDarker };;
-
   padding: 80px 0;
 
   h2 {
@@ -290,31 +316,35 @@ export const AlfacruxRecentActivities = styled.section`
   }
 
   section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
 
     max-width: 1120px;
     padding: 0 20px;
     margin: 0 auto;
 
-    @media(max-width: 960px) {
-      grid-template-columns: 1fr;
-      justify-items: center;
-    }
-
     div {
-      max-width: 510px;
-      flex: 1;
+      display: flex;
+      width: 100%;
+      max-width: 900px;
 
       border-radius: 6px;
       background-color: #F5F5F5;
 
+      @media(max-width: 960px) {
+        flex-direction: column;
+        max-width: 360px;
+        width: 100%;
+      }
+
       iframe {
         width: 100%;
-        max-width: 510px;
+        max-width: 400px;
+        height: 210px;
         border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
       }
 
       aside {
@@ -351,6 +381,33 @@ export const AlfacruxRecentActivities = styled.section`
       text-align: left;
       font-size: 2rem;
       margin-bottom: 24px;
+    }
+  }
+`;
+
+export const AlfacruxAcknowledgments = styled.section`
+  background-color: ${({ theme }) => theme.colors.black0 };
+  color: ${({ theme }) => theme.colors.blueDarker };
+
+  padding: 80px 0;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+
+    text-align: center;
+  }
+
+  > div {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    > div {
+      display: flex;
+
+      @media(max-width: 960px) {
+        flex-direction: column;
+      }
     }
   }
 `;
