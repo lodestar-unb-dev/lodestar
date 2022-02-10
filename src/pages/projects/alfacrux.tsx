@@ -328,7 +328,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           <h2>{gallery_title}</h2>
 
           <div>
-            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Ground Station's assemble and installation</h3>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Ground Station assembly, validation and tests</h3>
 
             <Slider {...settings}>
               {gs_gallery_images.map(({ image }) => (
@@ -340,7 +340,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           </div>
 
           <div style={{ marginTop: 50 }}>
-            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>AlfaCrux's integration Campaign, tests and validation</h3>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>AlfaCrux assembly, validation and tests campaign</h3>
 
             <Slider {...settings}>
               {ac_gallery_images.map(({ image }) => (
@@ -352,7 +352,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           </div>
 
           <div style={{ marginTop: 50 }}>
-            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Magnetic actuation's project, assemble, implementation and tests</h3>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Magnetic actuation system design, implementation and tests</h3>
 
             <Slider {...settings}>
               {ma_gallery_images.map(({ image }) => (
