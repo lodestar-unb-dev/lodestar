@@ -14,10 +14,14 @@ const variants = {
   visible: { opacity: 1 }
 }
 
-function Info({ data }: { 
-  data: {
+function Info({ description, keyValue }: { 
+  keyValue: {
     key: string;
     value: string;
+  }[],
+  description: {
+    type: string;
+    text: string;
   }[]
 }) {
   return (
@@ -28,7 +32,12 @@ function Info({ data }: {
       variants={variants}
       transition={{ duration: 0.4 }}
     >
-      {data.map(item => (
+      <article 
+        dangerouslySetInnerHTML={{
+          __html: PrismicDOM.RichText.asHtml(description)
+        }}
+      />
+      {keyValue.map(item => (
         <p key={item.key}>
           <strong>{item.key}</strong>: {item.value}
         </p>
@@ -85,17 +94,33 @@ interface AlfaCruxRadioPrismicDocument {
     key: string;
     value: string;
   }[];
+  basic_description: {
+    type: string;
+    text: string;
+  }[];
   sdr_info: {
     key: string;
     value: string;
+  }[];
+  sdr_description: {
+    type: string;
+    text: string;
   }[];
   ham_info: {
     key: string;
     value: string;
   }[];
+  ham_description: {
+    type: string;
+    text: string;
+  }[];
   ttc_info: {
     key: string;
     value: string;
+  }[];
+  ttc_description: {
+    type: string;
+    text: string;
   }[];
 }
 
@@ -133,18 +158,34 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
     banner_image,
     alfacrux_logo,
     basic_info,
+    basic_description,
     description,
     ham_info,
+    ham_description,
     radio_info_title,
     sdr_info,
-    ttc_info
+    sdr_description,
+    ttc_info,
+    ttc_description
   } = alfacruxRadioPrismicDocument;
 
   const info = {
-    'basic': basic_info,
-    'ham': ham_info,
-    'sdr': sdr_info,
-    'ttc': ttc_info
+    'basic': {
+      description: basic_description,
+      keyValue: basic_info
+    },
+    'ham': {
+      description: ham_description,
+      keyValue: ham_info
+    },
+    'sdr': {
+      description: sdr_description,
+      keyValue: sdr_info
+    },
+    'ttc': {
+      description: ttc_description,
+      keyValue: ttc_info
+    }
   }
   
   return (
@@ -213,8 +254,8 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
         <AnimatePresence
           exitBeforeEnter
         >
-          { info[activeFilter].length > 0 ? (
-            <Info key={activeFilter} data={info[activeFilter]} />
+          { (info[activeFilter].description.length > 0 || info[activeFilter].keyValue.length > 0) ? (
+              <Info key={activeFilter} {...info[activeFilter]} />
           ) : (
             <CommingSoon key="commingSoon" />
           ) }

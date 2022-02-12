@@ -95,16 +95,20 @@ interface AlfaCruxPrismicDocument {
   }[];
   radio_amateurs_button: string;
   recent_activities_title: string;
+  recent_activities_description: {
+    type: string;
+    text: string;
+  }[];
   recent_activities_cards: {
     youtube_video_url: string;
     title: string;
     description: string;
   }[];
-  title: string;
-  first_subsection_title: string;
-  second_subsection_title: string;
-  third_subsection_title: string;
-  first_subsection_images: {
+  acknowledgments_title: string;
+  acknowledgments_first_subsection_title: string;
+  acknowledgments_second_subsection_title: string;
+  acknowledgments_third_subsection_title: string;
+  acknowledgments_first_subsection_images: {
     image: {
       dimensions: {
         width: number;
@@ -113,8 +117,9 @@ interface AlfaCruxPrismicDocument {
       alt: string;
       url: string;
     };
+    acknowledgments_image_link: string;
   }[];
-  second_subsection_images: {
+  acknowledgments_second_subsection_images: {
     image: {
       dimensions: {
         width: number;
@@ -123,8 +128,9 @@ interface AlfaCruxPrismicDocument {
       alt: string;
       url: string;
     };
+    acknowledgments_image_link: string;
   }[];
-  third_subsection_images: {
+  acknowledgments_third_subsection_images: {
     image: {
       dimensions: {
         width: number;
@@ -133,6 +139,7 @@ interface AlfaCruxPrismicDocument {
       alt: string;
       url: string;
     };
+    acknowledgments_image_link: string;
   }[];
 }
 
@@ -172,16 +179,17 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
     radio_amateurs_title,
     recent_activities_cards,
     recent_activities_title,
+    recent_activities_description,
     right_image,
     why_description,
     why_title,
-    title,
-    first_subsection_title,
-    second_subsection_title,
-    third_subsection_title,
-    first_subsection_images,
-    second_subsection_images,
-    third_subsection_images
+    acknowledgments_title,
+    acknowledgments_first_subsection_title,
+    acknowledgments_second_subsection_title,
+    acknowledgments_third_subsection_title,
+    acknowledgments_first_subsection_images,
+    acknowledgments_second_subsection_images,
+    acknowledgments_third_subsection_images
   } = alfacruxPrismicDocument;
 
   const theme = useTheme();
@@ -289,6 +297,12 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           <h2>{recent_activities_title}</h2>
 
           <section>
+            <article
+              dangerouslySetInnerHTML={{
+                __html: PrismicDOM.RichText.asHtml(recent_activities_description)
+              }}
+            />
+
             {recent_activities_cards.map((recent_activity) => (
               <div key={recent_activity.youtube_video_url}>
                 <iframe
@@ -319,7 +333,12 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
                 alignItems: 'center',
                 gap: 10,
                 cursor: 'pointer',
-                }}>Check More Videos <FiYoutube size={22} /></a>
+                }}
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                  Check More Videos <FiYoutube size={22} />
+              </a>
             </NoScrollLink>
           </section>
         </AlfaCruxRecentActivities>
@@ -328,7 +347,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           <h2>{gallery_title}</h2>
 
           <div>
-            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Ground Station assembly, validation and tests</h3>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Ground Station assembly, validation, and tests</h3>
 
             <Slider {...settings}>
               {gs_gallery_images.map(({ image }) => (
@@ -340,7 +359,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           </div>
 
           <div style={{ marginTop: 50 }}>
-            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>AlfaCrux assembly, validation and tests campaign</h3>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>AlfaCrux assembly, validation, and tests campaign</h3>
 
             <Slider {...settings}>
               {ac_gallery_images.map(({ image }) => (
@@ -352,7 +371,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           </div>
 
           <div style={{ marginTop: 50 }}>
-            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Magnetic actuation system design, implementation and tests</h3>
+            <h3 style={{ marginBottom: 20, marginLeft: 20 }}>Magnetic actuation system design, implementation, and tests</h3>
 
             <Slider {...settings}>
               {ma_gallery_images.map(({ image }) => (
@@ -365,34 +384,55 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
         </AlfaCruxGallery>
 
         <AlfaCruxAcknowledgments>
-          <h2>Acknowledgments</h2>
+          <h2>{acknowledgments_title}</h2>
 
           <div style={{ marginTop: 60, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <h3 style={{ marginBottom: 60 }}>{first_subsection_title}</h3>
+            <h3 style={{ marginBottom: 60 }}>{acknowledgments_first_subsection_title}</h3>
 
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
-              {first_subsection_images.map(({ image }) => (
-                <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+              {acknowledgments_first_subsection_images.map(({ image, acknowledgments_image_link }) => (
+                <NoScrollLink href={acknowledgments_image_link} passHref>
+                  <a
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+                  </a>
+                </NoScrollLink>
               ))}
             </div>
           </div>
 
           <div style={{ marginTop: 60, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <h3 style={{ marginBottom: 60 }}>{second_subsection_title}</h3>
+            <h3 style={{ marginBottom: 60 }}>{acknowledgments_second_subsection_title}</h3>
 
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
-              {second_subsection_images.map(({ image }) => (
-                <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+              {acknowledgments_second_subsection_images.map(({ image, acknowledgments_image_link }) => (
+                <NoScrollLink href={acknowledgments_image_link} passHref>
+                <a
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+                </a>
+              </NoScrollLink>
               ))}
             </div>
           </div>
 
           <div style={{ marginTop: 60, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <h3 style={{ marginBottom: 60 }}>{third_subsection_title}</h3>
+            <h3 style={{ marginBottom: 60 }}>{acknowledgments_third_subsection_title}</h3>
 
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
-              {third_subsection_images.map(({ image }) => (
-                <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+              {acknowledgments_third_subsection_images.map(({ image, acknowledgments_image_link }) => (
+                <NoScrollLink href={acknowledgments_image_link} passHref>
+                <a
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+                </a>
+              </NoScrollLink>
               ))}
             </div>
           </div>
