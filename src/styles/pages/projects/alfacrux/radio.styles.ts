@@ -113,6 +113,17 @@ export const RadioInfo = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
+    article {
+      p {
+        text-align: justify;
+        line-height: 26px;
+      }
+
+      p + p {
+        margin-top: 20px;
+      }
+    }
   }
 
   @media(max-width: 960px) {    

@@ -53,8 +53,12 @@ export const AlfaCruxBio = styled.section`
     }
 
     p {
-      line-height: 140%;
       text-align: justify;
+      line-height: 26px;
+    }
+
+    p + p {
+      margin-top: 20px;
     }
 
     aside {
@@ -313,6 +317,17 @@ export const AlfaCruxRecentActivities = styled.section`
     padding: 0 20px;
 
     text-align: center;
+  }
+
+  article {
+    p {
+      text-align: justify;
+      line-height: 26px;
+    }
+
+    p + p {
+      margin-top: 20px;
+    }
   }
 
   section {
