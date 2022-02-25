@@ -103,6 +103,15 @@ interface AlfaCruxPrismicDocument {
     youtube_video_url: string;
     title: string;
     description: string;
+    image: {
+      dimensions: {
+        width: number;
+        height: number;
+      };
+      alt: string;
+      url: string;
+    };
+    news_url: string;
   }[];
   acknowledgments_title: string;
   acknowledgments_first_subsection_title: string;
@@ -303,24 +312,36 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
               }}
             />
 
-            {recent_activities_cards.map((recent_activity) => (
-              <div key={recent_activity.youtube_video_url}>
-                <iframe
-                  width="400"
-                  height="210"
-                  src={recent_activity.youtube_video_url}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+            <section style={{ display: 'flex', flexDirection: 'column-reverse' }}>
+              {recent_activities_cards.map((recent_activity) => (
+                <div key={recent_activity.youtube_video_url}>
+                  {recent_activity.youtube_video_url ? (
+                    <iframe
+                      width="400"
+                      height="210"
+                      src={recent_activity.youtube_video_url}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : recent_activity.news_url ? (
+                    <NoScrollLink href={recent_activity.news_url}>
+                      <a>
+                        <img src={recent_activity.image.url} alt={recent_activity.image.alt} style={{ height: 210, minWidth: 400, objectFit: "cover", objectPosition: 'top', margin: 'auto 0' }} />
+                      </a>
+                    </NoScrollLink>
+                  ) : (
+                    <img src={recent_activity.image.url} alt={recent_activity.image.alt} style={{ height: 210, minWidth: 400, objectFit: "cover", objectPosition: 'top', margin: 'auto 0' }} />
+                  ) }
 
-                <aside>
-                  <h3>{recent_activity.title}</h3>
-                  <p>{recent_activity.description}</p>
-                </aside>
-              </div>
-            ))}
+                  <aside>
+                    <h3>{recent_activity.title}</h3>
+                    <p>{recent_activity.description}</p>
+                  </aside>
+                </div>
+              ))}
+            </section>
 
             <NoScrollLink href='https://www.youtube.com/channel/UCkbKnVEH-IkNNB87Kn6CUtg' passHref>
               <a style={{ 

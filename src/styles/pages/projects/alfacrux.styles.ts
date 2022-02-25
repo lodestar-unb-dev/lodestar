@@ -375,6 +375,7 @@ export const AlfaCruxRecentActivities = styled.section`
         p {
           font-size: 0.875rem;
           line-height: 22px;
+          text-align: justify;
         }
       }
     }
