@@ -328,11 +328,11 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
                   ) : recent_activity.news_url ? (
                     <NoScrollLink href={recent_activity.news_url}>
                       <a>
-                        <img src={recent_activity.image.url} alt={recent_activity.image.alt} style={{ height: 210, minWidth: 400, objectFit: "cover", objectPosition: 'top', margin: 'auto 0' }} />
+                        <img src={recent_activity.image.url} alt={recent_activity.image.alt} style={{ height: 210, minWidth: 400, objectFit: "cover", objectPosition: 'top', margin: 'auto 0', borderRadius: '6px 0 0 6px' }} />
                       </a>
                     </NoScrollLink>
                   ) : (
-                    <img src={recent_activity.image.url} alt={recent_activity.image.alt} style={{ height: 210, minWidth: 400, objectFit: "cover", objectPosition: 'top', margin: 'auto 0' }} />
+                    <img src={recent_activity.image.url} alt={recent_activity.image.alt} style={{ height: 210, minWidth: 400, objectFit: "cover", objectPosition: 'top', margin: 'auto 0', borderRadius: '6px 0 0 6px' }} />
                   ) }
 
                   <aside>
