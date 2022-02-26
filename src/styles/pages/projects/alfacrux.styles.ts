@@ -357,9 +357,29 @@ export const AlfaCruxRecentActivities = styled.section`
       iframe {
         width: 100%;
         max-width: 400px;
-        height: 210px;
+        aspect-ratio: 1.905;
+        height: auto;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+
+        @media(max-width: 960px) {
+          border-radius: 6px 6px 0 0;
+        }
+      }
+
+      img {
+        aspect-ratio: 1.905;
+        height: auto;
+        max-width: 400px;
+        width: 100%;
+        object-fit: cover; 
+        object-position: top; 
+        margin: auto 0; 
+        border-radius: 6px 0 0 6px;
+
+        @media(max-width: 960px) {
+          border-radius: 6px 6px 0 0;
+        }
       }
 
       aside {
@@ -373,7 +393,7 @@ export const AlfaCruxRecentActivities = styled.section`
         }
 
         p {
-          font-size: 0.875rem;
+          font-size: 0.85rem;
           line-height: 22px;
           text-align: justify;
         }
