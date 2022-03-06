@@ -112,8 +112,8 @@ export default function Projects({ projectsPrismicDocument }: ProjectsProps) {
         const r = el?.getBoundingClientRect()
         if (r) {
           window?.top?.scroll({
-            top: pageYOffset + r.top -73,
-            behavior: "smooth",
+            top: scrollY + r.top -73,
+            behavior: 'smooth'
           })
         }
       }, 600)

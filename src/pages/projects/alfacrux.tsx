@@ -13,10 +13,13 @@ import {
   AlfaCruxRadioAmateur,
   AlfaCruxRecentActivities,
   AlfaCruxWhy,
-  AlfaCruxAcknowledgments
+  AlfaCruxAcknowledgments,
+  AlfacruxCountdown
 } from "../../styles/pages/projects/alfacrux.styles";
 import { GetStaticProps } from "next";
 import { getPrismicClient } from "../../services/prismic";
+import { useEffect, useState } from "react";
+import { intervalToDuration } from "date-fns";
 
 interface AlfaCruxPrismicDocument {
   banner_image: {
@@ -156,6 +159,8 @@ interface AlfaCruxProps {
   alfacruxPrismicDocument: AlfaCruxPrismicDocument | null;
 }
 
+const launchDate = new Date(2022, 3, 1, 20, 41, 1, 694);
+
 export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
   if (!alfacruxPrismicDocument) {
     return (
@@ -229,11 +234,93 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
     ],
   };
 
+  const [countdown, setCountdown] = useState(intervalToDuration({
+    start: new Date(),
+    end: launchDate
+  }));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCountdown(intervalToDuration({
+        start: new Date(),
+        end: launchDate
+      }))
+    }, 1000);
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
+
+  function scrollToRecentActivities() {
+    const el = window.document.getElementById('launch-simulation')
+    const r = el?.getBoundingClientRect()
+    if (r) {
+      window?.top?.scroll({
+        top: scrollY + r.top - 73,
+        behavior: "smooth"
+      })
+    }
+  }
+
   return (
     <Layout>
       <main style={{ backgroundColor: theme.colors.blueDark }}>
         <AlfaCruxBanner role="banner" bgImageUrl={banner_image.url}>
-          <div />
+          <AlfacruxCountdown>
+            <header>
+              <h3>LAUNCH COUNTDOWN</h3>
+              <span>Want to know what comes next? <button onClick={scrollToRecentActivities}>Click here!</button></span>
+            </header>
+
+            <section>
+              {(countdown.years ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.years}</p>
+                  <strong>years</strong>
+                </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.months}</p>
+                  <strong>months</strong>
+                </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.days}</p>
+                  <strong>days</strong>
+                </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.hours}</p>
+                  <strong>hours</strong>
+                </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.minutes}</p>
+                  <strong>minutes</strong>
+                </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) + (countdown.seconds ?? 0) > 0 ? (
+                <div>
+                  <p>{countdown.seconds}</p>
+                  <strong>seconds</strong>
+                </div>
+              ) : (
+                <div>
+                  <strong>launched 🚀</strong>
+                </div>
+              )}
+            </section>
+          </AlfacruxCountdown>
 
           <img src={alfacrux_logo.url} alt="AlfaCrux Logo" />
         </AlfaCruxBanner>
@@ -314,7 +401,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <section style={{ display: 'flex', flexDirection: 'column-reverse' }}>
               {recent_activities_cards.map((recent_activity) => (
-                <div key={recent_activity.youtube_video_url}>
+                <div key={recent_activity.title} id={recent_activity.youtube_video_url === 'https://www.youtube.com/embed/20rZ_9HG-HM' ? 'launch-simulation' : undefined}>
                   {recent_activity.youtube_video_url ? (
                     <iframe
                       width="400"
@@ -412,7 +499,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
               {acknowledgments_first_subsection_images.map(({ image, acknowledgments_image_link }) => (
-                <NoScrollLink href={acknowledgments_image_link} passHref>
+                <NoScrollLink href={acknowledgments_image_link} passHref key={acknowledgments_image_link}>
                   <a
                     target="_blank" 
                     rel="noopener noreferrer"
@@ -429,7 +516,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
               {acknowledgments_second_subsection_images.map(({ image, acknowledgments_image_link }) => (
-                <NoScrollLink href={acknowledgments_image_link} passHref>
+                <NoScrollLink href={acknowledgments_image_link} passHref key={acknowledgments_image_link}>
                 <a
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -446,7 +533,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
               {acknowledgments_third_subsection_images.map(({ image, acknowledgments_image_link }) => (
-                <NoScrollLink href={acknowledgments_image_link} passHref>
+                <NoScrollLink href={acknowledgments_image_link} passHref key={acknowledgments_image_link}>
                 <a
                   target="_blank" 
                   rel="noopener noreferrer"
