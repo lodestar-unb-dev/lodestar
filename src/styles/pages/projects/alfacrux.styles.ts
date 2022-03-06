@@ -14,13 +14,6 @@ export const AlfaCruxBanner = styled.section<AlfaCruxBannerProps>`
   display: flex;
   align-items: center;
 
-  > div {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-
   img {
     position: absolute;
     bottom: 20px;
@@ -29,8 +22,110 @@ export const AlfaCruxBanner = styled.section<AlfaCruxBannerProps>`
     max-width: 100px;
   }
 
-  @media(max-width: 560px) {
-    min-height: 20rem;
+  @media(max-width: 720px) {
+    min-height: 24rem;
+
+    img {
+      width: 70px;
+    }
+  }
+`;
+
+export const AlfacruxCountdown = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 40px;
+
+  @media(max-width: 1024px) {
+    gap: 20px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    h3 {
+      font-size: 72px;
+
+      @media(max-width: 1024px) {
+        font-size: 56px;
+      }
+
+      @media(max-width: 720px) {
+        font-size: 24px;
+      }
+    }
+
+    span {
+      font-size: 20px;
+      color: ${({ theme }) => theme.colors.black10};
+
+      @media(max-width: 720px) {
+        font-size: 14px;
+      }
+
+      button {
+        font-weight: bold;
+        color: ${({ theme }) => theme.colors.black0};
+        background-color: transparent;
+      }
+    }
+  }
+
+  section {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
+    text-transform: uppercase;
+
+    @media(max-width: 1024px) {
+      gap: 20px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-size: 56px;
+
+        @media(max-width: 1024px) {
+          font-size: 32px;
+        }
+
+        @media(max-width: 720px) {
+          font-size: 18px;
+        }
+      }
+
+      strong {
+        font-size: 24px;
+
+        @media(max-width: 720px) {
+          font-size: 14px;
+        }
+      }
+    }
   }
 `;
 
@@ -384,7 +479,8 @@ export const AlfaCruxRecentActivities = styled.section`
 
       aside {
         padding: 20px;
-        color: ${({ theme }) => theme.colors.blueDarker };;
+        color: ${({ theme }) => theme.colors.blueDarker };
+        max-width: 500px;
 
         h3 {
           font-weight: 500;
