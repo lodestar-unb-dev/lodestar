@@ -113,6 +113,7 @@ export default function Projects({ projectsPrismicDocument }: ProjectsProps) {
         if (r) {
           window?.top?.scroll({
             top: scrollY + r.top -73,
+            behavior: 'smooth'
           })
         }
       }, 600)
