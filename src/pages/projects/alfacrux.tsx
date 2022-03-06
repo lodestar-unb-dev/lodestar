@@ -159,7 +159,7 @@ interface AlfaCruxProps {
   alfacruxPrismicDocument: AlfaCruxPrismicDocument | null;
 }
 
-const launchDate = new Date(2022, 3, 1, 17, 41, 1, 694);
+const launchDate = new Date(2022, 3, 1, 20, 41, 1, 694);
 
 export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
   if (!alfacruxPrismicDocument) {
@@ -253,7 +253,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
   }, [])
 
   function scrollToRecentActivities() {
-    const el = window.document.getElementById('recent-activities')
+    const el = window.document.getElementById('launch-simulation')
     const r = el?.getBoundingClientRect()
     if (r) {
       window?.top?.scroll({
@@ -270,7 +270,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           <AlfacruxCountdown>
             <header>
               <h3>LAUNCH COUNTDOWN</h3>
-              <span>Wanna know what comes next? <button onClick={scrollToRecentActivities}>Click here!</button></span>
+              <span>Want to know what comes next? <button onClick={scrollToRecentActivities}>Click here!</button></span>
             </header>
 
             <section>
@@ -389,7 +389,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           </div>
         </AlfaCruxRadioAmateur>
 
-        <AlfaCruxRecentActivities id="recent-activities">
+        <AlfaCruxRecentActivities>
           <h2>{recent_activities_title}</h2>
 
           <section>
@@ -401,7 +401,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <section style={{ display: 'flex', flexDirection: 'column-reverse' }}>
               {recent_activities_cards.map((recent_activity) => (
-                <div key={recent_activity.youtube_video_url ?? recent_activity.image.url}>
+                <div key={recent_activity.title} id={recent_activity.youtube_video_url === 'https://www.youtube.com/embed/20rZ_9HG-HM' ? 'launch-simulation' : undefined}>
                   {recent_activity.youtube_video_url ? (
                     <iframe
                       width="400"
@@ -499,7 +499,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
               {acknowledgments_first_subsection_images.map(({ image, acknowledgments_image_link }) => (
-                <NoScrollLink href={acknowledgments_image_link} passHref>
+                <NoScrollLink href={acknowledgments_image_link} passHref key={acknowledgments_image_link}>
                   <a
                     target="_blank" 
                     rel="noopener noreferrer"
@@ -516,7 +516,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
               {acknowledgments_second_subsection_images.map(({ image, acknowledgments_image_link }) => (
-                <NoScrollLink href={acknowledgments_image_link} passHref>
+                <NoScrollLink href={acknowledgments_image_link} passHref key={acknowledgments_image_link}>
                 <a
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -533,7 +533,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
               {acknowledgments_third_subsection_images.map(({ image, acknowledgments_image_link }) => (
-                <NoScrollLink href={acknowledgments_image_link} passHref>
+                <NoScrollLink href={acknowledgments_image_link} passHref key={acknowledgments_image_link}>
                 <a
                   target="_blank" 
                   rel="noopener noreferrer"
