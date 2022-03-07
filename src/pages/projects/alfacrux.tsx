@@ -159,7 +159,7 @@ interface AlfaCruxProps {
   alfacruxPrismicDocument: AlfaCruxPrismicDocument | null;
 }
 
-const launchDate = new Date(2022, 3, 1, 20, 41, 1, 694);
+const launchDate = new Date(2022, 3, 1, 14, 41, 1, 694);
 
 export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
   if (!alfacruxPrismicDocument) {
