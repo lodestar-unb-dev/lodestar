@@ -239,18 +239,18 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
     end: launchDate
   }));
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCountdown(intervalToDuration({
-        start: new Date(),
-        end: launchDate
-      }))
-    }, 1000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCountdown(intervalToDuration({
+  //       start: new Date(),
+  //       end: launchDate
+  //     }))
+  //   }, 1000);
 
-    return () => {
-      clearInterval(interval)
-    }
-  }, [])
+  //   return () => {
+  //     clearInterval(interval)
+  //   }
+  // }, [])
 
   function scrollToRecentActivities() {
     const el = window.document.getElementById('launch-simulation')
@@ -270,7 +270,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           <AlfacruxCountdown>
             <header>
               <h3>LAUNCH COUNTDOWN</h3>
-              <span>Want to know what comes next? <button onClick={scrollToRecentActivities}>Click here!</button></span>
+              <span><strong>Comming soon</strong>. Want to know what comes next? <button onClick={scrollToRecentActivities}>Click here!</button></span>
             </header>
 
             <section>
@@ -290,28 +290,32 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
               {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) > 0 && (
                 <div>
-                  <p>{countdown.days}</p>
+                  {/* <p>{countdown.days}</p> */}
+                  <p>--</p>
                   <strong>days</strong>
                 </div>
               )}
 
               {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) > 0 && (
                 <div>
-                  <p>{countdown.hours}</p>
+                  {/* <p>{countdown.hours}</p> */}
+                  <p>--</p>
                   <strong>hours</strong>
                 </div>
               )}
 
               {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) > 0 && (
                 <div>
-                  <p>{countdown.minutes}</p>
+                  {/* <p>{countdown.minutes}</p> */}
+                  <p>--</p>
                   <strong>minutes</strong>
                 </div>
               )}
 
               {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) + (countdown.seconds ?? 0) > 0 ? (
                 <div>
-                  <p>{countdown.seconds}</p>
+                  {/* <p>{countdown.seconds}</p> */}
+                  <p>--</p>
                   <strong>seconds</strong>
                 </div>
               ) : (
