@@ -159,7 +159,7 @@ interface AlfaCruxProps {
   alfacruxPrismicDocument: AlfaCruxPrismicDocument | null;
 }
 
-const launchDate = new Date(2022, 3, 1, 14, 41, 1, 694);
+const launchDate = new Date(2022, 3, 1, 16, 24, 0, 0);
 
 export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
   if (!alfacruxPrismicDocument) {
@@ -239,18 +239,18 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
     end: launchDate
   }));
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCountdown(intervalToDuration({
-  //       start: new Date(),
-  //       end: launchDate
-  //     }))
-  //   }, 1000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCountdown(intervalToDuration({
+        start: new Date(),
+        end: launchDate
+      }))
+    }, 1000);
 
-  //   return () => {
-  //     clearInterval(interval)
-  //   }
-  // }, [])
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
 
   function scrollToRecentActivities() {
     const el = window.document.getElementById('launch-simulation')
@@ -270,7 +270,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           <AlfacruxCountdown>
             <header>
               <h3>LAUNCH COUNTDOWN</h3>
-              <span><strong>Comming soon</strong>. Want to know what comes next? <button onClick={scrollToRecentActivities}>Click here!</button></span>
+              <span>Want to know what comes next? <button onClick={scrollToRecentActivities}>Click here!</button></span>
             </header>
 
             <section>
@@ -290,32 +290,28 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
               {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) > 0 && (
                 <div>
-                  {/* <p>{countdown.days}</p> */}
-                  <p>--</p>
+                  <p>{countdown.days}</p>
                   <strong>days</strong>
                 </div>
               )}
 
               {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) > 0 && (
                 <div>
-                  {/* <p>{countdown.hours}</p> */}
-                  <p>--</p>
+                  <p>{countdown.hours}</p>
                   <strong>hours</strong>
                 </div>
               )}
 
               {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) > 0 && (
                 <div>
-                  {/* <p>{countdown.minutes}</p> */}
-                  <p>--</p>
+                  <p>{countdown.minutes}</p>
                   <strong>minutes</strong>
                 </div>
               )}
 
               {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) + (countdown.seconds ?? 0) > 0 ? (
                 <div>
-                  {/* <p>{countdown.seconds}</p> */}
-                  <p>--</p>
+                  <p>{countdown.seconds}</p>
                   <strong>seconds</strong>
                 </div>
               ) : (
@@ -394,7 +390,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
         </AlfaCruxRadioAmateur>
 
         <AlfaCruxRecentActivities>
-          <h2>{recent_activities_title}</h2>
+          <h2 id="launch-simulation">{recent_activities_title}</h2>
 
           <section>
             <article
@@ -405,7 +401,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <section style={{ display: 'flex', flexDirection: 'column-reverse' }}>
               {recent_activities_cards.map((recent_activity) => (
-                <div key={recent_activity.title} id={recent_activity.youtube_video_url === 'https://www.youtube.com/embed/20rZ_9HG-HM' ? 'launch-simulation' : undefined}>
+                <div key={recent_activity.title} id={recent_activity.title}>
                   {recent_activity.youtube_video_url ? (
                     <iframe
                       width="400"

@@ -464,7 +464,7 @@ export const AlfaCruxRecentActivities = styled.section`
 
       img {
         aspect-ratio: 1.905;
-        height: auto;
+        height: 100%;
         max-width: 400px;
         width: 100%;
         object-fit: cover; 
