@@ -419,7 +419,9 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
                   <aside>
                     <h3>{recent_activity.title}</h3>
-                    <p>{recent_activity.description}</p>
+                    <div
+                      dangerouslySetInnerHTML={{ __html: PrismicDOM.RichText.asHtml(recent_activity.description) }}
+                    />
                   </aside>
                 </div>
               ))}

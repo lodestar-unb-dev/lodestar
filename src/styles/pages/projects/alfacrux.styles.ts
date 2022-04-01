@@ -489,11 +489,18 @@ export const AlfaCruxRecentActivities = styled.section`
 
           margin-bottom: 12px;
         }
+        
+        div {
+          p {
+            font-size: 0.85rem;
+            line-height: 22px;
+            text-align: justify;
+          }
 
-        p {
-          font-size: 0.85rem;
-          line-height: 22px;
-          text-align: justify;
+          a {
+            color: ${({ theme }) => theme.colors.blue};
+            font-weight: bold;
+          }
         }
       }
     }
