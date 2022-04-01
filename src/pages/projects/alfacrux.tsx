@@ -234,24 +234,6 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
     ],
   };
 
-  const [countdown, setCountdown] = useState(intervalToDuration({
-    start: new Date(),
-    end: launchDate
-  }));
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCountdown(intervalToDuration({
-        start: new Date(),
-        end: launchDate
-      }))
-    }, 1000);
-
-    return () => {
-      clearInterval(interval)
-    }
-  }, [])
-
   function scrollToRecentActivities() {
     const el = window.document.getElementById('launch-simulation')
     const r = el?.getBoundingClientRect()
@@ -275,51 +257,9 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             </header>
 
             <section>
-              {(countdown.years ?? 0) > 0 && (
-                <div>
-                  <p>{countdown.years}</p>
-                  <strong>years</strong>
-                </div>
-              )}
-
-              {(countdown.years ?? 0) + (countdown.months ?? 0) > 0 && (
-                <div>
-                  <p>{countdown.months}</p>
-                  <strong>months</strong>
-                </div>
-              )}
-
-              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) > 0 && (
-                <div>
-                  <p>{countdown.days}</p>
-                  <strong>days</strong>
-                </div>
-              )}
-
-              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) > 0 && (
-                <div>
-                  <p>{countdown.hours}</p>
-                  <strong>hours</strong>
-                </div>
-              )}
-
-              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) > 0 && (
-                <div>
-                  <p>{countdown.minutes}</p>
-                  <strong>minutes</strong>
-                </div>
-              )}
-
-              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) + (countdown.seconds ?? 0) > 0 ? (
-                <div>
-                  <p>{countdown.seconds}</p>
-                  <strong>seconds</strong>
-                </div>
-              ) : (
                 <div>
                   <strong>launched 🚀</strong>
                 </div>
-              )}
             </section>
           </AlfacruxCountdown>
 
