@@ -162,6 +162,24 @@ interface AlfaCruxProps {
 const launchDate = new Date(2022, 3, 1, 13, 24, 0, 0);
 
 export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
+  const [countdown, setCountdown] = useState(intervalToDuration({
+    start: new Date(),
+    end: launchDate
+  }));
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCountdown(intervalToDuration({
+        start: launchDate,
+        end: new Date()
+      }))
+    }, 1000);
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
+  
   if (!alfacruxPrismicDocument) {
     return (
       <div
@@ -251,15 +269,51 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
         <AlfaCruxBanner role="banner" bgImageUrl={banner_image.url}>
           <AlfacruxCountdown>
             <header>
-              <h3>LAUNCH COUNTDOWN</h3>
-              <h4>(Brasília Time | UTC-3 )</h4>
-              <span>Want to know what comes next? <button onClick={scrollToRecentActivities}>Click here!</button></span>
+              <h3>Mission Elapsed Time <small>🚀</small></h3>
             </header>
 
             <section>
+            {(countdown.years ?? 0) > 0 && (
                 <div>
-                  <strong>launched 🚀</strong>
+                  <p>{countdown.years}</p>
+                  <strong>year{countdown.years !== 1 && 's'}</strong>
                 </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.months}</p>
+                  <strong>month{countdown.months !== 1 && 's'}</strong>
+                </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.days}</p>
+                  <strong>day{countdown.days !== 1 && 's'}</strong>
+                </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.hours}</p>
+                  <strong>hour{countdown.hours !== 1 && 's'}</strong>
+                </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.minutes}</p>
+                  <strong>minute{countdown.minutes !== 1 && 's'}</strong>
+                </div>
+              )}
+
+              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) + (countdown.seconds ?? 0) > 0 && (
+                <div>
+                  <p>{countdown.seconds}</p>
+                  <strong>second{countdown.seconds !== 1 && 's'}</strong>
+                </div>
+              )}
             </section>
           </AlfacruxCountdown>
 

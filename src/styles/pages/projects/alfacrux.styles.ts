@@ -59,6 +59,7 @@ export const AlfacruxCountdown = styled.div`
 
     h3 {
       font-size: 72px;
+      text-transform: uppercase;
 
       @media(max-width: 1024px) {
         font-size: 56px;
@@ -87,6 +88,7 @@ export const AlfacruxCountdown = styled.div`
 
   section {
     display: flex;
+    flex-wrap: wrap;
 
     align-items: center;
     justify-content: center;
