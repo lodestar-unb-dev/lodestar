@@ -159,7 +159,7 @@ interface AlfaCruxProps {
   alfacruxPrismicDocument: AlfaCruxPrismicDocument | null;
 }
 
-const launchDate = new Date(2022, 3, 1, 16, 24, 0, 0);
+const launchDate = new Date(2022, 3, 1, 13, 24, 0, 0);
 
 export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
   if (!alfacruxPrismicDocument) {
@@ -270,6 +270,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           <AlfacruxCountdown>
             <header>
               <h3>LAUNCH COUNTDOWN</h3>
+              <h4>(Brasília Time | UTC-3 )</h4>
               <span>Want to know what comes next? <button onClick={scrollToRecentActivities}>Click here!</button></span>
             </header>
 
