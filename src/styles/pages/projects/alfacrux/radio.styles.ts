@@ -165,3 +165,45 @@ export const RadioInfo = styled.section`
     }
   }
 `;
+
+export const RadioForm = styled.section`
+  padding: 80px 20px;
+  background-color: ${({ theme }) => theme.colors.blueDarker};
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    max-width: 1120px;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+
+    iframe {
+      width: 100%;
+      height: 540px;
+      border-radius: 4px;
+
+      @media(max-width: 824px) {
+        height: 983px;
+      }
+
+      @media(max-width: 730px) {
+        height: 1016px;
+      }
+
+      @media(max-width: 424px) {
+        height: 1050px;
+      }
+
+      @media(max-width: 320px) {
+        height: 1083px;
+      }
+    }
+  }
+`;
