@@ -103,7 +103,7 @@ export const RadioInfo = styled.section`
     }
   }
 
-  div {
+  > div {
     padding: 24px;
     background-color: ${({ theme }) => theme.colors.black0};
     border-radius: 12px;
@@ -123,6 +123,11 @@ export const RadioInfo = styled.section`
       p + p {
         margin-top: 20px;
       }
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
     }
   }
 

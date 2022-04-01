@@ -38,9 +38,11 @@ function Info({ description, keyValue }: {
         }}
       />
       {keyValue.map(item => (
-        <p key={item.key}>
-          <strong>{item.key}</strong>: {item.value}
-        </p>
+        <div key={item.key}>
+          <strong>{item.key}</strong>: <div dangerouslySetInnerHTML={{
+            __html: PrismicDOM.RichText.asHtml(item.value)
+          }} />
+        </div>
       ))}
     </motion.div>
   )
@@ -286,7 +288,7 @@ export const getStaticProps: GetStaticProps<AlfaCruxRadioProps> = async ({
   const alfacruxRadioResponse = await prismic.getSingle('alfacrux_radio_amateur', {
     ref: correctlyTypedPreviewData?.ref ? correctlyTypedPreviewData.ref : ''
   });
-
+  console.log(alfacruxRadioResponse.data)
   return {
     props: {
       alfacruxRadioPrismicDocument: alfacruxRadioResponse?.data ?? null,
