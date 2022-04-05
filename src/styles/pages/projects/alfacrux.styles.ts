@@ -375,6 +375,14 @@ export const AlfaCruxRadioAmateur = styled.section`
       }
     }
 
+    article {
+      margin-top: 2rem;
+      
+      p {
+        text-align: justify;
+      }
+    }
+
     @media(max-width: 960px) {
       div {
         flex-direction: column-reverse;

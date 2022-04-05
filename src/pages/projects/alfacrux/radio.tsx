@@ -270,7 +270,15 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
         <h3>Radio Form</h3>
 
         <iframe 
+          className="form"
           src="https://dbgeolog.unb.br/lodestar/form.php" 
+          frameBorder={0}
+        />
+
+        <h4>Check who has already received packets from AlfaCrux.<br />Come with us and be part of this mission!</h4>
+        <iframe 
+          className="map"
+          src="https://dbgeolog.unb.br/lodestar/map.php" 
           frameBorder={0}
         />
         </div>

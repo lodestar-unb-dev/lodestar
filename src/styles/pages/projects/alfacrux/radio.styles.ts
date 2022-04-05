@@ -189,7 +189,7 @@ export const RadioForm = styled.section`
       text-transform: uppercase;
     }
 
-    iframe {
+    iframe.form {
       width: 100%;
       height: 540px;
       border-radius: 4px;
@@ -209,6 +209,18 @@ export const RadioForm = styled.section`
       @media(max-width: 320px) {
         height: 1083px;
       }
+    }
+
+    h4 {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    iframe.map {
+      width: 100%;
+      height: 840px;
+      border-radius: 4px;
     }
   }
 `;
