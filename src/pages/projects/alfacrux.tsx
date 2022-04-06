@@ -361,6 +361,12 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           <div>
             <h2>{radio_amateurs_title}</h2>
 
+            <article>
+              <p>The AlfaCrux team at the University of Brasília informs that the AlfaCrux satellite project, an educational and technological demonstration mission in the area of telecommunication, is in full compliance with the national regulatory framework for telecommunications. The project's Coordination complied with all procedures in the National Telecommunications Agency (ANATEL) for usage of orbit and spectrum ressources as a brazilian satellite, having the Agency complied with all necessary procedures in the Internacional Telecommunications Union (ITU). We would like to reinforce that the frequency band coordination with the countries identified by ITU are ongoing and the applications that are under development in this project are fully in accordance with the radiocommunication and telecommunications services associated to the operation of these frequency bands.</p>
+              <br />
+              <p>We also inform that AlfaCrux is in the process of commissioning in orbit (LEOP), operating in safe mode, in which no service is active, only the transmission of beacons with telemetry packets transmitted at 437.100 MHz, GMSK modulation, at 4800 bps, and circular polarization. Additional information will be updated on this website, the official page of the mission, including details for the correct use of the services by the radio amateur community in the future after finishing the LEOP.</p>
+            </article>
+
             <div>
               <aside>
                 <div
@@ -381,12 +387,6 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
               <img src="/radio_amateur.svg" alt="Radio Amateur" />
             </div>
-
-            <article>
-              <p>The AlfaCrux team at the University of Brasília informs that the AlfaCrux satellite project, an educational and technological demonstration mission in the area of telecommunication, is in full compliance with the national regulatory framework for telecommunications. The project's Coordination complied with all procedures in the National Telecommunications Agency (ANATEL) for usage of orbit and spectrum ressources as a brazilian satellite, having the Agency complied with all necessary procedures in the Internacional Telecommunications Union (ITU). We would like to reinforce that the frequency band coordination with the countries identified by ITU are ongoing and the applications that are under development in this project are fully in accordance with the radiocommunication and telecommunications services associated to the operation of these frequency bands.</p>
-              <br />
-              <p>We also inform that AlfaCrux is in the process of commissioning in orbit (LEOP), operating in safe mode, in which no service is active, only the transmission of beacons with telemetry packets transmitted at 437.100 MHz, GMSK modulation, at 4800 bps, and circular polarization. Additional information will be updated on this website, the official page of the mission, including details for the correct use of the services by the radio amateur community in the future after finishing the LEOP.</p>
-            </article>
           </div>
         </AlfaCruxRadioAmateur>
 
