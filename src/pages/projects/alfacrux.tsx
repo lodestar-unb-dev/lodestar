@@ -414,8 +414,9 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
                       allowFullScreen
                     />
                   ) : recent_activity.news_url ? (
-                    <NoScrollLink href={recent_activity.news_url}>
-                      <a>
+                    <NoScrollLink 
+                      href={recent_activity.news_url}>
+                      <a target="_blank" rel="noopener noreferrer">
                         <img src={recent_activity.image.url} alt={recent_activity.image.alt} />
                       </a>
                     </NoScrollLink>
