@@ -219,7 +219,7 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
             }}
             onClick={() => handleFilterChange('basic')}
           >
-            Basic
+            Beacon
           </button>
 
           <button
