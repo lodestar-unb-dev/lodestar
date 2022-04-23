@@ -377,6 +377,9 @@ export const AlfaCruxRadioAmateur = styled.section`
 
     article {
       margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
       
       p {
         text-align: justify;
