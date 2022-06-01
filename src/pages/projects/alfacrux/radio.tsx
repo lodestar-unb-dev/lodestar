@@ -8,6 +8,7 @@ import { GetStaticProps } from "next";
 import { Layout } from "../../../components/Layout"
 import { RadioBanner, RadioForm, RadioInfo } from "../../../styles/pages/projects/alfacrux/radio.styles"
 import { getPrismicClient } from "../../../services/prismic";
+import { Dashboard } from "../../../components/Dashboard";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -283,6 +284,8 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
         />
         </div>
       </RadioForm>
+
+      <Dashboard />
     </Layout>
   )
 }
@@ -296,7 +299,7 @@ export const getStaticProps: GetStaticProps<AlfaCruxRadioProps> = async ({
   const alfacruxRadioResponse = await prismic.getSingle('alfacrux_radio_amateur', {
     ref: correctlyTypedPreviewData?.ref ? correctlyTypedPreviewData.ref : ''
   });
-  console.log(alfacruxRadioResponse.data)
+  
   return {
     props: {
       alfacruxRadioPrismicDocument: alfacruxRadioResponse?.data ?? null,
