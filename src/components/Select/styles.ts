@@ -29,7 +29,15 @@ export const SelectContent = styled(Select.Content)`
     0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2);
 `;
 
-export const SelectScrollUpButton = styled(Select.ScrollUpButton)``;
+export const SelectScrollUpButton = styled(Select.ScrollUpButton)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: white;
+  color: ${({ theme }) => theme.colors.blue};
+  cursor: default;
+`;
 
 export const SelectViewport = styled(Select.Viewport)`
   padding: 5px;

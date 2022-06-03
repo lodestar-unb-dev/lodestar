@@ -1,8 +1,69 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Line, ResponsiveContainer, Label } from "recharts";
 import { Select } from "../Select";
 import { Card, Chart, Container, Sections, Selectors, Summary, Table, Title, Value } from "./styles";
+
+import P_OBC_TELEM_MAG_X from '../../mocks/P_OBC_TELEM_MAG_X.json';
+import P_OBC_TELEM_MAG_Y from '../../mocks/P_OBC_TELEM_MAG_Y.json';
+import P_OBC_TELEM_MAG_Z from '../../mocks/P_OBC_TELEM_MAG_Z.json';
+import P_OBC_TELEM_GYRO_X from '../../mocks/P_OBC_TELEM_GYRO_X.json';
+import P_OBC_TELEM_GYRO_Y from '../../mocks/P_OBC_TELEM_GYRO_Y.json';
+import P_OBC_TELEM_GYRO_Z from '../../mocks/P_OBC_TELEM_GYRO_Z.json';
+import P_OBC_TELEM_TEMP_MCU from '../../mocks/P_OBC_TELEM_TEMP_MCU.json';
+import P_OM_TELEM_SW_STATE from '../../mocks/P_OM_TELEM_SW_STATE.json';
+
+const MockedAPISelectValues = {
+  'OBC_BEACON': {
+    'P_OBC_TELEM_MAG_X': 'X-axis OBC magnetometer measure',
+    'P_OBC_TELEM_MAG_Y': 'Y-axis OBC magnetometer measure',
+    'P_OBC_TELEM_MAG_Z': 'Z-axis OBC magnetometer measure',
+    'P_OBC_TELEM_GYRO_X': 'X-axis OBC gyroscope measure',
+    'P_OBC_TELEM_GYRO_Y': 'Y-axis OBC gyroscope measure',
+    'P_OBC_TELEM_GYRO_Z': 'Z-axis OBC gyroscope measure',
+    'P_OBC_TELEM_TEMP_MCU': 'MCU Temperature',
+    'P_OM_TELEM_SW_STATE': 'Operational mode'
+  }
+}
+
+const MockedAPIUnits = {
+  'OBC_BEACON': {
+    'P_OBC_TELEM_MAG_X': 'G',
+    'P_OBC_TELEM_MAG_Y': 'G',
+    'P_OBC_TELEM_MAG_Z': 'G',
+    'P_OBC_TELEM_GYRO_X': 'deg/s',
+    'P_OBC_TELEM_GYRO_Y': 'deg/s',
+    'P_OBC_TELEM_GYRO_Z': 'deg/s',
+    'P_OBC_TELEM_TEMP_MCU': '°C',
+    'P_OM_TELEM_SW_STATE': ''
+  }
+}
+
+const MockedAPIData = {
+  'OBC_BEACON': {
+    'P_OBC_TELEM_MAG_X': P_OBC_TELEM_MAG_X,
+    'P_OBC_TELEM_MAG_Y': P_OBC_TELEM_MAG_Y,
+    'P_OBC_TELEM_MAG_Z': P_OBC_TELEM_MAG_Z,
+    'P_OBC_TELEM_GYRO_X': P_OBC_TELEM_GYRO_X,
+    'P_OBC_TELEM_GYRO_Y': P_OBC_TELEM_GYRO_Y,
+    'P_OBC_TELEM_GYRO_Z': P_OBC_TELEM_GYRO_Z,
+    'P_OBC_TELEM_TEMP_MCU': P_OBC_TELEM_TEMP_MCU,
+    'P_OM_TELEM_SW_STATE': P_OM_TELEM_SW_STATE,
+  }
+}
+
+const MockedAPIDataTable = {
+  'OBC_BEACON': {
+    'P_OBC_TELEM_MAG_X': [...P_OBC_TELEM_MAG_X].reverse(),
+    'P_OBC_TELEM_MAG_Y': [...P_OBC_TELEM_MAG_Y].reverse(),
+    'P_OBC_TELEM_MAG_Z': [...P_OBC_TELEM_MAG_Z].reverse(),
+    'P_OBC_TELEM_GYRO_X': [...P_OBC_TELEM_GYRO_X].reverse(),
+    'P_OBC_TELEM_GYRO_Y': [...P_OBC_TELEM_GYRO_Y].reverse(),
+    'P_OBC_TELEM_GYRO_Z': [...P_OBC_TELEM_GYRO_Z].reverse(),
+    'P_OBC_TELEM_TEMP_MCU': [...P_OBC_TELEM_TEMP_MCU].reverse(),
+    'P_OM_TELEM_SW_STATE': [...P_OM_TELEM_SW_STATE].reverse(),
+  }
+}
 
 const apiAvailableData = [
   {
@@ -406,28 +467,56 @@ const apiExternalTemperaturesData = [
 const apiAvailableIntervals = ["1 Hour", "6 Hours", "12 Hours", "24 Hours", "7 days", "30 days", "90 days", "180 days", "360 days"]
 
 export function Dashboard() {
-  const [selectedDataMeasure, setSelectedDataMeasure] = useState("unavailable");
-  const [selectedDataComponent, setSelectedDataComponent] = useState("unavailable");
+  const [selectedDataMeasure, setSelectedDataMeasure] = useState(Object.keys(MockedAPISelectValues)[0]);
+  const [selectedDataComponent, setSelectedDataComponent] = useState(Object.keys(MockedAPISelectValues[selectedDataMeasure])[0]);
   const [selectedDataInterval, setSelectedDataInterval] = useState('24 Hours');
-  const apiAvailableMeasure = useMemo(() => {
-    return apiAvailableData.map(item => item.name) ?? []
-  }, []);
-  const apiAvailableComponents = useMemo(() => {
-    return apiAvailableData
-    .find(item => item.name === selectedDataMeasure)?.values
-    .map(item => item.name) ?? []
-  }, [selectedDataMeasure]);
+  const [tablePage, setTablePage] = useState(0);
 
-  useEffect(() => {
-    setSelectedDataMeasure(apiAvailableData[3].name);
-    setSelectedDataComponent(apiAvailableData[3].values[0].name);
-  }, []);
+  console.log(Object.entries(MockedAPISelectValues.OBC_BEACON))
 
-  useEffect(() => {
-    if (apiAvailableComponents.length > 0) {
-      setSelectedDataComponent(apiAvailableComponents[0]);
+  const pagination = useCallback((index) => {
+    return tablePage * 10 + index
+  }, [tablePage]);
+
+  const selectedDataToShow = useMemo(() => {
+    return MockedAPIData[selectedDataMeasure][selectedDataComponent]
+  }, [selectedDataMeasure, selectedDataComponent]);
+
+  const selectedTableDataToShow = useMemo(() => {
+    return MockedAPIDataTable[selectedDataMeasure][selectedDataComponent]
+  }, [selectedDataMeasure, selectedDataComponent]);
+
+  const selectedUnitOfDataToShow = useMemo(() => {
+    return MockedAPIUnits[selectedDataMeasure][selectedDataComponent]
+  }, [selectedDataMeasure, selectedDataComponent]);
+
+  const totalPages = useMemo(() => {
+    return Math.ceil(selectedDataToShow.length / 10)
+  }, [selectedDataMeasure, selectedDataComponent, selectedDataToShow])
+
+  const lastPageNumberOfRows = useMemo(() => {
+    return Math.ceil(selectedDataToShow.length % 10)
+  }, [selectedDataToShow])
+
+  function handleNextPage() {
+    if (tablePage + 1 >= Math.ceil(MockedAPIData[selectedDataMeasure][selectedDataComponent].length / 10)) {
+      return;
     }
-  }, [selectedDataMeasure, apiAvailableComponents])
+
+    setTablePage(prevState => prevState + 1);
+  }
+
+  function handlePreviousPage() {
+    if (tablePage - 1 < 0) {
+      return;
+    }
+
+    setTablePage(prevState => prevState - 1);
+  }
+
+  useEffect(() => {
+    setTablePage(0);
+  }, [selectedDataMeasure, selectedDataComponent])
   
   return (
     <Container>
@@ -435,66 +524,48 @@ export function Dashboard() {
 
       <Selectors>
         <Select 
-          items={apiAvailableMeasure}
+          items={Object.keys(MockedAPISelectValues)}
           value={selectedDataMeasure}
           setValue={setSelectedDataMeasure}
         />
 
         <Select 
-          items={apiAvailableComponents}
+          items={Object.keys(MockedAPISelectValues[selectedDataMeasure])}
           value={selectedDataComponent}
           setValue={setSelectedDataComponent}
         />
 
-        <Select 
+        {/* <Select 
           items={apiAvailableIntervals}
           value={selectedDataInterval}
           setValue={setSelectedDataInterval}
-        />
+        /> */}
       </Selectors>
 
       <Sections>
-        <Summary>
-          <h4>Summary</h4>
-
-          <div>
-            <Card>
-              <Title>Quantity of readings</Title>
-              <Value>10</Value>
-            </Card>
-
-            <Card>
-              <Title>Average of values</Title>
-              <Value>19.52</Value>
-            </Card>
-
-            <Card>
-              <Title>Within limits</Title>
-              <Value>100%</Value>
-            </Card>
-
-            <Card>
-              <Title>Average of intervals</Title>
-              <Value>5:00 min</Value>
-            </Card>
-          </div>
-        </Summary>
-
         <Chart>
           <h4>Chart</h4>
 
           <div>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart 
-                data={apiInternalTemperaturesData.data[6].data}
+                data={selectedDataToShow}
                 >
                 <Label value="Chart" />
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="utc" tick={false} />
                 <YAxis />
                 <Tooltip />
-                <Legend />
-                <Line type="monotone" dataKey="calibrated_value" stroke="#8884d8" />
+                {
+                  selectedDataComponent !== 'P_OM_TELEM_SW_STATE' ? (
+                    <Line type="monotone" dataKey="calibrated_value" stroke="#8884d8" />
+                  ) : (
+                    <>
+                      <Line type="monotone" dataKey="calibrated_value" stroke="red" />
+                      <Line type="monotone" dataKey="raw_value" stroke="#8884d8" />
+                    </>
+                  ) 
+                }
               </LineChart>
             </ResponsiveContainer>
           </div>
@@ -507,35 +578,33 @@ export function Dashboard() {
             <thead>
               <tr>
                 <th>Index</th>
-                <th>Calibrated Value</th>
+                <th>Call Sign</th>
+                <th>Calibrated Value ({selectedUnitOfDataToShow})</th>
                 <th>Raw Value</th>
                 <th>Within Limits</th>
-                <th>Local Date (UTC)</th>
-                <th>Satellite Date (UTC)</th>
-                <th>Global Date (UTC)</th>
+                <th>Date (UTC)</th>
               </tr>
             </thead>
             <tbody>
               {
-                apiInternalTemperaturesData.data[6].data.map((item, index) => (
+                Array.from(Array(tablePage + 1 === totalPages ? lastPageNumberOfRows : 10).keys()).map((item, index) => (
                   <tr>
-                    <td>{index}</td>
-                    <td>{item.calibrated_value}</td>
-                    <td>{item.raw_value}</td>
-                    <td>{item.within_limits ? 'Yes' : 'No'}</td>
-                    <td>{item.utc}</td>
-                    <td>{item.sat_utc}</td>
-                    <td>{item.gs_utc}</td>
-                  </tr>
+                  <td>{pagination(index) + 1}</td>
+                  <td>PT2ENE</td>
+                  <td>{selectedTableDataToShow[pagination(index)].calibrated_value}</td>
+                  <td>{selectedTableDataToShow[pagination(index)].raw_value}</td>
+                  <td>{selectedTableDataToShow[pagination(index)].within_limits ? 'Yes' : 'No'}</td>
+                  <td>{selectedTableDataToShow[pagination(index)].utc}</td>
+                </tr>
                 ))
               }
             </tbody>
           </table>
 
           <footer>
-            <button><FiArrowLeft /></button>
-            <span>Page 1 of 220</span>
-            <button><FiArrowRight /></button>
+            <button onClick={handlePreviousPage}><FiArrowLeft /></button>
+            <span>Page {tablePage + 1} of {totalPages}</span>
+            <button onClick={handleNextPage}><FiArrowRight /></button>
           </footer>
         </Table>
       </Sections>
