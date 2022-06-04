@@ -210,8 +210,11 @@ export function Dashboard() {
   }, [tablePage]);
 
   const selectedDataToShow = useMemo(() => {
+    console.log(MockedAPIData[selectedDataMeasure][selectedDataComponent]?.length)
     return MockedAPIData[selectedDataMeasure][selectedDataComponent] ?? []
   }, [selectedDataMeasure, selectedDataComponent]);
+
+  console.log(selectedDataToShow.length);
 
   const selectedTableDataToShow = useMemo(() => {
     return MockedAPIDataTable[selectedDataMeasure][selectedDataComponent] ?? []
@@ -290,8 +293,12 @@ export function Dashboard() {
                   >
                   <Label value="Chart" />
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="utc" tick={false}>
-                    <Label value='Satellite Timestamp (UTC)' offset={0} position="insideBottom" />
+                  <XAxis 
+                    dataKey="utc" 
+                    interval="preserveStartEnd" 
+                    minTickGap={75}
+                  >
+                    <Label value='Satellite Timestamp (UTC)' offset={0} position="bottom" />
                   </XAxis>
                   <YAxis domain={['auto', 'auto']}>
                   {!!selectedUnitOfDataToShow ? (
@@ -331,9 +338,9 @@ export function Dashboard() {
                   <th>Call Sign</th>
                   {!!selectedUnitOfDataToShow 
                   ? (
-                    <th>Calibrated Value ({selectedUnitOfDataToShow})</th>
+                    <th>Value ({selectedUnitOfDataToShow})</th>
                   ) : (
-                    <th>Calibrated Value</th>
+                    <th>Value</th>
                   )}
                   <th>Satellite Timestamp (UTC)</th>
                 </tr>
