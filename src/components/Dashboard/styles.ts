@@ -80,6 +80,9 @@ export const Chart = styled.section`
     padding: 12px 12px 12px 0;
   }
 
+  .recharts-yAxis .recharts-label {
+    transform: rotate(-90deg) translate(-420px, -200px);
+  }
 `;
 
 export const Table = styled.section`
