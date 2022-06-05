@@ -102,7 +102,7 @@ export const Chart = styled.section`
   div {
     background-color: white;
     border-radius: 4px;
-    padding: 12px 12px 12px 0;
+    padding: 12px 12px 12px 3px;
   }
 
   .recharts-yAxis .recharts-label {

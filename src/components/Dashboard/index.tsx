@@ -308,8 +308,12 @@ export function Dashboard({ id, data }: Props) {
                     >
                     <Label value="Chart" />
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="utc" tick={false}>
-                      <Label value='Satellite Timestamp (UTC)' offset={0} position="insideBottom" />
+                    <XAxis 
+                      dataKey="utc" 
+                      interval="preserveStartEnd" 
+                      minTickGap={75}
+                    >
+                      <Label value='Satellite Timestamp (UTC)' offset={0} position="bottom" />
                     </XAxis>
                     <YAxis domain={['auto', 'auto']}>
                     {!!selectedUnitOfDataToShow ? (
@@ -349,9 +353,9 @@ export function Dashboard({ id, data }: Props) {
                     <th>Call Sign</th>
                     {!!selectedUnitOfDataToShow 
                     ? (
-                      <th>Calibrated Value ({selectedUnitOfDataToShow})</th>
+                      <th>Value ({selectedUnitOfDataToShow})</th>
                     ) : (
-                      <th>Calibrated Value</th>
+                      <th>Value</th>
                     )}
                     <th>Satellite Timestamp (UTC)</th>
                   </tr>
