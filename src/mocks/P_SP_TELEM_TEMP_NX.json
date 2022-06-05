@@ -2737,6 +2737,321 @@
   },
   {
     "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 18.88,
+    "raw_value": 4832,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 02:45:40.376Z",
+    "sat_utc": "2000-02-28 09:06:46.702Z",
+    "gs_utc": "2022-06-04 02:03:12.090Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 6.25,
+    "raw_value": 1600,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 02:55:39.937Z",
+    "sat_utc": "2000-02-28 09:16:46.263Z",
+    "gs_utc": "2022-06-04 02:03:17.017Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 9.12,
+    "raw_value": 2336,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:05:39.508Z",
+    "sat_utc": "2000-02-28 09:26:45.834Z",
+    "gs_utc": "2022-06-04 02:03:20.817Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 15.75,
+    "raw_value": 4032,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:15:39.067Z",
+    "sat_utc": "2000-02-28 09:36:45.393Z",
+    "gs_utc": "2022-06-04 02:03:24.550Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 3.25,
+    "raw_value": 832,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:25:38.640Z",
+    "sat_utc": "2000-02-28 09:46:44.966Z",
+    "gs_utc": "2022-06-04 02:03:27.101Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -14.5,
+    "raw_value": -3712,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:35:38.164Z",
+    "sat_utc": "2000-02-28 09:56:44.490Z",
+    "gs_utc": "2022-06-04 02:03:31.487Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -20.38,
+    "raw_value": -5216,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:45:37.724Z",
+    "sat_utc": "2000-02-28 10:06:44.050Z",
+    "gs_utc": "2022-06-04 02:03:33.803Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -29.38,
+    "raw_value": -7520,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:55:37.290Z",
+    "sat_utc": "2000-02-28 10:16:43.616Z",
+    "gs_utc": "2022-06-04 02:03:36.568Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -25,
+    "raw_value": -6400,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:05:36.854Z",
+    "sat_utc": "2000-02-28 10:26:43.180Z",
+    "gs_utc": "2022-06-04 02:03:38.785Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 20.88,
+    "raw_value": 5344,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:25:36.944Z",
+    "sat_utc": "2000-02-28 10:46:43.270Z",
+    "gs_utc": "2022-06-04 02:03:43.932Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 13.88,
+    "raw_value": 3552,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:35:36.509Z",
+    "sat_utc": "2000-02-28 10:56:42.835Z",
+    "gs_utc": "2022-06-04 02:03:46.227Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -21,
+    "raw_value": -5376,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 05:15:34.892Z",
+    "sat_utc": "2000-02-28 11:36:41.218Z",
+    "gs_utc": "2022-06-04 02:03:57.539Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -18.75,
+    "raw_value": -4800,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 05:35:34.017Z",
+    "sat_utc": "2000-02-28 11:56:40.343Z",
+    "gs_utc": "2022-06-04 02:04:01.669Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 11.5,
+    "raw_value": 2944,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 05:45:33.613Z",
+    "sat_utc": "2000-02-28 12:06:39.939Z",
+    "gs_utc": "2022-06-04 02:04:06.070Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 7.25,
+    "raw_value": 1856,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 06:25:31.930Z",
+    "sat_utc": "2000-02-28 12:46:38.256Z",
+    "gs_utc": "2022-06-04 02:04:15.664Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 6.38,
+    "raw_value": 1632,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 08:05:27.584Z",
+    "sat_utc": "2000-02-28 14:26:33.910Z",
+    "gs_utc": "2022-06-04 02:04:42.787Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -10.12,
+    "raw_value": -2592,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 08:15:27.194Z",
+    "sat_utc": "2000-02-28 14:36:33.520Z",
+    "gs_utc": "2022-06-04 02:04:46.724Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -12.75,
+    "raw_value": -3264,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 08:45:25.882Z",
+    "sat_utc": "2000-02-28 15:06:32.208Z",
+    "gs_utc": "2022-06-04 02:04:52.947Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 6.88,
+    "raw_value": 1760,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:05:25.046Z",
+    "sat_utc": "2000-02-28 15:26:31.372Z",
+    "gs_utc": "2022-06-04 02:04:58.120Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 8.12,
+    "raw_value": 2080,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:15:24.587Z",
+    "sat_utc": "2000-02-28 15:36:30.913Z",
+    "gs_utc": "2022-06-04 02:05:00.824Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 0.5,
+    "raw_value": 128,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:25:24.116Z",
+    "sat_utc": "2000-02-28 15:46:30.442Z",
+    "gs_utc": "2022-06-04 02:05:03.132Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -0.62,
+    "raw_value": -160,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:35:23.681Z",
+    "sat_utc": "2000-02-28 15:56:30.007Z",
+    "gs_utc": "2022-06-04 02:05:05.398Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -17.38,
+    "raw_value": -4448,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:55:22.869Z",
+    "sat_utc": "2000-02-28 16:16:29.195Z",
+    "gs_utc": "2022-06-04 02:05:12.064Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -31.62,
+    "raw_value": -8096,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:15:22.001Z",
+    "sat_utc": "2000-02-28 16:36:28.327Z",
+    "gs_utc": "2022-06-04 02:05:17.643Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -10.5,
+    "raw_value": -2688,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:25:21.563Z",
+    "sat_utc": "2000-02-28 16:46:27.889Z",
+    "gs_utc": "2022-06-04 02:05:19.929Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -0.88,
+    "raw_value": -224,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:35:21.110Z",
+    "sat_utc": "2000-02-28 16:56:27.436Z",
+    "gs_utc": "2022-06-04 02:05:22.227Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 1.38,
+    "raw_value": 352,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:55:20.242Z",
+    "sat_utc": "2000-02-28 17:16:26.568Z",
+    "gs_utc": "2022-06-04 02:05:26.967Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 2.5,
+    "raw_value": 640,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:05:19.790Z",
+    "sat_utc": "2000-02-28 17:26:26.116Z",
+    "gs_utc": "2022-06-04 02:05:29.818Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -2.75,
+    "raw_value": -704,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:15:19.366Z",
+    "sat_utc": "2000-02-28 17:36:25.692Z",
+    "gs_utc": "2022-06-04 02:05:32.388Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -13.12,
+    "raw_value": -3360,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:25:18.945Z",
+    "sat_utc": "2000-02-28 17:46:25.271Z",
+    "gs_utc": "2022-06-04 02:05:34.682Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -22.12,
+    "raw_value": -5664,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:35:18.476Z",
+    "sat_utc": "2000-02-28 17:56:24.802Z",
+    "gs_utc": "2022-06-04 02:05:37.090Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -28.75,
+    "raw_value": -7360,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:45:18.019Z",
+    "sat_utc": "2000-02-28 18:06:24.345Z",
+    "gs_utc": "2022-06-04 02:05:39.977Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -24.12,
+    "raw_value": -6176,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:55:17.566Z",
+    "sat_utc": "2000-02-28 18:16:23.892Z",
+    "gs_utc": "2022-06-04 02:05:44.473Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 7.5,
+    "raw_value": 1920,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 12:05:17.114Z",
+    "sat_utc": "2000-02-28 18:26:23.440Z",
+    "gs_utc": "2022-06-04 02:05:47.100Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 13.5,
+    "raw_value": 3456,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 12:15:16.671Z",
+    "sat_utc": "2000-02-28 18:36:22.997Z",
+    "gs_utc": "2022-06-04 02:05:53.511Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
     "calibrated_value": 17.75,
     "raw_value": 4544,
     "within_limits": "Yes",
@@ -2779,6 +3094,60 @@
     "utc": "2022-05-30 14:07:37.805Z",
     "sat_utc": "2000-02-28 20:28:44.131Z",
     "gs_utc": "2022-05-30 14:07:01.406Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 23.88,
+    "raw_value": 6112,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 15:55:07.609Z",
+    "sat_utc": "2000-02-28 22:16:13.935Z",
+    "gs_utc": "2022-06-04 02:06:54.457Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -18.88,
+    "raw_value": -4832,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 16:15:06.727Z",
+    "sat_utc": "2000-02-28 22:36:13.053Z",
+    "gs_utc": "2022-06-04 02:06:54.474Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -25.88,
+    "raw_value": -6624,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 16:25:06.286Z",
+    "sat_utc": "2000-02-28 22:46:12.612Z",
+    "gs_utc": "2022-06-04 02:06:55.167Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 12.5,
+    "raw_value": 3200,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 18:45:00.463Z",
+    "sat_utc": "2000-02-29 01:06:06.789Z",
+    "gs_utc": "2022-06-04 02:07:31.596Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -16.75,
+    "raw_value": -4288,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 19:24:58.713Z",
+    "sat_utc": "2000-02-29 01:46:05.039Z",
+    "gs_utc": "2022-06-04 02:07:40.672Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -20,
+    "raw_value": -5120,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 19:34:58.327Z",
+    "sat_utc": "2000-02-29 01:56:04.653Z",
+    "gs_utc": "2022-06-04 02:07:42.907Z"
   },
   {
     "name": "P_SP_TELEM_TEMP_NX",
@@ -3016,6 +3385,213 @@
   },
   {
     "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 6.75,
+    "raw_value": 1728,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 14:54:09.181Z",
+    "sat_utc": "2000-02-29 21:15:15.507Z",
+    "gs_utc": "2022-06-04 14:02:18.173Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 16.62,
+    "raw_value": 4256,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:04:08.735Z",
+    "sat_utc": "2000-02-29 21:25:15.061Z",
+    "gs_utc": "2022-06-04 14:02:48.684Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 25.12,
+    "raw_value": 6432,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:14:08.318Z",
+    "sat_utc": "2000-02-29 21:35:14.644Z",
+    "gs_utc": "2022-06-04 14:03:21.956Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 7.25,
+    "raw_value": 1856,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:24:07.983Z",
+    "sat_utc": "2000-02-29 21:45:14.309Z",
+    "gs_utc": "2022-06-04 14:03:37.470Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 13.12,
+    "raw_value": 3360,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:34:07.406Z",
+    "sat_utc": "2000-02-29 21:55:13.732Z",
+    "gs_utc": "2022-06-04 14:04:02.672Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -2,
+    "raw_value": -512,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:44:06.981Z",
+    "sat_utc": "2000-02-29 22:05:13.307Z",
+    "gs_utc": "2022-06-04 14:04:29.603Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -15.5,
+    "raw_value": -3968,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:54:06.567Z",
+    "sat_utc": "2000-02-29 22:15:12.893Z",
+    "gs_utc": "2022-06-04 14:05:07.969Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -32,
+    "raw_value": -8192,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 16:14:05.682Z",
+    "sat_utc": "2000-02-29 22:35:12.008Z",
+    "gs_utc": "2022-06-04 14:05:43.163Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 7.75,
+    "raw_value": 1984,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 16:34:04.794Z",
+    "sat_utc": "2000-02-29 22:55:11.120Z",
+    "gs_utc": "2022-06-04 14:05:47.761Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 10.88,
+    "raw_value": 2784,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 16:54:03.949Z",
+    "sat_utc": "2000-02-29 23:15:10.275Z",
+    "gs_utc": "2022-06-04 14:05:54.488Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -13.12,
+    "raw_value": -3360,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 17:24:02.617Z",
+    "sat_utc": "2000-02-29 23:45:08.943Z",
+    "gs_utc": "2022-06-05 01:42:47.450Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -20.5,
+    "raw_value": -5248,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 17:34:02.155Z",
+    "sat_utc": "2000-02-29 23:55:08.481Z",
+    "gs_utc": "2022-06-05 01:42:53.123Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -12.38,
+    "raw_value": -3168,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 20:33:54.389Z",
+    "sat_utc": "2000-03-01 02:55:00.715Z",
+    "gs_utc": "2022-06-05 01:43:45.903Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -19.62,
+    "raw_value": -5024,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 20:43:53.932Z",
+    "sat_utc": "2000-03-01 03:05:00.258Z",
+    "gs_utc": "2022-06-05 01:43:48.151Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -31.38,
+    "raw_value": -8032,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 21:03:53.056Z",
+    "sat_utc": "2000-03-01 03:24:59.382Z",
+    "gs_utc": "2022-06-05 01:43:53.440Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 6.62,
+    "raw_value": 1696,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 21:13:52.619Z",
+    "sat_utc": "2000-03-01 03:34:58.945Z",
+    "gs_utc": "2022-06-05 01:43:56.011Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 9.75,
+    "raw_value": 2496,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 21:23:52.248Z",
+    "sat_utc": "2000-03-01 03:44:58.574Z",
+    "gs_utc": "2022-06-05 01:43:58.303Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 4.25,
+    "raw_value": 1088,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 21:33:51.789Z",
+    "sat_utc": "2000-03-01 03:54:58.115Z",
+    "gs_utc": "2022-06-05 01:44:01.588Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -17.12,
+    "raw_value": -4384,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 22:13:50.792Z",
+    "sat_utc": "2000-03-01 04:34:57.118Z",
+    "gs_utc": "2022-06-05 01:44:16.152Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -21.62,
+    "raw_value": -5536,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 22:43:49.749Z",
+    "sat_utc": "2000-03-01 05:04:56.075Z",
+    "gs_utc": "2022-06-05 01:44:19.912Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 3.38,
+    "raw_value": 864,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 00:53:44.862Z",
+    "sat_utc": "2000-03-01 07:14:51.188Z",
+    "gs_utc": "2022-06-05 01:44:55.075Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 1.75,
+    "raw_value": 448,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 01:03:44.409Z",
+    "sat_utc": "2000-03-01 07:24:50.735Z",
+    "gs_utc": "2022-06-05 01:44:57.063Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -17.75,
+    "raw_value": -4544,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 01:23:43.566Z",
+    "sat_utc": "2000-03-01 07:44:49.892Z",
+    "gs_utc": "2022-06-05 01:45:01.874Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
     "calibrated_value": -21.75,
     "raw_value": -5568,
     "within_limits": "Yes",
@@ -3031,6 +3607,501 @@
     "utc": "2022-06-01 01:28:42.935Z",
     "sat_utc": "2000-03-01 07:49:49.261Z",
     "gs_utc": "2022-06-01 01:27:36.495Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -21.75,
+    "raw_value": -5568,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 01:33:43.114Z",
+    "sat_utc": "2000-03-01 07:54:49.440Z",
+    "gs_utc": "2022-06-05 01:45:04.266Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -7.5,
+    "raw_value": -1920,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 01:53:42.222Z",
+    "sat_utc": "2000-03-01 08:14:48.548Z",
+    "gs_utc": "2022-06-05 01:45:09.602Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 6.88,
+    "raw_value": 1760,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 02:13:41.405Z",
+    "sat_utc": "2000-03-01 08:34:47.731Z",
+    "gs_utc": "2022-06-05 01:45:16.529Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 2.62,
+    "raw_value": 672,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 02:23:41.022Z",
+    "sat_utc": "2000-03-01 08:44:47.348Z",
+    "gs_utc": "2022-06-05 01:45:18.809Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 24.38,
+    "raw_value": 6240,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 02:43:40.196Z",
+    "sat_utc": "2000-03-01 09:04:46.522Z",
+    "gs_utc": "2022-06-05 01:45:23.405Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -14,
+    "raw_value": -3584,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 02:53:39.807Z",
+    "sat_utc": "2000-03-01 09:14:46.133Z",
+    "gs_utc": "2022-06-05 01:45:25.978Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -18.5,
+    "raw_value": -4736,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:03:39.390Z",
+    "sat_utc": "2000-03-01 09:24:45.716Z",
+    "gs_utc": "2022-06-05 01:45:28.761Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -29.88,
+    "raw_value": -7648,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:13:38.926Z",
+    "sat_utc": "2000-03-01 09:34:45.252Z",
+    "gs_utc": "2022-06-05 01:45:31.280Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 5.62,
+    "raw_value": 1440,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:53:37.242Z",
+    "sat_utc": "2000-03-01 10:14:43.568Z",
+    "gs_utc": "2022-06-05 01:45:41.184Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -0.5,
+    "raw_value": -128,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:03:36.816Z",
+    "sat_utc": "2000-03-01 10:24:43.142Z",
+    "gs_utc": "2022-06-05 01:45:43.535Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 29,
+    "raw_value": 7424,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:13:36.367Z",
+    "sat_utc": "2000-03-01 10:34:42.693Z",
+    "gs_utc": "2022-06-05 01:45:47.511Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -6.5,
+    "raw_value": -1664,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:23:35.924Z",
+    "sat_utc": "2000-03-01 10:44:42.250Z",
+    "gs_utc": "2022-06-05 01:45:50.545Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -18.25,
+    "raw_value": -4672,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:33:35.509Z",
+    "sat_utc": "2000-03-01 10:54:41.835Z",
+    "gs_utc": "2022-06-05 01:45:52.811Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -26.62,
+    "raw_value": -6816,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:43:35.080Z",
+    "sat_utc": "2000-03-01 11:04:41.406Z",
+    "gs_utc": "2022-06-05 01:45:55.264Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 1.5,
+    "raw_value": 384,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 05:03:34.165Z",
+    "sat_utc": "2000-03-01 11:24:40.491Z",
+    "gs_utc": "2022-06-05 01:46:01.483Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -8.5,
+    "raw_value": -2176,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 05:13:33.746Z",
+    "sat_utc": "2000-03-01 11:34:40.072Z",
+    "gs_utc": "2022-06-05 01:46:04.435Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 8.25,
+    "raw_value": 2112,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 05:23:33.319Z",
+    "sat_utc": "2000-03-01 11:44:39.645Z",
+    "gs_utc": "2022-06-05 01:46:06.296Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -1.25,
+    "raw_value": -320,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 05:33:32.857Z",
+    "sat_utc": "2000-03-01 11:54:39.183Z",
+    "gs_utc": "2022-06-05 01:46:08.682Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 21.12,
+    "raw_value": 5408,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 05:43:32.437Z",
+    "sat_utc": "2000-03-01 12:04:38.763Z",
+    "gs_utc": "2022-06-05 01:46:11.726Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 5.75,
+    "raw_value": 1472,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 05:53:31.996Z",
+    "sat_utc": "2000-03-01 12:14:38.322Z",
+    "gs_utc": "2022-06-05 01:46:13.809Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -14.5,
+    "raw_value": -3712,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 06:03:31.554Z",
+    "sat_utc": "2000-03-01 12:24:37.880Z",
+    "gs_utc": "2022-06-05 01:46:16.165Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -18.38,
+    "raw_value": -4704,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 06:13:31.096Z",
+    "sat_utc": "2000-03-01 12:34:37.422Z",
+    "gs_utc": "2022-06-05 01:46:18.736Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -29.25,
+    "raw_value": -7488,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 06:23:30.653Z",
+    "sat_utc": "2000-03-01 12:44:36.979Z",
+    "gs_utc": "2022-06-05 01:46:23.137Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -27.75,
+    "raw_value": -7104,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 06:33:30.184Z",
+    "sat_utc": "2000-03-01 12:54:36.510Z",
+    "gs_utc": "2022-06-05 01:46:25.428Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 12.25,
+    "raw_value": 3136,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 06:43:29.757Z",
+    "sat_utc": "2000-03-01 13:04:36.083Z",
+    "gs_utc": "2022-06-05 01:46:27.820Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 9.5,
+    "raw_value": 2432,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 06:53:29.343Z",
+    "sat_utc": "2000-03-01 13:14:35.669Z",
+    "gs_utc": "2022-06-05 01:46:30.115Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 10.38,
+    "raw_value": 2656,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 07:03:28.941Z",
+    "sat_utc": "2000-03-01 13:24:35.267Z",
+    "gs_utc": "2022-06-05 01:46:33.000Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 2.88,
+    "raw_value": 736,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 07:13:28.558Z",
+    "sat_utc": "2000-03-01 13:34:34.884Z",
+    "gs_utc": "2022-06-05 01:46:35.566Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 20.75,
+    "raw_value": 5312,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 07:23:28.140Z",
+    "sat_utc": "2000-03-01 13:44:34.466Z",
+    "gs_utc": "2022-06-05 01:46:37.866Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -8.5,
+    "raw_value": -2176,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 07:33:27.712Z",
+    "sat_utc": "2000-03-01 13:54:34.038Z",
+    "gs_utc": "2022-06-05 01:46:40.297Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -19.12,
+    "raw_value": -4896,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 07:43:27.261Z",
+    "sat_utc": "2000-03-01 14:04:33.587Z",
+    "gs_utc": "2022-06-05 01:46:44.154Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -23.75,
+    "raw_value": -6080,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 07:53:26.812Z",
+    "sat_utc": "2000-03-01 14:14:33.138Z",
+    "gs_utc": "2022-06-05 01:46:45.490Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -30.75,
+    "raw_value": -7872,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 08:03:26.383Z",
+    "sat_utc": "2000-03-01 14:24:32.709Z",
+    "gs_utc": "2022-06-05 01:46:48.154Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -20,
+    "raw_value": -5120,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 08:13:25.931Z",
+    "sat_utc": "2000-03-01 14:34:32.257Z",
+    "gs_utc": "2022-06-05 01:46:50.346Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 14.5,
+    "raw_value": 3712,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 08:23:25.484Z",
+    "sat_utc": "2000-03-01 14:44:31.810Z",
+    "gs_utc": "2022-06-05 01:46:54.807Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 20,
+    "raw_value": 5120,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 08:33:25.042Z",
+    "sat_utc": "2000-03-01 14:54:31.368Z",
+    "gs_utc": "2022-06-05 01:46:57.151Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 7,
+    "raw_value": 1792,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:23:20.312Z",
+    "sat_utc": "2000-03-01 16:44:26.638Z",
+    "gs_utc": "2022-06-05 01:47:24.309Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 22.88,
+    "raw_value": 5856,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:33:19.855Z",
+    "sat_utc": "2000-03-01 16:54:26.181Z",
+    "gs_utc": "2022-06-05 01:47:28.829Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -7.88,
+    "raw_value": -2016,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:43:19.383Z",
+    "sat_utc": "2000-03-01 17:04:25.709Z",
+    "gs_utc": "2022-06-05 01:47:31.095Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -18.75,
+    "raw_value": -4800,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:53:18.940Z",
+    "sat_utc": "2000-03-01 17:14:25.266Z",
+    "gs_utc": "2022-06-05 01:47:33.410Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -26.12,
+    "raw_value": -6688,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:03:18.503Z",
+    "sat_utc": "2000-03-01 17:24:24.829Z",
+    "gs_utc": "2022-06-05 01:47:35.683Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -29.62,
+    "raw_value": -7584,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:13:18.072Z",
+    "sat_utc": "2000-03-01 17:34:24.398Z",
+    "gs_utc": "2022-06-05 01:47:38.831Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -19,
+    "raw_value": -4864,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:23:17.655Z",
+    "sat_utc": "2000-03-01 17:44:23.981Z",
+    "gs_utc": "2022-06-05 01:47:41.239Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 6,
+    "raw_value": 1536,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:33:17.215Z",
+    "sat_utc": "2000-03-01 17:54:23.541Z",
+    "gs_utc": "2022-06-05 01:47:43.545Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 7.38,
+    "raw_value": 1888,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:43:16.765Z",
+    "sat_utc": "2000-03-01 18:04:23.091Z",
+    "gs_utc": "2022-06-05 01:47:45.843Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -0.88,
+    "raw_value": -224,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:53:16.339Z",
+    "sat_utc": "2000-03-01 18:14:22.665Z",
+    "gs_utc": "2022-06-05 01:47:48.709Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 3.88,
+    "raw_value": 992,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:03:15.944Z",
+    "sat_utc": "2000-03-01 18:24:22.270Z",
+    "gs_utc": "2022-06-05 01:47:51.131Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -3.38,
+    "raw_value": -864,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:13:15.511Z",
+    "sat_utc": "2000-03-01 18:34:21.837Z",
+    "gs_utc": "2022-06-05 01:47:53.689Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -13.5,
+    "raw_value": -3456,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:23:15.079Z",
+    "sat_utc": "2000-03-01 18:44:21.405Z",
+    "gs_utc": "2022-06-05 01:47:55.999Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -23.25,
+    "raw_value": -5952,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:33:14.612Z",
+    "sat_utc": "2000-03-01 18:54:20.938Z",
+    "gs_utc": "2022-06-05 01:48:00.366Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -26.12,
+    "raw_value": -6688,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:43:14.175Z",
+    "sat_utc": "2000-03-01 19:04:20.501Z",
+    "gs_utc": "2022-06-05 01:48:02.672Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -16,
+    "raw_value": -4096,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:53:13.707Z",
+    "sat_utc": "2000-03-01 19:14:20.033Z",
+    "gs_utc": "2022-06-05 01:48:05.075Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -10.88,
+    "raw_value": -2784,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:03:13.288Z",
+    "sat_utc": "2000-03-01 19:24:19.614Z",
+    "gs_utc": "2022-06-05 01:48:07.370Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 6,
+    "raw_value": 1536,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:13:12.841Z",
+    "sat_utc": "2000-03-01 19:34:19.167Z",
+    "gs_utc": "2022-06-05 01:48:10.518Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 19.62,
+    "raw_value": 5024,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:23:12.367Z",
+    "sat_utc": "2000-03-01 19:44:18.693Z",
+    "gs_utc": "2022-06-05 01:48:12.822Z"
   },
   {
     "name": "P_SP_TELEM_TEMP_NX",
@@ -3094,6 +4165,177 @@
     "utc": "2022-06-01 13:30:18.312Z",
     "sat_utc": "2000-03-01 19:51:24.638Z",
     "gs_utc": "2022-06-01 13:29:33.977Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 5.75,
+    "raw_value": 1472,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:33:12.042Z",
+    "sat_utc": "2000-03-01 19:54:18.368Z",
+    "gs_utc": "2022-06-05 01:48:15.233Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 14.62,
+    "raw_value": 3744,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:43:11.596Z",
+    "sat_utc": "2000-03-01 20:04:17.922Z",
+    "gs_utc": "2022-06-05 01:48:17.532Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -19.5,
+    "raw_value": -4992,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 14:03:10.771Z",
+    "sat_utc": "2000-03-01 20:24:17.097Z",
+    "gs_utc": "2022-06-05 01:48:22.719Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -32.38,
+    "raw_value": -8288,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 14:23:09.914Z",
+    "sat_utc": "2000-03-01 20:44:16.240Z",
+    "gs_utc": "2022-06-05 01:48:27.808Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 0.88,
+    "raw_value": 224,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 15:23:07.342Z",
+    "sat_utc": "2000-03-01 21:44:13.668Z",
+    "gs_utc": "2022-06-05 01:48:45.145Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 13.38,
+    "raw_value": 3424,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 16:33:04.362Z",
+    "sat_utc": "2000-03-01 22:54:10.688Z",
+    "gs_utc": "2022-06-05 01:49:02.066Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 20.5,
+    "raw_value": 5248,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 16:53:03.551Z",
+    "sat_utc": "2000-03-01 23:14:09.877Z",
+    "gs_utc": "2022-06-05 01:49:08.578Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -9.5,
+    "raw_value": -2432,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 17:03:03.132Z",
+    "sat_utc": "2000-03-01 23:24:09.458Z",
+    "gs_utc": "2022-06-05 01:49:13.579Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -32.12,
+    "raw_value": -8224,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 17:33:01.880Z",
+    "sat_utc": "2000-03-01 23:54:08.206Z",
+    "gs_utc": "2022-06-05 01:49:18.790Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 3,
+    "raw_value": 768,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:22:59.809Z",
+    "sat_utc": "2000-03-02 00:44:06.135Z",
+    "gs_utc": "2022-06-05 01:49:31.226Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -2.62,
+    "raw_value": -672,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:32:59.367Z",
+    "sat_utc": "2000-03-02 00:54:05.693Z",
+    "gs_utc": "2022-06-05 01:49:33.471Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -14.5,
+    "raw_value": -3712,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:42:58.939Z",
+    "sat_utc": "2000-03-02 01:04:05.265Z",
+    "gs_utc": "2022-06-05 01:49:35.769Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -19.75,
+    "raw_value": -5056,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:52:58.481Z",
+    "sat_utc": "2000-03-02 01:14:04.807Z",
+    "gs_utc": "2022-06-05 01:49:40.504Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -29.38,
+    "raw_value": -7520,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 19:02:58.039Z",
+    "sat_utc": "2000-03-02 01:24:04.365Z",
+    "gs_utc": "2022-06-05 01:49:42.664Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -10.5,
+    "raw_value": -2688,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 19:12:57.649Z",
+    "sat_utc": "2000-03-02 01:34:03.975Z",
+    "gs_utc": "2022-06-05 01:49:44.466Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -10.5,
+    "raw_value": -2688,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 19:22:57.250Z",
+    "sat_utc": "2000-03-02 01:44:03.576Z",
+    "gs_utc": "2022-06-05 01:49:46.768Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 13.25,
+    "raw_value": 3392,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 19:32:56.852Z",
+    "sat_utc": "2000-03-02 01:54:03.178Z",
+    "gs_utc": "2022-06-05 01:49:49.645Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 7.12,
+    "raw_value": 1824,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 19:42:56.429Z",
+    "sat_utc": "2000-03-02 02:04:02.755Z",
+    "gs_utc": "2022-06-05 01:49:52.169Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -8.88,
+    "raw_value": -2272,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 20:12:55.147Z",
+    "sat_utc": "2000-03-02 02:34:01.473Z",
+    "gs_utc": "2022-06-05 01:49:59.968Z"
   },
   {
     "name": "P_SP_TELEM_TEMP_NX",
@@ -3526,5 +4768,239 @@
     "utc": "2022-06-03 14:25:54.487Z",
     "sat_utc": "2000-03-03 20:47:00.813Z",
     "gs_utc": "2022-06-03 14:24:29.773Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -21.12,
+    "raw_value": -5408,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:03:23.055Z",
+    "sat_utc": "2000-03-04 08:24:29.381Z",
+    "gs_utc": "2022-06-04 02:02:26.785Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -21.75,
+    "raw_value": -5568,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:03:53.169Z",
+    "sat_utc": "2000-03-04 08:24:59.495Z",
+    "gs_utc": "2022-06-04 02:02:29.058Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -22,
+    "raw_value": -5632,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:04:23.305Z",
+    "sat_utc": "2000-03-04 08:25:29.631Z",
+    "gs_utc": "2022-06-04 02:02:57.523Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -22.62,
+    "raw_value": -5792,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:04:53.532Z",
+    "sat_utc": "2000-03-04 08:25:59.858Z",
+    "gs_utc": "2022-06-04 02:03:30.220Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -23.25,
+    "raw_value": -5952,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:06:23.917Z",
+    "sat_utc": "2000-03-04 08:27:30.243Z",
+    "gs_utc": "2022-06-04 02:05:09.191Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -22.75,
+    "raw_value": -5824,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:06:54.068Z",
+    "sat_utc": "2000-03-04 08:28:00.394Z",
+    "gs_utc": "2022-06-04 02:05:42.156Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -21.75,
+    "raw_value": -5568,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:07:54.317Z",
+    "sat_utc": "2000-03-04 08:29:00.643Z",
+    "gs_utc": "2022-06-04 02:06:54.465Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 11.88,
+    "raw_value": 3040,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:01:27.842Z",
+    "sat_utc": "2000-03-04 20:22:34.168Z",
+    "gs_utc": "2022-06-04 14:00:01.278Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 12,
+    "raw_value": 3072,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:01:57.984Z",
+    "sat_utc": "2000-03-04 20:23:04.310Z",
+    "gs_utc": "2022-06-04 14:00:42.841Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 7.88,
+    "raw_value": 2016,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:02:28.115Z",
+    "sat_utc": "2000-03-04 20:23:34.441Z",
+    "gs_utc": "2022-06-04 14:01:01.355Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 5,
+    "raw_value": 1280,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:02:58.261Z",
+    "sat_utc": "2000-03-04 20:24:04.587Z",
+    "gs_utc": "2022-06-04 14:01:31.767Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 2.5,
+    "raw_value": 640,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:03:28.419Z",
+    "sat_utc": "2000-03-04 20:24:34.745Z",
+    "gs_utc": "2022-06-04 14:02:33.307Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 1.5,
+    "raw_value": 384,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:03:58.543Z",
+    "sat_utc": "2000-03-04 20:25:04.869Z",
+    "gs_utc": "2022-06-04 14:03:06.965Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 2.25,
+    "raw_value": 576,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:04:28.664Z",
+    "sat_utc": "2000-03-04 20:25:34.990Z",
+    "gs_utc": "2022-06-04 14:04:02.657Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 3.38,
+    "raw_value": 864,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:04:58.802Z",
+    "sat_utc": "2000-03-04 20:26:05.128Z",
+    "gs_utc": "2022-06-04 14:05:07.966Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 4.25,
+    "raw_value": 1088,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:05:28.921Z",
+    "sat_utc": "2000-03-04 20:26:35.247Z",
+    "gs_utc": "2022-06-04 14:05:42.950Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": 4.25,
+    "raw_value": 1088,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:05:59.045Z",
+    "sat_utc": "2000-03-04 20:27:05.371Z",
+    "gs_utc": "2022-06-04 14:05:49.522Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -19.12,
+    "raw_value": -4896,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:42:30.028Z",
+    "sat_utc": "2000-03-05 08:03:36.354Z",
+    "gs_utc": "2022-06-05 01:41:02.929Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -18.25,
+    "raw_value": -4672,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:43:00.158Z",
+    "sat_utc": "2000-03-05 08:04:06.484Z",
+    "gs_utc": "2022-06-05 01:41:33.056Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -17.12,
+    "raw_value": -4384,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:44:00.429Z",
+    "sat_utc": "2000-03-05 08:05:06.755Z",
+    "gs_utc": "2022-06-05 01:42:32.945Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -22.12,
+    "raw_value": -5664,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:47:01.216Z",
+    "sat_utc": "2000-03-05 08:08:07.542Z",
+    "gs_utc": "2022-06-05 01:45:46.566Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -23.38,
+    "raw_value": -5984,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:47:31.360Z",
+    "sat_utc": "2000-03-05 08:08:37.686Z",
+    "gs_utc": "2022-06-05 01:46:20.489Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -25.25,
+    "raw_value": -6464,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:49:01.731Z",
+    "sat_utc": "2000-03-05 08:10:08.057Z",
+    "gs_utc": "2022-06-05 01:47:59.359Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -25,
+    "raw_value": -6400,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:49:31.872Z",
+    "sat_utc": "2000-03-05 08:10:38.198Z",
+    "gs_utc": "2022-06-05 01:48:34.495Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -24.88,
+    "raw_value": -6368,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:50:02.009Z",
+    "sat_utc": "2000-03-05 08:11:08.335Z",
+    "gs_utc": "2022-06-05 01:49:05.048Z"
+  },
+  {
+    "name": "P_SP_TELEM_TEMP_NX",
+    "calibrated_value": -25,
+    "raw_value": -6400,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:50:32.139Z",
+    "sat_utc": "2000-03-05 08:11:38.465Z",
+    "gs_utc": "2022-06-05 01:49:38.121Z"
   }
 ]

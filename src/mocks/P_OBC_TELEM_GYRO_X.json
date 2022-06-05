@@ -3493,12 +3493,597 @@
   },
   {
     "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.21291208267211914,
+    "raw_value": -0.21291208267211914,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 02:49:04.272Z",
+    "sat_utc": "2000-02-28 09:10:10.598Z",
+    "gs_utc": "2022-06-04 02:03:13.558Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.3049449920654297,
+    "raw_value": -1.3049449920654297,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 02:54:04.555Z",
+    "sat_utc": "2000-02-28 09:15:10.881Z",
+    "gs_utc": "2022-06-04 02:03:16.053Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.8543955087661743,
+    "raw_value": -1.8543955087661743,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 02:59:04.843Z",
+    "sat_utc": "2000-02-28 09:20:11.169Z",
+    "gs_utc": "2022-06-04 02:03:18.525Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.5796703100204468,
+    "raw_value": -1.5796703100204468,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:04:05.131Z",
+    "sat_utc": "2000-02-28 09:25:11.457Z",
+    "gs_utc": "2022-06-04 02:03:19.963Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.9546703100204468,
+    "raw_value": -0.9546703100204468,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:09:05.414Z",
+    "sat_utc": "2000-02-28 09:30:11.740Z",
+    "gs_utc": "2022-06-04 02:03:22.159Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.1222527027130127,
+    "raw_value": -2.1222527027130127,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:14:05.693Z",
+    "sat_utc": "2000-02-28 09:35:12.019Z",
+    "gs_utc": "2022-06-04 02:03:23.581Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0027471780776978,
+    "raw_value": -1.0027471780776978,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:19:05.984Z",
+    "sat_utc": "2000-02-28 09:40:12.310Z",
+    "gs_utc": "2022-06-04 02:03:25.481Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.923076868057251,
+    "raw_value": -1.923076868057251,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:24:06.260Z",
+    "sat_utc": "2000-02-28 09:45:12.586Z",
+    "gs_utc": "2022-06-04 02:03:26.517Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.115384578704834,
+    "raw_value": -2.115384578704834,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:29:06.565Z",
+    "sat_utc": "2000-02-28 09:50:12.891Z",
+    "gs_utc": "2022-06-04 02:03:27.770Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.6483515501022339,
+    "raw_value": -1.6483515501022339,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:34:06.807Z",
+    "sat_utc": "2000-02-28 09:55:13.133Z",
+    "gs_utc": "2022-06-04 02:03:30.886Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.9024724960327148,
+    "raw_value": -1.9024724960327148,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:39:07.088Z",
+    "sat_utc": "2000-02-28 10:00:13.414Z",
+    "gs_utc": "2022-06-04 02:03:32.139Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.2293955087661743,
+    "raw_value": -1.2293955087661743,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 03:44:07.402Z",
+    "sat_utc": "2000-02-28 10:05:13.728Z",
+    "gs_utc": "2022-06-04 02:03:33.184Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.06868131458759308,
+    "raw_value": 0.06868131458759308,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:14:09.080Z",
+    "sat_utc": "2000-02-28 10:35:15.406Z",
+    "gs_utc": "2022-06-04 02:03:41.332Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.298076868057251,
+    "raw_value": -1.298076868057251,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:19:09.348Z",
+    "sat_utc": "2000-02-28 10:40:15.674Z",
+    "gs_utc": "2022-06-04 02:03:42.305Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.5659339427947998,
+    "raw_value": -1.5659339427947998,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:29:09.922Z",
+    "sat_utc": "2000-02-28 10:50:16.248Z",
+    "gs_utc": "2022-06-04 02:03:44.598Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.9986262321472168,
+    "raw_value": -1.9986262321472168,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:34:10.290Z",
+    "sat_utc": "2000-02-28 10:55:16.616Z",
+    "gs_utc": "2022-06-04 02:03:45.636Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.126373529434204,
+    "raw_value": -1.126373529434204,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:39:10.470Z",
+    "sat_utc": "2000-02-28 11:00:16.796Z",
+    "gs_utc": "2022-06-04 02:03:46.895Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0027471780776978,
+    "raw_value": -1.0027471780776978,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:44:10.753Z",
+    "sat_utc": "2000-02-28 11:05:17.079Z",
+    "gs_utc": "2022-06-04 02:03:48.064Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.3489010334014893,
+    "raw_value": -2.3489010334014893,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:49:11.056Z",
+    "sat_utc": "2000-02-28 11:10:17.382Z",
+    "gs_utc": "2022-06-04 02:03:49.309Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.1744505167007446,
+    "raw_value": -1.1744505167007446,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 04:59:11.647Z",
+    "sat_utc": "2000-02-28 11:20:17.973Z",
+    "gs_utc": "2022-06-04 02:03:53.021Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.48076921701431274,
+    "raw_value": -0.48076921701431274,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 05:59:15.178Z",
+    "sat_utc": "2000-02-28 12:20:21.504Z",
+    "gs_utc": "2022-06-04 02:04:08.426Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.6868131756782532,
+    "raw_value": -0.6868131756782532,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 06:44:17.812Z",
+    "sat_utc": "2000-02-28 13:05:24.138Z",
+    "gs_utc": "2022-06-04 02:04:19.648Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.1538461446762085,
+    "raw_value": -1.1538461446762085,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 06:49:18.061Z",
+    "sat_utc": "2000-02-28 13:10:24.387Z",
+    "gs_utc": "2022-06-04 02:04:21.482Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.7554944753646851,
+    "raw_value": -0.7554944753646851,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 06:54:18.327Z",
+    "sat_utc": "2000-02-28 13:15:24.653Z",
+    "gs_utc": "2022-06-04 02:04:21.969Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.6043955683708191,
+    "raw_value": -0.6043955683708191,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 06:59:18.626Z",
+    "sat_utc": "2000-02-28 13:20:24.952Z",
+    "gs_utc": "2022-06-04 02:04:23.885Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.126373529434204,
+    "raw_value": -1.126373529434204,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 07:04:18.988Z",
+    "sat_utc": "2000-02-28 13:25:25.314Z",
+    "gs_utc": "2022-06-04 02:04:25.774Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.9752746820449829,
+    "raw_value": -0.9752746820449829,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 07:19:19.714Z",
+    "sat_utc": "2000-02-28 13:40:26.040Z",
+    "gs_utc": "2022-06-04 02:04:28.758Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5151098966598511,
+    "raw_value": -0.5151098966598511,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 07:39:20.858Z",
+    "sat_utc": "2000-02-28 14:00:27.184Z",
+    "gs_utc": "2022-06-04 02:04:34.961Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5494505167007446,
+    "raw_value": -0.5494505167007446,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 07:54:21.729Z",
+    "sat_utc": "2000-02-28 14:15:28.055Z",
+    "gs_utc": "2022-06-04 02:04:41.417Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.8585164546966553,
+    "raw_value": -0.8585164546966553,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 08:14:22.937Z",
+    "sat_utc": "2000-02-28 14:35:29.263Z",
+    "gs_utc": "2022-06-04 02:04:45.400Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.3118131160736084,
+    "raw_value": -1.3118131160736084,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 08:24:23.502Z",
+    "sat_utc": "2000-02-28 14:45:29.828Z",
+    "gs_utc": "2022-06-04 02:04:47.653Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.625,
+    "raw_value": -0.625,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 08:39:24.346Z",
+    "sat_utc": "2000-02-28 15:00:30.672Z",
+    "gs_utc": "2022-06-04 02:04:51.367Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.9752746820449829,
+    "raw_value": -0.9752746820449829,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 08:44:24.637Z",
+    "sat_utc": "2000-02-28 15:05:30.963Z",
+    "gs_utc": "2022-06-04 02:04:52.359Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.06868131458759308,
+    "raw_value": 0.06868131458759308,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 08:49:24.934Z",
+    "sat_utc": "2000-02-28 15:10:31.260Z",
+    "gs_utc": "2022-06-04 02:04:53.613Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.7760988473892212,
+    "raw_value": -0.7760988473892212,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:04:25.804Z",
+    "sat_utc": "2000-02-28 15:25:32.130Z",
+    "gs_utc": "2022-06-04 02:04:57.797Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.9093406200408936,
+    "raw_value": -1.9093406200408936,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:09:26.087Z",
+    "sat_utc": "2000-02-28 15:30:32.413Z",
+    "gs_utc": "2022-06-04 02:04:59.064Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.9684065580368042,
+    "raw_value": -0.9684065580368042,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:14:26.357Z",
+    "sat_utc": "2000-02-28 15:35:32.683Z",
+    "gs_utc": "2022-06-04 02:05:00.220Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.4354394674301147,
+    "raw_value": -1.4354394674301147,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:24:26.916Z",
+    "sat_utc": "2000-02-28 15:45:33.242Z",
+    "gs_utc": "2022-06-04 02:05:02.510Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.211538314819336,
+    "raw_value": -2.211538314819336,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:29:27.199Z",
+    "sat_utc": "2000-02-28 15:50:33.525Z",
+    "gs_utc": "2022-06-04 02:05:03.769Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.0467031002044678,
+    "raw_value": -2.0467031002044678,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:34:27.581Z",
+    "sat_utc": "2000-02-28 15:55:33.907Z",
+    "gs_utc": "2022-06-04 02:05:04.807Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.328296661376953,
+    "raw_value": -2.328296661376953,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:39:27.767Z",
+    "sat_utc": "2000-02-28 16:00:34.093Z",
+    "gs_utc": "2022-06-04 02:05:06.066Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.4972527027130127,
+    "raw_value": -1.4972527027130127,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:54:28.640Z",
+    "sat_utc": "2000-02-28 16:15:34.966Z",
+    "gs_utc": "2022-06-04 02:05:11.486Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5357142686843872,
+    "raw_value": -0.5357142686843872,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 09:59:28.947Z",
+    "sat_utc": "2000-02-28 16:20:35.273Z",
+    "gs_utc": "2022-06-04 02:05:12.846Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.48076921701431274,
+    "raw_value": -0.48076921701431274,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:04:29.231Z",
+    "sat_utc": "2000-02-28 16:25:35.557Z",
+    "gs_utc": "2022-06-04 02:05:13.891Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.10302197188138962,
+    "raw_value": 0.10302197188138962,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:09:29.510Z",
+    "sat_utc": "2000-02-28 16:30:35.836Z",
+    "gs_utc": "2022-06-04 02:05:15.416Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.24725273251533508,
+    "raw_value": -0.24725273251533508,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:14:29.817Z",
+    "sat_utc": "2000-02-28 16:35:36.143Z",
+    "gs_utc": "2022-06-04 02:05:16.457Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5906593203544617,
+    "raw_value": -0.5906593203544617,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:19:30.075Z",
+    "sat_utc": "2000-02-28 16:40:36.401Z",
+    "gs_utc": "2022-06-04 02:05:18.293Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.41208788752555847,
+    "raw_value": -0.41208788752555847,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:24:30.363Z",
+    "sat_utc": "2000-02-28 16:45:36.689Z",
+    "gs_utc": "2022-06-04 02:05:19.338Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.281593382358551,
+    "raw_value": 0.281593382358551,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:29:30.637Z",
+    "sat_utc": "2000-02-28 16:50:36.963Z",
+    "gs_utc": "2022-06-04 02:05:20.857Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.9478021860122681,
+    "raw_value": -0.9478021860122681,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:34:30.928Z",
+    "sat_utc": "2000-02-28 16:55:37.254Z",
+    "gs_utc": "2022-06-04 02:05:21.642Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.23351646959781647,
+    "raw_value": -0.23351646959781647,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:39:31.192Z",
+    "sat_utc": "2000-02-28 17:00:37.518Z",
+    "gs_utc": "2022-06-04 02:05:22.891Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.39835163950920105,
+    "raw_value": -0.39835163950920105,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:44:31.476Z",
+    "sat_utc": "2000-02-28 17:05:37.802Z",
+    "gs_utc": "2022-06-04 02:05:24.050Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0782966613769531,
+    "raw_value": -1.0782966613769531,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:54:32.042Z",
+    "sat_utc": "2000-02-28 17:15:38.368Z",
+    "gs_utc": "2022-06-04 02:05:26.337Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.8173076510429382,
+    "raw_value": -0.8173076510429382,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 10:59:32.326Z",
+    "sat_utc": "2000-02-28 17:20:38.652Z",
+    "gs_utc": "2022-06-04 02:05:27.591Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.673076868057251,
+    "raw_value": -0.673076868057251,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:09:32.943Z",
+    "sat_utc": "2000-02-28 17:30:39.269Z",
+    "gs_utc": "2022-06-04 02:05:30.752Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.1950548887252808,
+    "raw_value": -1.1950548887252808,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:14:33.198Z",
+    "sat_utc": "2000-02-28 17:35:39.524Z",
+    "gs_utc": "2022-06-04 02:05:31.798Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.906593382358551,
+    "raw_value": -0.906593382358551,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:24:33.786Z",
+    "sat_utc": "2000-02-28 17:45:40.112Z",
+    "gs_utc": "2022-06-04 02:05:34.108Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.2706043720245361,
+    "raw_value": -1.2706043720245361,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:29:34.048Z",
+    "sat_utc": "2000-02-28 17:50:40.374Z",
+    "gs_utc": "2022-06-04 02:05:35.489Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.3530219793319702,
+    "raw_value": -1.3530219793319702,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:34:34.318Z",
+    "sat_utc": "2000-02-28 17:55:40.644Z",
+    "gs_utc": "2022-06-04 02:05:36.561Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.6868131756782532,
+    "raw_value": -0.6868131756782532,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:39:34.603Z",
+    "sat_utc": "2000-02-28 18:00:40.929Z",
+    "gs_utc": "2022-06-04 02:05:37.808Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.3434065878391266,
+    "raw_value": -0.3434065878391266,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:44:34.864Z",
+    "sat_utc": "2000-02-28 18:05:41.190Z",
+    "gs_utc": "2022-06-04 02:05:39.384Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.10302197188138962,
+    "raw_value": 0.10302197188138962,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 11:49:35.148Z",
+    "sat_utc": "2000-02-28 18:10:41.474Z",
+    "gs_utc": "2022-06-04 02:05:41.048Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0233515501022339,
+    "raw_value": -1.0233515501022339,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 12:24:37.064Z",
+    "sat_utc": "2000-02-28 18:45:43.390Z",
+    "gs_utc": "2022-06-04 02:05:53.516Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.49450546503067017,
+    "raw_value": -0.49450546503067017,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 13:09:39.689Z",
+    "sat_utc": "2000-02-28 19:30:46.015Z",
+    "gs_utc": "2022-06-04 02:06:04.903Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
     "calibrated_value": -1.6277471780776978,
     "raw_value": -1.6277471780776978,
     "within_limits": "Yes",
     "utc": "2022-05-30 14:04:36.889Z",
     "sat_utc": "2000-02-28 20:25:43.215Z",
     "gs_utc": "2022-05-30 14:03:16.048Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.5796703100204468,
+    "raw_value": -1.5796703100204468,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 14:04:42.939Z",
+    "sat_utc": "2000-02-28 20:25:49.265Z",
+    "gs_utc": "2022-06-04 02:06:18.141Z"
   },
   {
     "name": "P_OBC_TELEM_GYRO_X",
@@ -3526,6 +4111,24 @@
     "utc": "2022-05-30 14:06:37.413Z",
     "sat_utc": "2000-02-28 20:27:43.739Z",
     "gs_utc": "2022-05-30 14:05:16.617Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.714285671710968,
+    "raw_value": -0.714285671710968,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 16:29:51.508Z",
+    "sat_utc": "2000-02-28 22:50:57.834Z",
+    "gs_utc": "2022-06-04 02:06:55.845Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.8310438990592957,
+    "raw_value": -0.8310438990592957,
+    "within_limits": "Yes",
+    "utc": "2022-05-30 16:44:52.421Z",
+    "sat_utc": "2000-02-28 23:05:58.747Z",
+    "gs_utc": "2022-06-04 02:07:00.186Z"
   },
   {
     "name": "P_OBC_TELEM_GYRO_X",
@@ -3700,12 +4303,822 @@
   },
   {
     "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.5178570747375488,
+    "raw_value": -1.5178570747375488,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 14:51:08.449Z",
+    "sat_utc": "2000-02-29 21:12:14.775Z",
+    "gs_utc": "2022-06-04 14:02:02.727Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.13049450516700745,
+    "raw_value": 0.13049450516700745,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 14:56:08.706Z",
+    "sat_utc": "2000-02-29 21:17:15.032Z",
+    "gs_utc": "2022-06-04 14:02:18.228Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.4079669713974,
+    "raw_value": -1.4079669713974,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:01:08.976Z",
+    "sat_utc": "2000-02-29 21:22:15.302Z",
+    "gs_utc": "2022-06-04 14:02:33.269Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.9505493640899658,
+    "raw_value": -1.9505493640899658,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:06:09.298Z",
+    "sat_utc": "2000-02-29 21:27:15.624Z",
+    "gs_utc": "2022-06-04 14:02:48.697Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.31593406200408936,
+    "raw_value": -0.31593406200408936,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:11:09.589Z",
+    "sat_utc": "2000-02-29 21:32:15.915Z",
+    "gs_utc": "2022-06-04 14:03:06.942Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0508241653442383,
+    "raw_value": -1.0508241653442383,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:16:09.867Z",
+    "sat_utc": "2000-02-29 21:37:16.193Z",
+    "gs_utc": "2022-06-04 14:03:21.980Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.3736263513565063,
+    "raw_value": -1.3736263513565063,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:21:10.160Z",
+    "sat_utc": "2000-02-29 21:42:16.486Z",
+    "gs_utc": "2022-06-04 14:03:37.463Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.3901097774505615,
+    "raw_value": -2.3901097774505615,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:26:10.439Z",
+    "sat_utc": "2000-02-29 21:47:16.765Z",
+    "gs_utc": "2022-06-04 14:03:37.475Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.8749998807907104,
+    "raw_value": -1.8749998807907104,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:31:10.714Z",
+    "sat_utc": "2000-02-29 21:52:17.040Z",
+    "gs_utc": "2022-06-04 14:04:02.664Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.431318521499634,
+    "raw_value": -2.431318521499634,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:36:11.086Z",
+    "sat_utc": "2000-02-29 21:57:17.412Z",
+    "gs_utc": "2022-06-04 14:04:22.166Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.1016483306884766,
+    "raw_value": -2.1016483306884766,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:41:11.248Z",
+    "sat_utc": "2000-02-29 22:02:17.574Z",
+    "gs_utc": "2022-06-04 14:04:22.180Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.6318681240081787,
+    "raw_value": -0.6318681240081787,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:46:11.549Z",
+    "sat_utc": "2000-02-29 22:07:17.875Z",
+    "gs_utc": "2022-06-04 14:04:29.613Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.2664833068847656,
+    "raw_value": -2.2664833068847656,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:51:11.831Z",
+    "sat_utc": "2000-02-29 22:12:18.157Z",
+    "gs_utc": "2022-06-04 14:04:30.064Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.6936812996864319,
+    "raw_value": -0.6936812996864319,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 15:56:12.126Z",
+    "sat_utc": "2000-02-29 22:17:18.452Z",
+    "gs_utc": "2022-06-04 14:05:07.989Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.4354394674301147,
+    "raw_value": -1.4354394674301147,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 16:11:12.965Z",
+    "sat_utc": "2000-02-29 22:32:19.291Z",
+    "gs_utc": "2022-06-04 14:05:41.082Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.15109889209270477,
+    "raw_value": 0.15109889209270477,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 16:21:13.532Z",
+    "sat_utc": "2000-02-29 22:42:19.858Z",
+    "gs_utc": "2022-06-04 14:05:44.871Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.1607142686843872,
+    "raw_value": -1.1607142686843872,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 16:26:13.846Z",
+    "sat_utc": "2000-02-29 22:47:20.172Z",
+    "gs_utc": "2022-06-04 14:05:46.129Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.8997252583503723,
+    "raw_value": -0.8997252583503723,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 17:26:17.233Z",
+    "sat_utc": "2000-02-29 23:47:23.559Z",
+    "gs_utc": "2022-06-05 01:42:49.698Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.126373529434204,
+    "raw_value": -1.126373529434204,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 20:26:27.547Z",
+    "sat_utc": "2000-03-01 02:47:33.873Z",
+    "gs_utc": "2022-06-05 01:43:44.383Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.2706043720245361,
+    "raw_value": -1.2706043720245361,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 20:36:28.203Z",
+    "sat_utc": "2000-03-01 02:57:34.529Z",
+    "gs_utc": "2022-06-05 01:43:46.570Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.5796703100204468,
+    "raw_value": -1.5796703100204468,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 20:46:28.627Z",
+    "sat_utc": "2000-03-01 03:07:34.953Z",
+    "gs_utc": "2022-06-05 01:43:49.427Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.2747252583503723,
+    "raw_value": -0.2747252583503723,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 20:56:29.172Z",
+    "sat_utc": "2000-03-01 03:17:35.498Z",
+    "gs_utc": "2022-06-05 01:43:51.766Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.583791196346283,
+    "raw_value": -0.583791196346283,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 21:01:29.469Z",
+    "sat_utc": "2000-03-01 03:22:35.795Z",
+    "gs_utc": "2022-06-05 01:43:52.870Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.3708791136741638,
+    "raw_value": 0.3708791136741638,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 21:11:30.029Z",
+    "sat_utc": "2000-03-01 03:32:36.355Z",
+    "gs_utc": "2022-06-05 01:43:55.418Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5769230723381042,
+    "raw_value": -0.5769230723381042,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 21:21:30.641Z",
+    "sat_utc": "2000-03-01 03:42:36.967Z",
+    "gs_utc": "2022-06-05 01:43:57.712Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0989010334014893,
+    "raw_value": -1.0989010334014893,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 22:21:33.779Z",
+    "sat_utc": "2000-03-01 04:42:40.105Z",
+    "gs_utc": "2022-06-05 01:44:16.198Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.6140109300613403,
+    "raw_value": -1.6140109300613403,
+    "within_limits": "Yes",
+    "utc": "2022-05-31 23:26:36.386Z",
+    "sat_utc": "2000-03-01 05:47:42.712Z",
+    "gs_utc": "2022-06-05 01:44:30.814Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.4491757154464722,
+    "raw_value": -1.4491757154464722,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 01:01:41.900Z",
+    "sat_utc": "2000-03-01 07:22:48.226Z",
+    "gs_utc": "2022-06-05 01:44:56.399Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.0535712242126465,
+    "raw_value": -2.0535712242126465,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 01:06:42.241Z",
+    "sat_utc": "2000-03-01 07:27:48.567Z",
+    "gs_utc": "2022-06-05 01:44:57.662Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
     "calibrated_value": -0.1648351550102234,
     "raw_value": -0.1648351550102234,
     "within_limits": "Yes",
     "utc": "2022-06-01 01:28:42.854Z",
     "sat_utc": "2000-03-01 07:49:49.180Z",
     "gs_utc": "2022-06-01 01:27:35.675Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.7967032790184021,
+    "raw_value": -0.7967032790184021,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 01:41:44.182Z",
+    "sat_utc": "2000-03-01 08:02:50.508Z",
+    "gs_utc": "2022-06-05 01:45:06.577Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.6758240461349487,
+    "raw_value": -1.6758240461349487,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 02:21:46.549Z",
+    "sat_utc": "2000-03-01 08:42:52.875Z",
+    "gs_utc": "2022-06-05 01:45:18.372Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.995879054069519,
+    "raw_value": -0.995879054069519,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 02:31:47.121Z",
+    "sat_utc": "2000-03-01 08:52:53.447Z",
+    "gs_utc": "2022-06-05 01:45:20.525Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.0810439586639404,
+    "raw_value": -2.0810439586639404,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 02:36:47.429Z",
+    "sat_utc": "2000-03-01 08:57:53.755Z",
+    "gs_utc": "2022-06-05 01:45:21.799Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.38461536169052124,
+    "raw_value": -0.38461536169052124,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:01:48.911Z",
+    "sat_utc": "2000-03-01 09:22:55.237Z",
+    "gs_utc": "2022-06-05 01:45:28.095Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.1126372814178467,
+    "raw_value": -1.1126372814178467,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:11:49.520Z",
+    "sat_utc": "2000-03-01 09:32:55.846Z",
+    "gs_utc": "2022-06-05 01:45:30.883Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.24038460850715637,
+    "raw_value": -0.24038460850715637,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:16:49.812Z",
+    "sat_utc": "2000-03-01 09:37:56.138Z",
+    "gs_utc": "2022-06-05 01:45:31.939Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.30906590819358826,
+    "raw_value": 0.30906590819358826,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:21:50.091Z",
+    "sat_utc": "2000-03-01 09:42:56.417Z",
+    "gs_utc": "2022-06-05 01:45:33.475Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.583791196346283,
+    "raw_value": -0.583791196346283,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:26:50.408Z",
+    "sat_utc": "2000-03-01 09:47:56.734Z",
+    "gs_utc": "2022-06-05 01:45:34.476Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.07554944604635239,
+    "raw_value": -0.07554944604635239,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:31:50.688Z",
+    "sat_utc": "2000-03-01 09:52:57.014Z",
+    "gs_utc": "2022-06-05 01:45:35.328Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0782966613769531,
+    "raw_value": -1.0782966613769531,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:41:51.253Z",
+    "sat_utc": "2000-03-01 10:02:57.579Z",
+    "gs_utc": "2022-06-05 01:45:38.604Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.22664834558963776,
+    "raw_value": -0.22664834558963776,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:46:51.562Z",
+    "sat_utc": "2000-03-01 10:07:57.888Z",
+    "gs_utc": "2022-06-05 01:45:39.516Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.3365384340286255,
+    "raw_value": -0.3365384340286255,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 03:51:51.831Z",
+    "sat_utc": "2000-03-01 10:12:58.157Z",
+    "gs_utc": "2022-06-05 01:45:40.602Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.1950548887252808,
+    "raw_value": -1.1950548887252808,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:06:52.655Z",
+    "sat_utc": "2000-03-01 10:27:58.981Z",
+    "gs_utc": "2022-06-05 01:45:44.150Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.3667582273483276,
+    "raw_value": -1.3667582273483276,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:11:52.940Z",
+    "sat_utc": "2000-03-01 10:32:59.266Z",
+    "gs_utc": "2022-06-05 01:45:46.998Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.0810439586639404,
+    "raw_value": -2.0810439586639404,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:16:53.225Z",
+    "sat_utc": "2000-03-01 10:37:59.551Z",
+    "gs_utc": "2022-06-05 01:45:48.816Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.9203296303749084,
+    "raw_value": -0.9203296303749084,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:31:54.062Z",
+    "sat_utc": "2000-03-01 10:53:00.388Z",
+    "gs_utc": "2022-06-05 01:45:52.401Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.346153736114502,
+    "raw_value": -1.346153736114502,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:36:54.372Z",
+    "sat_utc": "2000-03-01 10:58:00.698Z",
+    "gs_utc": "2022-06-05 01:45:53.455Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0096153020858765,
+    "raw_value": -1.0096153020858765,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:41:54.652Z",
+    "sat_utc": "2000-03-01 11:03:00.978Z",
+    "gs_utc": "2022-06-05 01:45:54.522Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.4217032194137573,
+    "raw_value": -1.4217032194137573,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:46:54.941Z",
+    "sat_utc": "2000-03-01 11:08:01.267Z",
+    "gs_utc": "2022-06-05 01:45:55.753Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.236263632774353,
+    "raw_value": -1.236263632774353,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 04:51:55.214Z",
+    "sat_utc": "2000-03-01 11:13:01.540Z",
+    "gs_utc": "2022-06-05 01:45:56.896Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0508241653442383,
+    "raw_value": -1.0508241653442383,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 05:26:57.199Z",
+    "sat_utc": "2000-03-01 11:48:03.525Z",
+    "gs_utc": "2022-06-05 01:46:06.984Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.923076868057251,
+    "raw_value": -1.923076868057251,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 05:46:58.337Z",
+    "sat_utc": "2000-03-01 12:08:04.663Z",
+    "gs_utc": "2022-06-05 01:46:12.286Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5769230723381042,
+    "raw_value": -0.5769230723381042,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 06:01:59.180Z",
+    "sat_utc": "2000-03-01 12:23:05.506Z",
+    "gs_utc": "2022-06-05 01:46:15.574Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0164834260940552,
+    "raw_value": -1.0164834260940552,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 06:22:00.284Z",
+    "sat_utc": "2000-03-01 12:43:06.610Z",
+    "gs_utc": "2022-06-05 01:46:22.527Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.9505493640899658,
+    "raw_value": -1.9505493640899658,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 07:37:04.674Z",
+    "sat_utc": "2000-03-01 13:58:11.000Z",
+    "gs_utc": "2022-06-05 01:46:41.024Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.6524724960327148,
+    "raw_value": -0.6524724960327148,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:22:14.052Z",
+    "sat_utc": "2000-03-01 16:43:20.378Z",
+    "gs_utc": "2022-06-05 01:47:23.740Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.7857142686843872,
+    "raw_value": -1.7857142686843872,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:27:14.324Z",
+    "sat_utc": "2000-03-01 16:48:20.650Z",
+    "gs_utc": "2022-06-05 01:47:24.992Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.9299449920654297,
+    "raw_value": -1.9299449920654297,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:37:14.893Z",
+    "sat_utc": "2000-03-01 16:58:21.219Z",
+    "gs_utc": "2022-06-05 01:47:29.475Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.8104395270347595,
+    "raw_value": -0.8104395270347595,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:42:15.140Z",
+    "sat_utc": "2000-03-01 17:03:21.466Z",
+    "gs_utc": "2022-06-05 01:47:30.505Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.8516483306884766,
+    "raw_value": -0.8516483306884766,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:47:15.414Z",
+    "sat_utc": "2000-03-01 17:08:21.740Z",
+    "gs_utc": "2022-06-05 01:47:31.774Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.6140109300613403,
+    "raw_value": -1.6140109300613403,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:52:15.694Z",
+    "sat_utc": "2000-03-01 17:13:22.020Z",
+    "gs_utc": "2022-06-05 01:47:32.796Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.4079669713974,
+    "raw_value": -1.4079669713974,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 10:57:15.981Z",
+    "sat_utc": "2000-03-01 17:18:22.307Z",
+    "gs_utc": "2022-06-05 01:47:34.057Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.1744505167007446,
+    "raw_value": -1.1744505167007446,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:02:16.254Z",
+    "sat_utc": "2000-03-01 17:23:22.580Z",
+    "gs_utc": "2022-06-05 01:47:35.110Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.2774724960327148,
+    "raw_value": -1.2774724960327148,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:07:16.554Z",
+    "sat_utc": "2000-03-01 17:28:22.880Z",
+    "gs_utc": "2022-06-05 01:47:36.348Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.25,
+    "raw_value": -1.25,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:12:16.843Z",
+    "sat_utc": "2000-03-01 17:33:23.169Z",
+    "gs_utc": "2022-06-05 01:47:38.246Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.6387362480163574,
+    "raw_value": -0.6387362480163574,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:17:17.124Z",
+    "sat_utc": "2000-03-01 17:38:23.450Z",
+    "gs_utc": "2022-06-05 01:47:39.708Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.48076921701431274,
+    "raw_value": 0.48076921701431274,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:22:17.422Z",
+    "sat_utc": "2000-03-01 17:43:23.748Z",
+    "gs_utc": "2022-06-05 01:47:40.660Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.48076921701431274,
+    "raw_value": -0.48076921701431274,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:27:17.705Z",
+    "sat_utc": "2000-03-01 17:48:24.031Z",
+    "gs_utc": "2022-06-05 01:47:41.921Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.9684065580368042,
+    "raw_value": -0.9684065580368042,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:32:18.097Z",
+    "sat_utc": "2000-03-01 17:53:24.423Z",
+    "gs_utc": "2022-06-05 01:47:42.960Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5357142686843872,
+    "raw_value": -0.5357142686843872,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:37:18.280Z",
+    "sat_utc": "2000-03-01 17:58:24.606Z",
+    "gs_utc": "2022-06-05 01:47:44.205Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.49450546503067017,
+    "raw_value": -0.49450546503067017,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:42:18.534Z",
+    "sat_utc": "2000-03-01 18:03:24.860Z",
+    "gs_utc": "2022-06-05 01:47:45.254Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.8200548887252808,
+    "raw_value": -1.8200548887252808,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:52:19.101Z",
+    "sat_utc": "2000-03-01 18:13:25.427Z",
+    "gs_utc": "2022-06-05 01:47:47.538Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.6758240461349487,
+    "raw_value": -1.6758240461349487,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 11:57:19.424Z",
+    "sat_utc": "2000-03-01 18:18:25.750Z",
+    "gs_utc": "2022-06-05 01:47:49.378Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.2087911367416382,
+    "raw_value": -1.2087911367416382,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:02:19.717Z",
+    "sat_utc": "2000-03-01 18:23:26.043Z",
+    "gs_utc": "2022-06-05 01:47:50.423Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.9546703100204468,
+    "raw_value": -0.9546703100204468,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:07:19.995Z",
+    "sat_utc": "2000-03-01 18:28:26.321Z",
+    "gs_utc": "2022-06-05 01:47:51.808Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.4423075914382935,
+    "raw_value": -1.4423075914382935,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:12:20.281Z",
+    "sat_utc": "2000-03-01 18:33:26.607Z",
+    "gs_utc": "2022-06-05 01:47:53.113Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.019230604171753,
+    "raw_value": -2.019230604171753,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:17:20.573Z",
+    "sat_utc": "2000-03-01 18:38:26.899Z",
+    "gs_utc": "2022-06-05 01:47:54.363Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5357142686843872,
+    "raw_value": -0.5357142686843872,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:22:20.862Z",
+    "sat_utc": "2000-03-01 18:43:27.188Z",
+    "gs_utc": "2022-06-05 01:47:55.406Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.2225273847579956,
+    "raw_value": -1.2225273847579956,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:27:21.132Z",
+    "sat_utc": "2000-03-01 18:48:27.458Z",
+    "gs_utc": "2022-06-05 01:47:56.668Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.6758240461349487,
+    "raw_value": -1.6758240461349487,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:32:21.399Z",
+    "sat_utc": "2000-03-01 18:53:27.725Z",
+    "gs_utc": "2022-06-05 01:47:59.775Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.490384578704834,
+    "raw_value": -1.490384578704834,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:37:21.670Z",
+    "sat_utc": "2000-03-01 18:58:27.996Z",
+    "gs_utc": "2022-06-05 01:48:01.033Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.057692289352417,
+    "raw_value": -1.057692289352417,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:42:21.949Z",
+    "sat_utc": "2000-03-01 19:03:28.275Z",
+    "gs_utc": "2022-06-05 01:48:02.074Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.47390109300613403,
+    "raw_value": -0.47390109300613403,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:47:22.245Z",
+    "sat_utc": "2000-03-01 19:08:28.571Z",
+    "gs_utc": "2022-06-05 01:48:03.438Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.4258241653442383,
+    "raw_value": 0.4258241653442383,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:52:22.504Z",
+    "sat_utc": "2000-03-01 19:13:28.830Z",
+    "gs_utc": "2022-06-05 01:48:04.484Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.9203296303749084,
+    "raw_value": -0.9203296303749084,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 12:57:22.781Z",
+    "sat_utc": "2000-03-01 19:18:29.107Z",
+    "gs_utc": "2022-06-05 01:48:05.742Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5769230723381042,
+    "raw_value": -0.5769230723381042,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:02:23.089Z",
+    "sat_utc": "2000-03-01 19:23:29.415Z",
+    "gs_utc": "2022-06-05 01:48:06.783Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.22664834558963776,
+    "raw_value": 0.22664834558963776,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:07:23.385Z",
+    "sat_utc": "2000-03-01 19:28:29.711Z",
+    "gs_utc": "2022-06-05 01:48:08.036Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.5178570747375488,
+    "raw_value": -1.5178570747375488,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:17:23.939Z",
+    "sat_utc": "2000-03-01 19:38:30.265Z",
+    "gs_utc": "2022-06-05 01:48:11.189Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.2843406200408936,
+    "raw_value": -1.2843406200408936,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:22:24.199Z",
+    "sat_utc": "2000-03-01 19:43:30.525Z",
+    "gs_utc": "2022-06-05 01:48:12.252Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5151098966598511,
+    "raw_value": -0.5151098966598511,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:27:24.487Z",
+    "sat_utc": "2000-03-01 19:48:30.813Z",
+    "gs_utc": "2022-06-05 01:48:13.489Z"
   },
   {
     "name": "P_OBC_TELEM_GYRO_X",
@@ -3760,6 +5173,132 @@
     "utc": "2022-06-01 13:30:18.230Z",
     "sat_utc": "2000-03-01 19:51:24.556Z",
     "gs_utc": "2022-06-01 13:29:08.592Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.1950548887252808,
+    "raw_value": -1.1950548887252808,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 13:47:25.711Z",
+    "sat_utc": "2000-03-01 20:08:32.037Z",
+    "gs_utc": "2022-06-05 01:48:18.192Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0851647853851318,
+    "raw_value": -1.0851647853851318,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 16:17:34.437Z",
+    "sat_utc": "2000-03-01 22:38:40.763Z",
+    "gs_utc": "2022-06-05 01:48:57.915Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.620879054069519,
+    "raw_value": -1.620879054069519,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 16:57:36.758Z",
+    "sat_utc": "2000-03-01 23:18:43.084Z",
+    "gs_utc": "2022-06-05 01:49:09.278Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5013735890388489,
+    "raw_value": -0.5013735890388489,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 17:02:37.031Z",
+    "sat_utc": "2000-03-01 23:23:43.357Z",
+    "gs_utc": "2022-06-05 01:49:10.278Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.3296703100204468,
+    "raw_value": -0.3296703100204468,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 17:37:39.123Z",
+    "sat_utc": "2000-03-01 23:58:45.449Z",
+    "gs_utc": "2022-06-05 01:49:19.464Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.7719779014587402,
+    "raw_value": -1.7719779014587402,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:02:40.547Z",
+    "sat_utc": "2000-03-02 00:23:46.873Z",
+    "gs_utc": "2022-06-05 01:49:26.186Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.5109889507293701,
+    "raw_value": -1.5109889507293701,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:12:41.174Z",
+    "sat_utc": "2000-03-02 00:33:47.500Z",
+    "gs_utc": "2022-06-05 01:49:28.444Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.2706043720245361,
+    "raw_value": -1.2706043720245361,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:22:41.777Z",
+    "sat_utc": "2000-03-02 00:43:48.103Z",
+    "gs_utc": "2022-06-05 01:49:30.607Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -2.067307710647583,
+    "raw_value": -2.067307710647583,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:27:42.044Z",
+    "sat_utc": "2000-03-02 00:48:48.370Z",
+    "gs_utc": "2022-06-05 01:49:32.054Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.559065818786621,
+    "raw_value": -1.559065818786621,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:32:42.321Z",
+    "sat_utc": "2000-03-02 00:53:48.647Z",
+    "gs_utc": "2022-06-05 01:49:33.219Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.5796703100204468,
+    "raw_value": -1.5796703100204468,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:47:43.210Z",
+    "sat_utc": "2000-03-02 01:08:49.536Z",
+    "gs_utc": "2022-06-05 01:49:38.564Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.5315933227539062,
+    "raw_value": -1.5315933227539062,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 18:52:43.443Z",
+    "sat_utc": "2000-03-02 01:13:49.769Z",
+    "gs_utc": "2022-06-05 01:49:39.734Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.4532966911792755,
+    "raw_value": -0.4532966911792755,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 19:17:44.895Z",
+    "sat_utc": "2000-03-02 01:38:51.221Z",
+    "gs_utc": "2022-06-05 01:49:45.158Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.2884615361690521,
+    "raw_value": -0.2884615361690521,
+    "within_limits": "Yes",
+    "utc": "2022-06-01 19:27:45.505Z",
+    "sat_utc": "2000-03-02 01:48:51.831Z",
+    "gs_utc": "2022-06-05 01:49:48.011Z"
   },
   {
     "name": "P_OBC_TELEM_GYRO_X",
@@ -4111,5 +5650,176 @@
     "utc": "2022-06-03 14:25:54.403Z",
     "sat_utc": "2000-03-03 20:47:00.729Z",
     "gs_utc": "2022-06-03 14:24:29.758Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.23351646959781647,
+    "raw_value": 0.23351646959781647,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:04:23.220Z",
+    "sat_utc": "2000-03-04 08:25:29.546Z",
+    "gs_utc": "2022-06-04 02:02:55.740Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.15109889209270477,
+    "raw_value": -0.15109889209270477,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:04:53.440Z",
+    "sat_utc": "2000-03-04 08:25:59.766Z",
+    "gs_utc": "2022-06-04 02:03:29.138Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.7417582273483276,
+    "raw_value": -0.7417582273483276,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:05:23.570Z",
+    "sat_utc": "2000-03-04 08:26:29.896Z",
+    "gs_utc": "2022-06-04 02:04:02.458Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.3530219793319702,
+    "raw_value": -1.3530219793319702,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:05:53.707Z",
+    "sat_utc": "2000-03-04 08:27:00.033Z",
+    "gs_utc": "2022-06-04 02:04:36.299Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.7376372814178467,
+    "raw_value": -1.7376372814178467,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:06:23.832Z",
+    "sat_utc": "2000-03-04 08:27:30.158Z",
+    "gs_utc": "2022-06-04 02:05:07.685Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.8269230127334595,
+    "raw_value": -1.8269230127334595,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 02:06:53.983Z",
+    "sat_utc": "2000-03-04 08:28:00.309Z",
+    "gs_utc": "2022-06-04 02:05:40.642Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.8104395270347595,
+    "raw_value": -0.8104395270347595,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:01:27.758Z",
+    "sat_utc": "2000-03-04 20:22:34.084Z",
+    "gs_utc": "2022-06-04 14:00:00.353Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.49450546503067017,
+    "raw_value": -0.49450546503067017,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:02:28.026Z",
+    "sat_utc": "2000-03-04 20:23:34.352Z",
+    "gs_utc": "2022-06-04 14:00:59.951Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.6799450516700745,
+    "raw_value": -0.6799450516700745,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:02:58.169Z",
+    "sat_utc": "2000-03-04 20:24:04.495Z",
+    "gs_utc": "2022-06-04 14:01:30.491Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0302197933197021,
+    "raw_value": -1.0302197933197021,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:03:28.337Z",
+    "sat_utc": "2000-03-04 20:24:34.663Z",
+    "gs_utc": "2022-06-04 14:02:33.282Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.4010988473892212,
+    "raw_value": -1.4010988473892212,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:03:58.461Z",
+    "sat_utc": "2000-03-04 20:25:04.787Z",
+    "gs_utc": "2022-06-04 14:03:06.952Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.7170329093933105,
+    "raw_value": -1.7170329093933105,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:04:28.582Z",
+    "sat_utc": "2000-03-04 20:25:34.908Z",
+    "gs_utc": "2022-06-04 14:04:02.631Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.8681317567825317,
+    "raw_value": -1.8681317567825317,
+    "within_limits": "Yes",
+    "utc": "2022-06-04 14:04:58.715Z",
+    "sat_utc": "2000-03-04 20:26:05.041Z",
+    "gs_utc": "2022-06-04 14:05:07.945Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.0920329093933105,
+    "raw_value": -1.0920329093933105,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:42:29.943Z",
+    "sat_utc": "2000-03-05 08:03:36.269Z",
+    "gs_utc": "2022-06-05 01:41:01.307Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.5906593203544617,
+    "raw_value": -0.5906593203544617,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:43:00.073Z",
+    "sat_utc": "2000-03-05 08:04:06.399Z",
+    "gs_utc": "2022-06-05 01:41:31.418Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -1.8681317567825317,
+    "raw_value": -1.8681317567825317,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:47:01.129Z",
+    "sat_utc": "2000-03-05 08:08:07.455Z",
+    "gs_utc": "2022-06-05 01:45:45.416Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.6936812996864319,
+    "raw_value": -0.6936812996864319,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:48:31.525Z",
+    "sat_utc": "2000-03-05 08:09:37.851Z",
+    "gs_utc": "2022-06-05 01:47:25.398Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": -0.20604394376277924,
+    "raw_value": -0.20604394376277924,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:49:01.650Z",
+    "sat_utc": "2000-03-05 08:10:07.976Z",
+    "gs_utc": "2022-06-05 01:47:57.732Z"
+  },
+  {
+    "name": "P_OBC_TELEM_GYRO_X",
+    "calibrated_value": 0.12362636625766754,
+    "raw_value": 0.12362636625766754,
+    "within_limits": "Yes",
+    "utc": "2022-06-05 01:50:01.923Z",
+    "sat_utc": "2000-03-05 08:11:08.249Z",
+    "gs_utc": "2022-06-05 01:49:03.438Z"
   }
 ]
