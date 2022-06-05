@@ -298,7 +298,7 @@ export function Dashboard({ id, data }: Props) {
         <Sections>
           {selectedDataToShow.length > 0 && (
             <Chart>
-              <h4>Chart</h4>
+              <h4>Telemetry Chart</h4>
 
               <div>
                 <ResponsiveContainer width="100%" height={500}>
@@ -344,7 +344,7 @@ export function Dashboard({ id, data }: Props) {
 
           {selectedTableDataToShow.length > 0 && (
             <Table>
-              <h4>Table</h4>
+              <h4>Telemetry Table</h4>
 
               <table>
                 <thead>
