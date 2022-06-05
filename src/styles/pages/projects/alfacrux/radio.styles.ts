@@ -193,20 +193,16 @@ export const RadioForm = styled.section`
       height: 540px;
       border-radius: 4px;
 
-      @media(max-width: 824px) {
-        height: 983px;
+      @media(max-width: 807px) {
+        height: 1070px;
       }
 
-      @media(max-width: 730px) {
-        height: 1016px;
+      @media(max-width: 662px) {
+        height: 1104px;
       }
 
-      @media(max-width: 424px) {
-        height: 1050px;
-      }
-
-      @media(max-width: 320px) {
-        height: 1083px;
+      @media(max-width: 380px) {
+        height: 1137px;
       }
     }
 
@@ -220,6 +216,10 @@ export const RadioForm = styled.section`
       width: 100%;
       height: 540px;
       border-radius: 4px;
+
+      @media(max-width: 807px) {
+        height: 1070px;
+      }
     }
   }
 `;
