@@ -104,7 +104,7 @@ export const Chart = styled.section`
     border-radius: 4px;
     padding: 12px 12px 12px 3px;
 
-    span {
+    > span {
       color: ${({ theme }) => theme.colors.green};
       font-weight: bold;
       display: block;

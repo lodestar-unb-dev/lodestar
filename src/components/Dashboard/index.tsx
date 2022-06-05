@@ -323,6 +323,7 @@ export function Dashboard({ id, data }: Props) {
                     )}
                     </YAxis>
                     <Tooltip 
+                      labelStyle={{ color: theme.colors.blue }}
                       formatter={value => [`${value} ${selectedUnitOfDataToShow}`, selectedDataComponent]} 
                       labelFormatter={value => `Satellite Timestamp (UTC): ${value}`}
                     />
