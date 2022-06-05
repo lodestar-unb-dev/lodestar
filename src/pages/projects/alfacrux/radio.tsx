@@ -6,7 +6,7 @@ import PrismicDOM from 'prismic-dom';
 import { GetStaticProps } from "next";
 
 import { Layout } from "../../../components/Layout"
-import { RadioBanner, RadioForm, RadioInfo } from "../../../styles/pages/projects/alfacrux/radio.styles"
+import { ComingNext, RadioBanner, RadioForm, RadioInfo } from "../../../styles/pages/projects/alfacrux/radio.styles"
 import { getPrismicClient } from "../../../services/prismic";
 import { Dashboard } from "../../../components/Dashboard";
 
@@ -130,6 +130,11 @@ interface AlfaCruxRadioPrismicDocument {
     type: string;
     text: string;
   }[];
+  coming_next_title: string;
+  coming_next_description: {
+    type: string;
+    text: string;
+  }[];
 }
 
 interface AlfaCruxRadioProps {
@@ -176,7 +181,9 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
     ttc_info,
     ttc_description,
     telemetry_viewer_title,
-    telemetry_viewer_description
+    telemetry_viewer_description,
+    coming_next_title,
+    coming_next_description
   } = alfacruxRadioPrismicDocument;
 
   const info = {
@@ -310,6 +317,14 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
       </RadioForm>
 
       <Dashboard id="telemetry-viewer" data={{ telemetry_viewer_title, telemetry_viewer_description }} />
+    
+      <ComingNext>
+        <h3>{coming_next_title}</h3>
+
+        <div dangerouslySetInnerHTML={{
+          __html: PrismicDOM.RichText.asHtml(coming_next_description)
+        }} />
+      </ComingNext>
     </Layout>
   )
 }

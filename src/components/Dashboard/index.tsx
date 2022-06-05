@@ -64,7 +64,7 @@ const MockedAPISelectValues = {
     'P_EP_TELEM_CUROUT_3': 'Output current to TTC',
     'P_EP_TELEM_CUROUT_5': 'Output current to Payload'
   },
-  'Temperature Telemetry': {
+  'Temperature Sensors Telemetry': {
     'P_TT_TELEM_TEMP_BRD': 'Internal TTC MCU temperature',
     'P_OBC_TELEM_TEMP_MCU': 'Internal OBC MCU temperature',
     'P_EP_TELEM_TEMP_3': 'Internal EPS PCB temperature',
@@ -103,7 +103,7 @@ const MockedAPIUnits = {
     'Output current to TTC': 'mA',
     'Output current to Payload': 'mA'
   },
-  'Temperature Telemetry': {
+  'Temperature Sensors Telemetry': {
     'Internal TTC MCU temperature': 'ºC',
     'Internal OBC MCU temperature': 'ºC',
     'Internal EPS PCB temperature': 'ºC',
@@ -142,7 +142,7 @@ const MockedAPIData = {
     'Output current to TTC' : P_EP_TELEM_CUROUT_3,
     'Output current to Payload' : P_EP_TELEM_CUROUT_5
   },
-  'Temperature Telemetry': {
+  'Temperature Sensors Telemetry': {
     'Internal TTC MCU temperature': P_TT_TELEM_TEMP_BRD,
     'Internal OBC MCU temperature': P_OBC_TELEM_TEMP_MCU,
     'Internal EPS PCB temperature': P_EP_TELEM_TEMP_3,
@@ -181,7 +181,7 @@ const MockedAPIDataTable = {
     'Output current to TTC': [...P_EP_TELEM_CUROUT_3].reverse(),
     'Output current to Payload': [...P_EP_TELEM_CUROUT_5].reverse(),
   },
-  'Temperature Telemetry': {
+  'Temperature Sensors Telemetry': {
     'Internal TTC MCU temperature': [...P_TT_TELEM_TEMP_BRD].reverse(),
     'Internal OBC MCU temperature': [...P_OBC_TELEM_TEMP_MCU].reverse(),
     'Internal EPS PCB temperature': [...P_EP_TELEM_TEMP_3].reverse(),
@@ -301,12 +301,12 @@ export function Dashboard({ id, data }: Props) {
               <h4>Telemetry Chart</h4>
 
               <div>
+                <span>{selectedDataComponent}</span>
                 <ResponsiveContainer width="100%" height={500}>
                   <LineChart 
                     data={selectedDataToShow}
                     margin={{ top: 15, right: 30, left: 20, bottom: 40 }}
-                    >
-                    <Label value="Chart" />
+                  >
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis 
                       dataKey="utc" 

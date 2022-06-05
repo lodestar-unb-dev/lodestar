@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: ${({ theme }) => theme.colors.blueDarker};
+    background-color: ${({ theme }) => theme.colors.blueDark};
     padding: 80px 20px;
     color: ${({ theme }) => theme.colors.black0};
     
@@ -103,6 +103,13 @@ export const Chart = styled.section`
     background-color: white;
     border-radius: 4px;
     padding: 12px 12px 12px 3px;
+
+    span {
+      color: ${({ theme }) => theme.colors.green};
+      font-weight: bold;
+      display: block;
+      text-align: center;
+    }
   }
 
   .recharts-yAxis .recharts-label {

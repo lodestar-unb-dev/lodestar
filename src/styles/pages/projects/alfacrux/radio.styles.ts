@@ -223,3 +223,31 @@ export const RadioForm = styled.section`
     }
   }
 `;
+
+export const ComingNext = styled.section`
+  h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 20px;
+  color: ${({ theme }) => theme.colors.blue };
+
+  ul {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      text-align: justify;
+    }
+  }
+`;
