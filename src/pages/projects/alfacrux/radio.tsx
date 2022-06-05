@@ -131,9 +131,19 @@ interface AlfaCruxRadioPrismicDocument {
     text: string;
   }[];
   coming_next_title: string;
-  coming_next_description: {
-    type: string;
-    text: string;
+  coming_next_group: {
+    coming_next_image: {
+      dimensions: {
+        width: number;
+        height: number;
+      };
+      alt: string;
+      url: string;
+    };
+    coming_next_description: {
+      type: string;
+      text: string;
+    }[];
   }[];
 }
 
@@ -183,7 +193,7 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
     telemetry_viewer_title,
     telemetry_viewer_description,
     coming_next_title,
-    coming_next_description
+    coming_next_group
   } = alfacruxRadioPrismicDocument;
 
   const info = {
@@ -321,9 +331,19 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
       <ComingNext>
         <h3>{coming_next_title}</h3>
 
-        <div dangerouslySetInnerHTML={{
-          __html: PrismicDOM.RichText.asHtml(coming_next_description)
-        }} />
+        <div>
+        {
+          coming_next_group.map(item => (
+            <article key={item.coming_next_image.url}>
+              <img src={item.coming_next_image.url} alt={item.coming_next_image.alt} />
+              
+              <div dangerouslySetInnerHTML={{
+                __html: PrismicDOM.RichText.asHtml(item.coming_next_description)
+              }} />
+            </article>
+          ))
+        }
+        </div>
       </ComingNext>
     </Layout>
   )

@@ -218,7 +218,7 @@ export const RadioForm = styled.section`
 
     iframe.map {
       width: 100%;
-      height: 840px;
+      height: 540px;
       border-radius: 4px;
     }
   }
@@ -239,15 +239,55 @@ export const ComingNext = styled.section`
   padding: 80px 20px;
   color: ${({ theme }) => theme.colors.blue };
 
-  ul {
-    max-width: 50%;
-    margin: 0 auto;
+  > div {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column-reverse;
+    gap: 40px;
 
-    li {
-      text-align: justify;
+    article {
+      display: flex;
+      width: 100%;
+      max-width: 900px;
+
+      border-radius: 6px;
+      background-color: ${({ theme }) => theme.colors.blueDark};
+
+      @media(max-width: 960px) {
+        flex-direction: column;
+        max-width: 360px;
+        width: 100%;
+      }
+
+      img {
+        aspect-ratio: 1.905;
+        height: 100%;
+        max-width: 400px;
+        width: 100%;
+        object-fit: cover; 
+        object-position: center; 
+        margin: auto 0; 
+        border-radius: 6px 0 0 6px;
+
+        @media(max-width: 960px) {
+          border-radius: 6px 6px 0 0;
+        }
+      }
+
+      div {
+        padding: 20px;
+        max-width: 500px;
+        color: ${({ theme }) => theme.colors.black0};
+        
+        p {
+          font-size: 0.85rem;
+          line-height: 22px;
+          text-align: justify;
+        }
+
+        a {
+          font-weight: bold;
+        }
+      }
     }
   }
 `;
