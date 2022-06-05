@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Line, ResponsiveContainer, Label } from "recharts";
+import { CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Label, AreaChart, Area } from "recharts";
 import { Select } from "../Select";
 import { Card, Chart, Container, Description, Sections, Selectors, SmallScreen, Summary, Table, Title, Value } from "./styles";
 import PrismicDOM from 'prismic-dom';
@@ -303,41 +303,47 @@ export function Dashboard({ id, data }: Props) {
               <div>
                 <span>{selectedDataComponent}</span>
                 <ResponsiveContainer width="100%" height={500}>
-                  <LineChart 
-                    data={selectedDataToShow}
-                    margin={{ top: 15, right: 30, left: 20, bottom: 40 }}
-                  >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis 
-                      dataKey="utc" 
-                      interval="preserveStartEnd" 
-                      minTickGap={75}
+                    <AreaChart 
+                      data={selectedDataToShow}
+                      margin={{ top: 15, left: 30, bottom: 15 }}
                     >
-                      <Label value='Satellite Timestamp (UTC)' offset={0} position="bottom" />
-                    </XAxis>
-                    <YAxis domain={['auto', 'auto']}>
-                    {!!selectedUnitOfDataToShow ? (
-                      <Label value={`${selectedDataComponent} (${selectedUnitOfDataToShow})`} position="insideLeft" />
-                    ) : (
-                      <Label value={selectedDataComponent} position="insideLeft" />
-                    )}
-                    </YAxis>
-                    <Tooltip 
-                      labelStyle={{ color: theme.colors.blue }}
-                      formatter={value => [`${value} ${selectedUnitOfDataToShow}`, selectedDataComponent]} 
-                      labelFormatter={value => `Satellite Timestamp (UTC): ${value}`}
-                    />
-                    {
-                      selectedDataComponent !== 'Operational mode' ? (
-                        <Line type="monotone" dataKey="calibrated_value" stroke={theme.colors.green} />
+                      <defs>
+                        <linearGradient id="calibrated_value" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor={theme.colors.green} stopOpacity={0.8}/>
+                          <stop offset="95%" stopColor={theme.colors.green} stopOpacity={0}/>
+                        </linearGradient>
+                      </defs>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis 
+                        dataKey="utc" 
+                        interval="preserveStartEnd" 
+                        minTickGap={75}
+                      >
+                        <Label value='Satellite Timestamp (UTC)' offset={0} position="bottom" />
+                      </XAxis>
+                      <YAxis domain={['auto', 'auto']}>
+                      {!!selectedUnitOfDataToShow ? (
+                        <Label value={`${selectedDataComponent} (${selectedUnitOfDataToShow})`} position="insideLeft" />
                       ) : (
-                        <>
-                          <Line type="monotone" dataKey="calibrated_value" stroke={theme.colors.green} />
-                          <Line type="monotone" dataKey="raw_value" stroke={theme.colors.green} tooltipType="none" />
-                        </>
-                      ) 
-                    }
-                  </LineChart>
+                        <Label value={selectedDataComponent} position="insideLeft" />
+                      )}
+                      </YAxis>
+                      <Tooltip 
+                        labelStyle={{ color: theme.colors.blue }}
+                        formatter={value => [`${value} ${selectedUnitOfDataToShow}`, selectedDataComponent]} 
+                        labelFormatter={value => `Satellite Timestamp (UTC): ${value}`}
+                      />
+                      {
+                        selectedDataComponent !== 'Operational mode' ? (
+                          <Area dot type="monotone" dataKey="calibrated_value" stroke={theme.colors.green} fill="url(#calibrated_value)" fillOpacity={1} />
+                        ) : (
+                          <>
+                            <Area dot type="monotone" dataKey="calibrated_value" stroke={theme.colors.green} fill="url(#calibrated_value)" fillOpacity={1} />
+                            <Area dot type="monotone" dataKey="raw_value" stroke={theme.colors.green} tooltipType="none" fill="url(#calibrated_value)" fillOpacity={1} />
+                          </>
+                        ) 
+                      }
+                    </AreaChart>
                 </ResponsiveContainer>
               </div>
             </Chart>

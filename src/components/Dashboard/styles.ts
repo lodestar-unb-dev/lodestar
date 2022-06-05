@@ -94,15 +94,16 @@ export const Chart = styled.section`
   flex-direction: column;
   gap: 12px;
 
-  h4 {
+  > h4 {
     font-size: 1.5rem;
     color: ${({ theme }) => theme.colors.black0};
   }
 
-  div {
+  > div {
     background-color: white;
+    border: 3px solid ${({ theme }) => theme.colors.green};
     border-radius: 4px;
-    padding: 12px 12px 12px 3px;
+    padding: 12px;
 
     > span {
       color: ${({ theme }) => theme.colors.green};
@@ -130,6 +131,7 @@ export const Table = styled.section`
   table {
     width: 100%;
     border-collapse: collapse;
+    border: 3px solid ${({ theme }) => theme.colors.green};
 
     * {
       font-size: 1rem;
