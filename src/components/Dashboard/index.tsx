@@ -2,7 +2,8 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { LineChart, CartesianGrid, XAxis, YAxis, Tooltip, Legend, Line, ResponsiveContainer, Label } from "recharts";
 import { Select } from "../Select";
-import { Card, Chart, Container, Sections, Selectors, Summary, Table, Title, Value } from "./styles";
+import { Card, Chart, Container, Description, Sections, Selectors, SmallScreen, Summary, Table, Title, Value } from "./styles";
+import PrismicDOM from 'prismic-dom';
 
 import P_OBC_TELEM_MAG_X from '../../mocks/P_OBC_TELEM_MAG_X.json';
 import P_OBC_TELEM_MAG_Y from '../../mocks/P_OBC_TELEM_MAG_Y.json';
@@ -197,8 +198,22 @@ const MockedAPIDataTable = {
 
 const apiAvailableIntervals = ["1 Hour", "6 Hours", "12 Hours", "24 Hours", "7 days", "30 days", "90 days", "180 days", "360 days"]
 
-export function Dashboard() {
+interface Data {
+  telemetry_viewer_title: string;
+  telemetry_viewer_description: {
+    type: string;
+    text: string;
+  }[];
+}
+
+interface Props {
+  id: string;
+  data: Data;
+}
+
+export function Dashboard({ id, data }: Props) {
   const theme = useTheme();
+  const { telemetry_viewer_title, telemetry_viewer_description } = data;
 
   const [selectedDataMeasure, setSelectedDataMeasure] = useState(Object.keys(MockedAPISelectValues)[0]);
   const [selectedDataComponent, setSelectedDataComponent] = useState(Object.values(MockedAPISelectValues[selectedDataMeasure])[0] as string);
@@ -254,112 +269,118 @@ export function Dashboard() {
   }, [selectedDataMeasure])
 
   return (
-    <Container>
-      <h3>AlfaCrux Telemetry Viewer</h3>
+    <Container id={id}>
+      <div>
+        <h3>{telemetry_viewer_title}</h3>
 
-      <Selectors>
-        <Select 
-          items={Object.keys(MockedAPISelectValues)}
-          value={selectedDataMeasure}
-          setValue={setSelectedDataMeasure}
+        <Description
+          dangerouslySetInnerHTML={{
+            __html: PrismicDOM.RichText.asHtml(telemetry_viewer_description)
+          }}
         />
 
-        <Select 
-          items={Object.values(MockedAPISelectValues[selectedDataMeasure])}
-          value={selectedDataComponent}
-          setValue={setSelectedDataComponent}
-        />
+        <Selectors>
+          <Select 
+            label="Subsystem/Sensor"
+            items={Object.keys(MockedAPISelectValues)}
+            value={selectedDataMeasure}
+            setValue={setSelectedDataMeasure}
+          />
 
-        {/* <Select 
-          items={apiAvailableIntervals}
-          value={selectedDataInterval}
-          setValue={setSelectedDataInterval}
-        /> */}
-      </Selectors>
+          <Select
+            label="Parameter"
+            items={Object.values(MockedAPISelectValues[selectedDataMeasure])}
+            value={selectedDataComponent}
+            setValue={setSelectedDataComponent}
+          />
+        </Selectors>
 
-      <Sections>
-        {selectedDataToShow.length > 0 && (
-          <Chart>
-            <h4>Chart</h4>
+        <Sections>
+          {selectedDataToShow.length > 0 && (
+            <Chart>
+              <h4>Chart</h4>
 
-            <div>
-              <ResponsiveContainer width="100%" height={500}>
-                <LineChart 
-                  data={selectedDataToShow}
-                  margin={{ top: 15, right: 30, left: 20, bottom: 40 }}
-                  >
-                  <Label value="Chart" />
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="utc" tick={false}>
-                    <Label value='Satellite Timestamp (UTC)' offset={0} position="insideBottom" />
-                  </XAxis>
-                  <YAxis domain={['auto', 'auto']}>
-                  {!!selectedUnitOfDataToShow ? (
-                    <Label value={`${selectedDataComponent} (${selectedUnitOfDataToShow})`} position="insideLeft" />
-                  ) : (
-                    <Label value={selectedDataComponent} position="insideLeft" />
-                  )}
-                  </YAxis>
-                  <Tooltip 
-                    formatter={value => [`${value} ${selectedUnitOfDataToShow}`, selectedDataComponent]} 
-                    labelFormatter={value => `Satellite Timestamp (UTC): ${value}`}
-                  />
-                  {
-                    selectedDataComponent !== 'Operational mode' ? (
-                      <Line type="monotone" dataKey="calibrated_value" stroke={theme.colors.green} />
+              <div>
+                <ResponsiveContainer width="100%" height={500}>
+                  <LineChart 
+                    data={selectedDataToShow}
+                    margin={{ top: 15, right: 30, left: 20, bottom: 40 }}
+                    >
+                    <Label value="Chart" />
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="utc" tick={false}>
+                      <Label value='Satellite Timestamp (UTC)' offset={0} position="insideBottom" />
+                    </XAxis>
+                    <YAxis domain={['auto', 'auto']}>
+                    {!!selectedUnitOfDataToShow ? (
+                      <Label value={`${selectedDataComponent} (${selectedUnitOfDataToShow})`} position="insideLeft" />
                     ) : (
-                      <>
+                      <Label value={selectedDataComponent} position="insideLeft" />
+                    )}
+                    </YAxis>
+                    <Tooltip 
+                      formatter={value => [`${value} ${selectedUnitOfDataToShow}`, selectedDataComponent]} 
+                      labelFormatter={value => `Satellite Timestamp (UTC): ${value}`}
+                    />
+                    {
+                      selectedDataComponent !== 'Operational mode' ? (
                         <Line type="monotone" dataKey="calibrated_value" stroke={theme.colors.green} />
-                        <Line type="monotone" dataKey="raw_value" stroke={theme.colors.green} tooltipType="none" />
-                      </>
-                    ) 
-                  }
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
-          </Chart>
-        )}
+                      ) : (
+                        <>
+                          <Line type="monotone" dataKey="calibrated_value" stroke={theme.colors.green} />
+                          <Line type="monotone" dataKey="raw_value" stroke={theme.colors.green} tooltipType="none" />
+                        </>
+                      ) 
+                    }
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </Chart>
+          )}
 
-        {selectedTableDataToShow.length > 0 && (
-          <Table>
-            <h4>Table</h4>
+          {selectedTableDataToShow.length > 0 && (
+            <Table>
+              <h4>Table</h4>
 
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Call Sign</th>
-                  {!!selectedUnitOfDataToShow 
-                  ? (
-                    <th>Calibrated Value ({selectedUnitOfDataToShow})</th>
-                  ) : (
-                    <th>Calibrated Value</th>
-                  )}
-                  <th>Satellite Timestamp (UTC)</th>
-                </tr>
-              </thead>
-              <tbody>
-                {
-                  Array.from(Array(tablePage + 1 === totalPages ? lastPageNumberOfRows : 10).keys()).map((item, index) => (
-                    <tr key={selectedTableDataToShow[pagination(index)].utc + selectedTableDataToShow[pagination(index)].gs_utc}>
-                      <td>{selectedDataComponent}</td>
-                      <td>PT2ENE</td>
-                      <td>{selectedTableDataToShow[pagination(index)].calibrated_value}</td>
-                      <td>{selectedTableDataToShow[pagination(index)].utc}</td>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Call Sign</th>
+                    {!!selectedUnitOfDataToShow 
+                    ? (
+                      <th>Calibrated Value ({selectedUnitOfDataToShow})</th>
+                    ) : (
+                      <th>Calibrated Value</th>
+                    )}
+                    <th>Satellite Timestamp (UTC)</th>
                   </tr>
-                  ))
-                }
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {
+                    Array.from(Array(tablePage + 1 === totalPages ? lastPageNumberOfRows : 10).keys()).map((item, index) => (
+                      <tr key={selectedTableDataToShow[pagination(index)].utc + selectedTableDataToShow[pagination(index)].gs_utc}>
+                        <td>{selectedDataComponent}</td>
+                        <td>PT2ENE</td>
+                        <td>{selectedTableDataToShow[pagination(index)].calibrated_value}</td>
+                        <td>{selectedTableDataToShow[pagination(index)].utc}</td>
+                    </tr>
+                    ))
+                  }
+                </tbody>
+              </table>
 
-            <footer>
-              <button onClick={handlePreviousPage}><FiArrowLeft /></button>
-              <span>Page {tablePage + 1} of {totalPages}</span>
-              <button onClick={handleNextPage}><FiArrowRight /></button>
-            </footer>
-          </Table>
-        )}
-      </Sections>
+              <footer>
+                <button onClick={handlePreviousPage}><FiArrowLeft /></button>
+                <span>Page {tablePage + 1} of {totalPages}</span>
+                <button onClick={handleNextPage}><FiArrowRight /></button>
+              </footer>
+            </Table>
+          )}
+        </Sections>
+
+        <SmallScreen>Please open this page on a larger screen to be able to see the telemetry viewer data</SmallScreen>
+      </div>
     </Container>
   )
 }

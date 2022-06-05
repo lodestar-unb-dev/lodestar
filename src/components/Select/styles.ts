@@ -1,20 +1,35 @@
 import styled from "styled-components";
 import * as Select from '@radix-ui/react-select';
 
-export const SelectRoot = styled(Select.Root)``;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 8px;
+
+  label {
+    font-size: 16px;
+  }
+`;
+
+export const SelectRoot = styled(Select.Root)`
+`;
 
 export const SelectTrigger = styled(Select.Trigger)`
   all: unset;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 4px;
   padding: 0 15px;
   font-size: 13px;
   height: 35px;
   width: fit-content;
+  min-width: 124px;
   gap: 5px;
   background-color: white;
+  color: ${({ theme }) => theme.colors.blueLight};
 `;
 
 export const SelectValue = styled(Select.Value)``;

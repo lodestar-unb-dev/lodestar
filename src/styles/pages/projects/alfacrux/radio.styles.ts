@@ -35,7 +35,6 @@ export const RadioBanner = styled.section<RadioBannerProps>`
     }
 
     div {
-      max-width: 45%;
       margin-right: auto;
 
       p {
@@ -173,7 +172,7 @@ export const RadioInfo = styled.section`
 
 export const RadioForm = styled.section`
   padding: 80px 20px;
-  background-color: ${({ theme }) => theme.colors.blueDarker};
+  background-color: ${({ theme }) => theme.colors.greenDark};
 
   div {
     display: flex;

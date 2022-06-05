@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useTheme } from "styled-components";
 import { FiTool } from 'react-icons/fi';
 import { AnimatePresence, motion } from "framer-motion";
@@ -125,6 +125,11 @@ interface AlfaCruxRadioPrismicDocument {
     type: string;
     text: string;
   }[];
+  telemetry_viewer_title: string;
+  telemetry_viewer_description: {
+    type: string;
+    text: string;
+  }[];
 }
 
 interface AlfaCruxRadioProps {
@@ -169,7 +174,9 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
     sdr_info,
     sdr_description,
     ttc_info,
-    ttc_description
+    ttc_description,
+    telemetry_viewer_title,
+    telemetry_viewer_description
   } = alfacruxRadioPrismicDocument;
 
   const info = {
@@ -191,6 +198,23 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
     }
   }
   
+  useEffect(() => {
+    const path = window.location.hash
+    if (path && path.includes("#")) {
+      setTimeout(() => {
+        const id = path.replace("#", "")
+        const el = window.document.getElementById(id)
+        const r = el?.getBoundingClientRect()
+        if (r) {
+          window?.top?.scroll({
+            top: scrollY + r.top -73,
+            behavior: 'smooth'
+          })
+        }
+      }, 600)
+    }
+  }, [])
+
   return (
     <Layout>
       <RadioBanner 
@@ -285,7 +309,7 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
         </div>
       </RadioForm>
 
-      <Dashboard />
+      <Dashboard id="telemetry-viewer" data={{ telemetry_viewer_title, telemetry_viewer_description }} />
     </Layout>
   )
 }

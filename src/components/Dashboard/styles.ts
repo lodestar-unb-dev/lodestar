@@ -1,30 +1,55 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 1120px;
-  margin: 80px auto;
-  padding: 0 20px;
-  color: ${({ theme }) => theme.colors.blue};
+    background-color: ${({ theme }) => theme.colors.blue};
+    padding: 80px 20px;
+    color: ${({ theme }) => theme.colors.black0};
+    
+    > div {
+      max-width: 1120px;
+      margin: 0 auto;
 
-  display: flex;
-  flex-direction: column;
+      display: flex;
+      flex-direction: column;
 
-  h3 {
-    align-self: center;
-    font-size: 2.5rem;
+      h3 {
+        align-self: center;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+    }
+`;
+
+export const Description = styled.div`
+  p {
+    text-align: justify;
+    line-height: 26px;
+  }
+
+  p + p {
+    margin-top: 20px;
   }
 `;
 
 export const Selectors = styled.div`
-  margin: 40px 0 24px;
+  margin: 80px 0 24px;
   display: flex;
-  gap: 12px;
+  gap: 16px;
+
+  @media(max-width: 640px) {
+    display: none;
+  }
 `;
 
 export const Sections = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media(max-width: 640px) {
+    display: none;
+  }
 `;
 
 export const Summary = styled.section`
@@ -71,7 +96,7 @@ export const Chart = styled.section`
 
   h4 {
     font-size: 1.5rem;
-    color: ${({ theme }) => theme.colors.blueDarker};
+    color: ${({ theme }) => theme.colors.black0};
   }
 
   div {
@@ -92,7 +117,7 @@ export const Table = styled.section`
 
   h4 {
     font-size: 1.5rem;
-    color: ${({ theme }) => theme.colors.blueDarker};
+    color: ${({ theme }) => theme.colors.black0};
   }
 
   table {
@@ -108,7 +133,7 @@ export const Table = styled.section`
       font-weight: normal;
       text-align: center;
       padding: 10px;
-      background-color: ${({ theme }) => theme.colors.blue};
+      background-color: ${({ theme }) => theme.colors.green};
       color: ${({ theme }) => theme.colors.black0};
     }
 
@@ -127,10 +152,12 @@ export const Table = styled.section`
 
     tr:nth-child(even) {
       background-color: ${({ theme }) => theme.colors.black0};
+      color: ${({ theme }) => theme.colors.blueLight};
     }
 
     tr:nth-child(odd) {
       background-color: ${({ theme }) => theme.colors.black10};
+      color: ${({ theme }) => theme.colors.blueLight};
     }
 
     tr:last-child td:first-child {
@@ -153,5 +180,17 @@ export const Table = styled.section`
       display: flex;
       align-items: center;
     }
+  }
+`;
+
+export const SmallScreen = styled.div`
+  display: none;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 80px auto 0;
+
+  @media(max-width: 640px) {
+    display: block;
   }
 `;
