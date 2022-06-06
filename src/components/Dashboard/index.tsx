@@ -81,9 +81,9 @@ const MockedAPISelectValues = {
 
 const MockedAPIUnits = {
   'OBC Telemetry': {
-    'X-axis OBC magnetometer measure': 'G',
-    'Y-axis OBC magnetometer measure': 'G',
-    'Z-axis OBC magnetometer measure': 'G',
+    'X-axis OBC magnetometer measure': 'mG',
+    'Y-axis OBC magnetometer measure': 'mG',
+    'Z-axis OBC magnetometer measure': 'mG',
     'X-axis OBC gyroscope measure': 'deg/s',
     'Y-axis OBC gyroscope measure': 'deg/s',
     'Z-axis OBC gyroscope measure': 'deg/s',
