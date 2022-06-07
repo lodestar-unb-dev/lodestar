@@ -30,7 +30,7 @@ export type TelemetryViewerParameters =
 'P_SP_TELEM_TEMP_PZ' |
 'P_SP_TELEM_TEMP_NZ'
 
-export interface ITelemetryViewerData {
+export interface ITelemetryViewerParameterQueryData {
   id: number;
   struct_type: string;
   param_name: TelemetryViewerParameters;
