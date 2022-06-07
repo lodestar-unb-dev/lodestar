@@ -39,6 +39,8 @@ import P_SP_TELEM_TEMP_PZ from '../../mocks/P_SP_TELEM_TEMP_PZ.json';
 import P_SP_TELEM_TEMP_NZ from '../../mocks/P_SP_TELEM_TEMP_NZ.json';
 
 import { useTheme } from "styled-components";
+import { useGetTelemetryViewerParameter } from "../../queries/telemetryViewer/useGetTelemetryViewerParameter";
+import { ITelemetryViewerParameterQueryData } from "../../dtos/TelemetryViewerData";
 
 const MockedAPISelectValues = {
   'OBC Telemetry': {
@@ -212,13 +214,20 @@ interface Props {
 }
 
 export function Dashboard({ id, data }: Props) {
+  
   const theme = useTheme();
   const { telemetry_viewer_title, telemetry_viewer_description } = data;
-
+  
   const [selectedDataMeasure, setSelectedDataMeasure] = useState(Object.keys(MockedAPISelectValues)[0]);
   const [selectedDataComponent, setSelectedDataComponent] = useState(Object.values(MockedAPISelectValues[selectedDataMeasure])[0] as string);
   const [selectedDataInterval, setSelectedDataInterval] = useState('24 Hours');
   const [tablePage, setTablePage] = useState(0);
+  
+  const telemetryViewerParameterQuery = useGetTelemetryViewerParameter('P_OBC_TELEM_MAG_X');
+
+  const telemetryViewerParameter = useMemo(() => {
+    return telemetryViewerParameterQuery.data ?? ({} as ITelemetryViewerParameterQueryData[]);
+  }, [telemetryViewerParameterQuery.data]);
 
   const pagination = useCallback((index) => {
     return tablePage * 10 + index
