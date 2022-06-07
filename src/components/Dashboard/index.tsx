@@ -279,6 +279,8 @@ export function Dashboard({ id, data }: Props) {
           }}
         />
 
+        <SmallScreen>⚠️ The telemetry viewer can be better seen on a larger screen.</SmallScreen>
+
         <Selectors>
           <Select 
             label="Subsystem/Sensor"
@@ -389,8 +391,6 @@ export function Dashboard({ id, data }: Props) {
             </Table>
           )}
         </Sections>
-
-        <SmallScreen>Please open this page on a larger screen to be able to see the telemetry viewer data</SmallScreen>
       </div>
     </Container>
   )

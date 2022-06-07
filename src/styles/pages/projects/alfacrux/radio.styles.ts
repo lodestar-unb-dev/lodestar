@@ -174,6 +174,10 @@ export const RadioForm = styled.section`
   padding: 80px 20px;
   background-color: ${({ theme }) => theme.colors.greenDark};
 
+  @media(max-width: 560px) {
+    padding: 40px 20px;
+  }
+
   div {
     display: flex;
     flex-direction: column;
@@ -236,8 +240,12 @@ export const ComingNext = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  padding: 80px 20px;
+  padding: 80px 40px;
   color: ${({ theme }) => theme.colors.blue };
+
+  @media(max-width: 560px) {
+    padding: 40px 20px;
+  }
 
   > div {
     display: flex;
