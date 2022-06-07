@@ -39,6 +39,7 @@ import P_SP_TELEM_TEMP_PZ from '../../mocks/P_SP_TELEM_TEMP_PZ.json';
 import P_SP_TELEM_TEMP_NZ from '../../mocks/P_SP_TELEM_TEMP_NZ.json';
 
 import { useTheme } from "styled-components";
+import { useMediaQuery } from "beautiful-react-hooks";
 
 const MockedAPISelectValues = {
   'OBC Telemetry': {
@@ -212,6 +213,8 @@ interface Props {
 }
 
 export function Dashboard({ id, data }: Props) {
+  const isSmall = useMediaQuery('(max-width: 560px)');
+
   const theme = useTheme();
   const { telemetry_viewer_title, telemetry_viewer_description } = data;
 
@@ -333,7 +336,7 @@ export function Dashboard({ id, data }: Props) {
                       <Tooltip 
                         labelStyle={{ color: theme.colors.blue }}
                         formatter={value => [`${value} ${selectedUnitOfDataToShow}`, selectedDataComponent]} 
-                        labelFormatter={value => `Satellite Timestamp (UTC): ${value}`}
+                        labelFormatter={value => isSmall ? `${value}` : `Satellite Timestamp (UTC): ${value}`}
                       />
                       {
                         selectedDataComponent !== 'Operational mode' ? (

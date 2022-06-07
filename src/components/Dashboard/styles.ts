@@ -123,6 +123,19 @@ export const Chart = styled.section`
   .recharts-yAxis .recharts-label {
     transform: rotate(-90deg) translate(-420px, -200px);
   }
+
+  .recharts-tooltip-item-name, .recharts-tooltip-item-separator {
+    @media(max-width: 560px) {
+      display: none;
+    }
+  }
+
+  .recharts-tooltip-wrapper {
+    @media(max-width: 560px) {
+      max-width: 200px;
+      overflow: hidden;
+    }
+  }
 `;
 
 export const Table = styled.section`
