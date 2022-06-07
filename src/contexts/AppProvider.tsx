@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { QueryClientProvider } from "react-query";
 import { ThemeProvider } from "styled-components";
+import { ReactQueryDevtools } from 'react-query/devtools'
 
 import { useQueryClientProvider } from "../hooks/useQueryClientProvider";
 import { theme } from "../styles/theme";
@@ -17,6 +18,8 @@ export function AppProvider({children}: Props) {
       <ThemeProvider theme={theme}>
         {children}
       </ThemeProvider>
+      
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }
