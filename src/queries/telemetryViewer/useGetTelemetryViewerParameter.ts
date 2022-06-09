@@ -7,15 +7,23 @@ import { ITelemetryViewerParameterQueryData, TelemetryViewerParameters } from '.
 
 export type QueryData = ITelemetryViewerParameterQueryData[];
 
-type Params = TelemetryViewerParameters;
+type Params = {
+  param_name: TelemetryViewerParameters;
+  start_time: string;
+  stop_time: string;
+};
 
 async function fetchTelemetryViewerParameter({ queryKey }: QueryFunctionContext) {
   const { data } = await api.get('/get', {
     params: {
-      param_name: queryKey[1]
+      param_name: queryKey[1],
+      start_time: queryKey[2],
+      stop_time: queryKey[3],
+      sort: 'sat_corrected',
+      // filter_time: 'sat_corrected'
     }
   });
-
+  
   return data;
 }
 
@@ -25,7 +33,7 @@ export function useGetTelemetryViewerParameter(
   telemetryViewerParamName: Params,
 ): UseQueryResult<QueryData, AxiosError<ITelemetryViewerParameterQueryData[]>> {
   return useQuery<QueryData, AxiosError<ITelemetryViewerParameterQueryData[]>>(
-    [QUERY_KEY, telemetryViewerParamName],
+    [QUERY_KEY, ...Object.values(telemetryViewerParamName)],
     fetchTelemetryViewerParameter,
   );
 }

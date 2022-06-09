@@ -2,166 +2,14 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { FiArrowLeft, FiArrowRight, FiLoader } from "react-icons/fi";
 import { CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Label, AreaChart, Area } from "recharts";
 import { Select } from "../Select";
-import { Card, Chart, Container, Description, Error, Loading, Sections, Selectors, SmallScreen, Summary, Table, Title, Value } from "./styles";
+import { Chart, Container, Description, Error, Loading, Sections, Selectors, SmallScreen, Summary, Table, Title, Value } from "./styles";
 import PrismicDOM from 'prismic-dom';
-
-import P_OBC_TELEM_MAG_X from '../../mocks/P_OBC_TELEM_MAG_X.json';
-import P_OBC_TELEM_MAG_Y from '../../mocks/P_OBC_TELEM_MAG_Y.json';
-import P_OBC_TELEM_MAG_Z from '../../mocks/P_OBC_TELEM_MAG_Z.json';
-import P_OBC_TELEM_GYRO_X from '../../mocks/P_OBC_TELEM_GYRO_X.json';
-import P_OBC_TELEM_GYRO_Y from '../../mocks/P_OBC_TELEM_GYRO_Y.json';
-import P_OBC_TELEM_GYRO_Z from '../../mocks/P_OBC_TELEM_GYRO_Z.json';
-import P_OM_TELEM_SW_STATE from '../../mocks/P_OM_TELEM_SW_STATE.json';
-
-import P_EP_TELEM_VBATT from '../../mocks/P_EP_TELEM_VBATT.json';
-import P_EP_TELEM_CURIN_0 from '../../mocks/P_EP_TELEM_CURIN_0.json';
-import P_EP_TELEM_CURIN_1 from '../../mocks/P_EP_TELEM_CURIN_1.json';
-import P_EP_TELEM_CURIN_2 from '../../mocks/P_EP_TELEM_CURIN_2.json';
-import P_EP_TELEM_CURSUN from '../../mocks/P_EP_TELEM_CURSUN.json';
-import P_EP_TELEM_CURSYS from '../../mocks/P_EP_TELEM_CURSYS.json';
-import P_EP_TELEM_VBOOST_0 from '../../mocks/P_EP_TELEM_VBOOST_0.json';
-import P_EP_TELEM_VBOOST_1 from '../../mocks/P_EP_TELEM_VBOOST_1.json';
-import P_EP_TELEM_VBOOST_2 from '../../mocks/P_EP_TELEM_VBOOST_2.json';
-import P_EP_TELEM_CUROUT_0 from '../../mocks/P_EP_TELEM_CUROUT_0.json';
-import P_EP_TELEM_CUROUT_3 from '../../mocks/P_EP_TELEM_CUROUT_3.json';
-import P_EP_TELEM_CUROUT_5 from '../../mocks/P_EP_TELEM_CUROUT_5.json';
-
-import P_TT_TELEM_TEMP_BRD from '../../mocks/P_TT_TELEM_TEMP_BRD.json';
-import P_OBC_TELEM_TEMP_MCU from '../../mocks/P_OBC_TELEM_TEMP_MCU.json';
-import P_EP_TELEM_TEMP_3 from '../../mocks/P_EP_TELEM_TEMP_3.json';
-import P_EP_TELEM_TEMP_4 from '../../mocks/P_EP_TELEM_TEMP_4.json';
-import P_EP_TELEM_TEMP_5 from '../../mocks/P_EP_TELEM_TEMP_5.json';
-import P_SP_TELEM_TEMP_PX from '../../mocks/P_SP_TELEM_TEMP_PX.json';
-import P_SP_TELEM_TEMP_NX from '../../mocks/P_SP_TELEM_TEMP_NX.json';
-import P_SP_TELEM_TEMP_PY from '../../mocks/P_SP_TELEM_TEMP_PY.json';
-import P_SP_TELEM_TEMP_NY from '../../mocks/P_SP_TELEM_TEMP_NY.json';
-import P_SP_TELEM_TEMP_PZ from '../../mocks/P_SP_TELEM_TEMP_PZ.json';
-import P_SP_TELEM_TEMP_NZ from '../../mocks/P_SP_TELEM_TEMP_NZ.json';
 
 import { useTheme } from "styled-components";
 import { useGetTelemetryViewerParameter } from "../../queries/telemetryViewer/useGetTelemetryViewerParameter";
 import { ITelemetryViewerParameterQueryData } from "../../dtos/TelemetryViewerData";
 import { correctApiCalibratedUnits } from "../../utils/correctApiCalibratedUnits";
-
-
-
-const MockedAPIUnits = {
-  'OBC Telemetry': {
-    'X-axis OBC magnetometer measure': 'mG',
-    'Y-axis OBC magnetometer measure': 'mG',
-    'Z-axis OBC magnetometer measure': 'mG',
-    'X-axis OBC gyroscope measure': 'deg/s',
-    'Y-axis OBC gyroscope measure': 'deg/s',
-    'Z-axis OBC gyroscope measure': 'deg/s',
-    'Operational mode': '',
-  },
-  'EPS Telemetry': {
-    'Battery voltage': 'mV',
-    'Input current from solar panels +/-X faces': 'mA',
-    'Input current from solar panels +/-Y faces': 'mA',
-    'Input current from solar panels +/-Z faces': 'mA',
-    'Input current from the solar panel to the battery': 'mA',
-    'Output current from the battery': 'mA',
-    'Input voltage from solar panels +/-X faces': 'mV',
-    'Input voltage from solar panels +/-Y faces': 'mV',
-    'Input voltage from solar panels +/-Z faces': 'mV',
-    'Output current to OBC': 'mA',
-    'Output current to TTC': 'mA',
-    'Output current to Payload': 'mA'
-  },
-  'Temperature Sensors Telemetry': {
-    'Internal TTC MCU temperature': 'ºC',
-    'Internal OBC MCU temperature': 'ºC',
-    'Internal EPS PCB temperature': 'ºC',
-    'Internal EPS battery temperature - pair 1': 'ºC',
-    'Internal EPS battery temperature - pair 2': 'ºC',
-    'External solar panel temperature on face +X': 'ºC',
-    'External solar panel temperature on face -X': 'ºC',
-    'External solar panel temperature on face +Y': 'ºC',
-    'External solar panel temperature on face -Y': 'ºC',
-    'External solar panel temperature on face +Z': 'ºC',
-    'External solar panel temperature on face-X': 'ºC'
-  }
-}
-
-const MockedAPIData = {
-  'OBC Telemetry': {
-    'X-axis OBC magnetometer measure': P_OBC_TELEM_MAG_X,
-    'Y-axis OBC magnetometer measure': P_OBC_TELEM_MAG_Y,
-    'Z-axis OBC magnetometer measure': P_OBC_TELEM_MAG_Z,
-    'X-axis OBC gyroscope measure': P_OBC_TELEM_GYRO_X,
-    'Y-axis OBC gyroscope measure': P_OBC_TELEM_GYRO_Y,
-    'Z-axis OBC gyroscope measure': P_OBC_TELEM_GYRO_Z,
-    'Operational mode': P_OM_TELEM_SW_STATE,
-  },
-  'EPS Telemetry': {
-    'Battery voltage' : P_EP_TELEM_VBATT,
-    'Input current from solar panels +/-X faces' : P_EP_TELEM_CURIN_0,
-    'Input current from solar panels +/-Y faces' : P_EP_TELEM_CURIN_1,
-    'Input current from solar panels +/-Z faces' : P_EP_TELEM_CURIN_2,
-    'Input current from the solar panel to the battery' : P_EP_TELEM_CURSUN,
-    'Output current from the battery' : P_EP_TELEM_CURSYS,
-    'Input voltage from solar panels +/-X faces' : P_EP_TELEM_VBOOST_0,
-    'Input voltage from solar panels +/-Y faces' : P_EP_TELEM_VBOOST_1,
-    'Input voltage from solar panels +/-Z faces' : P_EP_TELEM_VBOOST_2,
-    'Output current to OBC' : P_EP_TELEM_CUROUT_0,
-    'Output current to TTC' : P_EP_TELEM_CUROUT_3,
-    'Output current to Payload' : P_EP_TELEM_CUROUT_5
-  },
-  'Temperature Sensors Telemetry': {
-    'Internal TTC MCU temperature': P_TT_TELEM_TEMP_BRD,
-    'Internal OBC MCU temperature': P_OBC_TELEM_TEMP_MCU,
-    'Internal EPS PCB temperature': P_EP_TELEM_TEMP_3,
-    'Internal EPS battery temperature - pair 1': P_EP_TELEM_TEMP_4,
-    'Internal EPS battery temperature - pair 2': P_EP_TELEM_TEMP_5,
-    'External solar panel temperature on face +X': P_SP_TELEM_TEMP_PX,
-    'External solar panel temperature on face -X': P_SP_TELEM_TEMP_NX,
-    'External solar panel temperature on face +Y': P_SP_TELEM_TEMP_PY,
-    'External solar panel temperature on face -Y': P_SP_TELEM_TEMP_NY,
-    'External solar panel temperature on face +Z': P_SP_TELEM_TEMP_PZ,
-    'External solar panel temperature on face -Z': P_SP_TELEM_TEMP_NZ
-  }
-}
-
-const MockedAPIDataTable = {
-  'OBC Telemetry': {
-    'X-axis OBC magnetometer measure': [...P_OBC_TELEM_MAG_X].reverse(),
-    'Y-axis OBC magnetometer measure': [...P_OBC_TELEM_MAG_Y].reverse(),
-    'Z-axis OBC magnetometer measure': [...P_OBC_TELEM_MAG_Z].reverse(),
-    'X-axis OBC gyroscope measure': [...P_OBC_TELEM_GYRO_X].reverse(),
-    'Y-axis OBC gyroscope measure': [...P_OBC_TELEM_GYRO_Y].reverse(),
-    'Z-axis OBC gyroscope measure': [...P_OBC_TELEM_GYRO_Z].reverse(),
-    'Operational mode': [...P_OM_TELEM_SW_STATE].reverse(),
-  },
-  'EPS Telemetry': {
-    'Battery voltage': [...P_EP_TELEM_VBATT].reverse(),
-    'Input current from solar panels +/-X faces': [...P_EP_TELEM_CURIN_0].reverse(),
-    'Input current from solar panels +/-Y faces': [...P_EP_TELEM_CURIN_1].reverse(),
-    'Input current from solar panels +/-Z faces': [...P_EP_TELEM_CURIN_2].reverse(),
-    'Input current from the solar panel to the battery': [...P_EP_TELEM_CURSUN].reverse(),
-    'Output current from the battery': [...P_EP_TELEM_CURSYS].reverse(),
-    'Input voltage from solar panels +/-X faces': [...P_EP_TELEM_VBOOST_0].reverse(),
-    'Input voltage from solar panels +/-Y faces': [...P_EP_TELEM_VBOOST_1].reverse(),
-    'Input voltage from solar panels +/-Z faces': [...P_EP_TELEM_VBOOST_2].reverse(),
-    'Output current to OBC': [...P_EP_TELEM_CUROUT_0].reverse(),
-    'Output current to TTC': [...P_EP_TELEM_CUROUT_3].reverse(),
-    'Output current to Payload': [...P_EP_TELEM_CUROUT_5].reverse(),
-  },
-  'Temperature Sensors Telemetry': {
-    'Internal TTC MCU temperature': [...P_TT_TELEM_TEMP_BRD].reverse(),
-    'Internal OBC MCU temperature': [...P_OBC_TELEM_TEMP_MCU].reverse(),
-    'Internal EPS PCB temperature': [...P_EP_TELEM_TEMP_3].reverse(),
-    'Internal EPS battery temperature - pair 1': [...P_EP_TELEM_TEMP_4].reverse(),
-    'Internal EPS battery temperature - pair 2': [...P_EP_TELEM_TEMP_5].reverse(),
-    'External solar panel temperature on face +X': [...P_SP_TELEM_TEMP_PX].reverse(),
-    'External solar panel temperature on face -X': [...P_SP_TELEM_TEMP_NX].reverse(),
-    'External solar panel temperature on face +Y': [...P_SP_TELEM_TEMP_PY].reverse(),
-    'External solar panel temperature on face -Y': [...P_SP_TELEM_TEMP_NY].reverse(),
-    'External solar panel temperature on face +Z': [...P_SP_TELEM_TEMP_PZ].reverse(),
-    'External solar panel temperature on face -Z': [...P_SP_TELEM_TEMP_NZ].reverse()
-  }
-}
-
+import { subDays } from "date-fns";
 
 interface Data {
   telemetry_viewer_title: string;
@@ -214,7 +62,7 @@ const selectSubsystemSensorsAndParametersValues = {
     'External solar panel temperature on face -Z': 'P_SP_TELEM_TEMP_NZ'
   }
 }
-const selectIntervalsValues = ["24 Hours", "7 days", "30 days", "All data"];
+const selectIntervalsValues = ["24 hours", "7 days", "30 days", "All data"];
 
 const selectSubsystemOrSensorKeys = Object.keys(selectSubsystemSensorsAndParametersValues);
 
@@ -236,8 +84,54 @@ export function Dashboard({ id, data }: Props) {
   const selectedQueryParameter = useMemo(() => {
     return selectSubsystemSensorsAndParametersValues[selectedSubsystemOrSensor][selectedParameter];
   }, [selectedSubsystemOrSensor, selectedParameter])
+
+  const apiIntervalValues = useMemo(() => {
+    let stopTime = new Date();
+    
+    switch (selectedInterval) {
+      case '24 hours': {
+        const startTime = subDays(stopTime, 1);
+        return {
+          startTime,
+          stopTime
+        }
+      }
+      case '7 days': {
+        const startTime = subDays(stopTime, 7);
+        return {
+          startTime,
+          stopTime
+        }
+      }
+      case '30 days': {
+        const startTime = subDays(stopTime, 30);
+        return {
+          startTime,
+          stopTime
+        }
+      }
+      case 'All data': {
+        return {
+          startTime: null,
+          stopTime: null
+        }
+      }
+      default: {
+        return {
+          startTime: null,
+          stopTime: null
+        }
+      }
+    }
+  }, [selectedInterval]);
   
-  const telemetryViewerParameterQuery = useGetTelemetryViewerParameter(selectedQueryParameter);
+  const telemetryViewerParameterQuery = useGetTelemetryViewerParameter(
+    { 
+      param_name: selectedQueryParameter ?? initialQueryParameter, 
+      start_time: apiIntervalValues.startTime?.toISOString(), 
+      stop_time: apiIntervalValues.stopTime?.toISOString()
+    }
+  );
   
   const telemetryViewerParameter = useMemo(() => {
     if (telemetryViewerParameterQuery?.data?.length > 0) {
@@ -250,6 +144,14 @@ export function Dashboard({ id, data }: Props) {
 
     return ({} as ITelemetryViewerParameterQueryData[]);
   }, [telemetryViewerParameterQuery.data]);
+
+  const reversedTelemetryViewerParameter = useMemo(() => {
+    if (telemetryViewerParameter.length > 0) {
+      return [...telemetryViewerParameter].reverse();
+    }
+
+    return [];
+  }, [telemetryViewerParameter])
 
   const pagination = useCallback((index) => {
     return tablePage * 10 + index
@@ -327,6 +229,13 @@ export function Dashboard({ id, data }: Props) {
               value={selectedParameter}
               setValue={setSelectedParameter}
             />
+
+            <Select
+              label="Interval"
+              items={selectIntervalsValues}
+              value={selectedInterval}
+              setValue={setSelectedInterval}
+            />
           </Selectors>
 
           <Sections>
@@ -373,6 +282,14 @@ export function Dashboard({ id, data }: Props) {
               setValue={setSelectedParameter}
               disabled
             />
+
+            <Select
+              label="Interval"
+              items={selectIntervalsValues}
+              value={selectedInterval}
+              setValue={setSelectedInterval}
+              disabled
+            />
           </Selectors>
 
           <Sections>
@@ -411,6 +328,13 @@ export function Dashboard({ id, data }: Props) {
               items={selectParameterKeys}
               value={selectedParameter}
               setValue={setSelectedParameter}
+            />
+
+            <Select
+              label="Interval"
+              items={selectIntervalsValues}
+              value={selectedInterval}
+              setValue={setSelectedInterval}
             />
         </Selectors>
 
@@ -469,7 +393,7 @@ export function Dashboard({ id, data }: Props) {
             </Chart>
           )}
 
-          {telemetryViewerParameter.length > 0 && (
+          {reversedTelemetryViewerParameter.length > 0 && (
             <Table>
               <h4>Telemetry Table</h4>
 
@@ -490,11 +414,11 @@ export function Dashboard({ id, data }: Props) {
                 <tbody>
                   {
                     Array.from(Array(tablePage + 1 === totalPages ? lastPageNumberOfRows : 10).keys()).map((_, index) => (
-                      <tr key={telemetryViewerParameter[pagination(index)].timestamp_sat_utc_corrected + telemetryViewerParameter[pagination(index)].timestamp_gs_utc}>
+                      <tr key={reversedTelemetryViewerParameter[pagination(index)].timestamp_sat_utc_corrected + reversedTelemetryViewerParameter[pagination(index)].timestamp_gs_utc}>
                         <td>{selectedParameter}</td>
                         <td>PT2ENE</td>
-                        <td>{telemetryViewerParameter[pagination(index)].calibrated_value}</td>
-                        <td>{telemetryViewerParameter[pagination(index)].timestamp_sat_utc_corrected}</td>
+                        <td>{reversedTelemetryViewerParameter[pagination(index)].calibrated_value}</td>
+                        <td>{reversedTelemetryViewerParameter[pagination(index)].timestamp_sat_utc_corrected}</td>
                     </tr>
                     ))
                   }
@@ -514,6 +438,4 @@ export function Dashboard({ id, data }: Props) {
       </div>
     </Container>
   )
-
-  // return <div>oi</div>
 }
