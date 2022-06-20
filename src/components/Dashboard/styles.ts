@@ -14,6 +14,10 @@ export const Container = styled.div`
     background-color: ${({ theme }) => theme.colors.blueDark};
     padding: 80px 20px;
     color: ${({ theme }) => theme.colors.black0};
+
+    @media(max-width: 560px) {
+      padding: 40px 20px;
+    }
     
     > div {
       max-width: 1120px;
@@ -47,8 +51,10 @@ export const Selectors = styled.div`
   display: flex;
   gap: 16px;
 
-  @media(max-width: 640px) {
-    display: none;
+  @media(max-width: 560px) {
+    margin: 40px 0 12px;
+    gap: 8px;
+    flex-direction: column;
   }
 `;
 
@@ -57,8 +63,9 @@ export const Sections = styled.div`
   flex-direction: column;
   gap: 24px;
 
-  @media(max-width: 640px) {
-    display: none;
+  @media(max-width: 560px) {
+    margin-top: 20px;
+    gap: 12px;
   }
 `;
 
@@ -126,6 +133,19 @@ export const Chart = styled.section`
   .recharts-yAxis .recharts-label {
     transform: rotate(-90deg) translate(-420px, -200px);
   }
+
+  .recharts-tooltip-item-name, .recharts-tooltip-item-separator {
+    @media(max-width: 560px) {
+      display: none;
+    }
+  }
+
+  .recharts-tooltip-wrapper {
+    @media(max-width: 560px) {
+      max-width: 200px;
+      overflow: hidden;
+    }
+  }
 `;
 
 export const Table = styled.section`
@@ -186,6 +206,17 @@ export const Table = styled.section`
     tr:last-child td:last-child {
       border-bottom-right-radius: 4px;
     }
+
+    @media(max-width: 560px) {
+      td {
+        padding: 2px;
+        font-size: 12px;
+      }
+
+      td:nth-child(3) {
+        word-break: break-all;
+      }
+    }
   }
 
   footer {
@@ -204,12 +235,16 @@ export const Table = styled.section`
 
 export const SmallScreen = styled.div`
   display: none;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin: 80px auto 0;
+  margin: 40px auto 0;
+  background-color: #e5ac01;
+  border-radius: 4px;
+  padding: 8px 4px;
+  color: black;
 
-  @media(max-width: 640px) {
+  @media(max-width: 560px) {
     display: block;
   }
 `;

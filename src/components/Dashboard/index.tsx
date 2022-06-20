@@ -10,6 +10,7 @@ import { useGetTelemetryViewerParameter } from "../../queries/telemetryViewer/us
 import { ITelemetryViewerParameterQueryData } from "../../dtos/TelemetryViewerData";
 import { correctApiCalibratedUnits } from "../../utils/correctApiCalibratedUnits";
 import { subDays } from "date-fns";
+import { useMediaQuery } from "beautiful-react-hooks";
 
 interface Data {
   telemetry_viewer_title: string;
@@ -72,6 +73,8 @@ const initialSelectedIntervalValue = selectIntervalsValues[0];
 const initialQueryParameter = selectSubsystemSensorsAndParametersValues[initialSelectedSubsystemOrSensorValue][initialSelectedParameterValue]
 
 export function Dashboard({ id, data }: Props) {
+  const isSmall = useMediaQuery('(max-width: 560px)');
+
   const theme = useTheme();
   const { telemetry_viewer_title, telemetry_viewer_description } = data;
   
@@ -315,6 +318,8 @@ export function Dashboard({ id, data }: Props) {
           }}
         />
 
+        <SmallScreen>⚠️ The telemetry viewer can be better seen on a larger screen.</SmallScreen>
+
         <Selectors>
         <Select 
               label="Subsystem/Sensor"
@@ -375,7 +380,7 @@ export function Dashboard({ id, data }: Props) {
                       <Tooltip 
                         labelStyle={{ color: theme.colors.blue }}
                         formatter={value => [`${value} ${selectedParameterMeasureUnit}`, selectedParameter]} 
-                        labelFormatter={value => `Satellite Timestamp (UTC): ${value}`}
+                        labelFormatter={value => isSmall ? `${value}` : `Satellite Timestamp (UTC): ${value}`}
                       />
                       {
                         selectedParameter !== 'Operational mode' ? (
@@ -433,8 +438,6 @@ export function Dashboard({ id, data }: Props) {
             </Table>
           )}
         </Sections>
-
-        <SmallScreen>Please open this page on a larger screen to be able to see the telemetry viewer data</SmallScreen>
       </div>
     </Container>
   )
