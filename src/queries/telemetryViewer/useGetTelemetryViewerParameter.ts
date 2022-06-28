@@ -14,14 +14,19 @@ type Params = {
 };
 
 async function fetchTelemetryViewerParameter({ queryKey }: QueryFunctionContext) {
+  const params = !!queryKey[2] && !!queryKey[3] ? {
+    param_name: queryKey[1],
+    sort: 'sat_corrected',
+    start_time: queryKey[2],
+    stop_time: queryKey[3],
+    filter_time: 'sat_corrected'
+  } : {
+    param_name: queryKey[1],
+    sort: 'sat_corrected',
+  }
+
   const { data } = await api.get('/get', {
-    params: {
-      param_name: queryKey[1],
-      start_time: queryKey[2],
-      stop_time: queryKey[3],
-      sort: 'sat_corrected',
-      // filter_time: 'sat_corrected'
-    }
+    params: {...params}
   });
   
   return data;
