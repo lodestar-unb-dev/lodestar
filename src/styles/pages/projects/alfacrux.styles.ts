@@ -31,6 +31,19 @@ export const AlfaCruxBanner = styled.section<AlfaCruxBannerProps>`
   }
 `;
 
+export const AlfacruxCallout = styled.div`
+  background-color: #00822D99;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  gap: 4px;
+`;
+
 export const AlfacruxCountdown = styled.div`
   position: absolute;
   height: 100%;

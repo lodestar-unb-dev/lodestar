@@ -87,6 +87,19 @@ export const HomeBanner = styled.section<HomeBannerProps>`
   }
 `;
 
+export const HomeCallout = styled.header`
+  background-color: #00822D99;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  gap: 4px;
+`;
+
 const HomeProject = styled.div`
   section {
     max-width: 1120px;

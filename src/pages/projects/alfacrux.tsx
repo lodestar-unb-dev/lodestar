@@ -2,6 +2,7 @@ import Slider, { Settings } from "react-slick";
 import { FiRss, FiYoutube } from "react-icons/fi";
 import { useTheme } from "styled-components";
 import PrismicDOM from "prismic-dom";
+import Link from 'next/link';
 
 import { Layout } from "../../components/Layout";
 import { NoScrollLink } from "../../components/NoScrollLink";
@@ -14,7 +15,8 @@ import {
   AlfaCruxRecentActivities,
   AlfaCruxWhy,
   AlfaCruxAcknowledgments,
-  AlfacruxCountdown
+  AlfacruxCountdown,
+  AlfacruxCallout
 } from "../../styles/pages/projects/alfacrux.styles";
 import { GetStaticProps } from "next";
 import { getPrismicClient } from "../../services/prismic";
@@ -272,6 +274,10 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
     <Layout>
       <main style={{ backgroundColor: theme.colors.blueDark }}>
         <AlfaCruxBanner role="banner" bgImageUrl={banner_image.url}>
+          <AlfacruxCallout>
+            Did you know that you can actively help our project and consume AlfaCrux`s latest data <Link href="/projects/alfacrux/radio"><a><strong>with just one click?</strong></a></Link> 
+          </AlfacruxCallout>
+
           <AlfacruxCountdown>
             <header>
               <h3>Mission Elapsed Time <small>🚀</small></h3>
@@ -321,7 +327,6 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
               )}
             </section>
           </AlfacruxCountdown>
-
           <img src={alfacrux_logo.url} alt="AlfaCrux Logo" />
         </AlfaCruxBanner>
 

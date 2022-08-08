@@ -63,7 +63,7 @@ const selectSubsystemSensorsAndParametersValues = {
     'External solar panel temperature on face -Z': 'P_SP_TELEM_TEMP_NZ'
   }
 }
-const selectIntervalsValues = ["24 hours", "7 days", "30 days", "All data"];
+const selectIntervalsValues = ["7 days", "14 days", "30 days", "All data"];
 
 const selectSubsystemOrSensorKeys = Object.keys(selectSubsystemSensorsAndParametersValues);
 
@@ -92,15 +92,15 @@ export function Dashboard({ id, data }: Props) {
     let stopTime = new Date();
     
     switch (selectedInterval) {
-      case '24 hours': {
-        const startTime = subDays(stopTime, 1);
+      case '7 days': {
+        const startTime = subDays(stopTime, 7);
         return {
           startTime,
           stopTime
         }
       }
-      case '7 days': {
-        const startTime = subDays(stopTime, 7);
+      case '14 days': {
+        const startTime = subDays(stopTime, 14);
         return {
           startTime,
           stopTime

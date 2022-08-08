@@ -1,6 +1,7 @@
 import { GetStaticProps } from 'next';
 import { FiBox, FiHardDrive, FiDroplet } from 'react-icons/fi';
 import PrismicDOM from 'prismic-dom';
+import Link from 'next/link';
 
 import { Layout } from '../components/Layout';
 import { NoScrollLink } from '../components/NoScrollLink';
@@ -10,8 +11,10 @@ import {
   HomeBanner,
   HomeProjectSpaceMission,
   HomeProjectSmallSAT,
-  HomeProjectHighAltitudeBallooning
+  HomeProjectHighAltitudeBallooning,
+  HomeCallout
 } from '../styles/pages/home.styles';
+import { formatDistanceStrict } from 'date-fns';
 
 interface HomePrismicDocument {
   title: string;
@@ -103,12 +106,19 @@ export default function Home({
     high_altitude_ballooning_projects
   } = homePrismicDocument;
 
+  const launchDate = new Date(2022, 3, 1, 13, 24, 0, 0);
+  const days = formatDistanceStrict(new Date(), launchDate, { unit: 'day', roundingMethod: 'floor' });
+  
   return (
     <Layout>
       <HomeBanner 
         role="banner"
         bgImageUrl={banner_background.url}
       >
+        <HomeCallout>
+          AlfraCrux is already on orbit for over {days}! 🚀 <Link href='/projects/alfacrux'><a><strong>Click here for more information</strong></a></Link>
+        </HomeCallout>
+
         <div />
         
         <aside>
@@ -233,6 +243,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async ({
   return {
     props: {
       homePrismicDocument: homeResponse?.data ?? null,
-    }
+    },
+    revalidate: 60*60*1
   }
 }
