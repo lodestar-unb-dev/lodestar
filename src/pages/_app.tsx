@@ -4,15 +4,14 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { useEffect } from 'react';
 import { AppProps } from 'next/app';
 import { AnimatePresence } from 'framer-motion';
-import { ThemeProvider } from "styled-components";
 import * as gtag from '../utils/gtag';
 
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 
 import { GlobalStyles } from "../styles/globals";
-import { theme } from "../styles/theme";
 import { ExitPreviewButton } from "../components/ExitPreviewButton";
+import { AppProvider } from "../contexts/AppProvider";
 
 function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
   useEffect(() => {
@@ -27,7 +26,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
 
   return(
     <>
-      <ThemeProvider theme={theme}>
+      <AppProvider>
         <GlobalStyles />
 
         <Header
@@ -46,7 +45,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         <ExitPreviewButton />
 
         <Footer />
-      </ThemeProvider>
+      </AppProvider>
     </>
   )
 }

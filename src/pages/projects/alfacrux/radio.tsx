@@ -311,6 +311,7 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
         <div>
         <h3>Radio Form</h3>
 
+        <h4>Were you able to receive AlfaCrux packages? Share with us and become one of our distinguished collaborators. For that, just fill the form below and send your KISS frames. It will be checked by the AlfaCrux team, and later uploaded in our database associated to your call sign!</h4>
         <iframe 
           className="form"
           src="https://dbgeolog.unb.br/lodestar/form.php" 

@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const loadingAnimation = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 export const Container = styled.div`
     background-color: ${({ theme }) => theme.colors.blueDark};
@@ -236,5 +246,45 @@ export const SmallScreen = styled.div`
 
   @media(max-width: 560px) {
     display: block;
+  }
+`;
+
+export const Error = styled.button`
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #dc3545;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  padding: 8px 4px;
+  color: white;
+`;
+
+export const Warning = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ECC94B;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  padding: 8px 4px;
+  color: black;
+`;
+
+export const Loading = styled.span`
+  display: flex;
+  gap: 8px;  
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: ${({ theme }) => theme.colors.black0};
+  margin: 40px auto 0;
+  border-radius: 4px;
+  padding: 8px 4px;
+  color: ${({ theme }) => theme.colors.blue};
+
+  svg {
+    animation: ${loadingAnimation} 2s linear infinite;
   }
 `;

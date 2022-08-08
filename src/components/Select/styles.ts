@@ -30,6 +30,7 @@ export const SelectTrigger = styled(Select.Trigger)`
   gap: 5px;
   background-color: white;
   color: ${({ theme }) => theme.colors.blueLight};
+  opacity: ${({ disabled }) => disabled ? 0.5 : 1};
 `;
 
 export const SelectValue = styled(Select.Value)``;

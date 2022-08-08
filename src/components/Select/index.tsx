@@ -7,14 +7,15 @@ interface Props {
   items: string[];
   setValue: Dispatch<SetStateAction<string>>;
   value: string | undefined;
+  disabled?: boolean;
 }
 
-export function Select({ label, value, setValue, items }: Props) {
+export function Select({ label, value, setValue, items, disabled = false }: Props) {
   return (
     <Container>
       <label>{label}</label>
       <SelectRoot value={value} onValueChange={setValue}>
-          <SelectTrigger id={label}>
+          <SelectTrigger disabled={disabled} id={label}>
             <SelectValue>
               {value}
             </SelectValue>

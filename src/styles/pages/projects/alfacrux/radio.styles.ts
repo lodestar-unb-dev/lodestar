@@ -194,19 +194,19 @@ export const RadioForm = styled.section`
 
     iframe.form {
       width: 100%;
-      height: 540px;
+      height: 389px;
       border-radius: 4px;
 
-      @media(max-width: 807px) {
-        height: 1070px;
+      @media(max-width: 907px) {
+        height: 406px;
       }
 
-      @media(max-width: 662px) {
-        height: 1104px;
+      @media(max-width: 822px) {
+        height: 641px;
       }
 
-      @media(max-width: 380px) {
-        height: 1137px;
+      @media(max-width: 486px) {
+        height: 658px;
       }
     }
 
