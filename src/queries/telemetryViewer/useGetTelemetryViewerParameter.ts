@@ -28,7 +28,7 @@ async function fetchTelemetryViewerParameter({ queryKey }: QueryFunctionContext)
   const { data } = await api.get('/get', {
     params: {...params}
   });
-  
+
   return data;
 }
 

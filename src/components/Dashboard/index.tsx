@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { FiArrowLeft, FiArrowRight, FiLoader } from "react-icons/fi";
+import { FiArrowLeft, FiArrowRight, FiFastForward, FiLoader, FiPlay } from "react-icons/fi";
 import { CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Label, AreaChart, Area } from "recharts";
 import { Select } from "../Select";
-import { Chart, Container, Description, Error, Loading, Sections, Selectors, SmallScreen, Summary, Table, Title, Value } from "./styles";
+import { Chart, Container, Description, Error, Loading, Sections, Selectors, SmallScreen, Summary, Table, Title, Value, Warning } from "./styles";
 import PrismicDOM from 'prismic-dom';
 
 import { useTheme } from "styled-components";
@@ -69,7 +69,7 @@ const selectSubsystemOrSensorKeys = Object.keys(selectSubsystemSensorsAndParamet
 
 const initialSelectedSubsystemOrSensorValue = selectSubsystemOrSensorKeys[0];
 const initialSelectedParameterValue = Object.keys(selectSubsystemSensorsAndParametersValues["OBC Telemetry"])[0];
-const initialSelectedIntervalValue = selectIntervalsValues[0];
+const initialSelectedIntervalValue = selectIntervalsValues[1];
 const initialQueryParameter = selectSubsystemSensorsAndParametersValues[initialSelectedSubsystemOrSensorValue][initialSelectedParameterValue]
 
 export function Dashboard({ id, data }: Props) {
@@ -184,6 +184,14 @@ export function Dashboard({ id, data }: Props) {
     }
 
     setTablePage(prevState => prevState - 1);
+  }
+
+  function handleFirstPage() {
+    setTablePage(0);
+  }
+
+  function handleLastPage() {
+    setTablePage(totalPages - 1);
   }
 
   const selectParameterKeys = useMemo(() => {
@@ -307,6 +315,8 @@ export function Dashboard({ id, data }: Props) {
     )
   }
 
+  if (telemetryViewerParameter)
+
   return (
     <Container id={id}>
       <div>
@@ -344,7 +354,7 @@ export function Dashboard({ id, data }: Props) {
         </Selectors>
 
         <Sections>
-          {telemetryViewerParameter.length > 0 && (
+          {telemetryViewerParameter.length > 0 ? (
             <Chart>
               <h4>Telemetry Chart</h4>
 
@@ -396,6 +406,10 @@ export function Dashboard({ id, data }: Props) {
                 </ResponsiveContainer>
               </div>
             </Chart>
+          ) : (
+            <Warning>
+              No data found for {selectedParameter} in the selected interval ({selectedInterval}). Please choose a larger interval.
+            </Warning>
           )}
 
           {reversedTelemetryViewerParameter.length > 0 && (
@@ -431,9 +445,22 @@ export function Dashboard({ id, data }: Props) {
               </table>
 
               <footer>
-                <button onClick={handlePreviousPage}><FiArrowLeft /></button>
-                <span>Page {tablePage + 1} of {totalPages}</span>
-                <button onClick={handleNextPage}><FiArrowRight /></button>
+                <button onClick={handleFirstPage}><FiFastForward style={{ transform: 'rotate(180deg)' }} /></button>
+                <button onClick={handlePreviousPage}><FiPlay size={14} style={{ transform: 'rotate(180deg)' }} /></button>
+                <span>Page 
+                  <select 
+                    onChange={(e) => setTablePage(Number(e.target.value) - 1)}
+                    value={tablePage + 1}
+                    style={{ marginLeft: 8, marginRight: 8 }}
+                  >
+                    {Array.from(Array(totalPages).keys()).map((item, index) => (
+                      <option key={index + 1} value={index + 1}>{index + 1}</option>
+                    ))}
+                  </select> 
+                  of {totalPages}
+                </span>
+                <button onClick={handleNextPage}><FiPlay size={14} /></button>
+                <button onClick={handleLastPage}><FiFastForward /></button>
               </footer>
             </Table>
           )}

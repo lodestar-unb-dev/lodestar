@@ -260,6 +260,17 @@ export const Error = styled.button`
   color: white;
 `;
 
+export const Warning = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ECC94B;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  padding: 8px 4px;
+  color: black;
+`;
+
 export const Loading = styled.span`
   display: flex;
   gap: 8px;  
