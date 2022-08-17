@@ -1,5 +1,7 @@
 import axios from "axios";
 
+const { NEXT_PUBLIC_SITE_URL } = process.env;
+
 export const api = axios.create({
-  baseURL: 'https://lodestar.aerospace.unb.br/api/json'
+  baseURL: `${NEXT_PUBLIC_SITE_URL}/api/json`
 })
