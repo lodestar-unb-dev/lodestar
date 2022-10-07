@@ -1,5 +1,8 @@
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import '@fullcalendar/common/main.css'
+import '@fullcalendar/daygrid/main.css'
+import '@fullcalendar/list/main.css'
 
 import React, { useEffect } from 'react';
 import { AppProps } from 'next/app';
