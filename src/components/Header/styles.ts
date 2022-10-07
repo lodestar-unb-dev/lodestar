@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 10;
 
   background-color: ${props => props.theme.colors.blueDark};
   border-bottom: 1px solid ${props => props.theme.colors.blueLight};
