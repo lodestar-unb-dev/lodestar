@@ -433,7 +433,7 @@ export function Dashboard({ id, data }: Props) {
                 <tbody>
                   {
                     Array.from(Array(tablePage + 1 === totalPages ? lastPageNumberOfRows : 10).keys()).map((_, index) => (
-                      <tr key={reversedTelemetryViewerParameter[pagination(index)].timestamp_sat_utc_corrected + reversedTelemetryViewerParameter[pagination(index)].timestamp_gs_utc}>
+                      <tr key={reversedTelemetryViewerParameter[pagination(index)].id}>
                         <td>{selectedParameter}</td>
                         <td>PT2ENE</td>
                         <td>{reversedTelemetryViewerParameter[pagination(index)].calibrated_value}</td>
