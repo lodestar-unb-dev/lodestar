@@ -44,6 +44,11 @@ export const Description = styled.div`
   p + p {
     margin-top: 20px;
   }
+
+  a {
+    font-style: italic;
+    font-weight: bold;
+  }
 `;
 
 export const Selectors = styled.div`
