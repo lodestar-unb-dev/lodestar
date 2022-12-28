@@ -273,6 +273,82 @@ export const AlfaCruxWhy = styled.section`
   }
 `;
 
+export const AlfaCruxMissionControl = styled.section`
+  background-color: ${({ theme }) => theme.colors.black100 };
+  position: relative;
+
+  .mission {
+    max-width: 1120px;
+    /* padding: 80px 20px; */
+    margin: 0 auto;
+
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .banner {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 80px; 
+    z-index: 1; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.6);
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    section {
+      display: flex; 
+      align-items: center; 
+      flex-direction: column; 
+      gap: 20px;
+
+      a {
+        padding: 8px; 
+        background: ${({ theme }) => theme.colors.green}; 
+        border-radius: 4px;
+        transition: all 0.2s;
+
+        &:hover {
+          background: ${({ theme }) => theme.colors.greenDark}; 
+        }
+      }
+    }
+  }
+
+  @media(max-width: 768px) {
+    .banner {
+      padding: 20px;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 560px) {
+    .banner {
+      section ul {
+        display: none;
+      }
+    }
+  }
+`;
+
 export const AlfaCruxGallery = styled.section`
   background-color: ${({ theme }) => theme.colors.blueDarker };;
 

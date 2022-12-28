@@ -16,7 +16,8 @@ import {
   AlfaCruxWhy,
   AlfaCruxAcknowledgments,
   AlfacruxCountdown,
-  AlfacruxCallout
+  AlfacruxCallout,
+  AlfaCruxMissionControl
 } from "../../styles/pages/projects/alfacrux.styles";
 import { GetStaticProps } from "next";
 import { getPrismicClient } from "../../services/prismic";
@@ -366,6 +367,34 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             </div>
           </div>
         </AlfaCruxWhy>
+
+        <AlfaCruxMissionControl>
+          <div className="mission">
+            <video autoPlay loop muted>
+              <source src="/mission-control.mp4" type="video/mp4" />
+            </video>
+
+            <div className="banner">
+              <h2>Mission Control</h2>
+              
+              <section>
+                <ul>
+                  <li>Real-time Tracker</li>
+                  <li>Next 2 day passes</li>
+                  <li>SpaceTrack’s info updates every 2 hours</li>
+                  <li>Mission planner</li>
+                  <li>30 parameters charts and tables</li>
+                  <li>Mission health</li>
+                  <li>And more...</li>
+                </ul>
+                
+                <a href="https://lodestar-data.vercel.app">Check our new platform now!</a>
+              </section>
+
+              <span />
+            </div>
+          </div>
+        </AlfaCruxMissionControl>
 
         <AlfaCruxRadioAmateur>
           <div>
