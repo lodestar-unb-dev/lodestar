@@ -388,7 +388,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
                   <li>And more...</li>
                 </ul>
                 
-                <a href="https://lodestar-data.vercel.app">Check our new platform now!</a>
+                <a href="https://mission-control.lodestar.aerospace.unb.br/">Check our new platform now!</a>
               </section>
 
               <span />

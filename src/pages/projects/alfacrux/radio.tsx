@@ -9,6 +9,7 @@ import { Layout } from "../../../components/Layout"
 import { ComingNext, RadioBanner, RadioForm, RadioInfo } from "../../../styles/pages/projects/alfacrux/radio.styles"
 import { getPrismicClient } from "../../../services/prismic";
 import { Dashboard } from "../../../components/Dashboard";
+import { AlfaCruxMissionControl } from "../../../styles/pages/projects/alfacrux.styles";
 
 const variants = {
   hidden: { opacity: 0 },
@@ -327,7 +328,35 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
         </div>
       </RadioForm>
 
-      <Dashboard id="telemetry-viewer" data={{ telemetry_viewer_title, telemetry_viewer_description }} />
+      {/* <Dashboard id="telemetry-viewer" data={{ telemetry_viewer_title, telemetry_viewer_description }} />
+       */}
+       <AlfaCruxMissionControl>
+          <div className="mission">
+            <video autoPlay loop muted>
+              <source src="/mission-control.mp4" type="video/mp4" />
+            </video>
+
+            <div className="banner">
+              <h2>Mission Control</h2>
+              
+              <section>
+                <ul>
+                  <li>Real-time Tracker</li>
+                  <li>Next 2 day passes</li>
+                  <li>SpaceTrack’s info updates every 2 hours</li>
+                  <li>Mission planner</li>
+                  <li>30 parameters charts and tables</li>
+                  <li>Mission health</li>
+                  <li>And more...</li>
+                </ul>
+                
+                <a href="https://mission-control.lodestar.aerospace.unb.br/">Check our new platform now!</a>
+              </section>
+
+              <span />
+            </div>
+          </div>
+        </AlfaCruxMissionControl>
     
       <ComingNext>
         <h3>{coming_next_title}</h3>
