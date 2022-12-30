@@ -330,7 +330,7 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
 
       {/* <Dashboard id="telemetry-viewer" data={{ telemetry_viewer_title, telemetry_viewer_description }} />
        */}
-       <AlfaCruxMissionControl>
+      <AlfaCruxMissionControl>
           <div className="mission">
             <video autoPlay loop muted>
               <source src="/mission-control.mp4" type="video/mp4" />
@@ -340,16 +340,9 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
               <h2>Mission Control</h2>
               
               <section>
-                <ul>
-                  <li>Real-time Tracker</li>
-                  <li>Next 2 day passes</li>
-                  <li>SpaceTrack’s info updates every 2 hours</li>
-                  <li>Mission planner</li>
-                  <li>30 parameters charts and tables</li>
-                  <li>Mission health</li>
-                  <li>And more...</li>
-                </ul>
-                
+                <p>The AlfaCrux Telemetry Viewer is a web platform developed and provided by the AlfaCrux team to make easier and immediate for all users to see and understand the meaning and purpose of the AlfaCrux downlink signal in accordance with the amateur-satellite service. All frames available online are properly associated with the call sign responsible for the information, allowing the amateur radio to search our databank for his specific contribution in the AlfaCrux mission.</p>
+                <p>This web data system is also part of an innovative framework under development by the AlfaCrux team to assist the development and operation of nanosatellites. By innovative framework we mean a new architecture in which the development of a high-fidelity digital model of the nanosatellite is considered. In this innovative approach, the digital model is constantly under improvements based on the data collection system (laboratory tests, computer simulations, and in-orbit data), and more than that, the digital model may be able to improve and update the satellite on orbit. In other words, we are proposing a digital twin framework for nanosatellite mission applications. Come and be part of this within the AlfaCrux mission!</p>
+                <p>The AlfaCrux telemetry data is free of charge and openly distributed, but if you used the AlfaCrux data on your research and studies, please don’t forget to cite us! Citation for telemetry viewer data can be found here.</p>
                 <a href="https://mission-control.lodestar.aerospace.unb.br/">Check our new platform now!</a>
               </section>
 

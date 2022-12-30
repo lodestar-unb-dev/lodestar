@@ -274,10 +274,11 @@ export const AlfaCruxWhy = styled.section`
 `;
 
 export const AlfaCruxMissionControl = styled.section`
-  background-color: ${({ theme }) => theme.colors.blueLight };
-  position: relative;
-
+  background-color: ${({ theme }) => theme.colors.blueDark };
+  text-align: justify;
+  
   .mission {
+    position: relative;
     max-width: 1120px;
     /* padding: 80px 20px; */
     margin: 0 auto;
