@@ -274,7 +274,7 @@ export const AlfaCruxWhy = styled.section`
 `;
 
 export const AlfaCruxMissionControl = styled.section`
-  background-color: ${({ theme }) => theme.colors.black100 };
+  background-color: ${({ theme }) => theme.colors.blueLight };
   position: relative;
 
   .mission {
