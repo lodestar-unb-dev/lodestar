@@ -301,7 +301,7 @@ export const AlfaCruxMissionControl = styled.section`
     left: 0;
     width: 100%; 
     height: 100%; 
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
 
     h2 {
       font-size: 2.5rem;
