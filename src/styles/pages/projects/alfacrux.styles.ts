@@ -318,7 +318,11 @@ export const AlfaCruxMissionControl = styled.section`
       flex-direction: column; 
       gap: 20px;
 
-      a {
+      p a {
+        font-weight: bold;
+      }
+
+      > a {
         padding: 8px; 
         background: ${({ theme }) => theme.colors.green}; 
         border-radius: 4px;
