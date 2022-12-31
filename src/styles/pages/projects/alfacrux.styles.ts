@@ -273,6 +273,103 @@ export const AlfaCruxWhy = styled.section`
   }
 `;
 
+export const AlfaCruxMissionControl = styled.section`
+  background-color: ${({ theme }) => theme.colors.blueDark };
+  text-align: justify;
+  
+  .mission {
+    position: relative;
+    max-width: 1120px;
+    /* padding: 80px 20px; */
+    margin: 0 auto;
+
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 80px; 
+    z-index: 1; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8);
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    section {
+      display: flex; 
+      align-items: center; 
+      flex-direction: column;
+      height: 100%; 
+      gap: 20px;
+
+      aside {
+        display: flex; 
+        align-items: center; 
+        flex-direction: column; 
+        gap: 20px;
+        overflow-y: auto;
+      }
+
+      p a {
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      > a {
+        display: block;
+        padding: 8px; 
+        margin-bottom: 20px;
+        background: ${({ theme }) => theme.colors.green}; 
+        border-radius: 4px;
+        transition: all 0.2s;
+
+        &:hover {
+          background: ${({ theme }) => theme.colors.greenDark}; 
+        }
+      }
+    }
+  }
+
+  @media(max-width: 768px) {
+    .banner {
+      padding: 20px;
+
+      section {
+        height: 80%; 
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: 560px) {
+    .banner {
+      section aside {
+        display: none;
+      }
+    }
+  }
+`;
+
 export const AlfaCruxGallery = styled.section`
   background-color: ${({ theme }) => theme.colors.blueDarker };;
 
@@ -515,6 +612,17 @@ export const AlfaCruxRecentActivities = styled.section`
         }
         
         div {
+          display: flex;
+          flex-direction: column;
+
+          ul  {
+            padding-left: 0;
+            font-size: 0.85rem;
+          }
+          ul li {
+            list-style-position: inside;
+          }
+
           p {
             font-size: 0.85rem;
             line-height: 22px;
