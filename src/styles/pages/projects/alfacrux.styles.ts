@@ -291,7 +291,7 @@ export const AlfaCruxMissionControl = styled.section`
   }
 
   .banner {
-    display: flex; 
+    display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: space-between; 
@@ -315,15 +315,27 @@ export const AlfaCruxMissionControl = styled.section`
     section {
       display: flex; 
       align-items: center; 
-      flex-direction: column; 
+      flex-direction: column;
+      height: 100%; 
       gap: 20px;
+
+      aside {
+        display: flex; 
+        align-items: center; 
+        flex-direction: column; 
+        gap: 20px;
+        overflow-y: auto;
+      }
 
       p a {
         font-weight: bold;
+        font-style: italic;
       }
 
       > a {
+        display: block;
         padding: 8px; 
+        margin-bottom: 20px;
         background: ${({ theme }) => theme.colors.green}; 
         border-radius: 4px;
         transition: all 0.2s;
@@ -339,6 +351,10 @@ export const AlfaCruxMissionControl = styled.section`
     .banner {
       padding: 20px;
 
+      section {
+        height: 80%; 
+      }
+
       h2 {
         font-size: 2rem;
       }
@@ -347,7 +363,7 @@ export const AlfaCruxMissionControl = styled.section`
 
   @media (max-width: 560px) {
     .banner {
-      section ul {
+      section aside {
         display: none;
       }
     }
@@ -596,6 +612,17 @@ export const AlfaCruxRecentActivities = styled.section`
         }
         
         div {
+          display: flex;
+          flex-direction: column;
+
+          ul  {
+            padding-left: 0;
+            font-size: 0.85rem;
+          }
+          ul li {
+            list-style-position: inside;
+          }
+
           p {
             font-size: 0.85rem;
             line-height: 22px;
