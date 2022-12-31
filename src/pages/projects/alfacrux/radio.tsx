@@ -328,8 +328,6 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
         </div>
       </RadioForm>
 
-      {/* <Dashboard id="telemetry-viewer" data={{ telemetry_viewer_title, telemetry_viewer_description }} />
-       */}
       <AlfaCruxMissionControl>
           <div className="mission">
             <video autoPlay loop muted>
@@ -341,7 +339,7 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
               
               <section>
                 <aside>
-                  <p>The AlfaCrux Mission Control is part of an innovative framework under development by the AlfaCrux team to assist the development and operation of nanosatellites. By innovative framework we mean a new architecture for improving and strengthening education in the broad area of Science, Technology, Engineering and Mathematics (STEM). It is another contribution of the AlfaCrux team to deliver solutions for in-orbit data processing and management; new approaches for attitude determination, control, and reconstruction; space weather analysis and impact on UHF communication links; prognoses and satellite health management, among others. The management, processing, and analysis of all this information, along with the ground infrastructure, come together in the development of Digi-AlfaCrux, the digital twin version of the AlfaCrux.</p>
+                  <p>The AlfaCrux Mission Control platform is part of an innovative framework under development by the AlfaCrux team to assist the development and operation of nanosatellites. By innovative framework we mean a new architecture for improving and strengthening education in the broad area of Science, Technology, Engineering and Mathematics (STEM). It is another contribution of the AlfaCrux team to deliver solutions for in-orbit data processing and management; new approaches for attitude determination, control, and reconstruction; space weather analysis and impact on UHF communication links; prognoses and satellite health management, among others. The management, processing, and analysis of all this information, along with the ground infrastructure, come together in the development of Digi-AlfaCrux, the digital twin version of the AlfaCrux.</p>
                   <p>It also makes it easier and immediate for all users to see and understand the meaning and purpose of the AlfaCrux downlink signal in accordance with the amateur-satellite service. All frames available online are properly associated with the call sign responsible for the information.</p>
                   <p>The AlfaCrux telemetry data is free of charge and openly distributed, but if you used the AlfaCrux data on your research and studies, please don’t forget to cite us! Citation for telemetry viewer data <a href="http://dx.doi.org/10.3390/app12199764" target="__blank">can be found here.</a></p>
                 </aside>
