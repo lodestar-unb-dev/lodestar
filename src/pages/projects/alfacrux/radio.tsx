@@ -335,7 +335,7 @@ export default function AlfaCruxRadio({ alfacruxRadioPrismicDocument }: AlfaCrux
             </video>
 
             <div className="banner">
-              <h2>Mission Control</h2>
+              <h2>Mission Control Platform</h2>
               
               <section>
                 <aside>
