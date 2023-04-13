@@ -1,5 +1,5 @@
 import Slider, { Settings } from "react-slick";
-import { FiRss, FiYoutube } from "react-icons/fi";
+import { FiInstagram, FiRss, FiYoutube } from "react-icons/fi";
 import { useTheme } from "styled-components";
 import PrismicDOM from "prismic-dom";
 import Link from 'next/link';
@@ -186,7 +186,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
       clearInterval(interval)
     }
   }, [])
-  
+
   if (!alfacruxPrismicDocument) {
     return (
       <div
@@ -276,7 +276,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
       <main style={{ backgroundColor: theme.colors.blueDark }}>
         <AlfaCruxBanner role="banner" bgImageUrl={banner_image.url}>
           <AlfacruxCallout>
-            Did you know that you can actively help our project and consume AlfaCrux`s latest data <Link href="/projects/alfacrux/radio"><a><strong>with just one click?</strong></a></Link> 
+            Did you know that you can actively help our project and consume AlfaCrux`s latest data <Link href="/projects/alfacrux/radio"><a><strong>with just one click?</strong></a></Link>
           </AlfacruxCallout>
 
           <AlfacruxCountdown>
@@ -285,7 +285,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             </header>
 
             <section>
-            {(countdown.years ?? 0) > 0 && (
+              {(countdown.years ?? 0) > 0 && (
                 <div>
                   <p>{countdown.years}</p>
                   <strong>year{countdown.years !== 1 && 's'}</strong>
@@ -376,7 +376,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
             <div className="banner">
               <h2>Mission Control Platform</h2>
-              
+
               <section>
                 <aside>
                   <p>The AlfaCrux Mission Control platform is part of an innovative framework under development by the AlfaCrux team to assist the development and operation of nanosatellites. By innovative framework we mean a new architecture for improving and strengthening education in the broad area of Science, Technology, Engineering and Mathematics (STEM). It is another contribution of the AlfaCrux team to deliver solutions for in-orbit data processing and management; new approaches for attitude determination, control, and reconstruction; space weather analysis and impact on UHF communication links; prognoses and satellite health management, among others. The management, processing, and analysis of all this information, along with the ground infrastructure, come together in the development of Digi-AlfaCrux, the digital twin version of the AlfaCrux.</p>
@@ -434,6 +434,25 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
               }}
             />
 
+            <NoScrollLink href='https://www.instagram.com/lodestar_unb/' passHref>
+              <a style={{
+                backgroundColor: '#F5F5F5',
+                color: '#00244B',
+                borderRadius: 5,
+                padding: '14px 10px',
+                fontWeight: 'bold',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 10,
+                cursor: 'pointer',
+              }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Check our latest news <FiInstagram size={22} />
+              </a>
+            </NoScrollLink>
+
             <section style={{ display: 'flex', flexDirection: 'column-reverse' }}>
               {recent_activities_cards.map((recent_activity) => (
                 <div key={recent_activity.title} id={recent_activity.title}>
@@ -448,15 +467,15 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
                       allowFullScreen
                     />
                   ) : recent_activity.news_url ? (
-                    <NoScrollLink 
+                    <NoScrollLink
                       href={recent_activity.news_url}>
-                      <a target="_blank" rel="noopener noreferrer">
+                      <a target="_blank" rel="noopener noreferrer" style={{ width: "100%" }}>
                         <img src={recent_activity.image.url} alt={recent_activity.image.alt} />
                       </a>
                     </NoScrollLink>
                   ) : (
-                    <img src={recent_activity.image.url} alt={recent_activity.image.alt}  />
-                  ) }
+                    <img src={recent_activity.image.url} alt={recent_activity.image.alt} />
+                  )}
 
                   <aside>
                     <h3>{recent_activity.title}</h3>
@@ -469,7 +488,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             </section>
 
             <NoScrollLink href='https://www.youtube.com/channel/UCkbKnVEH-IkNNB87Kn6CUtg' passHref>
-              <a style={{ 
+              <a style={{
                 backgroundColor: '#F5F5F5',
                 color: '#00244B',
                 borderRadius: 5,
@@ -479,11 +498,11 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
                 alignItems: 'center',
                 gap: 10,
                 cursor: 'pointer',
-                }}
-                target="_blank" 
+              }}
+                target="_blank"
                 rel="noopener noreferrer"
-                >
-                  Check More Videos <FiYoutube size={22} />
+              >
+                Check More Videos <FiYoutube size={22} />
               </a>
             </NoScrollLink>
           </section>
@@ -539,7 +558,7 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
               {acknowledgments_first_subsection_images.map(({ image, acknowledgments_image_link }) => (
                 <NoScrollLink href={acknowledgments_image_link} passHref key={acknowledgments_image_link}>
                   <a
-                    target="_blank" 
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
@@ -555,13 +574,13 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
               {acknowledgments_second_subsection_images.map(({ image, acknowledgments_image_link }) => (
                 <NoScrollLink href={acknowledgments_image_link} passHref key={acknowledgments_image_link}>
-                <a
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
-                </a>
-              </NoScrollLink>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+                  </a>
+                </NoScrollLink>
               ))}
             </div>
           </div>
@@ -572,13 +591,13 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             <div style={{ display: 'flex', gap: 60, justifyContent: 'center', alignItems: 'center' }}>
               {acknowledgments_third_subsection_images.map(({ image, acknowledgments_image_link }) => (
                 <NoScrollLink href={acknowledgments_image_link} passHref key={acknowledgments_image_link}>
-                <a
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
-                </a>
-              </NoScrollLink>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img key={image.url} src={image.url} alt={image.alt} style={{ width: image.dimensions.width, height: image.dimensions.height }} />
+                  </a>
+                </NoScrollLink>
               ))}
             </div>
           </div>
