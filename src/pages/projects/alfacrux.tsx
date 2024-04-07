@@ -167,25 +167,30 @@ interface AlfaCruxProps {
 }
 
 const launchDate = new Date(2022, 3, 1, 13, 24, 0, 0);
+const reentryDate = new Date(2024, 3, 5, 0, 0, 0, 0);
 
 export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
-  const [countdown, setCountdown] = useState(intervalToDuration({
-    start: new Date(),
+  // const [countdown, setCountdown] = useState(intervalToDuration({
+  //   start: new Date(),
+  //   end: launchDate
+  // }));
+  const missionEllapsedTime = intervalToDuration({
+    start: reentryDate,
     end: launchDate
-  }));
+  })
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCountdown(intervalToDuration({
-        start: launchDate,
-        end: new Date()
-      }))
-    }, 1000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCountdown(intervalToDuration({
+  //       start: launchDate,
+  //       end: new Date()
+  //     }))
+  //   }, 1000);
 
-    return () => {
-      clearInterval(interval)
-    }
-  }, [])
+  //   return () => {
+  //     clearInterval(interval)
+  //   }
+  // }, [])
 
   if (!alfacruxPrismicDocument) {
     return (
@@ -285,48 +290,59 @@ export default function AlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             </header>
 
             <section>
-              {(countdown.years ?? 0) > 0 && (
+              {(missionEllapsedTime.years ?? 0) > 0 && (
                 <div>
-                  <p>{countdown.years}</p>
-                  <strong>year{countdown.years !== 1 && 's'}</strong>
+                  <p>{missionEllapsedTime.years}</p>
+                  <strong>year{missionEllapsedTime.years !== 1 && 's'}</strong>
                 </div>
               )}
 
-              {(countdown.years ?? 0) + (countdown.months ?? 0) > 0 && (
+              {(missionEllapsedTime.years ?? 0) + (missionEllapsedTime.months ?? 0) > 0 && (
                 <div>
-                  <p>{countdown.months}</p>
-                  <strong>month{countdown.months !== 1 && 's'}</strong>
+                  <p>{missionEllapsedTime.months}</p>
+                  <strong>month{missionEllapsedTime.months !== 1 && 's'}</strong>
                 </div>
               )}
 
-              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) > 0 && (
+              {(missionEllapsedTime.years ?? 0) + (missionEllapsedTime.months ?? 0) + (missionEllapsedTime.days ?? 0) > 0 && (
                 <div>
-                  <p>{countdown.days}</p>
-                  <strong>day{countdown.days !== 1 && 's'}</strong>
+                  <p>{missionEllapsedTime.days}</p>
+                  <strong>day{missionEllapsedTime.days !== 1 && 's'}</strong>
                 </div>
               )}
 
-              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) > 0 && (
+              {(missionEllapsedTime.years ?? 0) + (missionEllapsedTime.months ?? 0) + (missionEllapsedTime.days ?? 0) + (missionEllapsedTime.hours ?? 0) > 0 && (
                 <div>
-                  <p>{countdown.hours}</p>
-                  <strong>hour{countdown.hours !== 1 && 's'}</strong>
+                  <p>{missionEllapsedTime.hours}</p>
+                  <strong>hour{missionEllapsedTime.hours !== 1 && 's'}</strong>
                 </div>
               )}
 
-              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) > 0 && (
+              {(missionEllapsedTime.years ?? 0) + (missionEllapsedTime.months ?? 0) + (missionEllapsedTime.days ?? 0) + (missionEllapsedTime.hours ?? 0) + (missionEllapsedTime.minutes ?? 0) > 0 && (
                 <div>
-                  <p>{countdown.minutes}</p>
-                  <strong>minute{countdown.minutes !== 1 && 's'}</strong>
+                  <p>{missionEllapsedTime.minutes}</p>
+                  <strong>minute{missionEllapsedTime.minutes !== 1 && 's'}</strong>
                 </div>
               )}
 
-              {(countdown.years ?? 0) + (countdown.months ?? 0) + (countdown.days ?? 0) + (countdown.hours ?? 0) + (countdown.minutes ?? 0) + (countdown.seconds ?? 0) > 0 && (
+              {(missionEllapsedTime.years ?? 0) + (missionEllapsedTime.months ?? 0) + (missionEllapsedTime.days ?? 0) + (missionEllapsedTime.hours ?? 0) + (missionEllapsedTime.minutes ?? 0) + (missionEllapsedTime.seconds ?? 0) > 0 && (
                 <div>
-                  <p>{countdown.seconds}</p>
-                  <strong>second{countdown.seconds !== 1 && 's'}</strong>
+                  <p>{missionEllapsedTime.seconds}</p>
+                  <strong>second{missionEllapsedTime.seconds !== 1 && 's'}</strong>
                 </div>
               )}
             </section>
+
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 4,
+              fontWeight: 500
+            }}>
+              <span>Launch Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022-04-01, 13:24:00 (UTC)</span>
+              <span>Last Decoded Telemetry: 2024-04-03, 02:58:00 (UTC)</span>
+              <span>Reentry Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2024-04-05, 00:00:00 (UTC)</span>
+            </div>
           </AlfacruxCountdown>
           <img src={alfacrux_logo.url} alt="AlfaCrux Logo" />
         </AlfaCruxBanner>
