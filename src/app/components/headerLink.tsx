@@ -20,8 +20,8 @@ export function HeaderLink({ children, className, href, ...rest }: Props) {
   return (
     <Link
       className={twMerge(
-        'text-unbBlack-25 hover:text-unbBlack-5 text-lg transition-colors',
-        isActive && 'text-unbBlack-5 font-bold',
+        'text-lg text-unbBlack-25 transition-colors hover:text-unbBlack-5',
+        isActive && 'font-bold text-unbBlack-5',
         className,
       )}
       href={href}

@@ -4,7 +4,7 @@ import { MapPin, Youtube, Mail, Phone } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <Layout key="contact">
+    <Layout id="contact">
       <main className="flex h-full flex-col gap-10 bg-unbBlack-10 py-10 text-unbBlue-400 min-[560px]:gap-20 min-[560px]:py-20">
         <section className="mx-auto flex w-full max-w-[1120px] flex-col items-start gap-6 px-5 min-[560px]:items-center">
           <h2 className="text-4xl min-[560px]:text-6xl">Our contact</h2>

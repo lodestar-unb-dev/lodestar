@@ -13,7 +13,7 @@ export default function Home() {
   })
 
   return (
-    <Layout key="home">
+    <Layout id="home">
       <main className="relative">
         <div className="absolute top-0 z-30 flex w-full flex-col items-center justify-center gap-1 bg-unbGreen-500/50 p-2 min-[560px]:flex-row">
           <span>AlfraCrux is already on orbit for over {days}! 🚀 </span>

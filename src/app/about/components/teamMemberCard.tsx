@@ -34,7 +34,7 @@ export function TeamMemberCard({
 
   return (
     <a
-      className="bg-unbBlack-5 flex w-64 flex-col justify-self-center rounded-xl transition-all hover:opacity-80 min-[560px]:w-80"
+      className="flex w-64 flex-col justify-self-center rounded-xl bg-unbBlack-5 transition-all hover:opacity-80 min-[560px]:w-80"
       href={lattesUrl}
       target="_blank"
       rel="noopener noreferrer"
@@ -43,7 +43,7 @@ export function TeamMemberCard({
         <h3 className="mb-3 text-xl min-[560px]:text-3xl">{name}</h3>
         <span
           className={twMerge(
-            'text-unbBlack-5 inline-block rounded-xl p-2 text-sm min-[560px]:p-3',
+            'inline-block rounded-xl p-2 text-sm text-unbBlack-5 min-[560px]:p-3',
             highlightColor === 'black' && 'bg-unbBlack-100',
             highlightColor === 'blue' && 'bg-unbBlue-400',
             highlightColor === 'green' && 'bg-unbGreen-400',
@@ -63,7 +63,7 @@ export function TeamMemberCard({
 
       <div
         className={twMerge(
-          'text-unbBlack-5 h-full rounded-bl-xl rounded-br-xl p-3 min-[560px]:p-4',
+          'h-full rounded-bl-xl rounded-br-xl p-3 text-unbBlack-5 min-[560px]:p-4',
           highlightColor === 'black' && 'bg-unbBlack-100',
           highlightColor === 'blue' && 'bg-unbBlue-400',
           highlightColor === 'green' && 'bg-unbGreen-400',

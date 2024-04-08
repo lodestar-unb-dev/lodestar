@@ -72,7 +72,7 @@ export default function Projects() {
   // }, [])
 
   return (
-    <Layout key="projects">
+    <Layout id="projects">
       <main className="bg-unbBlack-10 pt-10 min-[560px]:pt-20">
         <section className="mx-auto flex w-full max-w-[1120px] flex-col items-start justify-center gap-4 px-5 pb-10 min-[560px]:items-center min-[560px]:pb-20">
           <h2 className="text-4xl uppercase text-unbBlue-400 min-[560px]:text-6xl">

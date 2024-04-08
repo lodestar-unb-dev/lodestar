@@ -26,7 +26,7 @@ export default async function About() {
   const { members_card } = JSON.parse(file) as JSONFile
 
   return (
-    <Layout key="about">
+    <Layout id="about">
       <main className="bg-unbBlack-10 text-unbBlue-400">
         <div className="bg-unbBlack-5">
           <section className="mx-auto flex max-w-[1120px] flex-col items-start gap-6 px-5 py-10 min-[560px]:items-center min-[560px]:py-20">
