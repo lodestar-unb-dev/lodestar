@@ -4,9 +4,6 @@ import { twMerge } from 'tailwind-merge'
 
 import './globals.css'
 
-import { Header } from './components/header'
-import { Footer } from './components/footer'
-
 const barlow = Barlow({ subsets: ['latin'], weight: ['300', '400', '500'] })
 
 export const metadata: Metadata = {
@@ -21,11 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={twMerge(barlow.className, 'flex flex-col')}>
-        <Header />
-
-        <div className="flex-1">{children}</div>
-
-        <Footer />
+        {children}
       </body>
     </html>
   )

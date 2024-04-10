@@ -1,4 +1,4 @@
-import { Layout } from '../components/animationLayout'
+import { Layout } from '@/components/animationLayout'
 import Image from 'next/image'
 import Link from 'next/link'
 

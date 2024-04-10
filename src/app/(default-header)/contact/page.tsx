@@ -1,4 +1,4 @@
-import { Layout } from '../components/animationLayout'
+import { Layout } from '@/components/animationLayout'
 
 import { MapPin, Youtube, Mail, Phone } from 'lucide-react'
 
