@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section className="relative">
       <Image
-        className="max-h-screen object-cover"
+        className="max-h-screen w-full object-cover"
         src={heroBg}
         alt="floresta amazonica com logo do perception"
       />

@@ -10,7 +10,11 @@ import sectionBg from '../assets/images/section-bg.jpg'
 export function Second() {
   return (
     <section className="bg-[#1A3E76]">
-      <Image className="max-h-screen object-cover" src={sectionBg} alt="" />
+      <Image
+        className="max-h-screen w-full object-cover"
+        src={sectionBg}
+        alt=""
+      />
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-5 pt-10 text-justify">
         <h2 className="text-3xl font-bold text-[#68C4EF]">
           Lorem ipsum dolor sit amet
