@@ -15,11 +15,9 @@ export function Header() {
         <nav className="flex gap-6 min-[960px]:gap-12">
           <HeaderLink href="/projects/perception">Home</HeaderLink>
 
-          <HeaderLink href="#">Lorem</HeaderLink>
+          <HeaderLink href="#">Equipe</HeaderLink>
 
-          <HeaderLink href="#">Lorem</HeaderLink>
-
-          <HeaderLink href="#">Lorem</HeaderLink>
+          <HeaderLink href="#">Galeria</HeaderLink>
         </nav>
       </section>
     </header>
