@@ -23,110 +23,11 @@ export function Second() {
         <div className="flex items-end justify-between gap-10 pb-6 pr-10 lg:pr-24">
           <Collapsible.Root className="flex flex-col space-y-5 text-unbBlack-0">
             <div className="space-y-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-                in hendrerit in vulputate velit esse molestie consequat, vel
-                illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-                et iusto odio dignissim qui blandit praesent luptatum zzril
-                delenit augue duis dolore te feugait nulla facilisi.
-              </p>
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat. Duis autem vel eum iriure dolor in hendrerit in
-                vulputate velit esse molestie consequat, vel illum dolore eu
-                feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                dignissim qui blandit praesent luptatum zzril delenit augue duis
-                dolore te feugait nulla facilisi.
-              </p>
+              <p>The name PERCEPTION...</p>
             </div>
-            <Collapsible.Content className="space-y-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-                in hendrerit in vulputate velit esse molestie consequat, vel
-                illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-                et iusto odio dignissim qui blandit praesent luptatum zzril
-                delenit augue duis dolore te feugait nulla facilisi. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-                autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                molestie consequat, vel illum dolore eu feugiat nulla facilisis
-                at vero eros et accumsan et iusto odio dignissim qui blandit
-                praesent luptatum zzril delenit augue duis dolore te feugait
-                nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-                minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                eum iriure dolor in hendrerit in vulputate velit esse molestie
-                consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                eros et accumsan et iusto odio dignissim qui blandit praesent
-                luptatum zzril delenit augue duis dolore te feugait nulla
-                facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci
-                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat. Duis autem vel eum iriure dolor in hendrerit
-                in vulputate velit esse molestie consequat, vel illum dolore eu
-                feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                dignissim qui blandit praesent luptatum zzril delenit augue duis
-                dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
-                consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-                autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                molestie consequat, vel illum dolore eu feugiat nulla facilisis
-                at vero eros et accumsan et iusto odio dignissim qui blandit
-                praesent luptatum zzril delenit augue duis dolore te feugait
-                nulla facilisi. Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-                minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
-                eum iriure dolor in hendrerit in vulputate velit esse molestie
-                consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                eros et accumsan et iusto odio dignissim qui blandit praesent
-                luptatum zzril delenit augue duis dolore te feugait nulla
-                facilisi. Ut wisi enim ad minim veniam, quis nostrud exerci
-                tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-                commodo consequat. Duis autem vel eum iriure dolor in hendrerit
-                in vulputate velit esse molestie consequat, vel illum dolore eu
-                feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                dignissim qui blandit praesent luptatum zzril delenit augue duis
-                dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
-                consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-                autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                molestie consequat, vel illum dolore eu feugiat nulla facilisis
-                at vero eros et accumsan et iusto odio dignissim qui blandit
-                praesent luptatum zzril delenit augue duis dolore te feugait
-                nulla facilisi. Ut wisi enim ad minim veniam, quis nostrud
-                exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                ea commodo consequat. Duis autem vel eum iriure dolor in
-                hendrerit in vulputate velit esse molestie consequat, vel illum
-                dolore eu feugiat nulla facilisis at vero eros et accumsan et
-                iusto odio dignissim qui blandit praesent luptatum zzril delenit
-                augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor
-                sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-                consequat. Duis autem vel eum iriure dolor in hendrerit in
-                vulputate velit esse molestie consequat, vel illum dolore eu
-                feugiat nulla facilisis at vero eros et accumsan et iusto odio
-                dignissim qui blandit praesent luptatum zzril delenit augue duis
-                dolore te feugait nulla facilisi.
-              </p>
-            </Collapsible.Content>
+            {/* <Collapsible.Content className="space-y-5">
+              <p className="hidden"></p>
+            </Collapsible.Content> */}
 
             <Collapsible.Trigger className="group flex gap-1 self-end p-4 text-xl uppercase text-unbBlack-0">
               <span>Saiba mais</span>
