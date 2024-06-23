@@ -3,6 +3,7 @@ import { Barlow } from 'next/font/google'
 import { twMerge } from 'tailwind-merge'
 
 import './globals.css'
+import './embla.css'
 
 const barlow = Barlow({ subsets: ['latin'], weight: ['300', '400', '500'] })
 

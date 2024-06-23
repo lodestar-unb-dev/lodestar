@@ -1,6 +1,7 @@
 'use client'
 
-import { InstagramEmbed } from 'react-social-media-embed'
+import { Carousel } from '../components/carousel'
+import { EmblaOptionsType } from 'embla-carousel'
 
 const instagramPosts = [
   'https://www.instagram.com/p/C3Wc8pvgo_N',
@@ -10,6 +11,8 @@ const instagramPosts = [
   'https://www.instagram.com/p/CxSvpzOAGxV',
   'https://www.instagram.com/p/Cv-HASvAK4B',
 ]
+
+const OPTIONS: EmblaOptionsType = { slidesToScroll: 'auto', loop: true }
 
 export function Instagram() {
   return (
@@ -48,11 +51,7 @@ export function Instagram() {
         </p>
       </div>
 
-      <div className="mx-auto flex max-w-5xl flex-wrap items-stretch justify-center gap-5">
-        {instagramPosts.map((post) => (
-          <InstagramEmbed url={post} key={post} />
-        ))}
-      </div>
+      <Carousel slides={instagramPosts} options={OPTIONS} />
     </section>
   )
 }
