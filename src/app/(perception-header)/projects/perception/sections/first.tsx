@@ -7,7 +7,7 @@ import { ArrowDown } from 'lucide-react'
 export function First() {
   return (
     <section className="relative mx-auto flex max-w-7xl flex-col gap-10 px-5 py-10 text-justify">
-      <h2 className="text-left text-3xl font-bold text-unbGreen-400">
+      <h2 className="text-left text-xl font-bold text-unbGreen-400 md:text-3xl">
         THE PERCEPTION PROJECT
       </h2>
 

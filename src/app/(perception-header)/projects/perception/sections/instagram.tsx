@@ -16,12 +16,12 @@ const OPTIONS: EmblaOptionsType = { slidesToScroll: 'auto', loop: true }
 
 export function Instagram() {
   return (
-    <section className="flex flex-col items-center gap-5 px-5 text-justify">
-      <h2 className="py-10 text-3xl font-bold text-[#1A3E76]">
+    <section className="mx-auto flex w-full max-w-7xl flex-col items-center gap-5 px-5 text-justify">
+      <h2 className="self-start py-10 text-xl font-bold text-[#1A3E76] md:text-3xl">
         RECENT ACTIVITIES
       </h2>
 
-      <div className="max-w-5xl space-y-5">
+      <div className="max-w-7xl space-y-5">
         <p className="text-unbBlack-100">
           One of the major motivations for carrying out the Perception project
           is to continue ongoing activities in the AlfaCrux mission, promoting

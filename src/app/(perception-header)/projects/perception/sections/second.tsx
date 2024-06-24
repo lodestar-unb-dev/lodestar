@@ -16,7 +16,7 @@ export function Second() {
         alt=""
       />
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-5 pt-10 text-justify">
-        <h2 className="text-left text-3xl font-bold text-[#68C4EF]">
+        <h2 className="text-left text-xl font-bold text-[#68C4EF] md:text-3xl">
           BEHIND THE NAME: THE MEANING OF PERCEPTION
         </h2>
 
