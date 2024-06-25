@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs'
 
 import { TeamMemberCard } from './components/teamMemberCard'
-import { Layout } from '../components/animationLayout'
+import { Layout } from '@/components/animationLayout'
 
 type JSONFile = {
   members_card: {
@@ -20,7 +20,7 @@ type JSONFile = {
 
 export default async function About() {
   const file = await fs.readFile(
-    process.cwd() + '/src/app/about/json/teamMembers.json',
+    process.cwd() + '/src/app/(default-header)/about/json/teamMembers.json',
     'utf8',
   )
   const { members_card } = JSON.parse(file) as JSONFile

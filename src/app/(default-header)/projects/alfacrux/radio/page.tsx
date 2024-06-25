@@ -1,5 +1,5 @@
-import { Layout } from '@/app/components/animationLayout'
-import { prismic } from '@/app/lib/prismic'
+import { Layout } from '@/components/animationLayout'
+import { prismic } from '@/lib/prismic'
 import { AlfaCruxRadioPrismicDocument, OldAlfaCruxRadio } from './old'
 
 export default async function AlfaCrux() {

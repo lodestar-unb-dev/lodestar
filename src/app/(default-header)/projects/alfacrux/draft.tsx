@@ -1,11 +1,11 @@
 import { RssIcon } from 'lucide-react'
 
-import { Layout } from '@/app/components/animationLayout'
+import { Layout } from '@/components/animationLayout'
 import Image from 'next/image'
 import Link from 'next/link'
 import explodedViewImg from './assets/exploded_view_alfacrux.png'
 import radioAmateurImg from './assets/radio_amateur.svg'
-import { prismic } from '@/app/lib/prismic'
+import { prismic } from '@/lib/prismic'
 import {
   RecentActivities,
   RecentActivitiesPrismicDoc,
