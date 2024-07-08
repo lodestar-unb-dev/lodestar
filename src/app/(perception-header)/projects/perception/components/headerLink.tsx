@@ -13,8 +13,8 @@ interface Props extends LinkProps {
 export function HeaderLink({ children, className, href, ...rest }: Props) {
   const pathname = usePathname()
   const isActive =
-    href.toString() === '/'
-      ? pathname === '/'
+    href.toString() === '/projects/perception'
+      ? pathname === '/projects/perception'
       : pathname.includes(href.toString())
 
   return (
