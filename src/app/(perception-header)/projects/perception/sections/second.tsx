@@ -17,20 +17,38 @@ export function Second() {
       />
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-5 pt-10 text-justify">
         <h2 className="text-left text-xl font-bold text-[#68C4EF] md:text-3xl">
-          BEHIND THE NAME: THE MEANING OF PERCEPTION
+          LEARNING THROUGH THE SENSES AND MIND
         </h2>
 
         <div className="flex items-end justify-between gap-10 pb-6 pr-10 lg:pr-24">
           <Collapsible.Root className="flex flex-col space-y-5 text-unbBlack-0">
             <div className="space-y-5">
-              <p>The name PERCEPTION...</p>
+              <p>
+                The word perception comes from the Latin word percepio, meaning
+                receiving, collecting, become aware through the mind or senses.
+                The project logo represents a door to infinity and captures the
+                idea of the proposed system being the frontier to the unknown,
+                the door to be opened to expand our vision and sense of our
+                environment and reality. This is the meaning of the name, a
+                poetic idea proposed and discussed over the centuries by
+                philosophers, musicians and many others who chose to deeply feel
+                the world in which we live.
+              </p>
             </div>
-            {/* <Collapsible.Content className="space-y-5">
-              <p className="hidden"></p>
-            </Collapsible.Content> */}
+            <Collapsible.Content className="space-y-5">
+              <p>
+                The Perception project is an initiative that aims to create new
+                technologies, business models and methods to optimize and expand
+                our ability to perceive the environment and its modification
+                throughout our evolution. We seek to expand the perception of
+                our planet through the generation of data, its structuring and
+                analysis as information, identification of trends and
+                extrapolation to future scenarios.
+              </p>
+            </Collapsible.Content>
 
             <Collapsible.Trigger className="group flex gap-1 self-end p-4 text-xl uppercase text-unbBlack-0">
-              <span>Saiba mais</span>
+              <span>Show more</span>
               <ArrowDown className="group-data-[state=open]:rotate-180" />
             </Collapsible.Trigger>
           </Collapsible.Root>

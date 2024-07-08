@@ -5,6 +5,10 @@ import unbLogo from '../assets/images/unb.jpg'
 import fapLogo from '../assets/images/fap.avif'
 import aebLogo from '../assets/images/aeb.avif'
 import anatelLogo from '../assets/images/anatel.avif'
+import lbaLogo from '../assets/images/lba.png'
+import ueaLogo from '../assets/images/uea.png'
+import vigoLogo from '../assets/images/vigo.png'
+import alenLogo from '../assets/images/alen.png'
 
 export function Partners() {
   return (
@@ -35,6 +39,18 @@ export function Partners() {
           <div className="flex items-center gap-10">
             <Image className="h-20 w-auto" src={aebLogo} alt="aeb" />
             <Image className="h-20 w-auto" src={anatelLogo} alt="anatel" />
+            <Image className="h-20 w-auto" src={lbaLogo} alt="LBA" />
+            <Image
+              className="h-20 w-auto mix-blend-multiply"
+              src={ueaLogo}
+              alt="UEA"
+            />
+            <Image className="h-20 w-auto" src={alenLogo} alt="alen" />
+            <Image
+              className="h-20 w-auto"
+              src={vigoLogo}
+              alt="UniversidadeVigo"
+            />
           </div>
         </div>
       </div>
