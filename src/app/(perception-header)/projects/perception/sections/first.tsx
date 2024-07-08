@@ -33,7 +33,7 @@ export function First() {
             through new systems engineering approaches, new operating concepts,
             and proposed services based on CubeSats missions, aims to develop
             new technologies and satellite-based services for tracking and
-            monitoring strategic assets, such as the Brazilian biomes and
+            monitoring strategic assets, such as the Brazilian biomes and our
             critical infrastructure, leading Brazil into a new era of space and
             terrestrial data science. Satellite technologies and geospatial data
             have the potential to support the sustainable transition of the
@@ -56,8 +56,8 @@ export function First() {
             reactivation of the environmental data collection tower for the
             Brazilian Cerrado located at the Água Limpa Farm at the University
             of Brasília. The Água Limpa Farm has an area of approximately 4,500
-            hectares dedicated to the scientific and technological environmental
-            development.
+            hectares dedicated to the scientific and technological demonstration
+            for the environment.
           </p>
 
           <p>
