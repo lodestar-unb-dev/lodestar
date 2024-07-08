@@ -6,6 +6,7 @@ import { twMerge } from 'tailwind-merge'
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '500', '800'],
+  variable: '--font-montserrat',
 })
 
 export default function PerceptionHeaderLayout({
@@ -15,7 +16,10 @@ export default function PerceptionHeaderLayout({
 }) {
   return (
     <div
-      className={twMerge(montserrat.className, 'flex min-h-screen flex-col')}
+      className={twMerge(
+        montserrat.variable,
+        'font-montserrat flex min-h-screen flex-col',
+      )}
     >
       <Header />
 

@@ -2,6 +2,8 @@ import { Layout } from '@/components/animationLayout'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import perceptionLogo from '@/app/(perception-header)/projects/perception/assets/icons/logo-alt.svg'
+
 interface Projects {
   space_missions_projects: {
     project_title: string
@@ -96,6 +98,49 @@ export default function Projects() {
           </h3>
 
           <div className="flex flex-col items-center gap-8 min-[560px]:gap-16">
+            <article className="mx-auto flex w-full max-w-[1120px] flex-row-reverse items-center justify-between gap-20 px-5">
+              <Image
+                className="hidden max-h-[166px] w-full max-w-[200px] bg-white p-5 min-[560px]:block"
+                src={perceptionLogo}
+                width={200}
+                height={166}
+                alt="project logo"
+              />
+
+              <div className="flex flex-col items-start gap-6 text-justify">
+                <h4 className="text-2xl font-medium">Perception</h4>
+
+                <div className="flex flex-col gap-4">
+                  <p>
+                    The Perception project aims to enhance the monitoring of
+                    strategic assets like natural resources through advanced
+                    perception, which involves understanding, learning, and
+                    adapting to their random and uncertain nature. By
+                    integrating sensor networks, space technologies, and data
+                    science, the project seeks to empower decision-making in
+                    complex scenarios. It involves developing new
+                    satellite-based services using CubeSats to track and monitor
+                    Brazilian biomes and infrastructure. The project includes
+                    the K34 Tower in the Amazon and the Água Limpa Farm in the
+                    Cerrado, supporting sustainable development and
+                    environmental monitoring. We invite you to join us in the
+                    Perception project to develop new technologies and
+                    satellite-based services for tracking and monitoring our
+                    strategic assets.
+                  </p>
+                </div>
+
+                <Link
+                  className="rounded-xl bg-unbGreen-400 p-4 font-bold uppercase transition-all hover:bg-unbGreen-500 min-[560px]:px-12 min-[560px]:py-5"
+                  href="/projects/perception"
+                >
+                  Check More
+                </Link>
+              </div>
+            </article>
+
+            <span className="block h-px w-full max-w-[1080px] bg-unbBlue-400" />
+
             <article className="mx-auto flex w-full max-w-[1120px] items-center justify-between gap-20 px-5">
               <Image
                 className="hidden max-h-[166px] w-full max-w-[200px] min-[560px]:block"

@@ -30,6 +30,10 @@ const config: Config = {
           0: '#FFFFFF',
         },
       },
+      fontFamily: {
+        barlow: ['var(--font-barlow)'],
+        montserrat: ['var(--font-montserrat)'],
+      },
     },
   },
   plugins: [],

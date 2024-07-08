@@ -5,7 +5,11 @@ import { twMerge } from 'tailwind-merge'
 import './globals.css'
 import './embla.css'
 
-const barlow = Barlow({ subsets: ['latin'], weight: ['300', '400', '500'] })
+const barlow = Barlow({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-barlow',
+})
 
 export const metadata: Metadata = {
   title: 'LODESTAR UnB',
@@ -18,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={twMerge(barlow.className, 'flex flex-col')}>
+      <body className={twMerge(barlow.variable, 'font-barlow flex flex-col')}>
         {children}
       </body>
     </html>
