@@ -40,7 +40,7 @@ export function Partners() {
 
         <div className="flex flex-col items-center gap-2">
           <p className="font-medium uppercase">Partner and technical support</p>
-          <div className="flex items-center gap-10">
+          <div className="flex flex-wrap items-center justify-center gap-10">
             <a href="https://www.gov.br/aeb/pt-br">
               <Image className="h-20 w-auto" src={aebLogo} alt="aeb" />
             </a>
