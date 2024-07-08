@@ -3,11 +3,12 @@ import { formatDistanceStrict } from 'date-fns'
 import Image from 'next/image'
 import { Box, Droplet, HardDrive } from 'lucide-react'
 
-import { Layout } from '../components/animationLayout'
+import { Layout } from '@/components/animationLayout'
 
 export default function Home() {
   const launchDate = new Date(2022, 3, 1, 13, 24, 0, 0)
-  const days = formatDistanceStrict(new Date(), launchDate, {
+  const reentryDate = new Date(2024, 3, 5, 0, 0, 0, 0)
+  const days = formatDistanceStrict(reentryDate, launchDate, {
     unit: 'day',
     roundingMethod: 'floor',
   })
@@ -16,7 +17,7 @@ export default function Home() {
     <Layout id="home">
       <main className="relative">
         <div className="absolute top-0 z-30 flex w-full flex-col items-center justify-center gap-1 bg-unbGreen-500/50 p-2 min-[560px]:flex-row">
-          <span>AlfraCrux is already on orbit for over {days}! 🚀 </span>
+          <span>AlfraCrux was on orbit for over {days}! 🚀 </span>
           <Link href="/projects/alfacrux" className="font-bold">
             Click here for more information
           </Link>
