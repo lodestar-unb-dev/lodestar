@@ -56,8 +56,8 @@ export function First() {
             reactivation of the environmental data collection tower for the
             Brazilian Cerrado located at the Água Limpa Farm at the University
             of Brasília. The Água Limpa Farm has an area of approximately 4,500
-            hectares dedicated to the scientific and technological demonstration
-            for the environment.
+            hectares dedicated to scientific development and technological
+            development and demonstration for the environment.
           </p>
 
           <p>
