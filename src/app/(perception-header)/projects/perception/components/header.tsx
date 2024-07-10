@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <header className="font-barlow sticky top-0 z-50 border border-unbBlue-200 bg-unbBlue-600">
+    <header className="sticky top-0 z-50 border border-unbBlue-200 bg-unbBlue-600 font-barlow">
       <section className="mx-auto flex max-w-[1120px] items-center justify-center gap-7 px-5 py-4 min-[560px]:justify-between min-[560px]:gap-14">
         <nav className="flex w-full items-center justify-center gap-6 min-[560px]:justify-between min-[960px]:gap-14">
           <div className="space-x-6 min-[960px]:space-x-14">

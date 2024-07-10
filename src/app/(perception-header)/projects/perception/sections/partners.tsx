@@ -41,12 +41,6 @@ export function Partners() {
         <div className="flex flex-col items-center gap-2">
           <p className="font-medium uppercase">Partner and technical support</p>
           <div className="flex flex-wrap items-center justify-center gap-10">
-            <a href="https://www.gov.br/aeb/pt-br">
-              <Image className="h-20 w-auto" src={aebLogo} alt="aeb" />
-            </a>
-            <a href="https://www.gov.br/anatel/pt-br">
-              <Image className="h-20 w-auto" src={anatelLogo} alt="anatel" />
-            </a>
             <a href="https://lba.inpa.gov.br/">
               <Image className="h-32 w-auto" src={lbaLogo} alt="LBA" />
             </a>
@@ -66,6 +60,12 @@ export function Partners() {
                 src={vigoLogo}
                 alt="UniversidadeVigo"
               />
+            </a>
+            <a href="https://www.gov.br/aeb/pt-br">
+              <Image className="h-20 w-auto" src={aebLogo} alt="aeb" />
+            </a>
+            <a href="https://www.gov.br/anatel/pt-br">
+              <Image className="h-20 w-auto" src={anatelLogo} alt="anatel" />
             </a>
           </div>
         </div>
