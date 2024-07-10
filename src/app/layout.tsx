@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={twMerge(barlow.variable, 'font-barlow flex flex-col')}>
+      <body className={twMerge(barlow.variable, 'flex flex-col font-barlow')}>
         {children}
       </body>
     </html>

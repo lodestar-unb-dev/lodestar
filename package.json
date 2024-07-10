@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "tsc",
+    "format": "prettier --write ./app",
+    "lint:fix": "eslint ./app --fix"
   },
   "dependencies": {
     "@prismicio/client": "^7.3.1",
