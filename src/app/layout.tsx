@@ -13,6 +13,23 @@ const barlow = Barlow({
 
 export const metadata: Metadata = {
   title: 'LODESTAR UnB',
+  icons: {
+    icon: '/images/lodestar/favicon.png',
+  },
+  openGraph: {
+    title: 'Lodestar UnB',
+    url: 'https://lodestar.aerospace.unb.br',
+    siteName: 'Lodestar UnB',
+    images: [
+      {
+        url: 'http://lodestar.aerospace.unb.br/images/lodestar/og.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
