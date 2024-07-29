@@ -21,7 +21,7 @@ export function Partners() {
 
       <Image src={logo} alt="perception" className="w-[216px]" />
 
-      <div className="flex max-w-5xl flex-wrap justify-center gap-5 text-unbBlue-400">
+      <div className="flex max-w-5xl flex-col flex-wrap justify-center gap-5 text-unbBlue-400">
         <div className="flex flex-col items-center gap-2">
           <p className="font-medium uppercase">Realization</p>
           <a
@@ -91,7 +91,7 @@ export function Partners() {
                 alt="UniversidadeVigo"
               />
             </a>
-            <a
+            {/* <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.gov.br/aeb/pt-br"
@@ -104,7 +104,7 @@ export function Partners() {
               href="https://www.gov.br/anatel/pt-br"
             >
               <Image className="h-20 w-auto" src={anatelLogo} alt="anatel" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
