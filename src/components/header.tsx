@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import LogoIcon from '@/app/favicon.png'
+import LogoIcon from '@/app/[locale]/favicon.png'
 import { HeaderLink } from './headerLink'
 
 export function Header() {

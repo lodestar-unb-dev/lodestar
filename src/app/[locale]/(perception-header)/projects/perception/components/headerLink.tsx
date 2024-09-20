@@ -16,20 +16,17 @@ export function HeaderLink({
   children,
   className,
   href,
-  locale,
   prefetch,
+  locale,
   ...rest
 }: Props) {
   const pathname = usePathname()
-  const isActive =
-    href.toString() === '/'
-      ? pathname === '/'
-      : pathname.includes(href.toString())
+  const isActive = href.toString() === pathname
 
   return (
     <Link
       className={twMerge(
-        'text-lg text-unbBlack-25 transition-colors hover:text-unbBlack-5',
+        'text-base font-normal text-unbBlack-25 transition-colors hover:text-unbBlack-5 min-[560px]:text-lg',
         isActive && 'font-bold text-unbBlack-5',
         className,
       )}
