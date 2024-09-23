@@ -1,5 +1,6 @@
 'use client'
 
+// eslint-disable-next-line no-restricted-imports
 import { LinkProps } from 'next/link'
 import { usePathname, Link } from '@/i18n/routing'
 import React, { ReactNode } from 'react'
