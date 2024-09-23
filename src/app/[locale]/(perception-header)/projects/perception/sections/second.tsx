@@ -6,8 +6,11 @@ import { ArrowDown, Instagram, Mail, Send } from 'lucide-react'
 import Image from 'next/image'
 
 import sectionBg from '../assets/images/section-bg.jpg'
+import { useTranslations } from 'next-intl'
 
 export function Second() {
+  const t = useTranslations('Projects.Perception.HomePage.SecondSection')
+
   return (
     <section className="bg-[#1A3E76]">
       <Image
@@ -16,39 +19,21 @@ export function Second() {
         alt=""
       />
       <div className="relative mx-auto flex max-w-7xl flex-col gap-10 px-5 pt-10 text-justify">
-        <h2 className="text-left text-xl font-bold text-[#68C4EF] md:text-3xl">
-          LEARNING THROUGH THE SENSES AND MIND
+        <h2 className="text-left text-xl font-bold uppercase text-[#68C4EF] md:text-3xl">
+          {t('title')}
         </h2>
 
         <div className="flex items-end justify-between gap-10 pb-6 pr-10 lg:pr-24">
           <Collapsible.Root className="flex flex-col space-y-5 text-unbBlack-0">
             <div className="space-y-5">
-              <p>
-                The word perception comes from the Latin word percepio, meaning
-                receiving, collecting, become aware through the mind or senses.
-                The project logo represents a door to infinity and captures the
-                idea of the proposed system being the frontier to the unknown,
-                the door to be opened to expand our vision and sense of our
-                environment and reality. This is the meaning of the name, a
-                poetic idea proposed and discussed over the centuries by
-                philosophers, musicians and many others who chose to deeply feel
-                the world in which we live.
-              </p>
+              <p>{t('content')}</p>
             </div>
             <Collapsible.Content className="space-y-5">
-              <p>
-                The Perception project is an initiative that aims to create new
-                technologies, business models and methods to optimize and expand
-                our ability to perceive the environment and its modification
-                throughout our evolution. We seek to expand the perception of
-                our planet through the generation of data, its structuring and
-                analysis as information, identification of trends and
-                extrapolation to future scenarios.
-              </p>
+              <p>{t('hiddenContent')}</p>
             </Collapsible.Content>
 
             <Collapsible.Trigger className="group flex gap-1 self-end p-4 text-xl uppercase text-unbBlack-0">
-              <span>Show more</span>
+              <span>{t('buttonText')}</span>
               <ArrowDown className="group-data-[state=open]:rotate-180" />
             </Collapsible.Trigger>
           </Collapsible.Root>

@@ -6,11 +6,7 @@ import logoText from '../assets/icons/logo-text.svg'
 export function Hero() {
   return (
     <section className="relative">
-      <Image
-        className="max-h-screen w-full object-cover"
-        src={heroBg}
-        alt="floresta amazonica com logo do perception"
-      />
+      <Image className="max-h-screen w-full object-cover" src={heroBg} alt="" />
 
       <Image
         src={logoText}

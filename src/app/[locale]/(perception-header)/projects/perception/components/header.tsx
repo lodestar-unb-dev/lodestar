@@ -2,6 +2,7 @@ import Image from 'next/image'
 import LogoIcon from '../assets/icons/logo.svg'
 import { HeaderLink } from './headerLink'
 import { Link } from '@/i18n/routing'
+import { LanguageSelector } from './language-selector'
 
 export function Header() {
   return (
@@ -25,10 +26,12 @@ export function Header() {
             />
           </Link>
 
-          <div className="space-x-6 min-[960px]:space-x-14">
+          <div className="flex items-center space-x-6 min-[960px]:space-x-14">
             <HeaderLink href="/projects/perception/members">Members</HeaderLink>
 
             <HeaderLink href="/projects/perception/gallery">Gallery</HeaderLink>
+
+            <LanguageSelector />
           </div>
         </nav>
       </section>

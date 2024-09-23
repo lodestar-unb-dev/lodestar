@@ -9,21 +9,24 @@ import lbaLogo from '../assets/images/lba.png'
 import ueaLogo from '../assets/images/uea.png'
 import vigoLogo from '../assets/images/vigo.png'
 import alenLogo from '../assets/images/alen.png'
+import { useTranslations } from 'next-intl'
 
 export function Partners() {
+  const t = useTranslations('Projects.Perception.HomePage.Partners')
+
   return (
     <section className="flex flex-col items-center gap-10 py-10">
       <div className="h-5 w-full bg-[#EE761B]" />
 
-      <h2 className="text-left text-xl font-bold text-[#1A3E76] md:text-3xl">
-        ACKNOWLEDGMENTS
+      <h2 className="text-left text-xl font-bold uppercase text-[#1A3E76] md:text-3xl">
+        {t('title')}
       </h2>
 
       <Image src={logo} alt="perception" className="w-[216px]" />
 
       <div className="flex max-w-5xl flex-col flex-wrap justify-center gap-5 text-unbBlue-400">
         <div className="flex flex-col items-center gap-2">
-          <p className="font-medium uppercase">Realization</p>
+          <p className="font-medium uppercase">{t('firstGroupTitle')}</p>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -38,7 +41,7 @@ export function Partners() {
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <p className="font-medium uppercase">Funder</p>
+          <p className="font-medium uppercase">{t('secondGroupTitle')}</p>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -53,7 +56,7 @@ export function Partners() {
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <p className="font-medium uppercase">Partner and technical support</p>
+          <p className="font-medium uppercase">{t('thirdGroupTitle')}</p>
           <div className="flex flex-wrap items-center justify-center gap-10">
             <a
               target="_blank"

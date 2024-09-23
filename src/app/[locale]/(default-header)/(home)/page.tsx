@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { Box, Droplet, HardDrive } from 'lucide-react'
 
 import { Layout } from '@/components/animationLayout'
-import { useTranslations } from 'next-intl'
 
 export default function Home() {
   const launchDate = new Date(2022, 3, 1, 13, 24, 0, 0)
@@ -13,10 +12,6 @@ export default function Home() {
     unit: 'day',
     roundingMethod: 'floor',
   })
-
-  const t = useTranslations('HomePage')
-
-  console.log(t('about'))
 
   return (
     <Layout id="home">
