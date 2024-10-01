@@ -1,26 +1,24 @@
 import { Layout } from '@/components/animationLayout'
 
 import { MapPin, Youtube, Mail, Phone } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 export default function Contact() {
+  const t = useTranslations('ContactPage')
+
   return (
     <Layout id="contact">
       <main className="flex h-full flex-col gap-10 bg-unbBlack-10 py-10 text-unbBlue-400 min-[560px]:gap-20 min-[560px]:py-20">
         <section className="mx-auto flex w-full max-w-[1120px] flex-col items-start gap-6 px-5 min-[560px]:items-center">
-          <h2 className="text-4xl min-[560px]:text-6xl">Our contact</h2>
-          <p>
-            Want to say something to us? Feel free to get in touch or visit.
-          </p>
+          <h2 className="text-4xl min-[560px]:text-6xl">{t('title')}</h2>
+          <p>{t('subTitle')}</p>
         </section>
 
         <section className="mx-auto flex w-full max-w-[1120px] flex-col items-center justify-between gap-10 px-5 min-[960px]:flex-row">
           <ul className="flex flex-col gap-2">
             <li className="flex items-center gap-4">
               <MapPin size={20} className="text-unbBlue-600" />
-              <span>
-                Laboratório de Simulação e Controle de Sistemas Aeroespaciais
-                (LODESTAR), SG 11, UnB área 1
-              </span>
+              <span>{t('address')}</span>
             </li>
 
             <li>
@@ -31,7 +29,7 @@ export default function Contact() {
                 className="flex items-center gap-4"
               >
                 <Mail size={20} className="text-unbBlue-600" />
-                <span>lodestar@aerospace.unb.br</span>
+                <span>{t('mail')}</span>
               </a>
             </li>
 
@@ -43,7 +41,7 @@ export default function Contact() {
                 className="flex items-center gap-4"
               >
                 <Phone size={20} className="text-unbBlue-600" />
-                <span>+55 61 3107-5556</span>
+                <span>{t('phone')}</span>
               </a>
             </li>
 
@@ -55,7 +53,7 @@ export default function Contact() {
                 className="flex items-center gap-4"
               >
                 <Youtube size={20} className="text-unbBlue-600" />
-                <span>LODESTAR - UnB</span>
+                <span>{t('youtube')}</span>
               </a>
             </li>
           </ul>

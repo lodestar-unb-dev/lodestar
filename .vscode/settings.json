@@ -4,5 +4,9 @@
     "src/i18n"
   ],
   "i18n-ally.keystyle": "nested",
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "i18n-ally.sourceLanguage": "en",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }

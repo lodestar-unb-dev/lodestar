@@ -15,15 +15,16 @@ import {
   AlfaCruxWhy,
   AlfaCruxAcknowledgments,
   AlfacruxCountdown,
-  AlfacruxCallout,
+  // AlfacruxCallout,
   AlfaCruxMissionControl,
 } from './styles'
-import { intervalToDuration } from 'date-fns'
+// import { intervalToDuration } from 'date-fns'
 import { RichTextField } from '@prismicio/client'
 import Image from 'next/image'
 
 import explodedViewImg from './assets/exploded_view_alfacrux.png'
 import radioAmateurImg from './assets/radio_amateur.svg'
+import { useTranslations } from 'next-intl'
 
 export interface AlfaCruxPrismicDocument {
   banner_image: {
@@ -149,14 +150,15 @@ interface AlfaCruxProps {
   alfacruxPrismicDocument: AlfaCruxPrismicDocument | null
 }
 
-const launchDate = new Date(2022, 3, 1, 13, 24, 0, 0)
-const reentryDate = new Date(2024, 3, 5, 0, 0, 0, 0)
+// const launchDate = new Date(2022, 3, 1, 13, 24, 0, 0)
+// const reentryDate = new Date(2024, 3, 5, 0, 0, 0, 0)
 
 export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
-  const missionEllapsedTime = intervalToDuration({
-    start: reentryDate,
-    end: launchDate,
-  })
+  // const missionEllapsedTime = intervalToDuration({
+  //   start: reentryDate,
+  //   end: launchDate,
+  // })
+  const t = useTranslations('Projects.AlfaCrux.Page')
 
   if (!alfacruxPrismicDocument) {
     return (
@@ -175,29 +177,13 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
   }
 
   const {
-    about_title,
     alfacrux_logo,
     banner_image,
-    bottom_description,
     gs_gallery_images,
     ac_gallery_images,
     ma_gallery_images,
-    gallery_title,
-    left_description,
-    radio_amateurs_button,
-    radio_amateurs_description,
-    radio_amateurs_cta,
-    radio_amateurs_title,
     recent_activities_cards,
-    recent_activities_title,
-    recent_activities_description,
     right_image,
-    why_description,
-    why_title,
-    acknowledgments_title,
-    acknowledgments_first_subsection_title,
-    acknowledgments_second_subsection_title,
-    acknowledgments_third_subsection_title,
     acknowledgments_first_subsection_images,
     acknowledgments_second_subsection_images,
     acknowledgments_third_subsection_images,
@@ -232,87 +218,42 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
   return (
     <main className="bg-unbBlue-700">
       <AlfaCruxBanner role="banner" $bgImageUrl={banner_image.url}>
-        <AlfacruxCallout>
+        {/* <AlfacruxCallout>
           Did you know that you can actively help our project and consume
           AlfaCrux`s latest data{' '}
           <Link href="/projects/alfacrux/radio">
             <strong>with just one click?</strong>
           </Link>
-        </AlfacruxCallout>
+        </AlfacruxCallout> */}
 
         <AlfacruxCountdown>
           <header>
             <h3>
-              Mission Elapsed Time <small>🚀</small>
+              {t('Banner.title')}
+              <small>🚀</small>
             </h3>
           </header>
 
           <section>
-            {(missionEllapsedTime.years ?? 0) > 0 && (
-              <div>
-                <p>{missionEllapsedTime.years}</p>
-                <strong>year{missionEllapsedTime.years !== 1 && 's'}</strong>
-              </div>
-            )}
+            <div>
+              <p>2</p>
+              <strong>{t('Banner.years')}</strong>
+            </div>
 
-            {(missionEllapsedTime.years ?? 0) +
-              (missionEllapsedTime.months ?? 0) >
-              0 && (
-              <div>
-                <p>{missionEllapsedTime.months}</p>
-                <strong>month{missionEllapsedTime.months !== 1 && 's'}</strong>
-              </div>
-            )}
+            <div>
+              <p>3</p>
+              <strong>{t('Banner.days')}</strong>
+            </div>
 
-            {(missionEllapsedTime.years ?? 0) +
-              (missionEllapsedTime.months ?? 0) +
-              (missionEllapsedTime.days ?? 0) >
-              0 && (
-              <div>
-                <p>{missionEllapsedTime.days}</p>
-                <strong>day{missionEllapsedTime.days !== 1 && 's'}</strong>
-              </div>
-            )}
+            <div>
+              <p>10</p>
+              <strong>{t('Banner.hours')}</strong>
+            </div>
 
-            {(missionEllapsedTime.years ?? 0) +
-              (missionEllapsedTime.months ?? 0) +
-              (missionEllapsedTime.days ?? 0) +
-              (missionEllapsedTime.hours ?? 0) >
-              0 && (
-              <div>
-                <p>{missionEllapsedTime.hours}</p>
-                <strong>hour{missionEllapsedTime.hours !== 1 && 's'}</strong>
-              </div>
-            )}
-
-            {(missionEllapsedTime.years ?? 0) +
-              (missionEllapsedTime.months ?? 0) +
-              (missionEllapsedTime.days ?? 0) +
-              (missionEllapsedTime.hours ?? 0) +
-              (missionEllapsedTime.minutes ?? 0) >
-              0 && (
-              <div>
-                <p>{missionEllapsedTime.minutes}</p>
-                <strong>
-                  minute{missionEllapsedTime.minutes !== 1 && 's'}
-                </strong>
-              </div>
-            )}
-
-            {(missionEllapsedTime.years ?? 0) +
-              (missionEllapsedTime.months ?? 0) +
-              (missionEllapsedTime.days ?? 0) +
-              (missionEllapsedTime.hours ?? 0) +
-              (missionEllapsedTime.minutes ?? 0) +
-              (missionEllapsedTime.seconds ?? 0) >
-              0 && (
-              <div>
-                <p>{missionEllapsedTime.seconds}</p>
-                <strong>
-                  second{missionEllapsedTime.seconds !== 1 && 's'}
-                </strong>
-              </div>
-            )}
+            <div>
+              <p>36</p>
+              <strong>{t('Banner.minutes')}</strong>
+            </div>
           </section>
 
           <div
@@ -324,13 +265,15 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             }}
           >
             <span>
-              Launch Date:
+              {t('Banner.launchDate')}:
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022-04-01,
               13:24:00 (UTC)
             </span>
-            <span>Last Decoded Telemetry: 2024-04-03, 02:58:00 (UTC)</span>
             <span>
-              Reentry Date:
+              {t('Banner.lastDecodedTelemetry')}: 2024-04-03, 02:58:00 (UTC)
+            </span>
+            <span>
+              {t('Banner.reentryDate')}:
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2024-04-05,
               00:00:00 (UTC)
             </span>
@@ -341,30 +284,34 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
       <AlfaCruxBio>
         <div>
-          <h2>{about_title}</h2>
+          <h2 className="uppercase">{t('FirstSection.title')}</h2>
 
           <aside>
             <div>
-              <PrismicRichText field={left_description} />
+              <p>{t('FirstSection.leftDescription')}</p>
             </div>
 
             <img src={right_image.url} alt="AlfaCrux render" />
           </aside>
 
-          <div>
-            <PrismicRichText field={bottom_description} />
-          </div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: t.raw('FirstSection.bottomDescription'),
+            }}
+          />
         </div>
       </AlfaCruxBio>
 
       <AlfaCruxWhy>
         <div>
-          <h2>{why_title}</h2>
+          <h2>{t('SecondSection.title')}</h2>
 
           <div style={{ display: 'flex' }}>
-            <div>
-              <PrismicRichText field={why_description} />
-            </div>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: t.raw('SecondSection.description'),
+              }}
+            />
             <Image src={explodedViewImg} alt="" />
           </div>
         </div>
@@ -377,49 +324,16 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           </video>
 
           <div className="banner">
-            <h2>Mission Control Platform</h2>
+            <h2>{t('ThirdSection.title')}</h2>
 
             <section>
-              <aside>
-                <p>
-                  The AlfaCrux Mission Control platform is part of an innovative
-                  framework under development by the AlfaCrux team to assist the
-                  development and operation of nanosatellites. By innovative
-                  framework we mean a new architecture for improving and
-                  strengthening education in the broad area of Science,
-                  Technology, Engineering and Mathematics (STEM). It is another
-                  contribution of the AlfaCrux team to deliver solutions for
-                  in-orbit data processing and management; new approaches for
-                  attitude determination, control, and reconstruction; space
-                  weather analysis and impact on UHF communication links;
-                  prognoses and satellite health management, among others. The
-                  management, processing, and analysis of all this information,
-                  along with the ground infrastructure, come together in the
-                  development of Digi-AlfaCrux, the digital twin version of the
-                  AlfaCrux.
-                </p>
-                <p>
-                  It also makes it easier and immediate for all users to see and
-                  understand the meaning and purpose of the AlfaCrux downlink
-                  signal in accordance with the amateur-satellite service. All
-                  frames available online are properly associated with the call
-                  sign responsible for the information.
-                </p>
-                <p>
-                  The AlfaCrux telemetry data is free of charge and openly
-                  distributed, but if you used the AlfaCrux data on your
-                  research and studies, please don’t forget to cite us! Citation
-                  for telemetry viewer data{' '}
-                  <a
-                    href="http://dx.doi.org/10.3390/app12199764"
-                    target="__blank"
-                  >
-                    can be found here.
-                  </a>
-                </p>
-              </aside>
+              <aside
+                dangerouslySetInnerHTML={{
+                  __html: t.raw('ThirdSection.description'),
+                }}
+              />
               <a href="https://mission-control.lodestar.aerospace.unb.br/">
-                Check our new platform now!
+                {t('ThirdSection.link')}
               </a>
             </section>
 
@@ -430,20 +344,22 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
       <AlfaCruxRadioAmateur>
         <div>
-          <h2>{radio_amateurs_title}</h2>
+          <h2>{t('FourthSection.title')}</h2>
 
-          <article>
-            <PrismicRichText field={radio_amateurs_description} />
-          </article>
+          <article
+            dangerouslySetInnerHTML={{
+              __html: t.raw('FourthSection.description'),
+            }}
+          />
 
           <div>
             <aside>
-              <div>
-                <PrismicRichText field={radio_amateurs_cta} />
-              </div>
+              <div
+                dangerouslySetInnerHTML={{ __html: t.raw('FourthSection.cta') }}
+              />
 
               <Link href="/projects/alfacrux/radio">
-                <span>{radio_amateurs_button}</span>
+                <span>{t('FourthSection.link')}</span>
                 <div>
                   <Rss />
                 </div>
@@ -456,12 +372,14 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
       </AlfaCruxRadioAmateur>
 
       <AlfaCruxRecentActivities>
-        <h2 id="launch-simulation">{recent_activities_title}</h2>
+        <h2 id="launch-simulation">{t('FifthSection.title')}</h2>
 
         <section>
-          <article>
-            <PrismicRichText field={recent_activities_description} />
-          </article>
+          <article
+            dangerouslySetInnerHTML={{
+              __html: t.raw('FifthSection.description'),
+            }}
+          />
 
           <Link
             href="https://www.instagram.com/lodestar_unb/"
@@ -480,7 +398,8 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Check our latest news <Instagram size={22} />
+            {t('FifthSection.link')}
+            <Instagram size={22} />
           </Link>
 
           <section style={{ display: 'flex', flexDirection: 'column-reverse' }}>
@@ -541,17 +460,18 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Check More Videos <Youtube size={22} />
+            {t('FifthSection.cta')}
+            <Youtube size={22} />
           </Link>
         </section>
       </AlfaCruxRecentActivities>
 
       <AlfaCruxGallery>
-        <h2>{gallery_title}</h2>
+        <h2>{t('SixthSection.title')}</h2>
 
         <div>
           <h3 style={{ marginBottom: 20, marginLeft: 20 }}>
-            Ground Station assembly, validation, and tests
+            {t('SixthSection.firstTitle')}
           </h3>
 
           <Slider {...settings}>
@@ -565,7 +485,7 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
         <div style={{ marginTop: 50 }}>
           <h3 style={{ marginBottom: 20, marginLeft: 20 }}>
-            AlfaCrux assembly, validation, and tests campaign
+            {t('SixthSection.secondTitle')}
           </h3>
 
           <Slider {...settings}>
@@ -579,7 +499,7 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
 
         <div style={{ marginTop: 50 }}>
           <h3 style={{ marginBottom: 20, marginLeft: 20 }}>
-            Magnetic actuation system design, implementation, and tests
+            {t('SixthSection.thirdTitle')}
           </h3>
 
           <Slider {...settings}>
@@ -593,7 +513,7 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
       </AlfaCruxGallery>
 
       <AlfaCruxAcknowledgments>
-        <h2>{acknowledgments_title}</h2>
+        <h2>{t('SeventhSection.title')}</h2>
 
         <div
           style={{
@@ -603,9 +523,7 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             alignItems: 'center',
           }}
         >
-          <h3 style={{ marginBottom: 60 }}>
-            {acknowledgments_first_subsection_title}
-          </h3>
+          <h3 style={{ marginBottom: 60 }}>{t('SeventhSection.firstTitle')}</h3>
 
           <div
             style={{
@@ -647,7 +565,7 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
           }}
         >
           <h3 style={{ marginBottom: 60 }}>
-            {acknowledgments_second_subsection_title}
+            {t('SeventhSection.secondTitle')}
           </h3>
 
           <div
@@ -689,9 +607,7 @@ export function OldAlfaCrux({ alfacruxPrismicDocument }: AlfaCruxProps) {
             alignItems: 'center',
           }}
         >
-          <h3 style={{ marginBottom: 60 }}>
-            {acknowledgments_third_subsection_title}
-          </h3>
+          <h3 style={{ marginBottom: 60 }}>{t('SeventhSection.thirdTitle')}</h3>
 
           <div
             style={{

@@ -6,25 +6,18 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 import { ComingNext, RadioBanner, RadioForm, RadioInfo } from './styles'
 import { AlfaCruxMissionControl } from '../styles'
-import { PrismicRichText } from '@prismicio/react'
 import { RichTextField } from '@prismicio/client'
 import { useTheme } from 'styled-components'
+import { useTranslations } from 'next-intl'
 
 const variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
 }
 
-function Info({
-  description,
-  keyValue,
-}: {
-  keyValue: {
-    key: string
-    value: RichTextField
-  }[]
-  description: RichTextField
-}) {
+function Info({ value }: { value: 'sdr' | 'ttc' | 'ham' | 'basic' }) {
+  const t = useTranslations('Projects.AlfaCrux.Radio')
+
   return (
     <motion.div
       initial="hidden"
@@ -32,19 +25,8 @@ function Info({
       exit="hidden"
       variants={variants}
       transition={{ duration: 0.4 }}
-    >
-      <article>
-        <PrismicRichText field={description} />
-      </article>
-      {keyValue.map((item) => (
-        <div key={item.key}>
-          <strong>{item.key}</strong>:{' '}
-          <div>
-            <PrismicRichText field={item.value} />
-          </div>
-        </div>
-      ))}
-    </motion.div>
+      dangerouslySetInnerHTML={{ __html: t.raw(`radioInfo.${value}.info`) }}
+    />
   )
 }
 
@@ -142,6 +124,7 @@ export function OldAlfaCruxRadio({
 
     setActiveFilter(filterNumber)
   }
+  const t = useTranslations('Projects.AlfaCrux.Radio')
 
   useEffect(() => {
     const path = window.location.hash
@@ -177,21 +160,16 @@ export function OldAlfaCruxRadio({
   }
 
   const {
-    title,
     banner_image,
     alfacrux_logo,
     basic_info,
     basic_description,
-    description,
     ham_info,
     ham_description,
-    radio_info_title,
     sdr_info,
     sdr_description,
     ttc_info,
     ttc_description,
-    coming_next_title,
-    coming_next_group,
   } = alfacruxRadioPrismicDocument
 
   const info = {
@@ -218,16 +196,14 @@ export function OldAlfaCruxRadio({
       <RadioBanner role="banner" bgImageUrl={banner_image.url}>
         <article>
           <img src={alfacrux_logo.url} alt={alfacrux_logo.alt} />
-          <h2>{title}</h2>
+          <h2>{t('title')}</h2>
 
-          <div>
-            <PrismicRichText field={description} />
-          </div>
+          <div dangerouslySetInnerHTML={{ __html: t.raw('description') }} />
         </article>
       </RadioBanner>
 
       <RadioInfo>
-        <h3>{radio_info_title}</h3>
+        <h3>{t('radioInfo.title')}</h3>
 
         <nav>
           <button
@@ -243,7 +219,7 @@ export function OldAlfaCruxRadio({
             }}
             onClick={() => handleFilterChange('basic')}
           >
-            Beacon
+            {t('radioInfo.basic.title')}
           </button>
 
           <button
@@ -259,7 +235,7 @@ export function OldAlfaCruxRadio({
             }}
             onClick={() => handleFilterChange('sdr')}
           >
-            SDR Experiments
+            {t('radioInfo.sdr.title')}
           </button>
 
           <button
@@ -275,7 +251,7 @@ export function OldAlfaCruxRadio({
             }}
             onClick={() => handleFilterChange('ham')}
           >
-            Ham radio digipeater
+            {t('radioInfo.ham.title')}
           </button>
 
           <button
@@ -291,14 +267,14 @@ export function OldAlfaCruxRadio({
             }}
             onClick={() => handleFilterChange('ttc')}
           >
-            TTC
+            {t('radioInfo.ttc.title')}
           </button>
         </nav>
 
         <AnimatePresence mode="wait">
           {info[activeFilter].description.length > 0 ||
           info[activeFilter].keyValue.length > 0 ? (
-            <Info key={activeFilter} {...info[activeFilter]} />
+            <Info value={activeFilter} {...info[activeFilter]} />
           ) : (
             <CommingSoon key="commingSoon" />
           )}
@@ -307,26 +283,20 @@ export function OldAlfaCruxRadio({
 
       <RadioForm>
         <div>
-          <h3>Radio Form</h3>
+          <h3>{t('radioForm.title')}</h3>
 
-          <h4>
-            Were you able to receive AlfaCrux packages? Share with us and become
-            one of our distinguished collaborators. For that, just fill the form
-            below and send your KISS frames. It will be checked by the AlfaCrux
-            team, and later uploaded in our database associated to your call
-            sign!
-          </h4>
+          <h4>{t('radioForm.form')}</h4>
           <iframe
             className="form"
             src="https://dbgeolog.unb.br/lodestar/form.php"
             frameBorder={0}
           />
 
-          <h4>
-            Check who has already received packets from AlfaCrux.
-            <br />
-            Come with us and be part of this mission!
-          </h4>
+          <h4
+            dangerouslySetInnerHTML={{
+              __html: t.raw('radioForm.collaborators'),
+            }}
+          />
           <iframe
             className="map"
             src="https://dbgeolog.unb.br/lodestar/map.php"
@@ -342,49 +312,16 @@ export function OldAlfaCruxRadio({
           </video>
 
           <div className="banner">
-            <h2>Mission Control Platform</h2>
+            <h2>{t('missionControl.title')}</h2>
 
             <section>
-              <aside>
-                <p>
-                  The AlfaCrux Mission Control platform is part of an innovative
-                  framework under development by the AlfaCrux team to assist the
-                  development and operation of nanosatellites. By innovative
-                  framework we mean a new architecture for improving and
-                  strengthening education in the broad area of Science,
-                  Technology, Engineering and Mathematics (STEM). It is another
-                  contribution of the AlfaCrux team to deliver solutions for
-                  in-orbit data processing and management; new approaches for
-                  attitude determination, control, and reconstruction; space
-                  weather analysis and impact on UHF communication links;
-                  prognoses and satellite health management, among others. The
-                  management, processing, and analysis of all this information,
-                  along with the ground infrastructure, come together in the
-                  development of Digi-AlfaCrux, the digital twin version of the
-                  AlfaCrux.
-                </p>
-                <p>
-                  It also makes it easier and immediate for all users to see and
-                  understand the meaning and purpose of the AlfaCrux downlink
-                  signal in accordance with the amateur-satellite service. All
-                  frames available online are properly associated with the call
-                  sign responsible for the information.
-                </p>
-                <p>
-                  The AlfaCrux telemetry data is free of charge and openly
-                  distributed, but if you used the AlfaCrux data on your
-                  research and studies, please don’t forget to cite us! Citation
-                  for telemetry viewer data{' '}
-                  <a
-                    href="http://dx.doi.org/10.3390/app12199764"
-                    target="__blank"
-                  >
-                    can be found here.
-                  </a>
-                </p>
-              </aside>
+              <aside
+                dangerouslySetInnerHTML={{
+                  __html: t.raw('missionControl.description'),
+                }}
+              />
               <a href="https://mission-control.lodestar.aerospace.unb.br/">
-                Check our new platform now!
+                {t('missionControl.link')}
               </a>
             </section>
 
@@ -394,21 +331,17 @@ export function OldAlfaCruxRadio({
       </AlfaCruxMissionControl>
 
       <ComingNext>
-        <h3>{coming_next_title}</h3>
+        <h3>{t('comingNext.title')}</h3>
 
         <div>
-          {coming_next_group.map((item) => (
-            <article key={item.coming_next_image.url}>
-              <img
-                src={item.coming_next_image.url}
-                alt={item.coming_next_image.alt}
-              />
+          <article>
+            <img
+              src="https://images.prismic.io/lodestar/250aa8b4-011d-4b8f-b210-9ace05fb073c_Group+1+%281%29.png?auto=compress,format&rect=0,0,678,356&w=400&h=210"
+              alt=""
+            />
 
-              <div>
-                <PrismicRichText field={item.coming_next_description} />
-              </div>
-            </article>
-          ))}
+            <div>{t('comingNext.description')}</div>
+          </article>
         </div>
       </ComingNext>
     </div>

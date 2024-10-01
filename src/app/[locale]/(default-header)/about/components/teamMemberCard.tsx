@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { twMerge } from 'tailwind-merge'
 
@@ -31,6 +32,7 @@ export function TeamMemberCard({
     2: 'green',
   } as const
   const highlightColor = colors[colorNumber]
+  const t = useTranslations('AboutPage.Members')
 
   return (
     <a
@@ -71,7 +73,7 @@ export function TeamMemberCard({
       >
         <strong>{role}</strong>
         <br />
-        <strong>Research Area: </strong>
+        <strong>{t('research')}</strong>
         <span>{researchArea}</span>
       </div>
     </a>

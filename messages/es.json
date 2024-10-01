@@ -30,6 +30,154 @@
       },
       "Members": {
         "title": "Próximamente."
+      },
+      "Header": {
+        "lodestar": "Lodestar",
+        "projects": "Proyectos",
+        "members": "Miembros",
+        "gallery": "Galería"
+      }
+    },
+    "Page": {
+      "title": "Nuestros proyectos",
+      "subTitle": "Estos son los proyectos en los que nuestro equipo está trabajando. \nNuestro enfoque principal son las misiones espaciales, el simulador SAT pequeño y los vuelos en globo a gran altitud.",
+      "firstSection": {
+        "title": "Misiones espaciales",
+        "Perception": {
+          "title": "Perception",
+          "description": "El proyecto Perception tiene como objetivo mejorar el seguimiento de activos estratégicos como los recursos naturales a través de la percepción avanzada, lo que implica comprender, aprender y adaptarse a su naturaleza aleatoria e incierta. \nAl integrar redes de sensores, tecnologías espaciales y ciencia de datos, el proyecto busca potenciar la toma de decisiones en escenarios complejos. \nImplica desarrollar nuevos servicios satelitales utilizando CubeSats para rastrear y monitorear biomas e infraestructura brasileños. \nEl proyecto incluye la Torre K34 en el Amazonas y la Granja Água Limpa en el Cerrado, apoyando el desarrollo sostenible y el monitoreo ambiental. \nLe invitamos a unirse a nosotros en el proyecto Perception para desarrollar nuevas tecnologías y servicios satelitales para el seguimiento y monitoreo de nuestros activos estratégicos.",
+          "link": "Ver más"
+        },
+        "AlfaCrux": {
+          "title": "AlfaCrux",
+          "description": "La misión AlfaCrux es una demostración educativa y tecnológica en órbita de soluciones de comunicación de banda estrecha. \nEs un satélite CubeSat universitario de 1U desarrollado por estudiantes y profesores de la Universidad de Brasilia, Brasil. \nEs la primera misión espacial financiada por el Gobierno del Distrito Federal de Brasil a través de la Fundación de Apoyo a la Investigación del Distrito Federal (FAPDF), que también cuenta con el apoyo de la Agencia Espacial Brasileña (AEB) y la Agencia Nacional de Telecomunicaciones de Brasil (ANATEL). \n. \n¡Ven y sé parte de ello!",
+          "link": "Ver más"
+        },
+        "WormSail": {
+          "title": "WormSail",
+          "description": "WormSail, un CubeSat 2U, es un satélite universitario desarrollado por estudiantes y profesores de la Universidad de Brasilia (UnB), Brasil, y la Universidad de Nottingham (UoN), Reino Unido. \nLa misión principal es educativa: brindar una experiencia práctica a los estudiantes en el proceso completo de desarrollo y operación de una misión espacial. \nSu objetivo es demostrar en órbita un algoritmo de software de vuelo para realizar el enrutamiento de paquetes, un conjunto de subsistemas de observación para recopilar imágenes y datos de sensores a bordo, y un nuevo subsistema para maniobras de actitud que incluye un magnetorquer de 3 ejes y un mecanismo de desorbitación pasiva basado en \nsobre estructuras tipo origami y corrosión del oxígeno atómico. \n¡Ponte en contacto y ayuda a WormSail a ser un gran éxito!",
+          "link": "Próximamente"
+        },
+        "AstroJam": {
+          "title": "AstroJam",
+          "description": "¡El equipo LODESTAR está muy orgulloso de ser miembro de la misión espacial AstroJam! \nEl AstroJam es un CubeSat de 3U dirigido por estudiantes y diseñado para realizar investigaciones en la Universidad de Nottingham, con cargas útiles científicas respaldadas por el Grupo de Investigación de Astrofarmacia y el Instituto Geoespacial de Nottingham (NGI). \nLas cargas útiles incluyen un espectrómetro de fluorescencia miniaturizado para el análisis in situ de bioinformadores libres de células que producen astrofármacos analógicos y una carga útil de mapeo de interferencias GNSS basada en CubeSat. \nAdemás, se utilizará un magnetorquer ADCS desarrollado en colaboración con el equipo LODESTAR de la Universidad de Brasilia para desarticular y apuntar el satélite. \nLa misión está organizada y dirigida por estudiantes de varios departamentos, involucrándolos a nivel de licenciatura, maestría y doctorado y permitiéndoles desarrollar sus tesis en piezas prácticas y funcionales de tecnología espacial. \nLos subsistemas de bus principales de AstroJam (OBC, EPS y transceptor de radio) son artículos comerciales listos para usar, aunque en particular los componentes estructurales se fabricarán en parte internamente en la UoN, mientras que otros componentes se fabricarán utilizando tecnologías de fabricación aditiva de empresas especializadas en Nottingham y \nEuropa. \nAstroJam proporcionará tanto el IOD de la primera carga útil de mapeo de interferencia GNSS alojada en CubeSat, como la validación de la primera carga útil biomédica de CubeSat dirigida por la Universidad, ambas áreas de investigación de vanguardia que han citado aplicaciones potenciales bien citadas. \nEl cultivo y análisis in situ de moléculas astrofarmacéuticas sintetizadas sin células tiene aplicaciones casi ilimitadas en la investigación y la tecnología de microgravedad para respaldar futuras misiones tripuladas para la producción de alimentos y medicamentos, el tratamiento de residuos y la ISRU (utilización de recursos in situ). \nDe manera similar, la capacidad de monitorear la interferencia GNSS utilizando satélites de costo relativamente bajo puede conducir a futuras constelaciones dedicadas al monitoreo de señales GNSS, aumentando el tiempo de revisita y permitiendo que los recursos se concentren en áreas con rendimiento degradado. \nEl equipo LODESTAR también apoyará la misión AstroJam en el segmento terrestre recibiendo telemetría en un canal de comunicación confiable. \n¡El equipo LODESTAR agradece a la Universidad de Nottingham por la asociación!",
+          "link": "Ver más"
+        },
+        "Glee": {
+          "title": "Glee",
+          "description": "La Gran Expedición Lunar para Todos, GLEE 2023, es una misión a la superficie de la Luna que realizará ciencia y probará tecnología con cientos de LunaSats de 5 gramos construidos por estudiantes de todo el mundo. \nLODESTAR se enorgullece de ser una de las organizaciones actualmente involucradas. \n¡Consulta más información en la web de GLEE!",
+          "link": "Ver más"
+        }
+      },
+      "secondSection": {
+        "title": "Simulador SAT pequeño",
+        "Simulator": {
+          "title": "Simulador",
+          "description": "Los simuladores de actitud son un gran recurso para diseñar y probar algoritmos de control y determinación de actitud para naves espaciales. \nSe utilizan desde hace décadas equipados con diferentes sensores y actuadores para reproducir las condiciones operativas de un satélite en el espacio y validar experimentalmente hardware y algoritmos. \nLa instalación LODESTAR proporciona al usuario un simulador de campo magnético acoplado a una plataforma aérea que puede simular el movimiento de actitud de un nanosatélite en órbita. \nEl objetivo de este sistema es proporcionar una instalación de hardware en el circuito para sistemas de control y determinación de actitud de nanosatélites para diversas aplicaciones, como pruebas de algoritmos, sensores y actuadores, así como pruebas funcionales de satélites. \n¡Ven a validar tus ideas y sé parte de este equipo!",
+          "link": "Próximamente"
+        }
+      },
+      "thirdSection": {
+        "title": "High-Altitude Ballooning",
+        "LAICAnSat": {
+          "title": "LAICAnSat",
+          "description": "La plataforma científica de gran altitud desarrollada en LODESTAR, llamada LAICAnSat, es un proyecto que comenzó en 2013 como una iniciativa para estimular el estudio de los sistemas aeroespaciales y proporcionar una plataforma de bajo costo para la educación aeroespacial práctica. \nLas primeras pruebas de vuelo tuvieron lugar en 2014 (LAICAnSat-1 y LAICAnSat-2) y permitieron probar las primeras soluciones de hardware. \nOtros cuatro lanzamientos se produjeron en 2017 (LAICAnSat-3, LAICAnSat-4, LAICAnSat-5 y LAICAnSat-5.1). \nLAICAnSat-3 y LAICAnSat-4 se lanzaron para validar una nueva estructura mecánica fabricada de acuerdo con el estándar CubeSat y utilizando tecnologías de prototipo rápido basadas en la fabricación de impresoras 3D, la nueva PCB estándar PC/104 con computadora de a bordo y sensores integrados. \nasí como dos cámaras esféricas de 360º.",
+          "link": "Ver más"
+        },
+        "Kuaray": {
+          "title": "Kuaray",
+          "description": "La misión principal de la plataforma LAICAnSat tuvo lugar en Idaho, EE.UU., en 2017. El objetivo era registrar el eclipse solar total desde la estratosfera utilizando una cámara de 360º, reproduciendo la experiencia de vuelo hasta la estratosfera durante el eclipse solar total de agosto. \n2017 en América del Norte, así como proporcionar un mapeo meteorológico vertical de toda la trayectoria de vuelo. \n¡Fue un nuevo logro en el mundo, hasta donde sabemos, nunca antes visto! \nEl equipo LODESTAR y sus socios, el equipo Mutum Ham Radio Expedition y el Club Brasileño de Astronomía, DF, Brasil, están orgullosos de haber sido miembros del Proyecto de Globo Aerostático Eclipse de la Subvención Espacial de la NASA. \n¡El lanzamiento y la misión de LAICAnSat-5 (estándar CubeSat 3U) y LAICAnSat-5.1 (estándar Cube-Sat 1U) fueron un gran éxito! \n¡Mira esta aventura y ven a ser socio!",
+          "link": "Ver más"
+        }
+      }
+    },
+    "AlfaCrux": {
+      "Page": {
+        "Banner": {
+          "title": "Duración de la misión",
+          "years": "años",
+          "days": "días",
+          "hours": "horas",
+          "minutes": "minutos",
+          "launchDate": "Fecha de lanzamiento",
+          "lastDecodedTelemetry": "Última telemetría decodificada",
+          "reentryDate": "Fecha de reingreso"
+        },
+        "FirstSection": {
+          "title": "La misión AlfaCrux",
+          "leftDescription": "El 1 de abril de 2022, el AlfaCrux CubeSat fue lanzado por la misión Falcon 9 Transporter-4, la cuarta misión del programa de viajes compartidos de satélites pequeños dedicados de SpaceX, desde el Complejo de Lanzamiento Espacial 40 en la Estación de la Fuerza Espacial de Cabo Cañaveral en Florida en un SSO a 500 km. \nFinanciado por el Gobierno del Distrito Federal de Brasil a través de la Fundación de Apoyo a la Investigación del Distrito Federal (FAPDF), AlfaCrux es una misión educativa y de radioaficionados para brindar una experiencia práctica a estudiantes y profesores en el proceso completo de desarrollo y operación de un \nmisión espacial. \nEn concreto, los miembros del equipo han diseñado y ahora están operando y observando el comportamiento y rendimiento del AlfaCrux CubeSat en órbita. \nAdemás, la misión AlfaCrux está brindando una experiencia única en el proceso de aprendizaje de radioelectrónica, antenas, comunicaciones digitales y actividades de radioaficionados. \nComo objetivo adicional, MSc. \ny estudiantes de doctorado de Ingeniería Eléctrica, Mecatrónica, Mecánica, Producción e Ingeniería Aeroespacial probarán y demostrarán en órbita experimentos de radio definidos por software para realizar análisis de centelleo ionosférico y un sistema de recopilación de datos de sensores en el suelo.",
+          "bottomDescription": "<p> La solución de enrutamiento de paquetes permitirá reenviar los mensajes recibidos de vuelta a la Tierra para apoyar   la comunicación y el intercambio de mensajes entre radioaficionados (QSO digital), almacenarlos a bordo y   transmitirlos a la estación terrestre. Los datos de telemetría recopilados están disponibles a través de internet, o   bajo solicitud, y pueden ser utilizados para varias aplicaciones: estudio de diferentes métodos para comunicación de   baja tasa de datos, caracterización de fuentes de interferencia, efectos de propagación atmosférica, capacidad de   comunicación en términos de tasa de datos y rendimiento del enlace en términos de tasa de error de bits (BER) y   relación señal/ruido (SNR).</p> <p> Las pasadas son monitoreadas a través de la estación terrestre de comando y control LODESTAR (PT2ENE), con el apoyo   de la comunidad de radioaficionados. La información de telemetría se actualiza diariamente y puede ser vista en línea   en la <em> <strong> <a href=\"https://mission-control.lodestar.aerospace.unb.br/\" rel=\"noreferrer\"> Plataforma de         Control de la Misión AlfaCrux </a> </strong> </em>, facilitando e haciendo inmediato para todos los usuarios ver   y comprender el significado de las señales. </p> <p> Bienvenidos al proyecto AlfaCrux y acompáñenos para aumentar la conciencia situacional terrestre y espacial a través   de enlaces de comunicación por satélite. </p>"
+        },
+        "SecondSection": {
+          "title": "DETRÁS DEL NOMBRE: EL SIGNIFICADO DE ALFACRUX",
+          "description": "<p> El nombre AlfaCrux proviene de la estrella Alpha Crucis, la estrella más brillante de la constelación austral Crux (la Cruz del Sur) y una de las estrellas más brillantes del cielo. \nLa motivación para elegir AlfaCrux como nombre de la misión proviene del hecho de que la Cruz del Sur es la constelación más conocida de las que podemos ver en el hemisferio sur. \nTiene una especial importancia en la navegación y orientación, siendo conocida desde la época de los antiguos griegos. \n</p> <p>La estrella Alfa Crucis aparece en la bandera de Brasil y en el escudo de armas de Brasil. \nEs sinónimo de guía, referencia y en consecuencia responsabilidad y excelencia. \nEn este sentido, resume los objetivos generales de esta misión espacial: convertirse en un referente de excelencia y dedicación, y un ejemplo a seguir como enfoque para el avance de las actividades espaciales en la nueva era espacial. \n</p>"
+        },
+        "ThirdSection": {
+          "title": "Plataforma de control de misión",
+          "description": "<p> La plataforma AlfaCrux Mission Control es parte de un marco innovador que está desarrollando el equipo de AlfaCrux para ayudar al desarrollo y operación de nanosatélites. \nPor marco innovador nos referimos a una nueva arquitectura para mejorar y fortalecer la educación en el amplio área de Ciencia, Tecnología, Ingeniería y Matemáticas (STEM). \nEs otra contribución del equipo de AlfaCrux para entregar soluciones para el procesamiento y gestión de datos en órbita; \nnuevos enfoques para la determinación, el control y la reconstrucción de actitudes; \nanálisis del clima espacial e impacto en los enlaces de comunicación UHF; \npronósticos y gestión de salud satelital, entre otros. \nLa gestión, procesamiento y análisis de toda esta información, junto con la infraestructura terrestre, se unen en el desarrollo de Digi-AlfaCrux, la versión gemela digital de AlfaCrux. \n</p> <p> También hace que sea más fácil e inmediato para todos los usuarios ver y comprender el significado y el propósito de la señal de enlace descendente de AlfaCrux de acuerdo con el servicio de aficionados por satélite. \nTodos los marcos disponibles en línea están debidamente asociados con el distintivo de llamada responsable de la información. \n</p> <p> Los datos de telemetría de AlfaCrux son gratuitos y se distribuyen abiertamente, pero si utilizó los datos de AlfaCrux en sus investigaciones y estudios, ¡no olvide citarnos! \nLa cita de los datos del visor de telemetría{' '} <a href=\"http://dx.doi.org/10.3390/app12199764\" target=\"__blank\" > se puede encontrar aquí. \n</a> </p>",
+          "link": "¡Consulta nuestra nueva plataforma ahora!"
+        },
+        "FourthSection": {
+          "title": "INFORMACIÓN DEL ENLACE DE COMUNICACIÓN",
+          "description": "<p> El equipo de AlfaCrux de la Universidad de Brasilia informa que el proyecto del satélite AlfaCrux, una misión de demostración educativa y tecnológica en el área de telecomunicaciones, cumple completamente con el marco regulatorio nacional para las telecomunicaciones. La Coordinación del proyecto cumplió con todos los procedimientos de la Agencia Nacional de Telecomunicaciones (ANATEL) para el uso de recursos orbitales y espectrales como satélite brasileño, y la Agencia cumplió con todos los procedimientos necesarios en la Unión Internacional de Telecomunicaciones (UIT), solicitando oficialmente la coordinación de frecuencia a la IARU. Nos gustaría reforzar que la coordinación de la banda de frecuencias con los países identificados por la UIT se ha concluido, y que el 1 de noviembre de 2022 se publicó el BR IFIC 2983 confirmando que las asignaciones de frecuencia de AlfaCrux se registraron correctamente en el Registro Maestro de la UIT bajo el Artículo 11 del Reglamento de Radiocomunicaciones. Además, las aplicaciones que se están desarrollando en este proyecto están totalmente de acuerdo con los servicios de radiocomunicaciones y telecomunicaciones asociados a la operación de estas bandas de frecuencia. El equipo de AlfaCrux quisiera agradecer a Sir Hans P. Blondeel Timmerman (PB2T), Asesor de Satélites de la IARU, por proporcionar la carta de coordinación de AlfaCrux el 5 de julio de 2022. </p> <p> También informamos que, el 27 de julio de 2022, a las 01:56 UTC, AlfaCrux cambió al modo nominal y ahora está comenzando la activación de la carga útil en órbita. Los servicios principales aún no están activos, solo la transmisión de señales con paquetes de telemetría a 437.100 MHz, modulación GMSK, 4800 bps y polarización circular. Información adicional será actualizada en este sitio web, la página oficial de la misión, incluyendo detalles para el uso correcto de los servicios por parte de la comunidad de radioaficionados en el futuro, después de finalizar el LEOP. ¿Quieres saber qué está sucediendo en el centro de control de AlfaCrux? ¡Consulta nuestro planificador de misión para más información! </p>",
+          "cta": "<p>¿Quieres comunicarte con AlfaCrux?</p> <p>¡Entonces haz clic en el botón de abajo para obtener más información!</p>",
+          "link": "Información de radioaficionados"
+        },
+        "FifthSection": {
+          "description": "<p> Una de las principales motivaciones para llevar a cabo el proyecto AlfaCrux es aportar beneficios educativos y científicos en el contexto de misiones de pequeños satélites. \nEs una misión espacial educativa y de radioaficionados. \nUna oportunidad para el aprendizaje teórico y práctico sobre gestión técnica, diseño de sistemas, comunicación, mecánica orbital, desarrollo, integración y operación de pequeños satélites. \nLa necesidad de formación y asignación de recursos humanos para una mejor gestión e innovación tecnológica en el sector espacial es una demanda crítica en nuestro país. \nLas actividades espaciales deben establecerse en un modelo sostenible en el que la educación superior, tanto de pregrado como de posgrado, desempeñe un papel fundamental y esencial. \nDesde la perspectiva de la universidad, la misión espacial crea poderosas oportunidades para aprender y allana el camino entre el entorno del aula y la experiencia de la vida cotidiana. \nEl equipo de AlfaCrux está comprometido con la mejora de la conectividad de datos y la inteligencia de datos, dos palabras clave importantes en un mundo moderno. \nEn consecuencia, esta misión representa un paso importante y estratégico en la consolidación y fortalecimiento de nuestro dominio en el desarrollo y operación de tecnologías críticas y de acceso restringido en misiones satelitales. \n</p> <p> En este contexto, le invitamos amablemente a tomarse un momento de su tiempo y comprobar nuestras actividades y logros recientes. \n</p>",
+          "title": "ACTIVIDADES RECIENTES",
+          "link": "Consulta nuestras últimas noticias",
+          "cta": "Ver más vídeos"
+        },
+        "SixthSection": {
+          "title": "GALERÍA",
+          "firstTitle": "Montaje, validación y pruebas de estaciones terrestres.",
+          "secondTitle": "Campaña de montaje, validación y pruebas de AlfaCrux",
+          "thirdTitle": "Diseño, implementación y pruebas de sistemas de actuación magnética."
+        },
+        "SeventhSection": {
+          "title": "EXPRESIONES DE GRATITUD",
+          "firstTitle": "Realización",
+          "secondTitle": "Financiador",
+          "thirdTitle": "Socio y soporte técnico"
+        }
+      },
+      "Radio": {
+        "title": "RADIO AFICIONADO",
+        "description": "<p> El satélite AlfaCrux opera en las frecuencias de radioaficionados en la banda UHF. Aloja un digipeater, actualmente configurado para repetir paquetes digitales APRS, que puede ser accedido por cualquier radioaficionado. Las instrucciones para el uso del digipeater estarán disponibles en esta página web. Además, se invita a cualquier radioaficionado a recibir la telemetría del satélite, compartirla y cooperar en los experimentos SDR. Los datos recibidos por la comunidad de radioaficionados de todo el mundo serán recopilados y clasificados junto con los datos descargados por la estación terrestre de comando y control PT2ENE del Laboratorio de Simulación y Control de Sistemas Aeroespaciales, LODESTAR, de la Universidad de Brasilia, UnB. Un formulario en línea está disponible a continuación para enviar los datos recopilados junto con alguna información adicional. Se enviará una tarjeta QSL electrónica por correo electrónico a aquellos que hayan enviado la información utilizando nuestro formulario en línea. Los paquetes de datos de telemetría pueden ser vistos y analizados en la <em> <strong> <a href=\"https://mission-control.lodestar.aerospace.unb.br\" rel=\"noreferrer\"> plataforma de Control de la Misión AlfaCrux </a> </strong> </em>. Además, <em> <strong> <a target=\"_blank\" href=\"https://lodestar.cdn.prismic.io/lodestar/5e184924-9374-4062-a03c-74cbb1c2a211_AlfaCrux_telemetry_modulation_codes_format.pdf\" rel=\"noreferrer\"> una descripción de las balizas de telemetría se puede ver aquí </a> </strong> </em>. </p>  <p> El equipo de AlfaCrux de la Universidad de Brasilia informa que el proyecto del satélite AlfaCrux, una misión de demostración educativa y tecnológica en el área de telecomunicaciones, cumple completamente con el marco regulatorio nacional para las telecomunicaciones. La Coordinación del proyecto cumplió con todos los procedimientos de la Agencia Nacional de Telecomunicaciones (ANATEL) para el uso de recursos orbitales y espectrales como satélite brasileño, y la Agencia cumplió con todos los procedimientos necesarios en la Unión Internacional de Telecomunicaciones (UIT), solicitando oficialmente la coordinación de frecuencia a la IARU. Nos gustaría reforzar que la coordinación de la banda de frecuencias con los países identificados por la UIT se ha concluido, y que el 1 de noviembre de 2022 se publicó el BR IFIC 2983 confirmando que las asignaciones de frecuencia de AlfaCrux se registraron correctamente en el Registro Maestro de la UIT bajo el Artículo 11 del Reglamento de Radiocomunicaciones. Además, las aplicaciones que se están desarrollando en este proyecto están totalmente de acuerdo con los servicios de radiocomunicaciones y telecomunicaciones asociados a la operación de estas bandas de frecuencia. El equipo de AlfaCrux quisiera agradecer a Sir Hans P. Blondeel Timmerman (PB2T), Asesor de Satélites de la IARU, por proporcionar la carta de coordinación de AlfaCrux el 5 de julio de 2022. </p>  <p> También informamos que, el 27 de julio de 2022, a las 01:56 UTC, AlfaCrux cambió al modo nominal y ahora está comenzando la activación de la carga útil en órbita. Los servicios principales aún no están activos, solo la transmisión de señales con paquetes de telemetría a 437.100 MHz, modulación GMSK, 4800 bps y polarización circular. Información adicional será actualizada en este sitio web, la página oficial de la misión, incluyendo detalles para el uso correcto de los servicios por parte de la comunidad de radioaficionados en el futuro, después de finalizar el LEOP. ¿Quieres saber qué está sucediendo en el centro de control de AlfaCrux? ¡Consulta nuestro planificador de misión para más información! </p>",
+        "radioInfo": {
+          "title": "INFORMACIÓN RADIO",
+          "basic": {
+            "title": "Beacon",
+            "info": "<article><p> A continuación se presenta una descripción general de las especificaciones técnicas de radio para recibir las balizas AlfaCrux (más información <em><strong><a target=\"_blank\" href=\"https://lodestar.cdn.prismic.io/lodestar/5e184924-9374-4062-a03c-74cbb1c2a211_AlfaCrux_telemetry_modulation_codes_format.pdf\" rel=\"noreferrer\">aquí</a></strong></em>)</p></article><div><strong>Banda de frecuencia de radio</strong>: <div><p>UHF</p></div></div><div><strong>Frecuencia de enlace descendente/ascendente</strong>: <div><p>437,100 MHz</p></div></div><div><strong>Polarización</strong>: <div><p>Circular</p></div></div><div><strong>Modulación</strong>: <div><p>GMSK a 4800 bps</p></div><strong>Protocolo</strong>: <div><p>CSP - CCSDS</p></div></div><div><strong>TLE</strong>: <div><p><a target=\"_blank\" href=\"https://celestrak.com/NORAD/elements/gp.php?INTDES=2022-033\" rel=\"noreferrer\">Haga clic aquí y busque el TLE ALFACRUX</a></p></div></div>"
+          },
+          "sdr": {
+            "title": "Experimentos SDR",
+            "info": "<p> Uno de los objetivos del proyecto está relacionado con el uso de herramientas de software que permitan la implementación de transceptores utilizando tecnología Software Defined Radio (SDR). \nEsta técnica permite la creación rápida de prototipos de sistemas de transmisión y recepción, complementando el aprendizaje de los estudiantes de pregrado y potenciando líneas de investigación a nivel de posgrado. \nPor el momento, el proyecto hace uso de la plataforma GNU Radio, con soporte de bibliotecas Python y la herramienta GNU Radio Companion.</p>"
+          },
+          "ham": {
+            "title": "Ham radio digipeater",
+            "info": "<p> Se implementa un repetidor digital (uplink/downlink) para servicios de voz de radioaficionados en 437.225MHz utilizando modulación AFSK/FM con una velocidad de datos de 1200 bps y protocolo AX.25. \n¡Bienvenido al sistema de comunicación de paquetes de datos de radioaficionado AlfaCrux!</p>"
+          },
+          "ttc": {
+            "title": "TTC",
+            "info": "<p> La telemetría, seguimiento y comando del satélite AlfaCrux está implementada en la banda UHF, concretamente 437.100 MHz, utilizando modulación GMSK a 4800 bps y CubeSat Space Protocol y CCSDS Space Packets. \n¿Listo para ayudar con el enlace descendente de telemetría y ser parte del equipo? \nEntonces, complete el formulario, comparta sus datos y consúltelos en la <em><strong><a href=\"https://mission-control.lodestar.aerospace.unb.br/\" rel=\"noreferrer\">Misión AlfaCrux \n¡Plataforma de control!</a></strong></em></p>"
+          }
+        },
+        "radioForm": {
+          "title": "Formulario de radio",
+          "form": "¿Pudiste recibir paquetes AlfaCrux? \nComparte con nosotros y conviértete en uno de nuestros distinguidos colaboradores. \nPara eso, simplemente complete el formulario a continuación y envíe sus marcos KISS. \n¡Será verificado por el equipo de AlfaCrux y luego cargado en nuestra base de datos asociada a su indicativo de llamada!",
+          "collaborators": "Compruebe quién ya recibió paquetes de AlfaCrux. \n<br /> ¡Ven con nosotros y sé parte de esta misión!"
+        },
+        "missionControl": {
+          "title": "Plataforma de control de misión",
+          "description": "<p> La plataforma AlfaCrux Mission Control es parte de un marco innovador que está desarrollando el equipo de AlfaCrux para ayudar al desarrollo y operación de nanosatélites. \nPor marco innovador nos referimos a una nueva arquitectura para mejorar y fortalecer la educación en el amplio área de Ciencia, Tecnología, Ingeniería y Matemáticas (STEM). \nEs otra contribución del equipo de AlfaCrux para entregar soluciones para el procesamiento y gestión de datos en órbita; \nnuevos enfoques para la determinación, el control y la reconstrucción de actitudes; \nanálisis del clima espacial e impacto en los enlaces de comunicación UHF; \npronósticos y gestión de salud satelital, entre otros. \nLa gestión, procesamiento y análisis de toda esta información, junto con la infraestructura terrestre, se unen en el desarrollo de Digi-AlfaCrux, la versión gemela digital de AlfaCrux. \n</p> <p> También hace que sea más fácil e inmediato para todos los usuarios ver y comprender el significado y el propósito de la señal de enlace descendente de AlfaCrux de acuerdo con el servicio de aficionados por satélite. \nTodos los marcos disponibles en línea están debidamente asociados con el distintivo de llamada responsable de la información. \n</p> <p> Los datos de telemetría de AlfaCrux son gratuitos y se distribuyen abiertamente, pero si utilizó los datos de AlfaCrux en sus investigaciones y estudios, ¡no olvide citarnos! \nLa cita de los datos del visor de telemetría{' '} <a href=\"http://dx.doi.org/10.3390/app12199764\" target=\"__blank\" > se puede encontrar aquí. \n</a> </p>",
+          "link": "¡Consulta nuestra nueva plataforma ahora!"
+        },
+        "comingNext": {
+          "title": "Próximamente",
+          "description": "¡La arquitectura piloto AlfaCrux Digital Twin! \n¡De la realidad a la realidad digital y viceversa!"
+        }
       }
     }
   },
@@ -37,5 +185,195 @@
     "title": "No encontrada",
     "description": "¡Vaya! Has intentado abrir una página que no existe. Haga clic en el enlace a continuación para regresar a la página de inicio.",
     "buttonText": "Página de inicio"
+  },
+  "HomePage": {
+    "callout": {
+      "title": "¡AlfraCrux estuvo en órbita durante más de 734 días! 🚀",
+      "link": "Haga clic aquí para más información"
+    },
+    "title": "Lodestar",
+    "subTitle": "Integrando conocimiento <br />  e innovando en el <br />  sector aeroespacial.",
+    "firstSection": {
+      "title": "Misiones espaciales",
+      "description": "<p> Con el objetivo de desarrollar habilidades para la planificación, análisis y diseño de misiones espaciales, además de garantizar el acceso al espacio para su equipo y socios, la división LODESTAR Space Mission es responsable de la investigación y el desarrollo tecnológico en el campo del espacio. \ngestión de misiones, análisis y diseño de pequeños satélites, ingeniería de sistemas, metodologías ágiles, sistemas globales de navegación por satélite, clima espacial, control, telecomunicaciones, seguridad en el ciberespacio, operación, mando y control, así como desarrollo de hardware y firmware para aplicaciones espaciales. \n</p> <p> ¡Te invitamos amablemente a tomarte un momento de tu tiempo y comprobar nuestras actividades y logros recientes! \n</p>",
+      "link": "Más información"
+    },
+    "secondSection": {
+      "title": "Simulador SAT pequeño",
+      "description": "<p> Es bien sabido que un paso crítico en el ciclo de vida de un proyecto espacial es demostrar la calificación del diseño y el desempeño para cumplir con los requisitos en los niveles especificados. \n</p> <p> En este contexto, se creó la división LODESTAR Small Sat Simulator con el objetivo de proporcionar infraestructura y métodos de pruebas de validación para medir el rendimiento y las funciones del producto en un entorno representativo. \nSe centra en características críticas para la seguridad y para la misión en los niveles de sistema, subsistema y equipo. \n</p> <p> La principal aplicación actualmente en desarrollo está dedicada a la determinación de actitud y control de satélites pequeños, tómate un momento para comprobarlo y ¡bienvenido a ser parte de ella! \n</p>",
+      "link": "Más información"
+    },
+    "thirdSection": {
+      "title": "High-altitude balooning",
+      "description": "<p> Consciente de la importancia y el papel fundamental del uso de globos científicos que flotan en la estratosfera para la investigación en ciencia espacial y el desarrollo tecnológico, la división LODESTAR High-Altitude Ballooning ha estado desarrollando una plataforma modular para aplicaciones a gran altitud. \n</p> <p> La plataforma se transporta a grandes altitudes utilizando un globo de goma de bajo costo y vuelo libre que permite realizar observaciones de amplio alcance. \nEn su versión actual, la plataforma se fabrica de acuerdo con el estándar CubeSat utilizando tecnologías de prototipos rápidos y aprovechando los avances tecnológicos actuales, como la miniaturización de componentes y dispositivos electrónicos. \n</p> <p>Para el equipo de LODESTAR representa una herramienta de bajo coste para realizar pruebas de validación, actividades educativas y experimentos en un entorno cercano a la Tierra. \n¡Ven y comprueba lo que está pasando en la división de globos aerostáticos de gran altitud de LODESTAR! \n</p>",
+      "link": "Más información"
+    }
+  },
+  "ContactPage": {
+    "title": "Nuestro contacto",
+    "subTitle": "¿Quieres decirnos algo? \nNo dude en ponerse en contacto o visitarnos.",
+    "address": "Laboratório de Simulação e Controle de Sistemas Aeroespaciais (LODESTAR), SG 11, UnB área 1",
+    "mail": "lodestar@aerospace.unb.br",
+    "phone": "+55 61 3107-5556",
+    "youtube": "LODESTAR - UnB"
+  },
+  "AboutPage": {
+    "title": "Descripción general",
+    "subTitle": "<p> El Laboratorio de Simulación y Control de Sistemas Aeroespaciales, LODESTAR, está ubicado en la Universidad de Brasilia, Brasil, y actualmente está estructurado en tres divisiones principales de investigación y desarrollo tecnológico: Misiones Espaciales, Small Sat Simulator y High-Altitude. \nGlobo científico. \nSu infraestructura se divide actualmente en tres entornos principales, organizados en un área total de aproximadamente 100 m2, que consta de un lugar para el desarrollo de hardware y firmware, una estación terrestre de comando y control satelital, un sistema de medición por láser satelital, un hardware-in- \nsistema de simulación the-loop, además de espacios para reuniones y desarrollos para el equipo de LODESTAR y sus socios. \n</p> <p className=\"font-bold\"> ¡Bienvenido al lugar donde la teoría se encuentra con la práctica, y las nuevas ideas se enfrentan a los rigurosos estándares de la evidencia! \n</p>",
+    "membersTitle": "Los miembros de nuestro equipo.",
+    "membersSubTitle": "El equipo del proyecto está compuesto por profesores, funcionarios y estudiantes de la UnB, contando también con la participación de colaboradores externos.",
+    "Members": {
+      "RenatoBorges": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://images.prismic.io/lodestar/55243055-c76f-4b05-942e-341225a8b2df_renatoBorges.webp?auto=compress,format&rect=0,0,241,241&w=240&h=240"
+        },
+        "member_name": "Renato Borges",
+        "member_affiliation": "ENE/UnB",
+        "member_role": "Profesor/Coordinador",
+        "member_research_area": "Sistemas de control",
+        "member_lattes": "http://lattes.cnpq.br/9986885788660516"
+      },
+      "DanielCafe": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://images.prismic.io/lodestar/716970cc-c508-46e5-bcaf-4ae9ccc646ac_danielCafe.webp?auto=compress,format&rect=0,0,241,241&w=240&h=240"
+        },
+        "member_name": "Daniel Café",
+        "member_affiliation": "ENE/UnB",
+        "member_role": "Profesor",
+        "member_research_area": "Sistemas integrados",
+        "member_lattes": "http://lattes.cnpq.br/5467474463267175"
+      },
+      "JoaoPauloLeite": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://lodestar.cdn.prismic.io/lodestar/5d93dd65-a162-4d0f-a5f3-48392464a24b_avatar-male.svg"
+        },
+        "member_name": "João Paulo Leite",
+        "member_affiliation": "ENE/UnB",
+        "member_role": "Profesor",
+        "member_research_area": "Telecomunicación",
+        "member_lattes": "http://lattes.cnpq.br/9310657002482326"
+      },
+      "JoaoGondim": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://images.prismic.io/lodestar/bd815bc4-7d42-4ac8-8472-f0d66f0041cf_gondim.webp?auto=compress,format&rect=0,0,247,247&w=240&h=240"
+        },
+        "member_name": "João Gondim",
+        "member_affiliation": "CIC/UnB",
+        "member_role": "Profesor",
+        "member_research_area": "Ciberseguridad",
+        "member_lattes": "http://lattes.cnpq.br/1755987387907910"
+      },
+      "GeovanyBorges": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://images.prismic.io/lodestar/52774036-608d-4850-99d4-8123042acfb6_geovany.webp?auto=compress,format&rect=0,52,430,430&w=240&h=240"
+        },
+        "member_name": "Geovany Borges",
+        "member_affiliation": "ENE/UnB",
+        "member_role": "Profesor",
+        "member_research_area": "Robótica",
+        "member_lattes": "http://lattes.cnpq.br/6103264336506171"
+      },
+      "ChantalCappelletti": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://lodestar.cdn.prismic.io/lodestar/d00f90e9-d040-482a-814a-cde8114fd482_avatar-female.svg"
+        },
+        "member_name": "Chantal Cappelletti",
+        "member_affiliation": "UoN/UK",
+        "member_role": "Profesor",
+        "member_research_area": "Análisis de la misión",
+        "member_lattes": "http://lattes.cnpq.br/4120937958034706"
+      },
+      "SimoneBattistini": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://images.prismic.io/lodestar/8d120a31-543b-458c-b2da-cfc515cc58a2_simoneBattistini.webp?auto=compress,format&rect=0,0,650,650&w=240&h=240"
+        },
+        "member_name": "Simone Battistini",
+        "member_affiliation": "SHU/UK",
+        "member_role": "Profesor",
+        "member_research_area": "Sistemas de control",
+        "member_lattes": "http://lattes.cnpq.br/0151016853523965"
+      },
+      "AndreaSantos": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://images.prismic.io/lodestar/c77dac78-6f3e-4d0f-bde3-0ea4a5700b78_andreaSantos.webp?auto=compress,format&rect=0,82,675,675&w=240&h=240"
+        },
+        "member_name": "Andréa Santos",
+        "member_affiliation": "EPR/UnB",
+        "member_role": "Profesor",
+        "member_research_area": "Ingeniería de Sistemas",
+        "member_lattes": "http://lattes.cnpq.br/4558493368126565"
+      },
+      "WilliamReis": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://images.prismic.io/lodestar/ac94ccb2-6cc2-4b76-9d3d-2b0e868a00ae_williamReis.webp?auto=compress,format&rect=0,0,1080,1080&w=240&h=240"
+        },
+        "member_name": "William Reis",
+        "member_affiliation": "FGA/UnB",
+        "member_role": "Profesor",
+        "member_research_area": "Dinámica orbital",
+        "member_lattes": "http://lattes.cnpq.br/7752228013890691"
+      },
+      "LeonardoAguayo": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://images.prismic.io/lodestar/e0155783-1bc0-4e24-9e0e-2184cde69577_leonardoAguayo.webp?auto=compress,format&rect=0,40,307,307&w=240&h=240"
+        },
+        "member_name": "Leonardo Aguayo",
+        "member_affiliation": "ENE/UnB",
+        "member_role": "Profesor",
+        "member_research_area": "Telecomunicación",
+        "member_lattes": "http://lattes.cnpq.br/4815464320872808"
+      },
+      "MarceloKaram": {
+        "member_avatar": {
+          "width": 240,
+          "height": 240,
+          "url": "https://images.prismic.io/lodestar/78cb2edd-ad54-4afd-b4f0-a0597ca1c398_marceloKaram.webp?auto=compress,format&rect=0,0,241,241&w=240&h=240"
+        },
+        "member_name": "Marcelo Karam",
+        "member_affiliation": "STI/UnB",
+        "member_role": "Personal",
+        "member_research_area": "Seguridad de datos",
+        "member_lattes": "http://lattes.cnpq.br/0017208558479044"
+      },
+      "RogerioSousa": {
+        "member_avatar": {
+          "width": "240",
+          "height": "240",
+          "url": "https://images.prismic.io/lodestar/a9706ccc-8222-4a32-ba0a-67a92d6f4e87_rogerioSousa.webp?auto=compress,format&rect=0,0,1276,1276&w=240&h=240"
+        },
+        "member_name": "Rogério Sousa",
+        "member_affiliation": "STI/UnB",
+        "member_role": "Personal",
+        "member_research_area": "Seguridad de datos",
+        "member_lattes": "http://lattes.cnpq.br/1249648187708650"
+      },
+      "research": "Área de Investigación:"
+    }
+  },
+  "Header": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "about": "Acerca de",
+    "contact": "Contacto"
   }
 }
