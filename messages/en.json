@@ -200,7 +200,7 @@
     },
     "secondSection": {
       "title": "Small SAT Simulator",
-      "description": "<p> It is well known that one critical step in a space project life cycle is to demonstrate the qualification of design and performance to meet the requirements at the specified levels. </p> <p> In this context, the LODESTAR Small Sat Simulator division was created with the aim of providing infrastructure and methods for validation testing to measure product performance and functions under a representative environment. It is focused on safety-critical and mission-critical features in system, subsystem, and equipment levels. </p> <p> The main application currently under development is dedicated to attitude determination and control of small satellites, take a moment to check it, and welcome to be part of it! </p>",
+      "description": "<p> It is well known that one critical step in a space project life cycle is to demonstrate the qualification of design and performance to meet the requirements at the specified levels. </p> <p> In this context, the LODESTAR Small Sat Simulator division was created with the aim of providing infrastructure and methods for validation testing to measure product performance and functions under a representative environment. It is focused on safety-critical and mission-critical features in system, subsystem, and equipment levels. </p> <p> The main application currently under development is dedicated to attitude determination and control of small satellites. Take a moment to check it, and you are welcome to be part of it! </p>",
       "link": "More info"
     },
     "thirdSection": {
