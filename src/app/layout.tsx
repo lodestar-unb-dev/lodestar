@@ -1,47 +1,7 @@
-import type { Metadata } from 'next'
-import { Barlow } from 'next/font/google'
-import { twMerge } from 'tailwind-merge'
+import { ReactNode } from 'react'
 
-import './globals.css'
-import './embla.css'
-
-const barlow = Barlow({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-barlow',
-})
-
-export const metadata: Metadata = {
-  title: 'LODESTAR UnB',
-  icons: {
-    icon: '/images/lodestar/favicon.png',
-  },
-  openGraph: {
-    title: 'Lodestar UnB',
-    url: 'https://lodestar.aerospace.unb.br',
-    siteName: 'Lodestar UnB',
-    images: [
-      {
-        url: 'http://lodestar.aerospace.unb.br/images/lodestar/og.jpg',
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: 'en',
-    type: 'website',
-  },
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body className={twMerge(barlow.variable, 'flex flex-col font-barlow')}>
-        {children}
-      </body>
-    </html>
-  )
+// Since we have a root `not-found.tsx` page, a layout file
+// is required, even if it's just passing children through.
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return children
 }
