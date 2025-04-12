@@ -80,6 +80,18 @@
           "title": "Grupo de investigación"
         },
         "description": "Transformar datos en ideas ambientales"
+      },
+      "LP": {
+        "k34-system-section": {
+          "cta": "Saber más",
+          "description": "La Torre K34, ubicada en el corazón de la selva amazónica, es un hito para el monitoreo ambiental. \nIntegrado con el sistema Perception, recopila y transmite datos críticos sobre el flujo de carbono, el clima y la biodiversidad. \nEsta infraestructura combina tecnologías avanzadas de satélite e IoT para proporcionar información en tiempo real, esenciales para preservar el bioma amazónico y avanzar en prácticas sostenibles.",
+          "list": {
+            "first": "Planificación clara y estratégica para la recopilación de datos ininterrumpida",
+            "second": "Entrega oportuna del proyecto con flexibilidad incorporada",
+            "third": "Monitoreo de alto impacto para la gestión ambiental sostenible"
+          },
+          "title": "Sistema K34"
+        }
       }
     },
     "Page": {

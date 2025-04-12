@@ -80,6 +80,18 @@
           "recentActivies": "Recent Activities",
           "contact": "Contact"
         }
+      },
+      "LP": {
+        "k34-system-section": {
+          "title": "K34 System",
+          "description": "The K34 Tower, located in the heart of the Amazon Rainforest, is a landmark for environmental monitoring. Integrated with the Perception system, it collects and transmits critical data on carbon flux, climate, and biodiversity. This infrastructure combines advanced satellite and IoT technologies to provide real-time insights, essential for preserving the Amazon biome and advancing sustainable practices.",
+          "list": {
+            "first": "Clear and strategic planning for seamless data collection",
+            "second": "Timely project delivery with built-in flexibility",
+            "third": "High-impact monitoring for sustainable environmental management"
+          },
+          "cta": "Learn More"
+        }
       }
     },
     "Page": {

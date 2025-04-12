@@ -80,6 +80,18 @@
           "title": "Grupo de pesquisa"
         },
         "description": "Transformando dados em insights ambientais"
+      },
+      "LP": {
+        "k34-system-section": {
+          "cta": "Saber mais",
+          "description": "A torre K34, localizada no coração da floresta amazônica, é um marco para o monitoramento ambiental. \nIntegrado ao sistema Perception, ela coleta e transmite dados críticos sobre fluxo de carbono, clima e biodiversidade. \nEssa infraestrutura combina tecnologias avançadas de satélite e IoT para fornecer insights em tempo real, essenciais para preservar o bioma da Amazônia e o avanço das práticas sustentáveis.",
+          "list": {
+            "first": "Planejamento claro e estratégico para coleta ininterrupta de dados",
+            "second": "Entrega oportuna do projeto com flexibilidade interna",
+            "third": "Monitoramento de alto impacto para gestão ambiental sustentável"
+          },
+          "title": "Sistema K34"
+        }
       }
     },
     "Page": {

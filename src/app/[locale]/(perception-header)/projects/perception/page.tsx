@@ -3,12 +3,9 @@ import {
   NextIntlClientProvider,
   useMessages,
 } from 'next-intl'
-import { First } from './sections/first'
 import { Hero } from './sections/hero'
-import { Instagram } from './sections/instagram'
-import { Partners } from './sections/partners'
-import { Second } from './sections/second'
 import get from 'lodash.get'
+import { K34System } from './sections/k34-system'
 
 export default function Perception() {
   const messages = useMessages()
@@ -38,10 +35,7 @@ export default function Perception() {
     <NextIntlClientProvider messages={translationMessages}>
       <main>
         <Hero />
-        <First />
-        <Second />
-        <Instagram />
-        <Partners />
+        <K34System />
       </main>
     </NextIntlClientProvider>
   )

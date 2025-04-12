@@ -6,7 +6,7 @@ import { Metadata } from 'next'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['400', '500', '800'],
+  weight: ['400', '500', '600', '800'],
   variable: '--font-montserrat',
 })
 
