@@ -32,10 +32,31 @@
         "title": "Comming soon."
       },
       "Header": {
-        "lodestar": "Lodestar",
-        "projects": "Projects",
-        "members": "Members",
-        "gallery": "Gallery"
+        "Proposals": {
+          "title": "Proposals",
+          "k34 System": {
+            "title": "K34 System",
+            "description": "Measure and monitor carbon flux in the Amazon biome"
+          },
+          "cerrado hotspot": {
+            "title": "Cerrado Hotspot",
+            "description": "Expand the capacity for autonomous data collection in reference areas"
+          }
+        },
+        "About": {
+          "title": "About",
+          "overview": {
+            "title": "Overview",
+            "link-1": "Mission",
+            "link-2": "Team"
+          },
+          "media": {
+            "title": "Media",
+            "link-1": "Recent Activities",
+            "link-2": "Partners"
+          }
+        },
+        "contact": "Projects"
       }
     },
     "Page": {

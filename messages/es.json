@@ -32,10 +32,31 @@
         "title": "Próximamente."
       },
       "Header": {
-        "lodestar": "Lodestar",
-        "projects": "Proyectos",
-        "members": "Miembros",
-        "gallery": "Galería"
+        "About": {
+          "media": {
+            "link-1": "Actividades recientes",
+            "link-2": "Socios estratégicos",
+            "title": "Medios de comunicación"
+          },
+          "overview": {
+            "link-1": "Misión",
+            "link-2": "Equipo",
+            "title": "Descripción general"
+          },
+          "title": "Acerca de"
+        },
+        "Proposals": {
+          "cerrado hotspot": {
+            "description": "Ampliar la capacidad de recopilación de datos autónomos en áreas de referencia",
+            "title": "Punto de acceso de Cerrado"
+          },
+          "k34 System": {
+            "description": "Medir y monitorear el flujo de carbono en el Amazon Biome",
+            "title": "Sistema K34"
+          },
+          "title": "Propuestas"
+        },
+        "contact": "Proyectos"
       }
     },
     "Page": {

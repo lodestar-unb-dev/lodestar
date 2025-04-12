@@ -9,6 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        perceptionOrange: {
+          300: '#EE761B',
+        },
         unbBlue: {
           700: '#00244B',
           600: '#002A59',
