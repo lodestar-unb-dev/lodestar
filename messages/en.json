@@ -57,6 +57,25 @@
           }
         },
         "contact": "Projects"
+      },
+      "Footer": {
+        "description": "Transforming data into environmental insights",
+        "Proposals": {
+          "title": "Proposals",
+          "k34 System": "K34 System",
+          "cerrado hotspot": "Cerrado Hotspot"
+        },
+        "ResearchGroup": {
+          "title": "Research Group",
+          "team": "Team",
+          "mission": "Mission",
+          "partners": "Partners"
+        },
+        "Media": {
+          "title": "Media",
+          "recentActivies": "Recent Activities",
+          "contact": "Contact"
+        }
       }
     },
     "Page": {
