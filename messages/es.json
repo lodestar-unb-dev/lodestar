@@ -23,6 +23,10 @@
           "content": "La palabra percepción proviene del latín percepio, que significa recibir, recoger, tomar conciencia a través de la mente o los sentidos. \nEl logotipo del proyecto representa una puerta al infinito y captura la idea de que el sistema propuesto es la frontera hacia lo desconocido, la puerta que debe abrirse para ampliar nuestra visión y sentido de nuestro entorno y realidad. \nEste es el significado del nombre, una idea poética propuesta y discutida a lo largo de los siglos por filósofos, músicos y muchos otros que optaron por sentir profundamente el mundo en el que vivimos.",
           "hiddenContent": "El proyecto Perception es una iniciativa que tiene como objetivo crear nuevas tecnologías, modelos de negocio y métodos para optimizar y ampliar nuestra capacidad de percibir el entorno y su modificación a lo largo de nuestra evolución. \nBuscamos ampliar la percepción de nuestro planeta a través de la generación de datos, su estructuración y análisis como información, identificación de tendencias y extrapolación a escenarios futuros.",
           "buttonText": "Mostrar más"
+        },
+        "Hero": {
+          "description": "Empoderar el desarrollo sostenible con la recopilación y el análisis de datos avanzados de las torres de monitoreo crítico en Brasil",
+          "subtitle": "Transformar datos en ideas ambientales"
         }
       },
       "Gallery": {
@@ -57,6 +61,25 @@
           "title": "Propuestas"
         },
         "contact": "Proyectos"
+      },
+      "Footer": {
+        "Media": {
+          "contact": "Contacto",
+          "recentActivies": "Actividades recientes",
+          "title": "Medios de comunicación"
+        },
+        "Proposals": {
+          "cerrado hotspot": "Punto de acceso de Cerrado",
+          "k34 System": "Sistema K34",
+          "title": "Propuestas"
+        },
+        "ResearchGroup": {
+          "mission": "Misión",
+          "partners": "Socios estratégicos",
+          "team": "Equipo",
+          "title": "Grupo de investigación"
+        },
+        "description": "Transformar datos en ideas ambientales"
       }
     },
     "Page": {

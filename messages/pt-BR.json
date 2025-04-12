@@ -23,6 +23,10 @@
           "content": "A palavra percepção vem da palavra latina percepio, que significa receber, coletar, tomar consciência através da mente ou dos sentidos. \nO logotipo do projeto representa uma porta para o infinito e capta a ideia do sistema proposto ser a fronteira para o desconhecido, a porta a ser aberta para expandir a nossa visão e sentido do nosso ambiente e realidade. \nEste é o significado do nome, uma ideia poética proposta e discutida ao longo dos séculos por filósofos, músicos e tantos outros que optaram por sentir profundamente o mundo em que vivemos.",
           "hiddenContent": "O projeto Perception é uma iniciativa que visa criar novas tecnologias, modelos de negócios e métodos para otimizar e ampliar nossa capacidade de perceber o ambiente e sua modificação ao longo de nossa evolução. \nBuscamos ampliar a percepção do nosso planeta através da geração de dados, sua estruturação e análise como informação, identificação de tendências e extrapolação para cenários futuros.",
           "buttonText": "Mostrar mais"
+        },
+        "Hero": {
+          "description": "Capacitar o desenvolvimento sustentável com coleta e análise de dados avançados de torres de monitoramento crítico em todo o Brasil",
+          "subtitle": "Transformando dados em insights ambientais"
         }
       },
       "Gallery": {
@@ -59,7 +63,23 @@
         "contact": "Projetos"
       },
       "Footer": {
-        
+        "Media": {
+          "contact": "Contato",
+          "recentActivies": "Atividades recentes",
+          "title": "Mídia"
+        },
+        "Proposals": {
+          "cerrado hotspot": "Hotspot do Cerrado",
+          "k34 System": "Sistema K34",
+          "title": "Propostas"
+        },
+        "ResearchGroup": {
+          "mission": "Missão",
+          "partners": "Parceiros",
+          "team": "Equipe",
+          "title": "Grupo de pesquisa"
+        },
+        "description": "Transformando dados em insights ambientais"
       }
     },
     "Page": {

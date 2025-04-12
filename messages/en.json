@@ -2,6 +2,10 @@
   "Projects": {
     "Perception": {
       "HomePage": {
+        "Hero": {
+          "subtitle": "Transforming Data into Environmental Insights",
+          "description": "Empowering sustainable development with advanced data collection and analysis from critical monitoring towers across Brazil&apos;s ecosystems."
+        },
         "FirstSection": {
           "title": "Expanding Our Perception Everywhere",
           "visibleContent": "When it comes to monitoring strategic assets that include our natural resources, the challenge goes beyond just tracking them to also perceive them. By perceiving them we mean understanding, learning and growing from their random and uncertain nature. It means empowering ourselves to deal with the unknown, understanding the impact of our actions and preparing ourselves to make decisions in complex scenarios. To achieve a high level of perception on a scale never seen before to monitor our strategic assets, we need to combine sensor networks, space technologies and data science. We need a team of experts, critical sense, and solid partnerships. This is the vision of the Perception project.",

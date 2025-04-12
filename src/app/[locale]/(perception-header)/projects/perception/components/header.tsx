@@ -16,11 +16,11 @@ export function Header() {
         <nav className="flex w-full items-center justify-center gap-6 min-[560px]:justify-between min-[960px]:gap-14">
           <Link
             href="/projects/perception"
-            className="hidden h-9 min-[560px]:block"
+            className="hidden h-9 w-fit min-[560px]:block"
           >
             <Image
               src={LogoIcon}
-              className="hidden h-9 min-[560px]:block"
+              className="hidden h-9 w-fit min-[560px]:block"
               alt="icon"
             />
           </Link>
