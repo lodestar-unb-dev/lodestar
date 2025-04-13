@@ -14,7 +14,7 @@ export function Instagram() {
   const t = useTranslations('Projects.Perception.LP.recent-activities')
 
   return (
-    <section className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-10 px-5 py-10 lg:py-20">
+    <section className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-10 px-5 pb-10 lg:pb-20">
       <h2 className="text-xl font-semibold uppercase text-unbBlack-100 lg:text-3xl">
         {t('title')}
       </h2>

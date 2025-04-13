@@ -3,6 +3,12 @@ import { Footer } from './components/footer'
 import { Header } from './components/header'
 import { twMerge } from 'tailwind-merge'
 import { Metadata } from 'next'
+import {
+  AbstractIntlMessages,
+  NextIntlClientProvider,
+  useMessages,
+} from 'next-intl'
+import get from 'lodash.get'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -36,18 +42,39 @@ export default function PerceptionHeaderLayout({
 }: {
   children: React.ReactNode
 }) {
+  const messages = useMessages()
+
+  const translationMessages = {
+    Projects: {
+      Perception: {
+        LP: {
+          'recent-activities': get(
+            messages,
+            'Projects.Perception.LP.recent-activities',
+          ) as AbstractIntlMessages,
+        },
+        RecentActivities: get(
+          messages,
+          'Projects.Perception.RecentActivities',
+        ) as AbstractIntlMessages,
+      },
+    },
+  }
+
   return (
-    <div
-      className={twMerge(
-        montserrat.variable,
-        'flex min-h-screen flex-col font-montserrat',
-      )}
-    >
-      <Header />
+    <NextIntlClientProvider messages={translationMessages}>
+      <div
+        className={twMerge(
+          montserrat.variable,
+          'flex min-h-screen flex-col font-montserrat',
+        )}
+      >
+        <Header />
 
-      <div className="flex flex-1 flex-col">{children}</div>
+        <div className="flex flex-1 flex-col">{children}</div>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </NextIntlClientProvider>
   )
 }

@@ -113,7 +113,7 @@ export function Header() {
                         {t('About.media.title')}:
                         <div className="flex flex-col">
                           <HeaderLink
-                            href="/projects/perception/recemt-activities"
+                            href="/projects/perception/recent-activities"
                             className="text-sm text-unbBlack-100 hover:text-unbBlack-100/50"
                           >
                             {t('About.media.link-1')}

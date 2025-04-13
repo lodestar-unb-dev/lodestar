@@ -1,0 +1,52 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+import { Carousel } from '../components/carousel'
+import { EmblaOptionsType } from 'embla-carousel'
+
+const instagramPosts = [
+  'https://www.instagram.com/p/C9vlfslAYsA',
+  'https://www.instagram.com/p/Cv-HASvAK4B',
+  'https://www.instagram.com/p/CxSvpzOAGxV',
+  'https://www.instagram.com/p/CxniILsgLx6',
+  'https://www.instagram.com/p/C3Wc8pvgo_N',
+  'https://www.instagram.com/p/C24-mC9gl1A',
+]
+
+const OPTIONS: EmblaOptionsType = { slidesToScroll: 'auto', loop: true }
+
+export default function Instagram() {
+  const t = useTranslations('Projects.Perception.RecentActivities')
+
+  return (
+    <section className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-10 px-5 py-10 lg:gap-20 lg:py-20">
+      <h2 className="text-3xl font-semibold uppercase text-unbBlue-400 md:text-6xl">
+        {t('title')}
+      </h2>
+
+      <div
+        className="space-y-5 text-justify text-unbBlue-400"
+        dangerouslySetInnerHTML={{ __html: t.raw('description') }}
+      />
+
+      <Carousel slides={instagramPosts} options={OPTIONS} />
+
+      <div className="flex items-center gap-7 md:gap-14">
+        <div className="max-w-96 text-sm font-medium text-unbBlack-100 lg:text-lg">
+          {t('more-news.text')}
+        </div>
+
+        <div className="h-14 w-px bg-perceptionOrange-300" />
+
+        <a
+          href="https://"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded bg-perceptionOrange-300 px-4 py-3 transition-colors hover:bg-unbBlack-0 hover:text-perceptionOrange-300"
+        >
+          {t('more-news.cta')}
+        </a>
+      </div>
+    </section>
+  )
+}
