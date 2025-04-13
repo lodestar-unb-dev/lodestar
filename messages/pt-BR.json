@@ -118,6 +118,10 @@
           },
           "description": "O projeto Perception vai além da inovação. \nSaiba mais sobre nossa missão, encontre a equipe dedicada por trás dela e explore as parcerias que impulsionam mudanças impactantes.",
           "title": "Construindo conexões para um amanhã melhor"
+        },
+        "recent-activities": {
+          "cta": "Saber mais",
+          "title": "Atividades recentes"
         }
       }
     },

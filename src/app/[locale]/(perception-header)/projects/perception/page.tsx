@@ -8,6 +8,7 @@ import get from 'lodash.get'
 import { K34System } from './sections/k34-system'
 import { CerradoHotspot } from './sections/cerrado-hotspot'
 import { More } from './sections/more'
+import { Instagram } from './sections/instagram'
 
 export default function Perception() {
   const messages = useMessages()
@@ -15,18 +16,10 @@ export default function Perception() {
   const translationMessages = {
     Projects: {
       Perception: {
-        HomePage: {
-          FirstSection: get(
+        LP: {
+          'recent-activities': get(
             messages,
-            'Projects.Perception.HomePage.FirstSection',
-          ) as AbstractIntlMessages,
-          RecentActivities: get(
-            messages,
-            'Projects.Perception.HomePage.RecentActivities',
-          ) as AbstractIntlMessages,
-          SecondSection: get(
-            messages,
-            'Projects.Perception.HomePage.SecondSection',
+            'Projects.Perception.LP.recent-activities',
           ) as AbstractIntlMessages,
         },
       },
@@ -40,6 +33,7 @@ export default function Perception() {
         <K34System />
         <CerradoHotspot />
         <More />
+        <Instagram />
       </main>
     </NextIntlClientProvider>
   )

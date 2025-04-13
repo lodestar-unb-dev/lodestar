@@ -118,6 +118,10 @@
           "cta": "Learn more",
           "title": "Building connections for a better tomorrow",
           "description": "The Perception project goes beyond innovation. Learn more about our mission, meet the dedicated team behind it, and explore the partnerships driving impactful change."
+        },
+        "recent-activities": {
+          "title": "Recent Activities",
+          "cta": "Check more"
         }
       }
     },
