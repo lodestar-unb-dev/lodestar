@@ -6,6 +6,7 @@ import {
 import { Hero } from './sections/hero'
 import get from 'lodash.get'
 import { K34System } from './sections/k34-system'
+import { CerradoHotspot } from './sections/cerrado-hotspot'
 
 export default function Perception() {
   const messages = useMessages()
@@ -36,6 +37,7 @@ export default function Perception() {
       <main>
         <Hero />
         <K34System />
+        <CerradoHotspot />
       </main>
     </NextIntlClientProvider>
   )

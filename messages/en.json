@@ -91,6 +91,16 @@
             "third": "High-impact monitoring for sustainable environmental management"
           },
           "cta": "Learn More"
+        },
+        "cerrado-hotspot-section": {
+          "title": "Cerrado Hotspot",
+          "description": "The Cerrado biome, vital for Brazil's water resources, faces rapid environmental changes. The integration of the UMRs with the Perception system offers a groundbreaking solution for monitoring this unique ecosystem. Equipped with advanced IoT sensors and satellite communication, this system collects and transmits critical environmental data, enabling real-time insights into the Cerrado’s health and sustainability.",
+          "list": {
+            "first": "Advanced IoT and satellite technology for precise monitoring",
+            "second": "Real-time environmental data for informed decision-making",
+            "third": "Solutions for preserving the Cerrado biome"
+          },
+          "cta": "Coming soon"
         }
       }
     },

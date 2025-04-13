@@ -91,6 +91,16 @@
             "third": "Monitoreo de alto impacto para la gestión ambiental sostenible"
           },
           "title": "Sistema K34"
+        },
+        "cerrado-hotspot-section": {
+          "cta": "Muy pronto",
+          "description": "El Bioma de Cerrado, vital para los recursos hídricos de Brasil, enfrenta rápidos cambios ambientales. \nLa integración del UMRS con el sistema Perception ofrece una solución innovadora para monitorear este ecosistema único. \nEquipado con sensores de IoT avanzados y comunicación por satélite, este sistema recopila y transmite datos ambientales críticos, lo que permite obtener información en tiempo real sobre la salud y la sostenibilidad del Cerrado.",
+          "list": {
+            "first": "Tecnología avanzada de IoT y satélite para monitoreo preciso",
+            "second": "Datos ambientales en tiempo real para la toma de decisiones informadas",
+            "third": "Soluciones para preservar el Bioma de Cerrado"
+          },
+          "title": "Cerrado Hotspot"
         }
       }
     },
