@@ -101,6 +101,23 @@
             "third": "Solutions for preserving the Cerrado biome"
           },
           "cta": "Coming soon"
+        },
+        "more": {
+          "our-team": {
+            "header": "Our team",
+            "body": "Meet the experts, engineers and visionaries working together to make Perception a reality."
+          },
+          "our-mission": {
+            "header": "Our mission",
+            "body": "Discover how Perception is redefining environmental monitoring with innovative solutions for a sustainable future."
+          },
+          "our-partners": {
+            "header": "Our partners",
+            "body": "Explore the network of partners and investors helping us protect our planet and innovate for tomorrow."
+          },
+          "cta": "Learn more",
+          "title": "Building connections for a better tomorrow",
+          "description": "The Perception project goes beyond innovation. Learn more about our mission, meet the dedicated team behind it, and explore the partnerships driving impactful change."
         }
       }
     },

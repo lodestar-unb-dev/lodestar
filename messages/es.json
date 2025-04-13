@@ -101,6 +101,23 @@
             "third": "Soluciones para preservar el Bioma de Cerrado"
           },
           "title": "Cerrado Hotspot"
+        },
+        "more": {
+          "cta": "Saber más",
+          "our-mission": {
+            "body": "Descubra cómo el Perception está redefiniendo el monitoreo ambiental con soluciones innovadoras para un futuro sostenible.",
+            "header": "Nuestra misión"
+          },
+          "our-partners": {
+            "header": "Nuestros socios",
+            "body": "Explore la red de socios e inversores que nos ayudan a proteger nuestro planeta e innovar para mañana."
+          },
+          "our-team": {
+            "body": "Conozca a los expertos, ingenieros y visionarios que trabajan juntos para hacer realidad el Perception.",
+            "header": "Nuestro equipo"
+          },
+          "description": "El proyecto Perception va más allá de la innovación. \nObtenga más información sobre nuestra misión, conozca al equipo dedicado detrás de ella y explore las asociaciones que impulsan un cambio impactante.",
+          "title": "Construyendo conexiones para un mañana mejor"
         }
       }
     },
