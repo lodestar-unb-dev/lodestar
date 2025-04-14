@@ -329,6 +329,20 @@
           },
           "title": "Sistema K34"
         }
+      },
+      "Partners": {
+        "firstGroupTitle": "Realización",
+        "footer": {
+          "cta": "Ser socio",
+          "description": "¡Sea un socio y ayúdanos a dar forma al futuro!",
+          "title": "¿Interesado?"
+        },
+        "headerFirstDescription": "El Perception está revolucionando el monitoreo ambiental y la gestión de datos estratégicos en Brasil al combinar tecnologías satelitales innovadoras con sostenibilidad. \nCon soluciones integradas y accesibles, estamos impulsando una nueva era de recopilación y análisis de datos en biomas como Amazonas y Cerrado, ayudando a proteger nuestros recursos naturales e infraestructuras críticas.",
+        "headerSecondDescription": "Agradecemos profundamente a todos nuestros socios e inversores, cuyo apoyo es esencial para hacer realidad la percepción. \nGracias a usted, estamos construyendo una plataforma robusta para el monitoreo ambiental, promover la sostenibilidad y crear un impacto global positivo. \nEres una parte vital de este viaje de transformación tecnológica y ambiental.",
+        "headerTitle": "Nuestros socios",
+        "secondGroupTitle": "Financiador",
+        "thirdGroupTitle": "Socio y soporte técnico",
+        "title": "Expresiones de gratitud"
       }
     },
     "Page": {

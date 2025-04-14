@@ -195,6 +195,20 @@
           "cta": "Join our team"
         }
       },
+      "Partners": {
+        "headerTitle": "Our partners",
+        "title": "Acknowledgments",
+        "firstGroupTitle": "Realization",
+        "secondGroupTitle": "Funder",
+        "thirdGroupTitle": "Partner and technical support",
+        "footer": {
+          "title": "Interested?",
+          "description": "Be a partner and help us shape the future!",
+          "cta": "Be a partner"
+        },
+        "headerFirstDescription": "Perception is revolutionizing environmental monitoring and strategic data management in Brazil by combining innovative satellite technologies with sustainability. With integrated and accessible solutions, we are driving a new era of data collection and analysis in biomes like the Amazon and Cerrado, helping to protect our natural resources and critical infrastructures.",
+        "headerSecondDescription": "We deeply thank all our partners and investors, whose support is essential to making Perception a reality. Thanks to you, we are building a robust platform for environmental monitoring, promoting sustainability, and creating a positive global impact. You are a vital part of this journey of technological and environmental transformation."
+      },
       "Mission": {
         "FirstSection": {
           "title": "Expanding Our Perception Everywhere",
