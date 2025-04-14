@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import k34SystemImg from '../../assets/images/hero-bg.jpg'
-import { K34SystemFullSvg } from '../../components/k34-system-full-svg'
+import { K34SystemFullSvg } from '../../components/k34-system-svg/full'
 
 export default function K34SystemPage() {
   const t = useTranslations('Projects.Perception.Proposals.k34-system')
@@ -26,7 +26,7 @@ export default function K34SystemPage() {
             {t('overview.title')}
           </h3>
 
-          <div className="space-y-4 text-justify text-unbBlack-100">
+          <div className="mb-20 space-y-4 text-justify text-unbBlack-100">
             <p>{t('overview.first-paragraph')}</p>
 
             <p>{t('overview.second-paragraph')}</p>

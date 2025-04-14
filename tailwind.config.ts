@@ -45,14 +45,27 @@ const config: Config = {
         slideUpAndFade: 'slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
         slideRightAndFade:
           'slideRightAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
-        pulseOff: 'pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
         slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        pulseOff: 'pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        pulseOff2: 'pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) 0.2s infinite',
+        pulseOff3: 'pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) 0.4s infinite',
+        pulseOff4: 'pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) 0.6s infinite',
+        isometricMove: 'isometricMove 4s ease-in-out infinite',
+        isometricMoveReverse: 'isometricMoveReverse 4s ease-in-out infinite',
+        isometricMoveVertical: 'isometricMoveVertical 2s ease-in-out infinite',
+        pulseAndScale: 'pulseAndScale 4s ease-in-out infinite',
       },
       keyframes: {
         pulseOff: {
           '50%': {
             opacity: '.0',
+          },
+        },
+        pulseAndScale: {
+          '50%': {
+            opacity: '.5',
+            transform: 'scale(0.98)',
           },
         },
         slideDownAndFade: {
@@ -78,6 +91,21 @@ const config: Config = {
         slideUp: {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
+        },
+        isometricMove: {
+          '0%': { transform: 'translate(6px, -3px)' },
+          '50%': { transform: 'translate(-6px, 3px)' },
+          '100%': { transform: 'translate(6px, -3px)' },
+        },
+        isometricMoveReverse: {
+          '0%': { transform: 'translate(-6px, 3px)' },
+          '50%': { transform: 'translate(6px, -3px)' },
+          '100%': { transform: 'translate(-6px, 3px)' },
+        },
+        isometricMoveVertical: {
+          '0%': { transform: 'translate(0, 3px)' },
+          '50%': { transform: 'translate(0, -3px)' },
+          '100%': { transform: 'translate(0, 3px)' },
         },
       },
     },

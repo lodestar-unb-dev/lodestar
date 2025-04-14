@@ -57,6 +57,14 @@ export default function PerceptionHeaderLayout({
           messages,
           'Projects.Perception.RecentActivities',
         ) as AbstractIntlMessages,
+        Proposals: {
+          'k34-system': {
+            markers: get(
+              messages,
+              'Projects.Perception.Proposals.k34-system.markers',
+            ) as AbstractIntlMessages,
+          },
+        },
       },
     },
   }

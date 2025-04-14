@@ -327,7 +327,13 @@
             "second-paragraph": "El sistema propuesto para recopilar, transmitir, almacenar y procesar datos es el sistema de monitoreo de activos estratégicos del Perception. \nPerception es un sistema de recopilación de datos satelitales que, a través de nuevos conceptos operativos y servicios propuestos, se dedica a monitorear los biomas brasileños y sus infraestructuras críticas. \nLas tecnologías satelitales y los datos geoespaciales tienen el potencial de apoyar la transición sostenible del sector productivo brasileño y desempeñar un papel vital en la implementación de objetivos de desarrollo sostenible. \nEl primer producto del proyecto Perception está dirigido a recopilar y procesar datos de la torre K34 del Programa de Atmosfera amazónica a gran escala (LBA), que, entre otras aplicaciones, permite medir y monitorear el flujo de carbono en el bioma amazónica.",
             "title": "Descripción general"
           },
-          "title": "Sistema K34"
+          "title": "Sistema K34",
+          "markers": {
+            "k34-tower": {
+              "description": "La Torre K34, ubicada en el corazón de la selva amazónica, es un hito para el monitoreo ambiental. \nIntegrado con el sistema de percepción, recopila y transmite datos críticos sobre el flujo de carbono, el clima y la biodiversidad",
+              "title": "Torre K34"
+            }
+          }
         }
       },
       "Partners": {

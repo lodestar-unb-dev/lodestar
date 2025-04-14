@@ -1,5 +1,5 @@
-import { K34SystemSVG } from '../components/k34-system-svg'
 import { useTranslations } from 'next-intl'
+import { K34SystemSVGNoAnimation } from '../components/k34-system-svg/no-animation'
 
 export function CerradoHotspot() {
   const t = useTranslations('Projects.Perception.LP.cerrado-hotspot-section')
@@ -8,7 +8,7 @@ export function CerradoHotspot() {
     <section className="bg-gradient-to-b from-unbBlack-100 via-unbBlue-700 to-unbBlue-700">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-5 px-5 py-10 lg:flex-row lg:gap-12 lg:py-20">
         <div className="w-full flex-[7] opacity-20">
-          <K34SystemSVG />
+          <K34SystemSVGNoAnimation />
         </div>
 
         <div className="flex flex-[4] flex-col gap-6 text-justify">
