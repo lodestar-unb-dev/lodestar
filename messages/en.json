@@ -39,6 +39,162 @@
       "Members": {
         "title": "Comming soon."
       },
+      "Team": {
+        "membersSubTitle": "The project team is entirely composed of professors, staff and students from UnB and LBA, also counting on the participation of external collaborators.",
+        "Members": {
+          "RenatoBorges": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://images.prismic.io/lodestar/55243055-c76f-4b05-942e-341225a8b2df_renatoBorges.webp?auto=compress,format&rect=0,0,241,241&w=240&h=240"
+            },
+            "member_name": "Renato Borges",
+            "member_affiliation": "ENE/UnB",
+            "member_role": "Professor/Coordinator",
+            "member_research_area": "Control Systems",
+            "member_lattes": "http://lattes.cnpq.br/9986885788660516"
+          },
+          "DanielCafe": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://images.prismic.io/lodestar/716970cc-c508-46e5-bcaf-4ae9ccc646ac_danielCafe.webp?auto=compress,format&rect=0,0,241,241&w=240&h=240"
+            },
+            "member_name": "Daniel Café",
+            "member_affiliation": "ENE/UnB",
+            "member_role": "Professor",
+            "member_research_area": "Embbeded Systems",
+            "member_lattes": "http://lattes.cnpq.br/5467474463267175"
+          },
+          "JoaoPauloLeite": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://lodestar.cdn.prismic.io/lodestar/5d93dd65-a162-4d0f-a5f3-48392464a24b_avatar-male.svg"
+            },
+            "member_name": "João Paulo Leite",
+            "member_affiliation": "ENE/UnB",
+            "member_role": "Professor",
+            "member_research_area": "Telecommunication",
+            "member_lattes": "http://lattes.cnpq.br/9310657002482326"
+          },
+          "JoaoGondim": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://images.prismic.io/lodestar/bd815bc4-7d42-4ac8-8472-f0d66f0041cf_gondim.webp?auto=compress,format&rect=0,0,247,247&w=240&h=240"
+            },
+            "member_name": "João Gondim",
+            "member_affiliation": "CIC/UnB",
+            "member_role": "Professor",
+            "member_research_area": "Cybersecurity",
+            "member_lattes": "http://lattes.cnpq.br/1755987387907910"
+          },
+          "GeovanyBorges": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://images.prismic.io/lodestar/52774036-608d-4850-99d4-8123042acfb6_geovany.webp?auto=compress,format&rect=0,52,430,430&w=240&h=240"
+            },
+            "member_name": "Geovany Borges",
+            "member_affiliation": "ENE/UnB",
+            "member_role": "Professor",
+            "member_research_area": "Robotics",
+            "member_lattes": "http://lattes.cnpq.br/6103264336506171"
+          },
+          "ChantalCappelletti": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://lodestar.cdn.prismic.io/lodestar/d00f90e9-d040-482a-814a-cde8114fd482_avatar-female.svg"
+            },
+            "member_name": "Chantal Cappelletti",
+            "member_affiliation": "UoN/UK",
+            "member_role": "Professor",
+            "member_research_area": "Mission Analysis",
+            "member_lattes": "http://lattes.cnpq.br/4120937958034706"
+          },
+          "SimoneBattistini": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://images.prismic.io/lodestar/8d120a31-543b-458c-b2da-cfc515cc58a2_simoneBattistini.webp?auto=compress,format&rect=0,0,650,650&w=240&h=240"
+            },
+            "member_name": "Simone Battistini",
+            "member_affiliation": "SHU/UK",
+            "member_role": "Professor",
+            "member_research_area": "Control Systems",
+            "member_lattes": "http://lattes.cnpq.br/0151016853523965"
+          },
+          "AndreaSantos": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://images.prismic.io/lodestar/c77dac78-6f3e-4d0f-bde3-0ea4a5700b78_andreaSantos.webp?auto=compress,format&rect=0,82,675,675&w=240&h=240"
+            },
+            "member_name": "Andréa Santos",
+            "member_affiliation": "EPR/UnB",
+            "member_role": "Professor",
+            "member_research_area": "Systems Engineering",
+            "member_lattes": "http://lattes.cnpq.br/4558493368126565"
+          },
+          "WilliamReis": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://images.prismic.io/lodestar/ac94ccb2-6cc2-4b76-9d3d-2b0e868a00ae_williamReis.webp?auto=compress,format&rect=0,0,1080,1080&w=240&h=240"
+            },
+            "member_name": "William Reis",
+            "member_affiliation": "FGA/UnB",
+            "member_role": "Professor",
+            "member_research_area": "Orbital Dynamic",
+            "member_lattes": "http://lattes.cnpq.br/7752228013890691"
+          },
+          "LeonardoAguayo": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://images.prismic.io/lodestar/e0155783-1bc0-4e24-9e0e-2184cde69577_leonardoAguayo.webp?auto=compress,format&rect=0,40,307,307&w=240&h=240"
+            },
+            "member_name": "Leonardo Aguayo",
+            "member_affiliation": "ENE/UnB",
+            "member_role": "Professor",
+            "member_research_area": "Telecommunication",
+            "member_lattes": "http://lattes.cnpq.br/4815464320872808"
+          },
+          "MarceloKaram": {
+            "member_avatar": {
+              "width": 240,
+              "height": 240,
+              "url": "https://images.prismic.io/lodestar/78cb2edd-ad54-4afd-b4f0-a0597ca1c398_marceloKaram.webp?auto=compress,format&rect=0,0,241,241&w=240&h=240"
+            },
+            "member_name": "Marcelo Karam",
+            "member_affiliation": "STI/UnB",
+            "member_role": "Staff",
+            "member_research_area": "Data Security",
+            "member_lattes": "http://lattes.cnpq.br/0017208558479044"
+          },
+          "RogerioSousa": {
+            "member_avatar": {
+              "width": "240",
+              "height": "240",
+              "url": "https://images.prismic.io/lodestar/a9706ccc-8222-4a32-ba0a-67a92d6f4e87_rogerioSousa.webp?auto=compress,format&rect=0,0,1276,1276&w=240&h=240"
+            },
+            "member_name": "Rogério Sousa",
+            "member_affiliation": "STI/UnB",
+            "member_role": "Staff",
+            "member_research_area": "Data Security",
+            "member_lattes": "http://lattes.cnpq.br/1249648187708650"
+          },
+          "research": "Research Area: "
+        },
+        "title": "Our Team",
+        "footer": {
+          "title": "Interested?",
+          "description": "Come join our team and help us shape the future!",
+          "cta": "Join our team"
+        }
+      },
       "Header": {
         "Proposals": {
           "title": "Proposals",
