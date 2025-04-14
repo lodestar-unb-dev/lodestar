@@ -127,6 +127,26 @@
           "title": "Recent Activities",
           "cta": "Check more"
         }
+      },
+      "Proposals": {
+        "k34-system": {
+          "title": "K34 System",
+          "description": "Measure and monitor carbon flux in the Amazon biome",
+          "overview": {
+            "title": "Overview",
+            "first-paragraph": "The K34 tower is located in the Amazon Rainforest, approximately 64km from Manaus, for which the proposed satellite data collection solution is compatible with the characteristics of the AlfaCrux satellite in cases of critical and restricted information traffic, also having data output via our partners' satellite networks, or other services available on the market, in cases of general information traffic that does not have confidentiality and secrecy restrictions. It is worth noting that the AlfaCrux space mission marks the beginning of command and control operations for the project team's own satellite network, having allowed the demonstration of space technologies and team training in the design cycle of a space mission.",
+            "second-paragraph": "The proposed system for collecting, transmitting, storing and processing data is the Perception strategic asset monitoring system. Perception is a satellite data collection system that, through new operational concepts and proposed services, is dedicated to monitoring Brazilian biomes and their critical infrastructures. Satellite technologies and geospatial data have the potential to support the sustainable transition of the Brazilian productive sector and play a vital role in implementing sustainable development goals. The first product of the Perception project is aimed at collecting and processing data from the K34 tower of the Large-Scale Amazon Biosphere-Atmosphere Program (LBA), which, among other applications, allows measuring and monitoring the flow of carbon in the Amazon biome."
+          },
+          "key-features": {
+            "title": "Key features",
+            "list": {
+              "first-item": "Clear and strategic planning for seamless data collection",
+              "second-item": "Timely project delivery with built-in flexibility",
+              "third-item": "High-impact monitoring for sustainable environmental management"
+            },
+            "cta": "Get in touch"
+          }
+        }
       }
     },
     "Page": {

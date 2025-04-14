@@ -127,6 +127,26 @@
           "cta": "Saber más",
           "title": "Actividades recientes"
         }
+      },
+      "Proposals": {
+        "k34-system": {
+          "description": "Medir y monitorear el flujo de carbono en el bioma amazónico",
+          "key-features": {
+            "cta": "Ponerse en contacto",
+            "list": {
+              "first-item": "Planificación clara y estratégica para la recopilación de datos sin problemas",
+              "second-item": "Entrega oportuna del proyecto con flexibilidad incorporada",
+              "third-item": "Monitoreo de alto impacto para la gestión ambiental sostenible"
+            },
+            "title": "Características clave"
+          },
+          "overview": {
+            "first-paragraph": "La Torre K34 se encuentra en la selva de la selva amazónica, aproximadamente a 64 km de Manaus, para la cual la solución de recopilación de datos satelital propuesta es compatible con las características del satélite Alfacrux en casos de información crítica y restringida del tráfico restringido y la producción de datos a través de las redes satelitales de nuestros socios, u otros servicios disponibles en el mercado, en casos de información general que no tiene confidencialidad confidencialidad y de la sección. \nVale la pena señalar que la misión espacial de Alfacrux marca el comienzo de las operaciones de mando y control para la red satelital propia del equipo del proyecto, ya que ha permitido la demostración de tecnologías espaciales y capacitación en equipo en el ciclo de diseño de una misión espacial.",
+            "second-paragraph": "El sistema propuesto para recopilar, transmitir, almacenar y procesar datos es el sistema de monitoreo de activos estratégicos del Perception. \nPerception es un sistema de recopilación de datos satelitales que, a través de nuevos conceptos operativos y servicios propuestos, se dedica a monitorear los biomas brasileños y sus infraestructuras críticas. \nLas tecnologías satelitales y los datos geoespaciales tienen el potencial de apoyar la transición sostenible del sector productivo brasileño y desempeñar un papel vital en la implementación de objetivos de desarrollo sostenible. \nEl primer producto del proyecto Perception está dirigido a recopilar y procesar datos de la torre K34 del Programa de Atmosfera amazónica a gran escala (LBA), que, entre otras aplicaciones, permite medir y monitorear el flujo de carbono en el bioma amazónica.",
+            "title": "Descripción general"
+          },
+          "title": "Sistema K34"
+        }
       }
     },
     "Page": {
