@@ -195,6 +195,32 @@
           "cta": "Join our team"
         }
       },
+      "Mission": {
+        "FirstSection": {
+          "title": "Expanding Our Perception Everywhere",
+          "first": "When it comes to monitoring strategic assets that include our natural resources, the challenge goes beyond just tracking them to also perceive them. By perceiving them we mean understanding, learning and growing from their random and uncertain nature. It means empowering ourselves to deal with the unknown, understanding the impact of our actions and preparing ourselves to make decisions in complex scenarios. To achieve a high level of perception on a scale never seen before to monitor our strategic assets, we need to combine sensor networks, space technologies and data science. We need a team of experts, critical sense, and solid partnerships. This is the vision of the Perception project.",
+          "second": "The Perception System is a satellite data collection system, which, through new systems engineering approaches, new operating concepts, and proposed services based on CubeSats missions, aims to develop new technologies and satellite-based services for tracking and monitoring strategic assets, such as the Brazilian biomes and our critical infrastructure, leading Brazil into a new era of space and terrestrial data science. Satellite technologies and geospatial data have the potential to support the sustainable transition of the Brazilian productive sector and play a vital role in the implementation of the Sustainable Development Goals. The first deliverable of the Perception project is the concept of operation for the space segment, and a new ground segment for collecting and processing data from the K34 Tower of the Large-Scale Amazon Biosphere-Atmosphere (LBA) Program, as well as for unmanned aerial vehicles (UAVs) that support environmental monitoring activities. A first use of this data is to measure and monitor carbon flow. The K34 tower is located in the Amazon rainforest, approximately 64km from Manaus, for which a new concept of operation is proposed for the installation of satellite communication terminals compatible with the characteristics of the AlfaCrux satellite, as well as satellites from our partners and future missions. The AlfaCrux space mission marks the beginning of this journey, having allowed the demonstration of space technologies and the training of our team. As a second deliverable of the Perception project, it is expected the reactivation of the environmental data collection tower for the Brazilian Cerrado located at the Água Limpa Farm at the University of Brasília. The Água Limpa Farm has an area of approximately 4,500 hectares dedicated to scientific development and technological development and demonstration for the environment.",
+          "third": "Welcome to the Perception project and come with us to develop new technologies and satellite-based services for tracking and monitoring our strategic assets."
+        },
+        "SecondSection": {
+          "title": "Learning through the senses and mind",
+          "first": "The word perception comes from the Latin word percepio, meaning receiving, collecting, become aware through the mind or senses. The project logo represents a door to infinity and captures the idea of the proposed system being the frontier to the unknown, the door to be opened to expand our vision and sense of our environment and reality. This is the meaning of the name, a poetic idea proposed and discussed over the centuries by philosophers, musicians and many others who chose to deeply feel the world in which we live.",
+          "second": "The Perception project is an initiative that aims to create new technologies, business models and methods to optimize and expand our ability to perceive the environment and its modification throughout our evolution. We seek to expand the perception of our planet through the generation of data, its structuring and analysis as information, identification of trends and extrapolation to future scenarios."
+        },
+        "title": "Our mission",
+        "footer": {
+          "title": "Interested?",
+          "description": "Check out our proposals",
+          "k34-system": {
+            "title": "K34 System",
+            "description": "Measure and monitor carbon flux in the Amazon biome"
+          },
+          "cerrado-hotspot": {
+            "title": "Cerrado Hotspot (coming soon)",
+            "description": "Expand the capacity for autonomous data collection in reference areas"
+          }
+        }
+      },
       "Header": {
         "Proposals": {
           "title": "Proposals",

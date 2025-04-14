@@ -195,6 +195,32 @@
         "membersSubTitle": "El equipo del proyecto está completamente compuesto por profesores, personal y estudiantes de UnB y LBA, también contando la participación de colaboradores externos.",
         "title": "Nuestro equipo"
       },
+      "Mission": {
+        "FirstSection": {
+          "title": "Ampliando nuestra percepción en todas partes",
+          "first": "Cuando se trata de monitorear activos estratégicos que incluyen nuestros recursos naturales, el desafío va más allá de simplemente rastrearlos para también percibirlos. \nAl percibirlos nos referimos a comprender, aprender y crecer a partir de su naturaleza aleatoria e incierta. \nSignifica empoderarnos para enfrentar lo desconocido, comprender el impacto de nuestras acciones y prepararnos para tomar decisiones en escenarios complejos. \nPara lograr un alto nivel de percepción a una escala nunca antes vista para monitorear nuestros activos estratégicos, necesitamos combinar redes de sensores, tecnologías espaciales y ciencia de datos. \nNecesitamos un equipo de expertos, sentido crítico y alianzas sólidas. \nEsta es la visión del proyecto Perception.",
+          "second": "El Sistema Perception es un sistema de recopilación de datos satelitales que, a través de nuevos enfoques de ingeniería de sistemas, nuevos conceptos operativos y servicios propuestos basados ​​en misiones CubeSats, tiene como objetivo desarrollar nuevas tecnologías y servicios basados ​​en satélites para el seguimiento y monitoreo de activos estratégicos. \ncomo los biomas brasileños y nuestra infraestructura crítica, llevando a Brasil a una nueva era de ciencia de datos espaciales y terrestres. \nLas tecnologías satelitales y los datos geoespaciales tienen el potencial de apoyar la transición sostenible del sector productivo brasileño y desempeñar un papel vital en la implementación de los Objetivos de Desarrollo Sostenible. \nEl primer entregable del proyecto Perception es el concepto de operación para el segmento espacial, y un nuevo segmento terrestre para la recolección y procesamiento de datos de la Torre K34 del Programa de Gran Escala Biosfera-Atmósfera Amazónica (LBA), así como para vehículos no tripulados. \nvehículos aéreos (UAV) que apoyan las actividades de monitoreo ambiental. \nUn primer uso de estos datos es medir y monitorear el flujo de carbono. \nLa torre K34 está ubicada en la selva amazónica, aproximadamente a 64 km de Manaos, para lo cual se propone un nuevo concepto de operación para la instalación de terminales de comunicación satelital compatibles con las características del satélite AlfaCrux, así como satélites de nuestros socios y futuras misiones. \n. \nLa misión espacial AlfaCrux marca el inicio de este viaje, habiendo permitido la demostración de tecnologías espaciales y la formación de nuestro equipo. \nComo segundo entregable del proyecto Percepción, se espera la reactivación de la torre de recolección de datos ambientales del Cerrado Brasileño ubicada en la Hacienda Água Limpa de la Universidad de Brasilia. \nLa Finca Água Limpa tiene un área de aproximadamente 4.500 hectáreas dedicadas al desarrollo científico y al desarrollo y demostración tecnológica para el medio ambiente.",
+          "third": "Bienvenido al proyecto Perception y venga con nosotros a desarrollar nuevas tecnologías y servicios basados en satélites para rastrear y monitorear nuestros activos estratégicos."
+        },
+        "SecondSection": {
+          "title": "Aprender a través de los sentidos y la mente.",
+          "first": "La palabra percepción proviene del latín percepio, que significa recibir, recoger, tomar conciencia a través de la mente o los sentidos. \nEl logotipo del proyecto representa una puerta al infinito y captura la idea de que el sistema propuesto es la frontera hacia lo desconocido, la puerta que debe abrirse para ampliar nuestra visión y sentido de nuestro entorno y realidad. \nEste es el significado del nombre, una idea poética propuesta y discutida a lo largo de los siglos por filósofos, músicos y muchos otros que optaron por sentir profundamente el mundo en el que vivimos.",
+          "second": "El proyecto Perception es una iniciativa que tiene como objetivo crear nuevas tecnologías, modelos de negocio y métodos para optimizar y ampliar nuestra capacidad de percibir el entorno y su modificación a lo largo de nuestra evolución. \nBuscamos ampliar la percepción de nuestro planeta a través de la generación de datos, su estructuración y análisis como información, identificación de tendencias y extrapolación a escenarios futuros."
+        },
+        "footer": {
+          "cerrado-hotspot": {
+            "description": "Ampliar la capacidad de recopilación de datos autónomos en áreas de referencia",
+            "title": "Cerrado Hotspot (próximamente)"
+          },
+          "description": "Mira nuestras propuestas",
+          "k34-system": {
+            "description": "Medir y monitorear el flujo de carbono en el bioma amazónico",
+            "title": "Sistema K34"
+          },
+          "title": "¿Interesado?"
+        },
+        "title": "Nuestra misión"
+      },
       "Header": {
         "About": {
           "media": {
