@@ -39,7 +39,7 @@ export default function Instagram() {
         <div className="h-14 w-px bg-perceptionOrange-300" />
 
         <a
-          href="https://"
+          href="https://www.instagram.com/lodestar_unb"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded bg-perceptionOrange-300 px-4 py-3 transition-colors hover:bg-unbBlack-0 hover:text-perceptionOrange-300"
