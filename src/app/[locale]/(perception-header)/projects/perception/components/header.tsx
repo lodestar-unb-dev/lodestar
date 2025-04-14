@@ -56,15 +56,15 @@ export function Header() {
 
                     <li>
                       <DropdownMenu.Item asChild>
-                        <HeaderLink
-                          href="/projects/perception/proposals/cerrado-hotspot"
-                          className="flex flex-col gap-1 text-unbBlue-400 hover:text-unbBlue-400/50"
+                        <div
+                          // href="/projects/perception/proposals/cerrado-hotspot"
+                          className="flex flex-col gap-1 text-unbBlue-400 opacity-50"
                         >
                           {t('Proposals.cerrado hotspot.title')}
                           <span className="text-xs text-black/50">
                             {t('Proposals.cerrado hotspot.description')}
                           </span>
-                        </HeaderLink>
+                        </div>
                       </DropdownMenu.Item>
                     </li>
                   </ul>
