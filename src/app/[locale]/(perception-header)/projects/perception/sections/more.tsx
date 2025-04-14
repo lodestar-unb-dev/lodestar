@@ -95,7 +95,7 @@ export function More() {
                   <ArrowDownCircle className="transition-transform group-data-[state=open]:rotate-180" />
                 </Accordion.Trigger>
               </Accordion.Header>
-              <Accordion.Content className="data-[state=closed]:animate-slideUp data-[state=open]:animate-slideDown overflow-hidden text-unbBlack-0">
+              <Accordion.Content className="overflow-hidden·text-unbBlack-0·data-[state=closed]:animate-slideUp·data-[state=open]:animate-slideDown">
                 <div className="flex flex-col gap-3 pt-5 sm:pt-10 md:pt-32">
                   <div className="text-xs md:text-base">{t(item.body)}</div>
                   <Link
