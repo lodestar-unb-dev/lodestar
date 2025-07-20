@@ -10,7 +10,7 @@ export function FullForeignObjects() {
   const t = useTranslations('Projects.Perception.Proposals.k34-system.markers')
 
   return (
-    <foreignObject x="500" y="360" width="868.7" height="624.17">
+    <foreignObject x="500" y="360" width="24" height="24">
       <Tooltip.Provider delayDuration={0}>
         <Tooltip.Root open={open} onOpenChange={(e) => setOpen(e)}>
           <Tooltip.Trigger
@@ -20,7 +20,7 @@ export function FullForeignObjects() {
             <PlusSquareIcon className="fill-unbBlack-100/60 stroke-perceptionOrange-300 transition-colors group-hover:fill-unbBlack-100" />
           </Tooltip.Trigger>
           <Tooltip.Portal>
-            <Tooltip.Content className="max-w-[321px] rounded border border-perceptionOrange-300 bg-unbBlack-100/95 p-3">
+            <Tooltip.Content className="z-[61] max-w-[321px] rounded border border-perceptionOrange-300 bg-unbBlack-100/95 p-3">
               <strong>{t('k34-tower.title')}</strong>
 
               <p>{t('k34-tower.description')}</p>

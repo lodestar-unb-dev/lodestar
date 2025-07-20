@@ -43,7 +43,7 @@ export function Header() {
                     <li>
                       <DropdownMenu.Item asChild>
                         <HeaderLink
-                          href="/projects/perception/proposals/k34-system"
+                          href="/projects/perception/actions/perception-system"
                           className="flex flex-col gap-1 text-unbBlue-400 hover:text-unbBlue-400/50"
                         >
                           {t('Proposals.k34 System.title')}
@@ -57,12 +57,26 @@ export function Header() {
                     <li>
                       <DropdownMenu.Item asChild>
                         <div
-                          // href="/projects/perception/proposals/cerrado-hotspot"
+                          // href="/projects/perception/actions/cerrado-hotspot"
                           className="flex flex-col gap-1 text-unbBlue-400 opacity-50"
                         >
                           {t('Proposals.cerrado hotspot.title')}
                           <span className="text-xs text-black/50">
                             {t('Proposals.cerrado hotspot.description')}
+                          </span>
+                        </div>
+                      </DropdownMenu.Item>
+                    </li>
+
+                    <li>
+                      <DropdownMenu.Item asChild>
+                        <div
+                          // href="/projects/perception/actions/data-platform-structure"
+                          className="flex flex-col gap-1 text-unbBlue-400 opacity-50"
+                        >
+                          {t('Proposals.data platform structure.title')}
+                          <span className="text-xs text-black/50">
+                            {t('Proposals.data platform structure.description')}
                           </span>
                         </div>
                       </DropdownMenu.Item>
@@ -99,7 +113,7 @@ export function Header() {
                             {t('About.overview.link-1')}
                           </HeaderLink>
                           <HeaderLink
-                            href="/projects/perception/team"
+                            href="/projects/perception/who-we-are"
                             className="text-sm text-unbBlack-100 hover:text-unbBlack-100/50"
                           >
                             {t('About.overview.link-2')}
@@ -117,12 +131,6 @@ export function Header() {
                             className="text-sm text-unbBlack-100 hover:text-unbBlack-100/50"
                           >
                             {t('About.media.link-1')}
-                          </HeaderLink>
-                          <HeaderLink
-                            href="/projects/perception/partners"
-                            className="text-sm text-unbBlack-100 hover:text-unbBlack-100/50"
-                          >
-                            {t('About.media.link-2')}
                           </HeaderLink>
                         </div>
                       </DropdownMenu.Item>

@@ -6,7 +6,7 @@ import { Link } from '@/i18n/routing'
 import { useId } from 'react'
 
 const instagramPosts = [
-  'https://www.instagram.com/p/C9vlfslAYsA',
+  'https://www.instagram.com/p/DKHNPjeOiSq/',
   'https://www.instagram.com/p/Cv-HASvAK4B',
   'https://www.instagram.com/p/CxSvpzOAGxV',
 ]
@@ -24,7 +24,7 @@ export function Instagram() {
         {t('title')}
       </h2>
 
-      <div className="flex w-full flex-wrap items-center justify-center gap-5">
+      <div className="flex w-full flex-wrap justify-center gap-5">
         {instagramPosts.map((post) => (
           <InstagramEmbed key={post} url={post} />
         ))}

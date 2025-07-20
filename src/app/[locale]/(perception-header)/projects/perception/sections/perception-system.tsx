@@ -2,7 +2,7 @@ import { Link } from '@/i18n/routing'
 import { K34SystemSVG } from '../components/k34-system-svg'
 import { useTranslations } from 'next-intl'
 
-export function K34System() {
+export function PerceptionSystem() {
   const t = useTranslations('Projects.Perception.LP.k34-system-section')
 
   return (
@@ -28,7 +28,7 @@ export function K34System() {
 
             <Link
               className="w-fit rounded border border-perceptionOrange-300 bg-unbBlack-0 px-4 py-3 text-lg font-medium text-perceptionOrange-300 transition-colors hover:bg-perceptionOrange-300 hover:text-unbBlack-0"
-              href="/projects/perception/proposals/k34-system"
+              href="/projects/perception/actions/perception-system"
             >
               {t('cta')}
             </Link>

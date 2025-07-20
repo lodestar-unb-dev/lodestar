@@ -2,8 +2,9 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import k34SystemImg from '../../assets/images/hero-bg.jpg'
 import { K34SystemFullSvg } from '../../components/k34-system-svg/full'
+import { Tooltip } from 'radix-ui'
 
-export default function K34SystemPage() {
+export default function PerceptionSystemPage() {
   const t = useTranslations('Projects.Perception.Proposals.k34-system')
 
   return (
@@ -30,9 +31,19 @@ export default function K34SystemPage() {
             <p>{t('overview.first-paragraph')}</p>
 
             <p>{t('overview.second-paragraph')}</p>
+
+            <p>{t('overview.third-paragraph')}</p>
+
+            <p>{t('overview.fourth-paragraph')}</p>
+
+            <p>{t('overview.fifth-paragraph')}</p>
+
+            <p>{t('overview.sixth-paragraph')}</p>
           </div>
 
-          <K34SystemFullSvg />
+          <Tooltip.Provider delayDuration={0}>
+            <K34SystemFullSvg />
+          </Tooltip.Provider>
         </section>
       </div>
       <section className="bg-unbBlack-100">

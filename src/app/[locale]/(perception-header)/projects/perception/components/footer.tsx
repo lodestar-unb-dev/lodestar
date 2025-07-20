@@ -29,25 +29,21 @@ export function Footer() {
               <span className="font-semibold uppercase">
                 {t('Proposals.title')}
               </span>
-              <Link href="/projects/perception/proposals/k34-system">
+              <Link href="/projects/perception/actions/perception-system">
                 {t('Proposals.k34 System')}
               </Link>
-              <Link href="/projects/perception/proposals/cerrado-hotspot">
-                {t('Proposals.cerrado hotspot')}
-              </Link>
+              <p>{t('Proposals.cerrado hotspot')}</p>
+              <p>{t('Proposals.data platform structure')}</p>
             </div>
 
             <div className="flex flex-col gap-3 text-xs">
               <span className="font-semibold uppercase">
                 {t('ResearchGroup.title')}
               </span>
-              <Link href="/projects/perception/team">
-                {t('ResearchGroup.team')}
-              </Link>
               <Link href="/projects/perception/mission">
                 {t('ResearchGroup.mission')}
               </Link>
-              <Link href="/projects/perception/partners">
+              <Link href="/projects/perception/who-we-are">
                 {t('ResearchGroup.partners')}
               </Link>
             </div>

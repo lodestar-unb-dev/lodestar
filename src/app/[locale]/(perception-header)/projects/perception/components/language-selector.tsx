@@ -16,9 +16,9 @@ export function LanguageSelector() {
   const router = useRouter()
 
   const languages: Record<(typeof routing.locales)[number], ReactElement> = {
-    en: <Image src={usFlagIcon} alt="EN" width={20} priority />,
+    // en: <Image src={usFlagIcon} alt="EN" width={20} priority />,
     'pt-BR': <Image src={brFlagIcon} alt="BR" width={20} priority />,
-    es: <Image src={esFlagIcon} alt="ES" width={20} priority />,
+    // es: <Image src={esFlagIcon} alt="ES" width={20} priority />,
   }
 
   function handleNavigation(value: string) {

@@ -31,6 +31,11 @@ export default function MissionPage() {
             <p>{t('FirstSection.first')}</p>
             <p>{t('FirstSection.second')}</p>
             <p>{t('FirstSection.third')}</p>
+            <p>{t('FirstSection.p4')}</p>
+            <p>{t('FirstSection.p5')}</p>
+            <p>{t('FirstSection.p6')}</p>
+            <p>{t('FirstSection.p7')}</p>
+            <p>{t('FirstSection.p8')}</p>
           </div>
         </div>
 
@@ -64,7 +69,7 @@ export default function MissionPage() {
 
           <div className="flex flex-wrap items-center justify-center gap-5 md:gap-20">
             <Link
-              href="/projects/perception/proposals/k34-system"
+              href="/projects/perception/actions/k34-system"
               className="group relative block h-[360px] w-[320px] overflow-hidden rounded-xl border border-perceptionOrange-300"
             >
               <Image

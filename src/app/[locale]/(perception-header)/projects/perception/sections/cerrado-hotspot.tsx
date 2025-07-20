@@ -31,7 +31,7 @@ export function CerradoHotspot() {
 
             <div
               className="w-fit rounded border border-perceptionOrange-300 bg-unbBlack-0 px-4 py-3 text-lg font-medium text-perceptionOrange-300 transition-colors"
-              // href="/projects/perception/proposals/k34-system"
+              // href="/projects/perception/actions/k34-system"
             >
               {t('cta')}
             </div>

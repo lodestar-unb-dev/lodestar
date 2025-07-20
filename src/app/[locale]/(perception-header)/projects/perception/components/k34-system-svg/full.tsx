@@ -1,4 +1,4 @@
-import { FullForeignObjects } from './full-foreign-objects'
+import { ForeignObjectContext } from './foreign-objects-context'
 
 export function K34SystemFullSvg() {
   return (
@@ -12947,7 +12947,8 @@ export function K34SystemFullSvg() {
             </g>
           </g>
         </g>
-        <FullForeignObjects />
+
+        <ForeignObjectContext />
       </svg>
     </>
   )

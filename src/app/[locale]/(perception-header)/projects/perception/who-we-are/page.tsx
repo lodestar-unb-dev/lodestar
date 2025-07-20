@@ -1,7 +1,9 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import partnersImg from '../assets/images/our-partners.jpg'
-import beAPartnerImg from '../assets/images/be-a-partner.jpg'
+import partnersImg from '../assets/images/our-team.jpg'
+import beAPartnerImg from '../assets/images/join-our-team.jpg'
+import image from '../assets/images/image.png'
+import whoWeAre from '../assets/images/who-we-are-2.png'
 import logo from '../assets/icons/logo-alt.svg'
 import unbLogo from '../assets/images/unb.jpg'
 import fapLogo from '../assets/images/fap.avif'
@@ -20,9 +22,9 @@ export default function PartnersPage() {
           {t('headerTitle')}
         </h1>
         <Image
-          className="absolute inset-0 -z-10 size-full object-cover"
-          src={partnersImg}
-          alt="our partners"
+          className="absolute inset-0 -z-10 size-full object-cover object-[0%_15%]"
+          src={whoWeAre}
+          alt="quem somos"
         />
         <div className="absolute inset-0 -z-10 size-full bg-gradient-to-b from-unbBlack-100/0 to-unbBlue-400" />
       </section>
@@ -32,16 +34,22 @@ export default function PartnersPage() {
             <p>{t('headerFirstDescription')}</p>
 
             <p>{t('headerSecondDescription')}</p>
+
+            <p>{t('p3')}</p>
+            <p>{t('p4')}</p>
+            <p>{t('p5')}</p>
           </div>
         </div>
         <section className="mx-auto flex max-w-[1200px] flex-col items-center gap-3 px-5 py-10 lg:py-20">
-          <h2 className="text-left text-xl font-semibold uppercase text-[#1A3E76] md:text-3xl">
+          <h2 className="text-center font-semibold uppercase text-[#1A3E76] md:text-xl">
             {t('title')}
           </h2>
 
-          <Image src={logo} alt="perception" className="w-[216px]" />
+          <Image src={image} alt="partners" />
 
-          <div className="flex max-w-5xl flex-col flex-wrap justify-center gap-5 text-unbBlue-400">
+          {/* <Image src={logo} alt="perception" className="w-[216px]" /> */}
+
+          {/* <div className="flex max-w-5xl flex-col flex-wrap justify-center gap-5 text-unbBlue-400">
             <div className="flex flex-col items-center gap-2">
               <p className="font-medium uppercase">{t('firstGroupTitle')}</p>
               <a
@@ -113,7 +121,7 @@ export default function PartnersPage() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
       </div>
       <section className="relative">
@@ -133,7 +141,7 @@ export default function PartnersPage() {
           </a>
         </div>
         <Image
-          className="absolute inset-0 -z-10 size-full object-cover"
+          className="absolute inset-0 -z-10 size-full object-cover object-top"
           src={beAPartnerImg}
           alt="be a partner"
         />

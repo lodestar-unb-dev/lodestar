@@ -10,22 +10,6 @@ import { useTranslations } from 'next-intl'
 
 const accordionItems = [
   {
-    header: 'our-team.header',
-    body: 'our-team.body',
-    link: '/projects/perception/team',
-    className: 'border-perceptionOrange-300 text-perceptionOrange-300',
-    bg: (
-      <>
-        <Image
-          src={ourTeamImg}
-          className="absolute inset-0 -z-10 size-full origin-center object-cover object-center opacity-0 transition-opacity group-data-[state=open]:opacity-100"
-          alt="our team"
-        />
-        <div className="absolute inset-0 -z-10 size-full bg-unbBlack-100/50 opacity-0 transition-opacity group-data-[state=open]:opacity-100" />
-      </>
-    ),
-  } as const,
-  {
     header: 'our-mission.header',
     body: 'our-mission.body',
     link: '/projects/perception/mission',
@@ -49,9 +33,9 @@ const accordionItems = [
     bg: (
       <>
         <Image
-          src={ourPartnersImg}
+          src={ourTeamImg}
           className="absolute inset-0 -z-10 size-full origin-center object-cover object-center opacity-0 transition-opacity group-data-[state=open]:opacity-100"
-          alt="our team"
+          alt="who we are"
         />
         <div className="absolute inset-0 -z-10 size-full bg-unbBlack-100/50 opacity-0 transition-opacity group-data-[state=open]:opacity-100" />
       </>
@@ -95,7 +79,7 @@ export function More() {
                   <ArrowDownCircle className="transition-transform group-data-[state=open]:rotate-180" />
                 </Accordion.Trigger>
               </Accordion.Header>
-              <Accordion.Content className="overflow-hidden·text-unbBlack-0·data-[state=closed]:animate-slideUp·data-[state=open]:animate-slideDown">
+              <Accordion.Content className="overflow-hidden·text-unbBlack-0·data-[state=closed]:animate-slideUp·data-[state=open]:animate-slideDown data-[state=open]:text-unbBlack-0">
                 <div className="flex flex-col gap-3 pt-5 sm:pt-10 md:pt-32">
                   <div className="text-xs md:text-base">{t(item.body)}</div>
                   <Link
