@@ -17,16 +17,16 @@ export default function PartnersPage() {
 
   return (
     <main>
-      <section className="relative flex min-h-56 flex-col items-center justify-center px-5 text-center md:min-h-[384px]">
-        <h1 className="text-2xl font-semibold uppercase md:text-4xl">
+      <section className="relative flex min-h-56 flex-col items-center justify-center bg-unbBlue-400 px-5 text-center md:min-h-[384px]">
+        <h1 className="z-10 text-2xl font-semibold uppercase md:text-4xl">
           {t('headerTitle')}
         </h1>
         <Image
-          className="absolute inset-0 -z-10 size-full bg-unbBlue-400 object-contain"
+          className="absolute inset-0 mx-auto size-full max-w-[1160px] object-cover object-[50%_10%]"
           src={whoWeAre}
           alt="quem somos"
         />
-        <div className="absolute inset-0 -z-10 size-full bg-gradient-to-b from-unbBlack-100/0 to-unbBlue-400" />
+        <div className="absolute inset-0 size-full bg-gradient-to-b from-unbBlack-100/0 to-unbBlue-400" />
       </section>
       <div className="bg-unbBlack-0">
         <div className="bg-unbBlue-400">
@@ -124,9 +124,9 @@ export default function PartnersPage() {
           </div> */}
         </section>
       </div>
-      <section className="relative">
-        <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-center gap-14 px-5 py-5 md:min-h-[487px] lg:py-10">
-          <div className="flex max-w-[400px] flex-col gap-4 text-center text-lg md:text-2xl">
+      <section className="relative bg-unbBlack-100">
+        <div className="z-10 mx-auto flex max-w-[1200px] flex-col items-center justify-center gap-14 px-5 py-5 lg:py-10">
+          <div className="z-10 flex max-w-[400px] flex-col gap-4 text-center text-lg md:text-2xl">
             <span>{t('footer.title')}</span>
             <span>{t('footer.description')}</span>
           </div>
@@ -135,17 +135,17 @@ export default function PartnersPage() {
             href="mailto:lodestar@aerospace.unb.br"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded bg-perceptionOrange-300 px-4 py-3 uppercase transition-colors hover:bg-unbBlack-0 hover:text-perceptionOrange-300"
+            className="z-10 rounded bg-perceptionOrange-300 px-4 py-3 uppercase transition-colors hover:bg-unbBlack-0 hover:text-perceptionOrange-300"
           >
             {t('footer.cta')}
           </a>
         </div>
         <Image
-          className="absolute inset-0 -z-10 size-full bg-unbBlack-100 object-contain"
+          className="absolute inset-0 mx-auto size-full max-w-[1160px] bg-unbBlack-100 object-cover object-top"
           src={beAPartnerImg}
           alt="be a partner"
         />
-        <div className="absolute inset-0 -z-10 size-full bg-gradient-to-b from-unbBlack-100/20 to-unbBlack-100" />
+        <div className="absolute inset-0 size-full bg-gradient-to-b from-unbBlack-100/40 to-unbBlack-100" />
       </section>
     </main>
   )
