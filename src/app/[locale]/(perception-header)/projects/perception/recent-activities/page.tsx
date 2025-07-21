@@ -5,7 +5,7 @@ import { Carousel } from '../components/carousel'
 import { EmblaOptionsType } from 'embla-carousel'
 
 const instagramPosts = [
-  'https://www.instagram.com/p/C9vlfslAYsA',
+  'https://www.instagram.com/p/DKHNPjeOiSq/',
   'https://www.instagram.com/p/Cv-HASvAK4B',
   'https://www.instagram.com/p/CxSvpzOAGxV',
   'https://www.instagram.com/p/CxniILsgLx6',

@@ -12,7 +12,7 @@ export function CerradoHotspot() {
         </div>
 
         <div className="flex flex-[4] flex-col gap-6 text-justify">
-          <h4 className="text-3xl font-semibold">{t('title')}</h4>
+          <h4 className="text-left text-3xl font-semibold">{t('title')}</h4>
 
           <div className="flex flex-col gap-6">
             <p>{t('description')}</p>

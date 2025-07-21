@@ -69,7 +69,7 @@ export default function MissionPage() {
 
           <div className="flex flex-wrap items-center justify-center gap-5 md:gap-20">
             <Link
-              href="/projects/perception/actions/k34-system"
+              href="/projects/perception/actions/perception-system"
               className="group relative block h-[360px] w-[320px] overflow-hidden rounded-xl border border-perceptionOrange-300"
             >
               <Image

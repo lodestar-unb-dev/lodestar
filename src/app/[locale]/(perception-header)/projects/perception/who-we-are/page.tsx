@@ -1,8 +1,6 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import partnersImg from '../assets/images/our-team.jpg'
 import beAPartnerImg from '../assets/images/join-our-team.jpg'
-import image from '../assets/images/image.png'
 import whoWeAre from '../assets/images/who-we-are-2.png'
 import logo from '../assets/icons/logo-alt.svg'
 import unbLogo from '../assets/images/unb.jpg'
@@ -11,6 +9,52 @@ import lbaLogo from '../assets/images/lba.png'
 import ueaLogo from '../assets/images/uea.png'
 import vigoLogo from '../assets/images/vigo.png'
 import alenLogo from '../assets/images/alen.png'
+import capesLogo from '../assets/images/capes.png'
+import cnpqLogo from '../assets/images/cnpq.png'
+import { OrbitLayout } from '../components/partners'
+
+const orbitImgs = [
+  {
+    src: alenLogo,
+    width: 120,
+    url: 'https://alen.space/',
+  },
+  {
+    src: capesLogo,
+    width: 50,
+    url: 'https://www.gov.br/capes/pt-br',
+  },
+  {
+    src: fapLogo,
+    width: 190,
+    url: 'https://www.fap.df.gov.br/',
+  },
+  {
+    src: cnpqLogo,
+    width: 110,
+    url: 'https://www.gov.br/cnpq/pt-br',
+  },
+  {
+    src: vigoLogo,
+    width: 110,
+    url: 'https://www.uvigo.gal/',
+  },
+  {
+    src: ueaLogo,
+    width: 80,
+    url: 'http://www.uea.edu.br/',
+  },
+  {
+    src: unbLogo,
+    width: 87,
+    url: 'https://www.unb.br/',
+  },
+  {
+    src: lbaLogo,
+    width: 80,
+    url: 'https://lba.inpa.gov.br/',
+  },
+]
 
 export default function PartnersPage() {
   const t = useTranslations('Projects.Perception.Partners')
@@ -18,7 +62,7 @@ export default function PartnersPage() {
   return (
     <main>
       <section className="relative flex min-h-56 flex-col items-center justify-center bg-unbBlue-400 px-5 text-center md:min-h-[384px]">
-        <h1 className="z-10 text-2xl font-semibold uppercase md:text-4xl">
+        <h1 className="z-10 mt-80 text-2xl font-semibold uppercase md:text-4xl">
           {t('headerTitle')}
         </h1>
         <Image
@@ -28,7 +72,7 @@ export default function PartnersPage() {
         />
         <div className="absolute inset-0 size-full bg-gradient-to-b from-unbBlack-100/0 to-unbBlue-400" />
       </section>
-      <div className="bg-unbBlack-0">
+      <div className="bg-unbBlack-0 text-justify">
         <div className="bg-unbBlue-400">
           <div className="mx-auto max-w-[1200px] space-y-3 px-5 py-10 text-sm md:text-base lg:py-20">
             <p>{t('headerFirstDescription')}</p>
@@ -40,12 +84,21 @@ export default function PartnersPage() {
             <p>{t('p5')}</p>
           </div>
         </div>
-        <section className="mx-auto flex max-w-[1200px] flex-col items-center gap-3 px-5 py-10 lg:py-20">
+        <section className="mx-auto flex max-w-[1200px] flex-col items-center gap-5 px-5 py-10 lg:gap-10 lg:py-20">
           <h2 className="text-center font-semibold uppercase text-[#1A3E76] md:text-xl">
             {t('title')}
           </h2>
 
-          <Image src={image} alt="partners" />
+          {/* <Image src={image} alt="partners" /> */}
+
+          <OrbitLayout
+            centerImage={logo}
+            orbitImages={orbitImgs}
+            containerSize={500}
+            orbitRadius={200}
+            centerSize={150}
+            orbitSize={80}
+          />
 
           {/* <Image src={logo} alt="perception" className="w-[216px]" /> */}
 
