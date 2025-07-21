@@ -43,6 +43,71 @@ export default function Instagram() {
         </ul>
       </ul>
 
+      <div className="mt-5 text-justify text-unbBlue-400 lg:self-start">
+        <p>Destaques recentes:</p>
+        <ul className="pl-5 text-unbBlue-400 lg:self-start">
+          <li>
+            A Tarde:{' '}
+            <a
+              href="https://atarde.com.br/brasil/cientista-brasileiro-lidera-missao-espacial-para-escanear-amazonia-e-cerrado-1331390"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-perceptionOrange-300"
+            >
+              Cientista brasileiro lidera missão espacial para escanear Amazônia
+              e Cerrado
+            </a>
+          </li>
+          <li>
+            O Globo:{' '}
+            <a
+              href="https://oglobo.globo.com/brasil/noticia/2025/06/17/missao-liderada-por-cientista-brasileiro-vai-escanear-amazonia-e-cerrado-para-combater-mudancas-climaticas.ghtml"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-perceptionOrange-300"
+            >
+              Missão liderada por cientista brasileiro vai escanear Amazônia e
+              Cerrado para combater mudanças climáticas
+            </a>
+          </li>
+          <li>
+            O Povo:{' '}
+            <a
+              href="https://www.opovo.com.br/noticias/ciencia/2025/06/13/missao-espacial-brasileira-pretende-escanear-biomas-na-amazonia-e-no-cerrado-com-ia.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-perceptionOrange-300"
+            >
+              Missão espacial brasileira pretende escanear biomas na Amazônia e
+              no Cerrado com IA
+            </a>
+          </li>
+          <li>
+            Zero Hora:{' '}
+            <a
+              href="https://gauchazh.clicrbs.com.br/colunistas/marta-sfredo/noticia/2025/05/missao-espacial-vai-escanear-amazonia-e-cerrado-para-combater-mudanca-climatica-cmay3cq9600v9011gwhlah1h1.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-perceptionOrange-300"
+            >
+              Missão espacial vai escanear Amazônia e Cerrado para combater
+              mudança climática
+            </a>
+          </li>
+          <li>
+            A Crítica:{' '}
+            <a
+              href="https://www.acritica.com/amazonia/plataforma-espacial-de-monitoramento-1.373369"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-perceptionOrange-300"
+            >
+              Plataforma espacial de monitoramento
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <p className="mt-5 text-unbBlue-400 lg:self-start">{t('cta-text')}</p>
 
       <div className="mt-10 lg:mt-20">

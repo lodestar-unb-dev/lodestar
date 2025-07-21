@@ -1,6 +1,5 @@
 import { Accordion } from 'radix-ui'
 import ourTeamImg from '../assets/images/our-team.jpg'
-import ourPartnersImg from '../assets/images/our-partners.jpg'
 import ourMissionImg from '../assets/images/hero-bg.jpg'
 import Image from 'next/image'
 import { Link } from '@/i18n/routing'

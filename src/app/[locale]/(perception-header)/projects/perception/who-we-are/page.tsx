@@ -17,41 +17,49 @@ const orbitImgs = [
   {
     src: alenLogo,
     width: 120,
+    height: 52,
     url: 'https://alen.space/',
   },
   {
     src: capesLogo,
     width: 50,
+    height: 46,
     url: 'https://www.gov.br/capes/pt-br',
   },
   {
     src: fapLogo,
     width: 190,
+    height: 106,
     url: 'https://www.fap.df.gov.br/',
   },
   {
     src: cnpqLogo,
     width: 110,
+    height: 34,
     url: 'https://www.gov.br/cnpq/pt-br',
   },
   {
     src: vigoLogo,
-    width: 110,
+    width: 150,
+    height: 150,
     url: 'https://www.uvigo.gal/',
   },
   {
     src: ueaLogo,
     width: 80,
+    height: 75,
     url: 'http://www.uea.edu.br/',
   },
   {
     src: unbLogo,
     width: 87,
+    height: 80,
     url: 'https://www.unb.br/',
   },
   {
     src: lbaLogo,
     width: 80,
+    height: 80,
     url: 'https://lba.inpa.gov.br/',
   },
 ]

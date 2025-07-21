@@ -7,6 +7,7 @@ export interface OrbitLayoutProps {
   orbitImages: {
     src: StaticImageData
     width: number
+    height?: number
     url: string
   }[]
   containerSize?: number // largura/altura do container em px
@@ -89,11 +90,12 @@ export function OrbitLayout({
       />
 
       {/* imagens orbitais */}
-      {orbitImages.map(({ src, width, url }, idx) => {
+      {orbitImages.map(({ src, width, height, url }, idx) => {
         const angle = angles[idx]
         const rad = (angle * Math.PI) / 180
         const xPos = half + orbitRadius * Math.cos(rad) - width / 2
-        const yPos = half + orbitRadius * Math.sin(rad) - orbitSize / 2
+        const yPos =
+          half + orbitRadius * Math.sin(rad) - (height ?? orbitSize) / 2
 
         return (
           <a key={idx} href={url} target="_blank" rel="noopener noreferrer">
@@ -103,7 +105,7 @@ export function OrbitLayout({
               className="absolute bg-unbBlack-0"
               style={{
                 width,
-                height: 'auto',
+                height: height ?? 'auto',
                 objectFit: 'contain',
                 top: yPos,
                 left: xPos,
