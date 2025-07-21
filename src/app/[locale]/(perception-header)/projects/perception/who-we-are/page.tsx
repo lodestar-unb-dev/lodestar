@@ -22,7 +22,7 @@ export default function PartnersPage() {
           {t('headerTitle')}
         </h1>
         <Image
-          className="absolute inset-0 -z-10 size-full object-cover object-[0%_15%]"
+          className="absolute inset-0 -z-10 size-full bg-unbBlue-400 object-contain"
           src={whoWeAre}
           alt="quem somos"
         />
@@ -141,7 +141,7 @@ export default function PartnersPage() {
           </a>
         </div>
         <Image
-          className="absolute inset-0 -z-10 size-full object-cover object-top"
+          className="absolute inset-0 -z-10 size-full bg-unbBlack-100 object-contain"
           src={beAPartnerImg}
           alt="be a partner"
         />
