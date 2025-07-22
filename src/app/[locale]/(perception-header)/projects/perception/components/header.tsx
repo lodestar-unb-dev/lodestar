@@ -138,7 +138,7 @@ export function Header() {
             </DropdownMenu.Root>
 
             <HeaderLink
-              className="text-xl hover:text-unbBlack-25"
+              className="text-sm hover:text-unbBlack-25 md:text-xl"
               href="/projects/perception/contact"
             >
               {t('contact')}
