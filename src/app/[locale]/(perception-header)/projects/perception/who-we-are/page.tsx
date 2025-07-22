@@ -16,50 +16,50 @@ import { OrbitLayout } from '../components/partners'
 const orbitImgs = [
   {
     src: alenLogo,
-    width: 120,
-    height: 52,
+    width: 240,
+    height: 104,
     url: 'https://alen.space/',
   },
   {
     src: capesLogo,
-    width: 50,
-    height: 46,
+    width: 100,
+    height: 92,
     url: 'https://www.gov.br/capes/pt-br',
   },
   {
     src: fapLogo,
-    width: 190,
-    height: 106,
+    width: 380,
+    height: 212,
     url: 'https://www.fap.df.gov.br/',
   },
   {
     src: cnpqLogo,
-    width: 110,
-    height: 34,
+    width: 220,
+    height: 68,
     url: 'https://www.gov.br/cnpq/pt-br',
   },
   {
     src: vigoLogo,
-    width: 150,
-    height: 150,
+    width: 300,
+    height: 300,
     url: 'https://www.uvigo.gal/',
   },
   {
     src: ueaLogo,
-    width: 80,
-    height: 75,
+    width: 160,
+    height: 150,
     url: 'http://www.uea.edu.br/',
   },
   {
     src: unbLogo,
-    width: 87,
-    height: 80,
+    width: 174,
+    height: 160,
     url: 'https://www.unb.br/',
   },
   {
     src: lbaLogo,
-    width: 80,
-    height: 80,
+    width: 160,
+    height: 160,
     url: 'https://lba.inpa.gov.br/',
   },
 ]
@@ -119,92 +119,14 @@ export default function WhoWeArePage() {
             {t('title')}
           </h2>
 
-          {/* <Image src={image} alt="partners" /> */}
-
           <OrbitLayout
             centerImage={logo}
             orbitImages={orbitImgs}
-            containerSize={500}
-            orbitRadius={200}
-            centerSize={150}
-            orbitSize={80}
+            containerSize={1000}
+            orbitRadius={400}
+            centerSize={300}
+            orbitSize={160}
           />
-
-          {/* <Image src={logo} alt="perception" className="w-[216px]" /> */}
-
-          {/* <div className="flex max-w-5xl flex-col flex-wrap justify-center gap-5 text-unbBlue-400">
-            <div className="flex flex-col items-center gap-2">
-              <p className="font-medium uppercase">{t('firstGroupTitle')}</p>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.unb.br/"
-              >
-                <Image
-                  className="h-20 w-auto mix-blend-multiply"
-                  src={unbLogo}
-                  alt="unb"
-                />
-              </a>
-            </div>
-
-            <div className="flex flex-col items-center gap-2">
-              <p className="font-medium uppercase">{t('secondGroupTitle')}</p>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.fap.df.gov.br/"
-              >
-                <Image
-                  className="h-20 w-auto mix-blend-multiply"
-                  src={fapLogo}
-                  alt="fapdf"
-                />
-              </a>
-            </div>
-
-            <div className="flex flex-col items-center gap-2">
-              <p className="font-medium uppercase">{t('thirdGroupTitle')}</p>
-              <div className="flex flex-wrap items-center justify-center gap-10">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://lba.inpa.gov.br/"
-                >
-                  <Image className="h-32 w-auto" src={lbaLogo} alt="LBA" />
-                </a>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="http://www.uea.edu.br/"
-                >
-                  <Image
-                    className="h-20 w-auto mix-blend-multiply"
-                    src={ueaLogo}
-                    alt="UEA"
-                  />
-                </a>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://alen.space/"
-                >
-                  <Image className="h-20 w-auto" src={alenLogo} alt="alen" />
-                </a>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.uvigo.gal/es"
-                >
-                  <Image
-                    className="h-32 w-auto"
-                    src={vigoLogo}
-                    alt="UniversidadeVigo"
-                  />
-                </a>
-              </div>
-            </div>
-          </div> */}
         </section>
       </div>
       <section className="relative bg-unbBlack-100">
