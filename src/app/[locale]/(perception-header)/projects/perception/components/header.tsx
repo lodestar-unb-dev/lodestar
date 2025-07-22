@@ -37,7 +37,7 @@ export function Header() {
                       <DropdownMenu.Item asChild>
                         <HeaderLink
                           href="/projects/perception/initiatives/perception-system"
-                          className="flex flex-col gap-1 text-unbBlue-400 hover:text-unbBlue-400/50"
+                          className="flex flex-col gap-1 text-xl text-unbBlue-400 hover:text-unbBlue-400/50"
                         >
                           {t('Initiatives.perception System.title')}
                           <span className="text-xs text-black/50">
@@ -51,7 +51,7 @@ export function Header() {
                       <DropdownMenu.Item asChild>
                         <div
                           // href="/projects/perception/initiatives/cerrado-hotspot"
-                          className="flex flex-col gap-1 text-unbBlue-400 opacity-50"
+                          className="flex flex-col gap-1 text-xl text-unbBlue-400 opacity-50"
                         >
                           {t('Initiatives.digital twin.title')}
                           <span className="text-xs text-black/50">
@@ -65,7 +65,7 @@ export function Header() {
                       <DropdownMenu.Item asChild>
                         <div
                           // href="/projects/perception/initiatives/data-platform-structure"
-                          className="flex flex-col gap-1 text-unbBlue-400 opacity-50"
+                          className="flex flex-col gap-1 text-xl text-unbBlue-400 opacity-50"
                         >
                           {t('Initiatives.data platform structure.title')}
                           <span className="text-xs text-black/50">
@@ -98,18 +98,18 @@ export function Header() {
                 >
                   <ul className="flex w-56 flex-col gap-3 p-4">
                     <li>
-                      <DropdownMenu.Item className="flex flex-col gap-1 text-unbBlue-400">
+                      <DropdownMenu.Item className="flex flex-col gap-1 text-xl text-unbBlue-400">
                         {t('About.overview.title')}:
                         <div className="flex flex-col">
                           <HeaderLink
                             href="/projects/perception/mission"
-                            className="text-sm text-unbBlack-100 hover:text-unbBlack-100/50"
+                            className="text-sm text-unbBlack-100 opacity-50 hover:opacity-100"
                           >
                             {t('About.overview.link-1')}
                           </HeaderLink>
                           <HeaderLink
                             href="/projects/perception/who-we-are"
-                            className="text-sm text-unbBlack-100 hover:text-unbBlack-100/50"
+                            className="text-sm text-unbBlack-100 opacity-50 hover:opacity-100"
                           >
                             {t('About.overview.link-2')}
                           </HeaderLink>
@@ -118,12 +118,12 @@ export function Header() {
                     </li>
 
                     <li>
-                      <DropdownMenu.Item className="flex flex-col gap-1 text-unbBlue-400">
+                      <DropdownMenu.Item className="flex flex-col gap-1 text-xl text-unbBlue-400">
                         {t('About.media.title')}:
                         <div className="flex flex-col">
                           <HeaderLink
                             href="/projects/perception/recent-activities"
-                            className="text-sm text-unbBlack-100 hover:text-unbBlack-100/50"
+                            className="text-sm text-unbBlack-100 opacity-50 hover:opacity-100"
                           >
                             {t('About.media.link-1')}
                           </HeaderLink>
