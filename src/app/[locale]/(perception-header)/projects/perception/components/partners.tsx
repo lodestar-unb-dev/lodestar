@@ -34,7 +34,7 @@ export function OrbitLayout({
 
   return (
     <div
-      className="relative -mb-[650px] origin-top scale-[35%] transform sm:-mb-[450px] sm:scale-50 md:-mb-[250px] md:scale-[70%] lg:mb-0 lg:scale-100"
+      className="relative -mb-[520px] origin-top scale-[35%] transform sm:-mb-[400px] sm:scale-50 md:-mb-[250px] md:scale-[70%] lg:mb-0 lg:scale-100"
       style={{ width: containerSize, height: containerSize }}
     >
       {/* SVG de fundo: círculo + linhas */}

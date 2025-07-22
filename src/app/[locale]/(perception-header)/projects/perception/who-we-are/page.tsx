@@ -16,50 +16,50 @@ import { OrbitLayout } from '../components/partners'
 const orbitImgs = [
   {
     src: alenLogo,
-    width: 240,
-    height: 104,
+    width: 168,
+    height: 73,
     url: 'https://alen.space/',
   },
   {
     src: capesLogo,
-    width: 100,
-    height: 92,
+    width: 70,
+    height: 64,
     url: 'https://www.gov.br/capes/pt-br',
   },
   {
     src: fapLogo,
-    width: 380,
-    height: 212,
+    width: 266,
+    height: 148,
     url: 'https://www.fap.df.gov.br/',
   },
   {
     src: cnpqLogo,
-    width: 220,
-    height: 68,
+    width: 154,
+    height: 48,
     url: 'https://www.gov.br/cnpq/pt-br',
   },
   {
     src: vigoLogo,
-    width: 300,
-    height: 300,
+    width: 210,
+    height: 210,
     url: 'https://www.uvigo.gal/',
   },
   {
     src: ueaLogo,
-    width: 160,
-    height: 150,
+    width: 112,
+    height: 105,
     url: 'http://www.uea.edu.br/',
   },
   {
     src: unbLogo,
-    width: 174,
-    height: 160,
+    width: 122,
+    height: 112,
     url: 'https://www.unb.br/',
   },
   {
     src: lbaLogo,
-    width: 160,
-    height: 160,
+    width: 112,
+    height: 112,
     url: 'https://lba.inpa.gov.br/',
   },
 ]
@@ -122,10 +122,10 @@ export default function WhoWeArePage() {
           <OrbitLayout
             centerImage={logo}
             orbitImages={orbitImgs}
-            containerSize={1000}
-            orbitRadius={400}
-            centerSize={300}
-            orbitSize={160}
+            containerSize={800}
+            orbitRadius={300}
+            centerSize={200}
+            orbitSize={120}
           />
         </section>
       </div>

@@ -137,7 +137,10 @@ export function Header() {
               </DropdownMenu.Portal>
             </DropdownMenu.Root>
 
-            <HeaderLink href="/projects/perception/contact">
+            <HeaderLink
+              className="text-xl hover:text-unbBlack-25"
+              href="/projects/perception/contact"
+            >
               {t('contact')}
             </HeaderLink>
           </div>
