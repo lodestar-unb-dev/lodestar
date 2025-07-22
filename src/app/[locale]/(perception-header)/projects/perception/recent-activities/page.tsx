@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { Carousel } from '../components/carousel'
 import { EmblaOptionsType } from 'embla-carousel'
+import { Newspaper } from 'lucide-react'
 
 const instagramPosts = [
   'https://www.instagram.com/p/DKHNPjeOiSq/',
@@ -44,10 +45,13 @@ export default function Instagram() {
       </ul>
 
       <div className="mt-5 text-justify text-unbBlue-400 sm:self-start">
-        <p>{t('title')}</p>
-        <ul className="text-unbBlue-400 sm:self-start">
-          <li>
-            A Tarde:{' '}
+        <p className="font-semibold">{t('title')}</p>
+        <ul className="flex flex-col gap-2 text-unbBlue-400 sm:self-start">
+          <li className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <Newspaper size={20} />
+              <span>A Tarde</span>
+            </div>
             <a
               href="https://atarde.com.br/brasil/cientista-brasileiro-lidera-missao-espacial-para-escanear-amazonia-e-cerrado-1331390"
               target="_blank"
@@ -57,8 +61,12 @@ export default function Instagram() {
               {t('recent-highlights-1')}
             </a>
           </li>
-          <li>
-            O Globo:{' '}
+
+          <li className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <Newspaper size={20} />
+              <span>O Globo</span>
+            </div>
             <a
               href="https://oglobo.globo.com/brasil/noticia/2025/06/17/missao-liderada-por-cientista-brasileiro-vai-escanear-amazonia-e-cerrado-para-combater-mudancas-climaticas.ghtml"
               target="_blank"
@@ -68,8 +76,12 @@ export default function Instagram() {
               {t('recent-highlights-2')}
             </a>
           </li>
-          <li>
-            O Povo:{' '}
+
+          <li className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <Newspaper size={20} />
+              <span>O Povo</span>
+            </div>
             <a
               href="https://www.opovo.com.br/noticias/ciencia/2025/06/13/missao-espacial-brasileira-pretende-escanear-biomas-na-amazonia-e-no-cerrado-com-ia.html"
               target="_blank"
@@ -79,8 +91,12 @@ export default function Instagram() {
               {t('recent-highlights-3')}
             </a>
           </li>
-          <li>
-            Zero Hora:{' '}
+
+          <li className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <Newspaper size={20} />
+              <span>Zero Hora</span>
+            </div>
             <a
               href="https://gauchazh.clicrbs.com.br/colunistas/marta-sfredo/noticia/2025/05/missao-espacial-vai-escanear-amazonia-e-cerrado-para-combater-mudanca-climatica-cmay3cq9600v9011gwhlah1h1.html"
               target="_blank"
@@ -90,8 +106,12 @@ export default function Instagram() {
               {t('recent-highlights-4')}
             </a>
           </li>
-          <li>
-            A Crítica:{' '}
+
+          <li className="flex flex-col gap-1">
+            <div className="flex items-center gap-2">
+              <Newspaper size={20} />
+              <span>A Crítica</span>
+            </div>
             <a
               href="https://www.acritica.com/amazonia/plataforma-espacial-de-monitoramento-1.373369"
               target="_blank"
