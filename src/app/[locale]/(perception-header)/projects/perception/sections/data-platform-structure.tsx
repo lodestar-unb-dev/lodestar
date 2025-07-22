@@ -10,7 +10,7 @@ export function DataPlatformStructure() {
     <section className="bg-gradient-to-b from-unbBlue-700 via-unbBlue-700 to-unbBlack-100">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-5 px-5 py-10 lg:flex-row lg:gap-12 lg:py-20">
         <div className="flex flex-[4] flex-col gap-6 text-justify">
-          <h4 className="text-3xl font-semibold">{t('title')}</h4>
+          <h4 className="text-left text-3xl font-semibold">{t('title')}</h4>
 
           <div className="flex flex-col gap-6">
             <p>{t('description')}</p>

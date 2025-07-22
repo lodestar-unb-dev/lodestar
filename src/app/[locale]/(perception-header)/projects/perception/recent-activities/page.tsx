@@ -45,7 +45,7 @@ export default function Instagram() {
 
       <div className="mt-5 text-justify text-unbBlue-400 lg:self-start">
         <p>Destaques recentes:</p>
-        <ul className="pl-5 text-unbBlue-400 lg:self-start">
+        <ul className="text-unbBlue-400 lg:self-start">
           <li>
             A Tarde:{' '}
             <a

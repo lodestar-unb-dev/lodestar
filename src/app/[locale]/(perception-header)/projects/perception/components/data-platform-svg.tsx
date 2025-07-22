@@ -25,7 +25,8 @@ export function DataPlatformSvg() {
             </g>
           </g>
 
-          <g className="animate-isometricMoveVertical">
+          {/* vermelho */}
+          <g>
             <g
               id="g-root-cp_6_g-6_hyey5gr98jk0-fill"
               data-item-order="-374386"
