@@ -9,8 +9,7 @@ import { twMerge } from 'tailwind-merge'
 interface Props extends LinkProps {
   children: ReactNode
   className?: string | undefined
-  // locale?: 'en' | 'pt-BR' | 'es' | undefined
-  locale?: 'pt-BR' | undefined
+  locale?: 'en' | 'pt-BR' | 'es' | undefined
   prefetch?: boolean | undefined
 }
 
