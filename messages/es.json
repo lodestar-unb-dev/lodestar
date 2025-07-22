@@ -1,41 +1,246 @@
 {
   "Projects": {
     "Perception": {
+      "RecentActivities": {
+        "title": "Logros Recientes",
+        "description": "<p>Una de las principales motivaciones del Sistema <strong>Perception</strong> es contribuir a la preservación del medio ambiente y al avance del desarrollo sostenible. El proyecto es un desarrollo derivado de la misión espacial <strong>AlfaCrux</strong>, que evoluciona hacia una aplicación orientada al monitoreo ambiental y a la construcción de una base de datos robusta que respalde la formulación de nuevas políticas públicas.</p> <p>Además, al estar estructurado en plataformas modulares, Perception proporciona herramientas para apoyar la formación continua de recursos humanos altamente calificados, tanto en el nivel de grado como de posgrado. También fomenta el intercambio de investigadores y especialistas, fortaleciendo la cooperación nacional e internacional con instituciones de investigación y empresas del sector productivo. Entre algunos de los logros recientes, se destacan:</p>",
+        "more-news": {
+          "cta": "Saber más",
+          "text": "¿Quieres más noticias? \nMira nuestro Instagram para averiguar qué ha estado haciendo el equipo"
+        },
+        "cta-text": "En este contexto, lo invitamos a dedicar un momento de su tiempo para conocer más de cerca nuestras actividades y logros recientes.",
+        "list-1": {
+          "item-1": "Montaje de plataformas para el análisis lógico y funcional de subsistemas;",
+          "item-2": "Simulación del entorno espacial;",
+          "item-3": "Montaje, análisis y gestión de terminales de usuarios.",
+          "text": "1. <strong>Modelado y simulación de un nuevo sistema de recolección de datos vía satélite</strong>, que incluye:"
+        },
+        "list-2": {
+          "item-1": "Desarrollo de soluciones para la gestión y el procesamiento de datos;",
+          "item-2": "Propuestas de gemelos digitales para el monitoreo del medio ambiente y de infraestructuras críticas.",
+          "text": "2. <strong>Investigación y análisis de la confiabilidad en la generación de datos vía satélite</strong>, que abarca:"
+        },
+        "recent-highlights-1": "Científico brasileño lidera misión espacial para escanear la Amazonía y el Cerrado",
+        "recent-highlights-2": "Misión liderada por científico brasileño escaneará la Amazonía y el Cerrado para combatir el cambio climático",
+        "recent-highlights-3": "Misión espacial brasileña pretende escanear biomas en la Amazonía y el Cerrado con inteligencia artificial",
+        "recent-highlights-4": "Misión espacial escaneará la Amazonía y el Cerrado para combatir el cambio climático",
+        "recent-highlights-5": "Plataforma espacial de monitoreo ambiental"
+      },
       "HomePage": {
+        "Hero": {
+          "description": "Solución integrada de monitoreo ambiental, basada en redes de satélites para la recolección y el procesamiento avanzado de datos. Una plataforma desarrollada para fortalecer la gestión ambiental y ampliar la capacidad de respuesta del Estado ante los desafíos climáticos y ecológicos.",
+          "subtitle": "Inteligencia ambiental para la toma de decisiones estratégicas"
+        }
+      },
+      "Mission": {
         "FirstSection": {
           "title": "Ampliando nuestra percepción en todas partes",
-          "visibleContent": "Cuando se trata de monitorear activos estratégicos que incluyen nuestros recursos naturales, el desafío va más allá de simplemente rastrearlos para también percibirlos. \nAl percibirlos nos referimos a comprender, aprender y crecer a partir de su naturaleza aleatoria e incierta. \nSignifica empoderarnos para enfrentar lo desconocido, comprender el impacto de nuestras acciones y prepararnos para tomar decisiones en escenarios complejos. \nPara lograr un alto nivel de percepción a una escala nunca antes vista para monitorear nuestros activos estratégicos, necesitamos combinar redes de sensores, tecnologías espaciales y ciencia de datos. \nNecesitamos un equipo de expertos, sentido crítico y alianzas sólidas. \nEsta es la visión del proyecto Perception.",
-          "hiddenContent": "<p> El Sistema Perception es un sistema de recopilación de datos satelitales que, a través de nuevos enfoques de ingeniería de sistemas, nuevos conceptos operativos y servicios propuestos basados ​​en misiones CubeSats, tiene como objetivo desarrollar nuevas tecnologías y servicios basados ​​en satélites para el seguimiento y monitoreo de activos estratégicos. \ncomo los biomas brasileños y nuestra infraestructura crítica, llevando a Brasil a una nueva era de ciencia de datos espaciales y terrestres. \nLas tecnologías satelitales y los datos geoespaciales tienen el potencial de apoyar la transición sostenible del sector productivo brasileño y desempeñar un papel vital en la implementación de los Objetivos de Desarrollo Sostenible. \nEl primer entregable del proyecto Perception es el concepto de operación para el segmento espacial, y un nuevo segmento terrestre para la recolección y procesamiento de datos de la Torre K34 del Programa de Gran Escala Biosfera-Atmósfera Amazónica (LBA), así como para vehículos no tripulados. \nvehículos aéreos (UAV) que apoyan las actividades de monitoreo ambiental. \nUn primer uso de estos datos es medir y monitorear el flujo de carbono. \nLa torre K34 está ubicada en la selva amazónica, aproximadamente a 64 km de Manaos, para lo cual se propone un nuevo concepto de operación para la instalación de terminales de comunicación satelital compatibles con las características del satélite AlfaCrux, así como satélites de nuestros socios y futuras misiones. \n. \nLa misión espacial AlfaCrux marca el inicio de este viaje, habiendo permitido la demostración de tecnologías espaciales y la formación de nuestro equipo. \nComo segundo entregable del proyecto Percepción, se espera la reactivación de la torre de recolección de datos ambientales del Cerrado Brasileño ubicada en la Hacienda Água Limpa de la Universidad de Brasilia. \nLa Finca Água Limpa tiene un área de aproximadamente 4.500 hectáreas dedicadas al desarrollo científico y al desarrollo y demostración tecnológica para el medio ambiente. \n</p> <p> Bienvenido al proyecto Perception y venga con nosotros a desarrollar nuevas tecnologías y servicios basados ​​en satélites para rastrear y monitorear nuestros activos estratégicos. \n</p>",
-          "buttonText": "Mostrar más"
-        },
-        "RecentActivities": {
-          "title": "Actividades recientes",
-          "description": "<p> Una de las principales motivaciones para llevar a cabo el proyecto Perception es continuar las actividades en curso de la misión AlfaCrux, promoviendo el desarrollo tecnológico y científico en el contexto de los sistemas de recolección de datos satelitales. \nAdemás, se pretende continuar formando recursos humanos de alto valor agregado a nivel de pregrado y posgrado con el intercambio de investigadores, fortaleciendo la cooperación nacional e internacional con instituciones de investigación y empresas del sector productivo. \n</p> <p> El alcance del proyecto se divide en dos líneas de trabajo: 1) Modelado y simulación de un nuevo sistema de recopilación de datos satelitales, incluido el montaje de plataformas para el análisis lógico y funcional de diferentes subsistemas, simulación del entorno espacial. \n, montaje, análisis y gestión de terminales de usuario, tanto fijos para aplicaciones de recopilación de datos ambientales como móviles para el seguimiento de vehículos aéreos no tripulados (UAV) en aplicaciones de monitoreo ambiental y 2) Investigación y análisis de confiabilidad en la producción de datos satelitales para aplicaciones de monitoreo ambiental; \ndesarrollo de nuevas soluciones para la gestión y procesamiento de datos obtenidos vía satélite; \ny también diseñar modelos digitales para el seguimiento de la salud y el control de datos de misiones espaciales. \n</p> <p className=\"self-start\"> En este contexto, le invitamos amablemente a tomarse un momento de su tiempo y comprobar nuestras actividades y logros recientes. \n</p>"
-        },
-        "Partners": {
-          "title": "Expresiones de gratitud",
-          "firstGroupTitle": "Realización",
-          "secondGroupTitle": "Financiador",
-          "thirdGroupTitle": "Socio y soporte técnico"
+          "first": "Monitorear activos estratégicos —incluidos nuestros recursos naturales— exige más que simplemente rastrearlos: exige <strong>percibirlos</strong>. Percibir significa comprender, aprender y evolucionar a partir de la naturaleza aleatoria e incierta de estos sistemas. Es estar preparado para afrontar lo desconocido, entender los impactos de nuestras acciones y tomar decisiones en escenarios complejos.",
+          "second": "Alcanzar este nivel elevado de percepción, a una escala sin precedentes, requiere la integración de <strong>redes de sensores, tecnologías espaciales y ciencia de datos</strong>. Requiere un equipo altamente calificado, pensamiento crítico agudo y alianzas institucionales sólidas.",
+          "third": "Esta es la <strong>visión</strong> que guía el Proyecto <strong>Perception</strong>: hacer posible un nuevo nivel de inteligencia ambiental para el monitoreo de nuestros activos estratégicos.",
+          "p4": "El <strong>Sistema Perception</strong> es una arquitectura de recolección e integración de datos por satélite que propone nuevos enfoques de ingeniería de sistemas, conceptos operativos innovadores y servicios basados en misiones espaciales. Su objetivo es desarrollar tecnologías y servicios espaciales orientados al rastreo y monitoreo de activos estratégicos, como los biomas brasileños y la infraestructura crítica nacional, impulsando a Brasil hacia una nueva era de ciencia de datos espaciales y terrestres. Las tecnologías satelitales y los datos geoespaciales tienen un alto potencial para apoyar la transición sostenible del sector productivo brasileño, al tiempo que desempeñan un papel esencial en la implementación de los Objetivos de Desarrollo Sostenible (ODS).",
+          "p5": "El primer resultado del proyecto es la Plataforma de Datos Perception, combinada con la infraestructura de comunicación satelital de la red HDL y el concepto de operación del segmento espacial Perceive, elementos que conforman la estructura central del sistema.",
+          "p6": "Las <strong>unidades estructurantes</strong> de la propuesta son dos proyectos piloto: la Torre K34, integrada al Programa a Gran Escala de la Biosfera-Atmósfera en la Amazonía (LBA), y la Torre Cerrado, ubicada en la Fazenda Água Limpa de la Universidad de Brasília (UnB). Esta última representa un campo experimental de aproximadamente 4.500 hectáreas, orientado al desarrollo científico, la innovación tecnológica y la demostración de soluciones ambientales. La infraestructura del Sistema Perception se expande con el uso de vehículos aéreos no tripulados (VANTs) y cámaras fijas en tierra, que apoyan acciones de monitoreo ambiental en tiempo real.",
+          "p7": "Una de las primeras aplicaciones prácticas de estos datos es la medición y el monitoreo de los recursos hídricos y del flujo de carbono, elementos esenciales para entender y proteger nuestros ecosistemas.",
+          "p8": "Bienvenido al Proyecto Perception. Únase a nosotros en el desarrollo de tecnologías espaciales de vanguardia y servicios innovadores para rastrear y monitorear los activos estratégicos de Brasil."
         },
         "SecondSection": {
           "title": "Aprender a través de los sentidos y la mente.",
-          "content": "La palabra percepción proviene del latín percepio, que significa recibir, recoger, tomar conciencia a través de la mente o los sentidos. \nEl logotipo del proyecto representa una puerta al infinito y captura la idea de que el sistema propuesto es la frontera hacia lo desconocido, la puerta que debe abrirse para ampliar nuestra visión y sentido de nuestro entorno y realidad. \nEste es el significado del nombre, una idea poética propuesta y discutida a lo largo de los siglos por filósofos, músicos y muchos otros que optaron por sentir profundamente el mundo en el que vivimos.",
-          "hiddenContent": "El proyecto Perception es una iniciativa que tiene como objetivo crear nuevas tecnologías, modelos de negocio y métodos para optimizar y ampliar nuestra capacidad de percibir el entorno y su modificación a lo largo de nuestra evolución. \nBuscamos ampliar la percepción de nuestro planeta a través de la generación de datos, su estructuración y análisis como información, identificación de tendencias y extrapolación a escenarios futuros.",
-          "buttonText": "Mostrar más"
-        }
-      },
-      "Gallery": {
-        "title": "Próximamente."
-      },
-      "Members": {
-        "title": "Próximamente."
+          "first": "La palabra percepción proviene del latín percepio, que significa recibir, recoger, tomar conciencia a través de la mente o los sentidos. \nEl logotipo del proyecto representa una puerta al infinito y captura la idea de que el sistema propuesto es la frontera hacia lo desconocido, la puerta que debe abrirse para ampliar nuestra visión y sentido de nuestro entorno y realidad. \nEste es el significado del nombre, una idea poética propuesta y discutida a lo largo de los siglos por filósofos, músicos y muchos otros que optaron por sentir profundamente el mundo en el que vivimos.",
+          "second": "El proyecto Perception es una iniciativa que tiene como objetivo crear nuevas tecnologías, modelos de negocio y métodos para optimizar y ampliar nuestra capacidad de percibir el entorno y su modificación a lo largo de nuestra evolución. \nBuscamos ampliar la percepción de nuestro planeta a través de la generación de datos, su estructuración y análisis como información, identificación de tendencias y extrapolación a escenarios futuros."
+        },
+        "footer": {
+          "digital-twin": {
+            "description": "Ecosistemas Simulados para Decisiones Reales",
+            "title": "El Gemelo Digital Ambiental (próximamente)"
+          },
+          "description": "Conozca nuestras iniciativas",
+          "perception-system": {
+            "description": "Inteligencia ambiental para la toma de decisiones estratégicas",
+            "title": "Sistema K34"
+          },
+          "title": "¿Interesado?"
+        },
+        "title": "Nuestra misión"
       },
       "Header": {
-        "lodestar": "Lodestar",
-        "projects": "Proyectos",
-        "members": "Miembros",
-        "gallery": "Galería"
+        "About": {
+          "media": {
+            "link-1": "Logros recientes",
+            "title": "Medios de comunicación"
+          },
+          "overview": {
+            "link-1": "Misión",
+            "link-2": "Quiénes Somos",
+            "title": "Descripción general"
+          },
+          "title": "Acerca de"
+        },
+        "Initiatives": {
+          "digital twin": {
+            "description": "Ecosistemas Simulados para Decisiones Reales",
+            "title": "Gemelo Digital Ambiental (próximamente)"
+          },
+          "perception System": {
+            "description": "Inteligencia ambiental para la toma de decisiones estratégicas",
+            "title": "Sistema Perception"
+          },
+          "title": "Iniciativas",
+          "data platform structure": {
+            "title": "Plataforma de Datos Perception (próximamente)",
+            "description": "Infraestructura integrada para la orquestación de datos ambientales de extremo a extremo"
+          }
+        },
+        "contact": "Contacto"
+      },
+      "Footer": {
+        "Media": {
+          "title": "Medios de comunicación",
+          "link-1": "Logros recientes",
+          "link-2": "Contacto"
+        },
+        "Initiatives": {
+          "title": "Iniciativas",
+          "link-1": "Sistema Perception",
+          "link-2": "Gemelo Digital Ambiental",
+          "link-3": "Plataforma de Datos Perception"
+        },
+        "ResearchGroup": {
+          "title": "Grupo de investigación",
+          "link-1": "Misión",
+          "link-2": "Socios estratégicos"
+        },
+        "description": "Inteligencia ambiental para la toma de decisiones estratégicas"
+      },
+      "LP": {
+        "perception-system-section": {
+          "cta": "Saber más",
+          "description": "Una arquitectura integrada para el monitoreo en tiempo real y a gran escala, el <strong>Sistema Perception</strong> utiliza dos redes de comunicación satelital para recolectar datos de matrices de sensores en tierra, conformando una infraestructura de retransmisión robusta que permite la observación continua de ecosistemas estratégicos. Esta infraestructura combina tecnologías avanzadas de satélites e IoT para proporcionar información esencial en tiempo real, incluyendo:",
+          "list": {
+            "first": "Planificación estratégica para la recolección continua y de alta calidad de datos;",
+            "second": "Ejecución eficiente y flexible, con plazos acordes a las demandas institucionales;",
+            "third": "Monitoreo de alto impacto para respaldar políticas públicas y acciones de gestión ambiental sostenible."
+          },
+          "title": "El Sistema Perception"
+        },
+        "digital-twin-section": {
+          "cta": "Próximamente",
+          "description": "Para hacer posible el monitoreo en tiempo real y la previsión de escenarios, se está desarrollando un marco de Gemelo Digital que va más allá de los activos físicos, dando origen al <strong>Gemelo Digital Ambiental</strong>: una integración de datos ambientales y modelos computacionales capaces de simular la dinámica de los ecosistemas. Este enfoque está alineado con iniciativas gubernamentales recientes, como los proyectos Destination Earth e Ilia de la Unión Europea, y representa un avance estratégico para Brasil en la consolidación de una gestión ambiental basada en evidencia. Algunos aspectos destacados de la propuesta:",
+          "list": {
+            "first": "Metodología para simplificar la construcción de sistemas complejos;",
+            "second": "Datos ambientales en tiempo real para respaldar la toma de decisiones públicas;",
+            "third": "Flexibilidad y confiabilidad para aplicaciones críticas."
+          },
+          "title": "El Gemelo Digital Ambiental"
+        },
+        "data-platform-structure-section": {
+          "cta": "Próximamente",
+          "description": "Diseñada como una arquitectura modular y escalable, estructurada en múltiples capas integradas para gestionar todo el ciclo de vida de los datos provenientes de fuentes heterogéneas. Comienza con una capa de ingestión de datos, capaz de procesar flujos en tiempo real y por lotes, provenientes de satélites y sensores terrestres. A continuación, la capa de almacenamiento adopta un modelo híbrido que combina repositorios de datos no estructurados y comprimidos con bases de datos relacionales estructuradas, lo que garantiza durabilidad y flexibilidad en el acceso a la información. La capa de procesamiento de datos ejecuta tareas críticas como calibración, transformación y completado de lagunas asistido por inteligencia artificial. La capa de visualización ofrece paneles interactivos y herramientas de monitoreo en tiempo real orientadas al apoyo en la toma de decisiones.",
+          "title": "La Plataforma de Datos Perception"
+        },
+        "more": {
+          "cta": "Saber más",
+          "our-mission": {
+            "body": "Descubra cómo el Perception está redefiniendo el monitoreo ambiental con soluciones innovadoras para un futuro sostenible.",
+            "header": "Nuestra misión"
+          },
+          "who-we-are": {
+            "header": "Nuestros socios",
+            "body": "Explore la red de socios e inversores que nos ayudan a proteger nuestro planeta e innovar para mañana."
+          },
+          "description": "El proyecto Perception va más allá de la innovación. \nObtenga más información sobre nuestra misión, conozca al equipo dedicado detrás de ella y explore las asociaciones que impulsan un cambio impactante.",
+          "title": "Construyendo conexiones para un mañana mejor"
+        },
+        "recent-highlights": {
+          "cta": "Saber más",
+          "title": "Logros recientes"
+        },
+        "platform-data-structure-section": {
+          "cta": "",
+          "description": "",
+          "title": ""
+        }
+      },
+      "Data-Platform-Schema": {
+        "layer-1": {
+          "title": "Capa de Ingesta de Datos",
+          "description": "Procesa flujos de datos en tiempo real y por lotes desde diversas fuentes"
+        },"layer-2": {
+          "title": "Capa de Almacenamiento",
+          "description": "Combina repositorios de datos no estructurados y comprimidos con bases de datos estructuradas"
+        },
+        "layer-3": {
+          "title": "Capa de Procesamiento de Datos",
+          "description": "Calibración, transformación y completado de lagunas asistido por inteligencia artificial"
+        },
+        "layer-4": {
+          "title": "Capa de Análisis",
+          "description": "Soporta modelado avanzado, aprendizaje automático y simulaciones de Gemelos Digitales"
+        },
+        "layer-5": {
+          "title": "Capa de Visualización",
+          "description": "Ofrece paneles interactivos y herramientas de monitoreo en tiempo real"
+        },
+        "layer-6": {
+          "title": "Capa de Infraestructura",
+          "description": "Utiliza computación de alto rendimiento (HPC), aceleración por GPU y arquitecturas distribuidas"
+        }
+      },
+      "Initiatives": {
+        "perception-system": {
+          "description": "Inteligencia ambiental para la toma de decisiones estratégicas",
+          "key-features": {
+            "cta": "Ponerse en contacto",
+            "list": {
+              "first-item": "Planificación clara y estratégica para la recopilación de datos sin problemas",
+              "second-item": "Entrega oportuna del proyecto con flexibilidad incorporada",
+              "third-item": "Monitoreo de alto impacto para la gestión ambiental sostenible"
+            },
+            "title": "Características clave"
+          },
+          "overview": {
+            "title": "Descripción general",
+            "first-paragraph": "El <strong>Sistema Perception</strong> es una arquitectura integrada y estratégica para el <strong>monitoreo ambiental en tiempo real y a gran escala</strong>, concebida para enfrentar los desafíos de la observación continua de ecosistemas críticos. Operando a través de dos redes de comunicación satelital, el sistema es capaz de recolectar y retransmitir datos de sensores instalados en campo, asegurando la cobertura remota de áreas de alta relevancia ambiental.",
+            "second-paragraph": "En el centro de Perception se encuentran las <strong>Unidades de Monitoreo Remoto (UMR)</strong>, compuestas por dos componentes principales: la <strong>Torre Micrometeorológica Central (CMT)</strong>, dedicada a la medición de variables atmosféricas y de superficie, como la radiación solar, los flujos turbulentos de energía y el balance de carbono; y la <strong>Célula de Monitoreo del Suelo (SMC)</strong>, enfocada en la captura de parámetros del suelo, como temperatura, humedad e indicadores de calidad ambiental. Estas unidades alimentan una arquitectura de TI distribuida en múltiples capas, compuesta por dispositivos de borde, paneles de control en tiempo real y una estructura jerárquica para el almacenamiento, análisis y visualización de datos.",
+            "third-paragraph": "A partir de esta base, el sistema da forma a un <strong>Gemelo Digital Ambiental</strong>, estructurado en cinco dimensiones: elementos físicos, elementos virtuales, descripciones de datos, servicios del sistema e interconexiones. Este modelo integrado permite la sincronización entre datos reales y simulaciones, haciendo posible la <strong>modelización predictiva, detección de anomalías y simulación de escenarios ambientales</strong>. Todo el marco de Perception sigue los principios de la <strong>Ingeniería de Sistemas Basada en Modelos</strong>, utilizando la metodología Arcadia/Capella, y está organizado en cuatro capas principales: operativa, sistémica, lógica y física.",
+            "fourth-paragraph": "La comunicación entre las UMRs y la red de satélites adopta un enfoque de <strong>doble enlace</strong>: un canal de alta tasa de datos (HDL) para la transmisión de grandes volúmenes de datos, y un canal de baja tasa (LDL), operado por la red de satélites <strong>Perceive</strong>, orientado a la telemetría y al intercambio de datos críticos en entornos con bajo ancho de banda.",
+            "fifth-paragraph": "La <strong>definición y el desarrollo de las UMRs</strong> se originan en dos proyectos piloto fundamentales: la <strong>Torre K34</strong>, ubicada en la selva amazónica a unos 64 km de Manaos, y la <strong>Torre Cerrado</strong>, en la Fazenda Água Limpa de la Universidad de Brasília (UnB). Ambos representan entornos estratégicos que sirven como referencia para el diseño y validación del modelo de monitoreo remoto. En el caso de la Torre K34, integrada en el marco del <strong>Experimento a Gran Escala de la Biosfera-Atmósfera en la Amazonía (LBA)</strong>, Perception actúa en la recolección y procesamiento de datos de telemetría y estadísticas ambientales mediante el satélite Perceive, concebido a partir de la misión espacial <strong>Alfacrux</strong>. Esta misión marca el inicio de las operaciones de comando y control de la red satelital del proyecto, permitiendo la comunicación segura de datos críticos, así como la formación técnica de equipos en el ciclo completo de una misión espacial.",
+            "sixth-paragraph": "La <strong>asociación del Sistema Perception con el Programa LBA</strong>, una iniciativa del <strong>Ministerio de Ciencia, Tecnología e Innovación (MCTI)</strong>, coordinada por el <strong>Instituto Nacional de Investigaciones de la Amazonía (INPA)</strong> en 2023, consolida su papel como instrumento científico y estratégico para el país. Con 27 años de trayectoria, el LBA es una de las principales referencias globales en datos sobre las interacciones entre la biosfera y la atmósfera en bosques tropicales. En este contexto, Perception amplía su contribución al proporcionar <strong>soluciones tecnológicas aplicadas a la gestión ambiental, al monitoreo climático y a la formulación de políticas públicas</strong>, basadas en datos calificados y en tiempo real."
+          },
+          "title": "Sistema Perception",
+          "markers": {
+            "remote-monitoring-unit": {
+              "description": "En su primera versión, el Sistema Perception incluye la Torre K34, ubicada en el corazón de la selva amazónica—un referente en el monitoreo ambiental—y la Torre Cerrado, situada en la Fazenda Água Limpa de la UnB, que funciona como un laboratorio a cielo abierto y repositorio de datos estratégicos. Esta infraestructura constituye la base central de instrumentación de sensores y representa el embrión del Gemelo Digital Ambiental.",
+              "title": "Unidad de Monitoreo Remoto"
+            },
+            "transmission": {
+              "title": "Red de Satélites del Sistema Perception",
+              "description": "La recolección de datos de la matriz de sensores sigue una estrategia de comunicación satelital de doble enlace. Un enlace de alta tasa de datos se utiliza para la transmisión de grandes volúmenes de información, mientras que un enlace de baja tasa, operado por el satélite Perceive, se encarga de la telemetría, el monitoreo de la integridad del sistema y el intercambio de datos críticos para la misión."
+            },
+            "command-and-control": {
+              "description": "La operación, el comando y el control del satélite Perceive, así como el mantenimiento y la gestión de la red de alta tasa de datos, además de la estructuración de los datos e información para los usuarios en la fase piloto, se realizan en el Laboratorio de Simulación y Control de Sistemas Aeroespaciales (LODESTAR) de la Universidad de Brasília. El LODESTAR cuenta con una infraestructura completa y asociaciones estratégicas, recientemente fortalecidas para respaldar la iniciativa del Gemelo Digital Ambiental.",
+              "title": "Estación de Comando, Control y Datos"
+            },
+            "public": {
+              "description": "El Proyecto Perception responde a las necesidades de monitoreo ambiental y generación de datos estratégicos del Gobierno de Brasil, contribuyendo a la formulación de políticas públicas y regulaciones. También está dirigido a instituciones de investigación y desarrollo, como el Instituto Nacional de Investigaciones de la Amazonía (INPA), la Universidad del Estado de Amazonas (UEA) y la Universidad de Brasília (UnB), además de la comunidad científica dedicada al estudio del cambio climático y la dinámica ambiental.",
+              "title": "Público de Interés"
+            }
+          }
+        }
+      },
+      "Who-we-are": {
+        "footer": {
+          "cta": "Ser socio",
+          "description": "¡Sea un socio y ayúdanos a dar forma al futuro!",
+          "title": "¿Interesado?"
+        },
+        "headerTitle": "Quiénes Somos",
+        "title": "Somos quienes se unieron para ampliar la percepción del mundo en el que vivimos.",
+        "headerFirstDescription": "Somos un grupo multidisciplinario de científicos, ingenieros, especialistas en tecnología espacial y profesionales dedicados a la innovación ambiental. Combinamos conocimiento técnico, visión estratégica y compromiso con la sostenibilidad para desarrollar soluciones avanzadas de <strong>monitoreo ambiental basado en satélites</strong>.",
+        "headerSecondDescription": "El <strong>Proyecto Perception</strong> nace de la integración entre universidades, centros de investigación, instituciones gubernamentales y socios estratégicos, con el objetivo de crear una <strong>infraestructura nacional de monitoreo remoto</strong> capaz de apoyar decisiones críticas en tiempo real, proteger nuestros ecosistemas y contribuir al desarrollo sostenible de Brasil.",
+        "p3": "Nuestro trabajo se basa en principios de <strong>ingeniería de sistemas, ciencia de datos, observación de la Tierra y tecnologías emergentes</strong>, aplicados al seguimiento de <strong>biomas, recursos naturales e infraestructuras críticas</strong>. Creemos que, para enfrentar los desafíos ambientales del presente y del futuro, se necesita más que observar: es necesario <strong>percibir</strong>. Y esa percepción guía cada etapa de nuestra misión.",
+        "p4": "El proyecto es desarrollado por el <strong>Laboratorio de Simulación y Control de Sistemas Aeroespaciales de la Universidad de Brasília (UnB)</strong> y actualmente está <strong>asociado e integrado al Experimento a Gran Escala de la Biosfera-Atmósfera en la Amazonía (LBA)</strong>, una iniciativa del <strong>Ministerio de Ciencia, Tecnología e Innovación (MCTI)</strong>, bajo la coordinación del <strong>Instituto Nacional de Investigaciones de la Amazonía (INPA)</strong>. El equipo incluye investigadores del propio INPA, de distintas unidades académicas de la UnB, con destaque para la Fazenda Água Limpa, de la <strong>Universidad del Estado de Amazonas (UEA)</strong>, de la <strong>Universidad de Vigo (España)</strong> y de la <strong>Universidad de Nottingham (Reino Unido)</strong>. Perception también cuenta con la colaboración técnica de la empresa <strong>Alén Space</strong>, especializada en el desarrollo de soluciones espaciales centradas en <strong>misiones CubeSats</strong> y arquitectura de sistemas distribuidos.",
+        "p5": "El proyecto está financiado principalmente por la <strong>Fundación de Apoyo a la Investigación del Distrito Federal (FAPDF)</strong>, con apoyo complementario del <strong>Consejo Nacional de Desarrollo Científico y Tecnológico (CNPq)</strong> y de la <strong>Coordinación de Perfeccionamiento de Personal de Nivel Superior (CAPES)</strong>."
       }
     },
     "Page": {

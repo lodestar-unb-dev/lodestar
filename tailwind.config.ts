@@ -9,6 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        perceptionOrange: {
+          300: '#EE761B',
+        },
         unbBlue: {
           700: '#00244B',
           600: '#002A59',
@@ -34,31 +37,101 @@ const config: Config = {
         barlow: ['var(--font-barlow)'],
         montserrat: ['var(--font-montserrat)'],
       },
-    },
-    keyframes: {
-      slideDownAndFade: {
-        from: { opacity: '0', transform: 'translateY(-2px)' },
-        to: { opacity: '1', transform: 'translateY(0)' },
+      animation: {
+        slideDownAndFade:
+          'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        slideLeftAndFade:
+          'slideLeftAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        slideUpAndFade: 'slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        slideRightAndFade:
+          'slideRightAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+        pulseOff: 'pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        pulseOff2: 'pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) 0.2s infinite',
+        pulseOff3: 'pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) 0.4s infinite',
+        pulseOff4: 'pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) 0.6s infinite',
+        isometricMove: 'isometricMove 4s ease-in-out infinite',
+        isometricMoveReverse: 'isometricMoveReverse 4s ease-in-out infinite',
+        isometricMoveVertical: 'isometricMoveVertical 2s ease-in-out infinite',
+        isometricMoveVerticalMin:
+          'isometricMoveVerticalMin 2s ease-in-out infinite',
+        isometricMoveHorizontal:
+          'isometricMoveHorizontal 4s ease-in-out infinite',
+        isometricMoveVerticalMin2:
+          'isometricMoveVerticalMin 2s ease-in-out 0.2s infinite',
+        isometricMoveVerticalMin3:
+          'isometricMoveVerticalMin 2s ease-in-out 0.4s infinite',
+        isometricMoveVerticalMin4:
+          'isometricMoveVerticalMin 2s ease-in-out 0.6s infinite',
+        isometricMoveVerticalMin5:
+          'isometricMoveVerticalMin 2s ease-in-out 0.8s infinite',
+        isometricMoveVerticalMin6:
+          'isometricMoveVerticalMin 2s ease-in-out 1s infinite',
+        pulseAndScale: 'pulseAndScale 4s ease-in-out infinite',
       },
-      slideLeftAndFade: {
-        from: { opacity: '0', transform: 'translateX(2px)' },
-        to: { opacity: '1', transform: 'translateX(0)' },
+      keyframes: {
+        pulseOff: {
+          '50%': {
+            opacity: '.0',
+          },
+        },
+        pulseAndScale: {
+          '50%': {
+            opacity: '.5',
+            transform: 'scale(0.98)',
+          },
+        },
+        slideDownAndFade: {
+          from: { opacity: '0', transform: 'translateY(-2px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideLeftAndFade: {
+          from: { opacity: '0', transform: 'translateX(2px)' },
+          to: { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideUpAndFade: {
+          from: { opacity: '0', transform: 'translateY(2px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideRightAndFade: {
+          from: { opacity: '0', transform: 'translateX(-2px)' },
+          to: { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideDown: {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        slideUp: {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
+        isometricMove: {
+          '0%': { transform: 'translate(6px, -3px)' },
+          '50%': { transform: 'translate(-6px, 3px)' },
+          '100%': { transform: 'translate(6px, -3px)' },
+        },
+        isometricMoveReverse: {
+          '0%': { transform: 'translate(-6px, 3px)' },
+          '50%': { transform: 'translate(6px, -3px)' },
+          '100%': { transform: 'translate(-6px, 3px)' },
+        },
+        isometricMoveVertical: {
+          '0%': { transform: 'translate(0, 3px)' },
+          '50%': { transform: 'translate(0, -3px)' },
+          '100%': { transform: 'translate(0, 3px)' },
+        },
+        isometricMoveVerticalMin: {
+          '0%': { transform: 'translate(0, 1px)' },
+          '50%': { transform: 'translate(0, -1px)' },
+          '100%': { transform: 'translate(0, 1px)' },
+        },
+        isometricMoveHorizontal: {
+          '0%': { transform: 'translate(1px, 0)' },
+          '50%': { transform: 'translate(-1px, 0)' },
+          '100%': { transform: 'translate(1px, 0)' },
+        },
       },
-      slideUpAndFade: {
-        from: { opacity: '0', transform: 'translateY(2px)' },
-        to: { opacity: '1', transform: 'translateY(0)' },
-      },
-      slideRightAndFade: {
-        from: { opacity: '0', transform: 'translateX(-2px)' },
-        to: { opacity: '1', transform: 'translateX(0)' },
-      },
-    },
-    animation: {
-      slideDownAndFade: 'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
-      slideLeftAndFade: 'slideLeftAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
-      slideUpAndFade: 'slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
-      slideRightAndFade:
-        'slideRightAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
     },
   },
   plugins: [],

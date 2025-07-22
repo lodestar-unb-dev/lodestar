@@ -27,9 +27,9 @@ export function HeaderLink({
   return (
     <Link
       className={twMerge(
-        'text-base font-normal text-unbBlack-25 transition-colors hover:text-unbBlack-5 min-[560px]:text-lg',
-        isActive && 'font-bold text-unbBlack-5',
+        'font-normal transition-all',
         className,
+        isActive && 'font-bold',
       )}
       href={href}
       locale={locale}

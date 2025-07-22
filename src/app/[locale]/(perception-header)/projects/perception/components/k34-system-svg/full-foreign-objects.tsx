@@ -1,0 +1,36 @@
+'use client'
+
+import { PlusSquareIcon } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import { Tooltip } from 'radix-ui'
+import { useState } from 'react'
+
+export function FullForeignObjects() {
+  const [open, setOpen] = useState(false)
+  const t = useTranslations(
+    'Projects.Perception.Initiatives.perception-system.markers',
+  )
+
+  return (
+    <foreignObject x="500" y="360" width="24" height="24">
+      <Tooltip.Provider delayDuration={0}>
+        <Tooltip.Root open={open} onOpenChange={(e) => setOpen(e)}>
+          <Tooltip.Trigger
+            onClick={() => setOpen((prevValue) => !prevValue)}
+            className="group cursor-default select-none transition-opacity"
+          >
+            <PlusSquareIcon className="fill-unbBlack-100/60 stroke-perceptionOrange-300 transition-colors group-hover:fill-unbBlack-100" />
+          </Tooltip.Trigger>
+          <Tooltip.Portal>
+            <Tooltip.Content className="z-[61] max-w-[321px] rounded border border-perceptionOrange-300 bg-unbBlack-100/95 p-3">
+              <strong>{t('remote-monitoring-unit.title')}</strong>
+
+              <p>{t('remote-monitoring-unit.description')}</p>
+              <Tooltip.Arrow className="fill-perceptionOrange-300" />
+            </Tooltip.Content>
+          </Tooltip.Portal>
+        </Tooltip.Root>
+      </Tooltip.Provider>
+    </foreignObject>
+  )
+}

@@ -1,35 +1,49 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { Carousel } from '../components/carousel'
-import { EmblaOptionsType } from 'embla-carousel'
+import { InstagramEmbed } from 'react-social-media-embed'
+import { Link } from '@/i18n/routing'
+import { useEffect, useId, useState } from 'react'
 
 const instagramPosts = [
-  'https://www.instagram.com/p/C9vlfslAYsA',
+  'https://www.instagram.com/p/DKHNPjeOiSq/',
   'https://www.instagram.com/p/Cv-HASvAK4B',
   'https://www.instagram.com/p/CxSvpzOAGxV',
-  'https://www.instagram.com/p/CxniILsgLx6',
-  'https://www.instagram.com/p/C3Wc8pvgo_N',
-  'https://www.instagram.com/p/C24-mC9gl1A',
 ]
 
-const OPTIONS: EmblaOptionsType = { slidesToScroll: 'auto', loop: true }
-
 export function Instagram() {
-  const t = useTranslations('Projects.Perception.HomePage.RecentActivities')
+  const t = useTranslations('Projects.Perception.LP.recent-highlights')
+  const id = useId()
+
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsClient(true)
+    }
+  }, [])
 
   return (
-    <section className="mx-auto flex w-full max-w-7xl flex-col items-center gap-5 px-5 text-justify">
-      <h2 className="self-start py-10 text-xl font-bold uppercase text-[#1A3E76] md:text-3xl">
+    <section
+      id={id}
+      className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-10 px-5 pb-10 lg:pb-20"
+    >
+      <h2 className="text-xl font-semibold uppercase text-unbBlack-100 lg:text-3xl">
         {t('title')}
       </h2>
 
-      <div
-        className="max-w-7xl space-y-5 text-unbBlack-100"
-        dangerouslySetInnerHTML={{ __html: t.raw('description') }}
-      />
+      <div className="flex w-full flex-wrap justify-center gap-5">
+        {instagramPosts.map((post) =>
+          isClient ? <InstagramEmbed key={post} url={post} /> : null,
+        )}
+      </div>
 
-      <Carousel slides={instagramPosts} options={OPTIONS} />
+      <Link
+        className="rounded bg-perceptionOrange-300 px-4 py-3 uppercase transition-colors hover:bg-unbBlack-0 hover:text-perceptionOrange-300"
+        href="/projects/perception/recent-activities"
+      >
+        {t('cta')}
+      </Link>
     </section>
   )
 }
