@@ -54,6 +54,20 @@ const config: Config = {
         isometricMove: 'isometricMove 4s ease-in-out infinite',
         isometricMoveReverse: 'isometricMoveReverse 4s ease-in-out infinite',
         isometricMoveVertical: 'isometricMoveVertical 2s ease-in-out infinite',
+        isometricMoveVerticalMin:
+          'isometricMoveVerticalMin 2s ease-in-out infinite',
+        isometricMoveHorizontal:
+          'isometricMoveHorizontal 4s ease-in-out infinite',
+        isometricMoveVerticalMin2:
+          'isometricMoveVerticalMin 2s ease-in-out 0.2s infinite',
+        isometricMoveVerticalMin3:
+          'isometricMoveVerticalMin 2s ease-in-out 0.4s infinite',
+        isometricMoveVerticalMin4:
+          'isometricMoveVerticalMin 2s ease-in-out 0.6s infinite',
+        isometricMoveVerticalMin5:
+          'isometricMoveVerticalMin 2s ease-in-out 0.8s infinite',
+        isometricMoveVerticalMin6:
+          'isometricMoveVerticalMin 2s ease-in-out 1s infinite',
         pulseAndScale: 'pulseAndScale 4s ease-in-out infinite',
       },
       keyframes: {
@@ -106,6 +120,16 @@ const config: Config = {
           '0%': { transform: 'translate(0, 3px)' },
           '50%': { transform: 'translate(0, -3px)' },
           '100%': { transform: 'translate(0, 3px)' },
+        },
+        isometricMoveVerticalMin: {
+          '0%': { transform: 'translate(0, 1px)' },
+          '50%': { transform: 'translate(0, -1px)' },
+          '100%': { transform: 'translate(0, 1px)' },
+        },
+        isometricMoveHorizontal: {
+          '0%': { transform: 'translate(1px, 0)' },
+          '50%': { transform: 'translate(-1px, 0)' },
+          '100%': { transform: 'translate(1px, 0)' },
         },
       },
     },
