@@ -7,6 +7,7 @@
     "camelcase": "off",
     // "react/jsx-no-literals": "error",
     // Consistently import navigation APIs from `@/i18n/routing`
+    "react/no-unknown-property": "error",
     "no-restricted-imports": [
       "error",
       {

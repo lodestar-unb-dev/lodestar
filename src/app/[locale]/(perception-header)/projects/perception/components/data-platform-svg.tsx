@@ -47,11 +47,11 @@ export function DataPlatformSvg() {
               <g
                 id="cp_6_g-6_hyey5gr98jk0-stroke"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="4"
                 stroke="#2c2c2c"
-                stroke-width="2"
+                strokeWidth="2"
               >
                 <g>
                   <path d="M 82 46C 82 65.8823 65.8823 82 46 82C 26.1177 82 10 65.8823 10 46C 10 26.1177 26.1177 10 46 10C 65.8823 10 82 26.1177 82 46Z"></path>
@@ -205,14 +205,14 @@ export function DataPlatformSvg() {
           >
             <g id="tx_includes_dgosisrisoaq-fill" stroke="none" fill="#f4f4f4">
               <g>
-                <text font-size="15px" font-family="Roboto, sans-serif">
-                  <tspan x="56.53" y="30.5" dominant-baseline="ideographic">
+                <text fontSize="15px" fontFamily="Roboto, sans-serif">
+                  <tspan x="56.53" y="30.5" dominantBaseline="ideographic">
                     Calibration,{' '}
                   </tspan>
-                  <tspan x="17.63" y="48.5" dominant-baseline="ideographic">
+                  <tspan x="17.63" y="48.5" dominantBaseline="ideographic">
                     transformation, and AI-
                   </tspan>
-                  <tspan x="31.41" y="66.5" dominant-baseline="ideographic">
+                  <tspan x="31.41" y="66.5" dominantBaseline="ideographic">
                     assisted gap-filling
                   </tspan>
                 </text>
@@ -226,14 +226,14 @@ export function DataPlatformSvg() {
           >
             <g id="tx_processe_18isuasrisnia-fill" stroke="none" fill="#f4f4f4">
               <g>
-                <text font-size="15px" font-family="Roboto, sans-serif">
-                  <tspan x="19.58" y="30.5" dominant-baseline="ideographic">
+                <text fontSize="15px" fontFamily="Roboto, sans-serif">
+                  <tspan x="19.58" y="30.5" dominantBaseline="ideographic">
                     Processes real-time and{' '}
                   </tspan>
-                  <tspan x="17.52" y="48.5" dominant-baseline="ideographic">
+                  <tspan x="17.52" y="48.5" dominantBaseline="ideographic">
                     batch data streams from{' '}
                   </tspan>
-                  <tspan x="47.29" y="66.5" dominant-baseline="ideographic">
+                  <tspan x="47.29" y="66.5" dominantBaseline="ideographic">
                     various sources
                   </tspan>
                 </text>
@@ -247,17 +247,17 @@ export function DataPlatformSvg() {
           >
             <g id="tx_combines_mcbsrorismq6-fill" stroke="none" fill="#f4f4f4">
               <g>
-                <text font-size="15px" font-family="Roboto, sans-serif">
-                  <tspan x="13.75" y="27.5" dominant-baseline="ideographic">
+                <text fontSize="15px" fontFamily="Roboto, sans-serif">
+                  <tspan x="13.75" y="27.5" dominantBaseline="ideographic">
                     Combines compressed,{' '}
                   </tspan>
-                  <tspan x="33.07" y="45.5" dominant-baseline="ideographic">
+                  <tspan x="33.07" y="45.5" dominantBaseline="ideographic">
                     unstructured data{' '}
                   </tspan>
-                  <tspan x="36.83" y="63.5" dominant-baseline="ideographic">
+                  <tspan x="36.83" y="63.5" dominantBaseline="ideographic">
                     repositories with{' '}
                   </tspan>
-                  <tspan x="21.34" y="81.5" dominant-baseline="ideographic">
+                  <tspan x="21.34" y="81.5" dominantBaseline="ideographic">
                     structured databases
                   </tspan>
                 </text>
@@ -271,14 +271,14 @@ export function DataPlatformSvg() {
           >
             <g id="tx_leverage_1hdtdgkrisp3i-fill" stroke="none" fill="#f4f4f4">
               <g>
-                <text font-size="15px" font-family="Roboto, sans-serif">
-                  <tspan x="25.07" y="30.5" dominant-baseline="ideographic">
+                <text fontSize="15px" fontFamily="Roboto, sans-serif">
+                  <tspan x="25.07" y="30.5" dominantBaseline="ideographic">
                     Leverages HPC, GPU{' '}
                   </tspan>
-                  <tspan x="37.33" y="48.5" dominant-baseline="ideographic">
+                  <tspan x="37.33" y="48.5" dominantBaseline="ideographic">
                     acceleration, and{' '}
                   </tspan>
-                  <tspan x="12.69" y="66.5" dominant-baseline="ideographic">
+                  <tspan x="12.69" y="66.5" dominantBaseline="ideographic">
                     distributed architectures
                   </tspan>
                 </text>
@@ -293,14 +293,14 @@ export function DataPlatformSvg() {
             <g id="tx_dataproc_hwian8risnig-fill" stroke="none" fill="#f4f4f4">
               <g>
                 <text
-                  font-weight="bold"
-                  font-size="20px"
-                  font-family="Roboto, sans-serif"
+                  fontWeight="bold"
+                  fontSize="20px"
+                  fontFamily="Roboto, sans-serif"
                 >
-                  <tspan x="11.98" y="33.5" dominant-baseline="ideographic">
+                  <tspan x="11.98" y="33.5" dominantBaseline="ideographic">
                     Data Processing{' '}
                   </tspan>
-                  <tspan x="60.79" y="57.5" dominant-baseline="ideographic">
+                  <tspan x="60.79" y="57.5" dominantBaseline="ideographic">
                     Layer
                   </tspan>
                 </text>
@@ -315,11 +315,11 @@ export function DataPlatformSvg() {
             <g id="tx_storagel_v7cbxgrisp38-fill" stroke="none" fill="#f4f4f4">
               <g>
                 <text
-                  font-weight="bold"
-                  font-size="20px"
-                  font-family="Roboto, sans-serif"
+                  fontWeight="bold"
+                  fontSize="20px"
+                  fontFamily="Roboto, sans-serif"
                 >
-                  <tspan x="13.77" y="33.5" dominant-baseline="ideographic">
+                  <tspan x="13.77" y="33.5" dominantBaseline="ideographic">
                     Storage Layer
                   </tspan>
                 </text>
@@ -334,14 +334,14 @@ export function DataPlatformSvg() {
             <g id="tx_datainge_1cymcf8rismq0-fill" stroke="none" fill="#f4f4f4">
               <g>
                 <text
-                  font-weight="bold"
-                  font-size="20px"
-                  font-family="Roboto, sans-serif"
+                  fontWeight="bold"
+                  fontSize="20px"
+                  fontFamily="Roboto, sans-serif"
                 >
-                  <tspan x="14.37" y="33.5" dominant-baseline="ideographic">
+                  <tspan x="14.37" y="33.5" dominantBaseline="ideographic">
                     Data Ingestion{' '}
                   </tspan>
-                  <tspan x="54.79" y="57.5" dominant-baseline="ideographic">
+                  <tspan x="54.79" y="57.5" dominantBaseline="ideographic">
                     Layer
                   </tspan>
                 </text>
@@ -356,11 +356,11 @@ export function DataPlatformSvg() {
             <g id="tx_analytic_1413wx0risoi4-fill" stroke="none" fill="#f4f4f4">
               <g>
                 <text
-                  font-weight="bold"
-                  font-size="20px"
-                  font-family="Roboto, sans-serif"
+                  fontWeight="bold"
+                  fontSize="20px"
+                  fontFamily="Roboto, sans-serif"
                 >
-                  <tspan x="13.21" y="33.5" dominant-baseline="ideographic">
+                  <tspan x="13.21" y="33.5" dominantBaseline="ideographic">
                     Analytics Layer
                   </tspan>
                 </text>
@@ -375,14 +375,14 @@ export function DataPlatformSvg() {
             <g id="tx_visualiz_v63dr8rismww-fill" stroke="none" fill="#f4f4f4">
               <g>
                 <text
-                  font-weight="bold"
-                  font-size="20px"
-                  font-family="Roboto, sans-serif"
+                  fontWeight="bold"
+                  fontSize="20px"
+                  fontFamily="Roboto, sans-serif"
                 >
-                  <tspan x="15.22" y="33.5" dominant-baseline="ideographic">
+                  <tspan x="15.22" y="33.5" dominantBaseline="ideographic">
                     Visualization{' '}
                   </tspan>
-                  <tspan x="48.79" y="57.5" dominant-baseline="ideographic">
+                  <tspan x="48.79" y="57.5" dominantBaseline="ideographic">
                     Layer
                   </tspan>
                 </text>
@@ -397,14 +397,14 @@ export function DataPlatformSvg() {
             <g id="tx_infrastr_1q9gdpgrisoas-fill" stroke="none" fill="#f4f4f4">
               <g>
                 <text
-                  font-weight="bold"
-                  font-size="20px"
-                  font-family="Roboto, sans-serif"
+                  fontWeight="bold"
+                  fontSize="20px"
+                  fontFamily="Roboto, sans-serif"
                 >
-                  <tspan x="17.6" y="33.5" dominant-baseline="ideographic">
+                  <tspan x="17.6" y="33.5" dominantBaseline="ideographic">
                     Infrastructure{' '}
                   </tspan>
-                  <tspan x="54.79" y="57.5" dominant-baseline="ideographic">
+                  <tspan x="54.79" y="57.5" dominantBaseline="ideographic">
                     Layer
                   </tspan>
                 </text>
@@ -418,17 +418,17 @@ export function DataPlatformSvg() {
           >
             <g id="tx_supports_zlaeskrispae-fill" stroke="none" fill="#f4f4f4">
               <g>
-                <text font-size="15px" font-family="Roboto, sans-serif">
-                  <tspan x="15.84" y="27.5" dominant-baseline="ideographic">
+                <text fontSize="15px" fontFamily="Roboto, sans-serif">
+                  <tspan x="15.84" y="27.5" dominantBaseline="ideographic">
                     Supports advanced{' '}
                   </tspan>
-                  <tspan x="17.23" y="45.5" dominant-baseline="ideographic">
+                  <tspan x="17.23" y="45.5" dominantBaseline="ideographic">
                     modeling, machine{' '}
                   </tspan>
-                  <tspan x="14.76" y="63.5" dominant-baseline="ideographic">
+                  <tspan x="14.76" y="63.5" dominantBaseline="ideographic">
                     learning, and Digital{' '}
                   </tspan>
-                  <tspan x="23.68" y="81.5" dominant-baseline="ideographic">
+                  <tspan x="23.68" y="81.5" dominantBaseline="ideographic">
                     Twin simulations
                   </tspan>
                 </text>
@@ -442,14 +442,14 @@ export function DataPlatformSvg() {
           >
             <g id="tx_offersin_magdicrisnpm-fill" stroke="none" fill="#f4f4f4">
               <g>
-                <text font-size="15px" font-family="Roboto, sans-serif">
-                  <tspan x="30.82" y="30.5" dominant-baseline="ideographic">
+                <text fontSize="15px" fontFamily="Roboto, sans-serif">
+                  <tspan x="30.82" y="30.5" dominantBaseline="ideographic">
                     Offers interactive{' '}
                   </tspan>
-                  <tspan x="17.95" y="48.5" dominant-baseline="ideographic">
+                  <tspan x="17.95" y="48.5" dominantBaseline="ideographic">
                     dashboards and real-
                   </tspan>
-                  <tspan x="16.62" y="66.5" dominant-baseline="ideographic">
+                  <tspan x="16.62" y="66.5" dominantBaseline="ideographic">
                     time monitoring tools
                   </tspan>
                 </text>
@@ -464,11 +464,11 @@ export function DataPlatformSvg() {
             <g
               id="cp_common_g-common_me8g9wr98irq-stroke"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="4"
               stroke="#2c2c2c"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <g>
                 <path d="M 97.2799 152.3754C 129.7048 145.3684 154 116.5214 154 82C 154 42.2355 121.7645 10 82 10C 42.2355 10 10 42.2355 10 82C 10 107.0781 22.8213 129.1616 42.2665 142.0531C 48.607 138.2115 56.0452 136 64 136C 77.5493 136 89.6 142.4159 97.2799 152.3754Z"></path>
@@ -483,11 +483,11 @@ export function DataPlatformSvg() {
             <g
               id="cp_5_g-5_hyey5gr98jk2-stroke"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="4"
               stroke="#2c2c2c"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <g>
                 <path d="M 94 52C 94 75.196 75.196 94 52 94C 28.804 94 10 75.196 10 52C 10 28.804 28.804 10 52 10C 75.196 10 94 28.804 94 52Z"></path>
@@ -502,11 +502,11 @@ export function DataPlatformSvg() {
             <g
               id="cp_4_g-4_hyey5gr98jk4-stroke"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="4"
               stroke="#2c2c2c"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <g>
                 <path d="M 82 46C 82 65.8823 65.8823 82 46 82C 26.1177 82 10 65.8823 10 46C 10 26.1177 26.1177 10 46 10C 65.8823 10 82 26.1177 82 46Z"></path>
@@ -521,11 +521,11 @@ export function DataPlatformSvg() {
             <g
               id="cp_2_g-2_92rxwkr98kcu-stroke"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="4"
               stroke="#2c2c2c"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <g>
                 <path d="M 58 34C 58 47.2548 47.2548 58 34 58C 20.7452 58 10 47.2548 10 34C 10 20.7452 20.7452 10 34 10C 47.2548 10 58 20.7452 58 34Z"></path>
@@ -540,11 +540,11 @@ export function DataPlatformSvg() {
             <g
               id="cp_3_g-3_dilg10r98kcg-stroke"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="4"
               stroke="#2c2c2c"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <g>
                 <path d="M 70 40C 70 56.5685 56.5685 70 40 70C 23.4315 70 10 56.5685 10 40C 10 23.4315 23.4315 10 40 10C 56.5685 10 70 23.4315 70 40Z"></path>
@@ -559,11 +559,11 @@ export function DataPlatformSvg() {
             <g
               id="cp_1_g-1_4nkwv8r98hze-stroke"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="4"
               stroke="#2c2c2c"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <g>
                 <path d="M 70 40C 70 56.5685 56.5685 70 40 70C 23.4315 70 10 56.5685 10 40C 10 23.4315 23.4315 10 40 10C 56.5685 10 70 23.4315 70 40Z"></path>
@@ -578,12 +578,12 @@ export function DataPlatformSvg() {
             <g
               id="cp_-1_common_4nkwv8r98hzg-stroke"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-miterlimit="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeMiterlimit="4"
               stroke="#f4f4f4"
-              stroke-width="2"
-              stroke-dasharray="5.0, 7.0"
+              strokeWidth="2"
+              strokeDasharray="5.0, 7.0"
             >
               <g className="animate-pulse">
                 <path d="M 240.3949 62.7998C 196.3567 70.5791 166 87.0004 166 106C 166 124.9996 196.3567 141.4209 240.3949 149.2002C 250.9859 150.8308 277.3442 154.092 298.0492 154.092C 318.7541 154.092 345.0468 150.8308 355.6051 149.2002C 399.6433 141.4209 430 124.9996 430 106C 430 87.0004 399.6433 70.5791 355.6051 62.7998M 313.5372 34.2057C 418.9446 37.0074 502 68.0804 502 106C 502 109.5216 501.2836 112.9842 499.8995 116.3706M 308.0208 10.057C 304.6945 10.0191 301.3539 10 298 10C 138.942 10 10 52.9807 10 106C 10 108.0892 10.2002 110.1629 10.5946 112.219M 172.6875 49.1813C 203.2595 40.7702 240.7967 35.3654 281.7331 34.2256M 114.6127 74.4242C 101.4102 83.958 94 94.6736 94 106C 94 139.2901 158.0134 167.3033 244.9662 175.543M 236.1421 199.7803C 166.575 194.7051 106.4166 181.248 65.6736 162.7447M 323.9567 201.6154C 470.8525 197.2414 586 156.1031 586 106C 586 95.2501 580.6993 84.9129 570.9216 75.2629M 437.9654 158.3804C 405.6423 169.1433 363.3595 176.2203 316.5116 177.7076M 359.8668 12.2203C 421.5552 16.7215 475.8449 27.8134 515.7582 43.1704"></path>
