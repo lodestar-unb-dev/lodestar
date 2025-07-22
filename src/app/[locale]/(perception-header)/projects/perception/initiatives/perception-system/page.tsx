@@ -5,7 +5,7 @@ import { K34SystemFullSvg } from '../../components/k34-system-svg/full'
 import { Tooltip } from 'radix-ui'
 
 export default function PerceptionSystemPage() {
-  const t = useTranslations('Projects.Perception.Proposals.k34-system')
+  const t = useTranslations('Projects.Perception.Initiatives.perception-system')
 
   return (
     <main>
@@ -28,17 +28,41 @@ export default function PerceptionSystemPage() {
           </h3>
 
           <div className="mb-20 space-y-4 text-justify text-unbBlack-100">
-            <p>{t('overview.first-paragraph')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('overview.first-paragraph'),
+              }}
+            />
 
-            <p>{t('overview.second-paragraph')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('overview.second-paragraph'),
+              }}
+            />
 
-            <p>{t('overview.third-paragraph')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('overview.third-paragraph'),
+              }}
+            />
 
-            <p>{t('overview.fourth-paragraph')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('overview.fourth-paragraph'),
+              }}
+            />
 
-            <p>{t('overview.fifth-paragraph')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('overview.fifth-paragraph'),
+              }}
+            />
 
-            <p>{t('overview.sixth-paragraph')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('overview.sixth-paragraph'),
+              }}
+            />
           </div>
 
           <Tooltip.Provider delayDuration={0}>

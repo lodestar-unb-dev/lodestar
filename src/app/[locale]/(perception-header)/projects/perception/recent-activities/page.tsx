@@ -29,23 +29,23 @@ export default function Instagram() {
         dangerouslySetInnerHTML={{ __html: t.raw('description') }}
       />
 
-      <ul className="mt-5 text-unbBlue-400 lg:self-start">
-        <li>{t('list-1.text')}</li>
+      <ul className="mt-5 text-unbBlue-400 sm:self-start">
+        <li dangerouslySetInnerHTML={{ __html: t.raw('list-1.text') }} />
         <ul className="pl-5">
           <li>- {t('list-1.item-1')}</li>
           <li>- {t('list-1.item-2')}</li>
           <li>- {t('list-1.item-3')}</li>
         </ul>
-        <li>{t('list-2.text')}</li>
+        <li dangerouslySetInnerHTML={{ __html: t.raw('list-2.text') }} />
         <ul className="pl-5">
           <li>- {t('list-2.item-1')}</li>
           <li>- {t('list-2.item-2')}</li>
         </ul>
       </ul>
 
-      <div className="mt-5 text-justify text-unbBlue-400 lg:self-start">
-        <p>Destaques recentes:</p>
-        <ul className="text-unbBlue-400 lg:self-start">
+      <div className="mt-5 text-justify text-unbBlue-400 sm:self-start">
+        <p>{t('title')}</p>
+        <ul className="text-unbBlue-400 sm:self-start">
           <li>
             A Tarde:{' '}
             <a
@@ -54,8 +54,7 @@ export default function Instagram() {
               rel="noopener noreferrer"
               className="text-perceptionOrange-300"
             >
-              Cientista brasileiro lidera missão espacial para escanear Amazônia
-              e Cerrado
+              {t('recent-highlights-1')}
             </a>
           </li>
           <li>
@@ -66,8 +65,7 @@ export default function Instagram() {
               rel="noopener noreferrer"
               className="text-perceptionOrange-300"
             >
-              Missão liderada por cientista brasileiro vai escanear Amazônia e
-              Cerrado para combater mudanças climáticas
+              {t('recent-highlights-2')}
             </a>
           </li>
           <li>
@@ -78,8 +76,7 @@ export default function Instagram() {
               rel="noopener noreferrer"
               className="text-perceptionOrange-300"
             >
-              Missão espacial brasileira pretende escanear biomas na Amazônia e
-              no Cerrado com IA
+              {t('recent-highlights-3')}
             </a>
           </li>
           <li>
@@ -90,8 +87,7 @@ export default function Instagram() {
               rel="noopener noreferrer"
               className="text-perceptionOrange-300"
             >
-              Missão espacial vai escanear Amazônia e Cerrado para combater
-              mudança climática
+              {t('recent-highlights-4')}
             </a>
           </li>
           <li>
@@ -102,13 +98,13 @@ export default function Instagram() {
               rel="noopener noreferrer"
               className="text-perceptionOrange-300"
             >
-              Plataforma espacial de monitoramento
+              {t('recent-highlights-5')}
             </a>
           </li>
         </ul>
       </div>
 
-      <p className="mt-5 text-unbBlue-400 lg:self-start">{t('cta-text')}</p>
+      <p className="mt-5 text-unbBlue-400 sm:self-start">{t('cta-text')}</p>
 
       <div className="mt-10 lg:mt-20">
         <Carousel slides={instagramPosts} options={OPTIONS} />

@@ -25,8 +25,8 @@ const accordionItems = [
     ),
   } as const,
   {
-    header: 'our-partners.header',
-    body: 'our-partners.body',
+    header: 'who-we-are.header',
+    body: 'who-we-are.body',
     link: '/projects/perception/who-we-are',
     className: 'border-unbGreen-300 text-unbGreen-300',
     bg: (

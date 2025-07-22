@@ -3,7 +3,7 @@ import { K34SystemSVG } from '../components/k34-system-svg'
 import { useTranslations } from 'next-intl'
 
 export function PerceptionSystem() {
-  const t = useTranslations('Projects.Perception.LP.k34-system-section')
+  const t = useTranslations('Projects.Perception.LP.perception-system-section')
 
   return (
     <section className="bg-unbBlack-100">
@@ -12,7 +12,7 @@ export function PerceptionSystem() {
           <h4 className="text-3xl font-semibold">{t('title')}</h4>
 
           <div className="flex flex-col gap-6">
-            <p>{t('description')}</p>
+            <p dangerouslySetInnerHTML={{ __html: t.raw('description') }} />
 
             <ul className="list-disc pl-5">
               <li className="marker:text-perceptionOrange-300">
@@ -28,7 +28,7 @@ export function PerceptionSystem() {
 
             <Link
               className="w-fit rounded border border-perceptionOrange-300 bg-unbBlack-0 px-4 py-3 text-lg font-medium text-perceptionOrange-300 transition-colors hover:bg-perceptionOrange-300 hover:text-unbBlack-0"
-              href="/projects/perception/actions/perception-system"
+              href="/projects/perception/initiatives/perception-system"
             >
               {t('cta')}
             </Link>

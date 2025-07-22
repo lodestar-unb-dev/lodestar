@@ -7,7 +7,9 @@ import { useState } from 'react'
 
 export function FullForeignObjects4() {
   const [open, setOpen] = useState(false)
-  const t = useTranslations('Projects.Perception.Proposals.k34-system.markers')
+  const t = useTranslations(
+    'Projects.Perception.Initiatives.perception-system.markers',
+  )
 
   return (
     <foreignObject x="650" y="300" width="24" height="24">

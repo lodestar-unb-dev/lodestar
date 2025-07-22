@@ -28,7 +28,7 @@ export function Header() {
           <div className="center flex list-none items-center gap-6 md:gap-16">
             <DropdownMenu.Root>
               <DropdownMenu.Trigger className="group flex items-center gap-1 hover:text-unbBlack-25 md:text-xl">
-                {t('Proposals.title')}
+                {t('Initiatives.title')}
                 <ChevronDown
                   size={20}
                   className="transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
@@ -43,12 +43,12 @@ export function Header() {
                     <li>
                       <DropdownMenu.Item asChild>
                         <HeaderLink
-                          href="/projects/perception/actions/perception-system"
+                          href="/projects/perception/initiatives/perception-system"
                           className="flex flex-col gap-1 text-unbBlue-400 hover:text-unbBlue-400/50"
                         >
-                          {t('Proposals.k34 System.title')}
+                          {t('Initiatives.perception System.title')}
                           <span className="text-xs text-black/50">
-                            {t('Proposals.k34 System.description')}
+                            {t('Initiatives.perception System.description')}
                           </span>
                         </HeaderLink>
                       </DropdownMenu.Item>
@@ -57,12 +57,12 @@ export function Header() {
                     <li>
                       <DropdownMenu.Item asChild>
                         <div
-                          // href="/projects/perception/actions/cerrado-hotspot"
+                          // href="/projects/perception/initiatives/cerrado-hotspot"
                           className="flex flex-col gap-1 text-unbBlue-400 opacity-50"
                         >
-                          {t('Proposals.cerrado hotspot.title')}
+                          {t('Initiatives.digital twin.title')}
                           <span className="text-xs text-black/50">
-                            {t('Proposals.cerrado hotspot.description')}
+                            {t('Initiatives.digital twin.description')}
                           </span>
                         </div>
                       </DropdownMenu.Item>
@@ -71,12 +71,14 @@ export function Header() {
                     <li>
                       <DropdownMenu.Item asChild>
                         <div
-                          // href="/projects/perception/actions/data-platform-structure"
+                          // href="/projects/perception/initiatives/data-platform-structure"
                           className="flex flex-col gap-1 text-unbBlue-400 opacity-50"
                         >
-                          {t('Proposals.data platform structure.title')}
+                          {t('Initiatives.data platform structure.title')}
                           <span className="text-xs text-black/50">
-                            {t('Proposals.data platform structure.description')}
+                            {t(
+                              'Initiatives.data platform structure.description',
+                            )}
                           </span>
                         </div>
                       </DropdownMenu.Item>

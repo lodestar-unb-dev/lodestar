@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl'
 import { K34SystemSVGNoAnimation } from '../components/k34-system-svg/no-animation'
 
-export function CerradoHotspot() {
-  const t = useTranslations('Projects.Perception.LP.cerrado-hotspot-section')
+export function DigitalTwin() {
+  const t = useTranslations('Projects.Perception.LP.digital-twin-section')
 
   return (
     <section className="bg-gradient-to-b from-unbBlack-100 via-unbBlue-700 to-unbBlue-700">
@@ -15,7 +15,7 @@ export function CerradoHotspot() {
           <h4 className="text-left text-3xl font-semibold">{t('title')}</h4>
 
           <div className="flex flex-col gap-6">
-            <p>{t('description')}</p>
+            <p dangerouslySetInnerHTML={{ __html: t.raw('description') }} />
 
             <ul className="list-disc pl-5">
               <li className="marker:text-perceptionOrange-300">
@@ -31,7 +31,7 @@ export function CerradoHotspot() {
 
             <div
               className="w-fit rounded border border-perceptionOrange-300 bg-unbBlack-0 px-4 py-3 text-lg font-medium text-perceptionOrange-300 transition-colors"
-              // href="/projects/perception/actions/k34-system"
+              // href="/projects/perception/initiatives/perception-system"
             >
               {t('cta')}
             </div>

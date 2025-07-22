@@ -9,6 +9,7 @@
   --text-body: rgb(222, 222, 222);
 
   @media (min-width: 760px) {
+    max-width: 42rem;
     --slide-size: 50%;
   }
 

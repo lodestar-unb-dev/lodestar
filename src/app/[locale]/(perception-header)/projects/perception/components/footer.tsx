@@ -27,13 +27,13 @@ export function Footer() {
           <div className="flex gap-9">
             <div className="flex flex-col gap-3 text-xs">
               <span className="font-semibold uppercase">
-                {t('Proposals.title')}
+                {t('Initiatives.title')}
               </span>
-              <Link href="/projects/perception/actions/perception-system">
-                {t('Proposals.k34 System')}
+              <Link href="/projects/perception/initiatives/perception-system">
+                {t('Initiatives.link-1')}
               </Link>
-              <p>{t('Proposals.cerrado hotspot')}</p>
-              <p>{t('Proposals.data platform structure')}</p>
+              <p>{t('Initiatives.link-2')}</p>
+              <p>{t('Initiatives.link-3')}</p>
             </div>
 
             <div className="flex flex-col gap-3 text-xs">
@@ -41,10 +41,10 @@ export function Footer() {
                 {t('ResearchGroup.title')}
               </span>
               <Link href="/projects/perception/mission">
-                {t('ResearchGroup.mission')}
+                {t('ResearchGroup.link-1')}
               </Link>
               <Link href="/projects/perception/who-we-are">
-                {t('ResearchGroup.partners')}
+                {t('ResearchGroup.link-2')}
               </Link>
             </div>
 
@@ -53,10 +53,10 @@ export function Footer() {
                 {t('Media.title')}
               </span>
               <Link href="/projects/perception/recent-activities">
-                {t('Media.recentActivies')}
+                {t('Media.link-1')}
               </Link>
               <Link href="/projects/perception/contact">
-                {t('Media.contact')}
+                {t('Media.link-2')}
               </Link>
             </div>
           </div>

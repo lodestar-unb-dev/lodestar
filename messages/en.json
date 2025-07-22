@@ -2,239 +2,61 @@
   "Projects": {
     "Perception": {
       "RecentActivities": {
-        "title": "Recent Activities",
-        "description": "<p> One of the main motivations for carrying out the Perception project is to continue the ongoing activities of the AlfaCrux mission, promoting technological and scientific development in the context of satellite data collection systems. Furthermore, it aims to continue training human resources with high added value at undergraduate and postgraduate levels with the exchange of researchers, strengthening national and international cooperation with research institutions and companies in the productive sector. </p> <p> The scope of the project is divided into two workstreams: 1) Modeling and simulation of a new satellite data collection system, including the assembly of platforms for logical and functional analysis of different subsystems, simulation of the space environment, assembly, analysis, and management of user terminals, both fixed for environmental data collection applications and mobile for tracking unmanned aerial vehicles (UAVs) in environmental monitoring applications and 2) Reliability research and analysis in satellite data production for environmental monitoring applications; development of new solutions for managing and processing data obtained via satellite; and also designing digital models for health monitoring and data control from space missions. </p> <p className=\"self-start\"> In this context, we kindly invite you to take a moment of your time and check our recent activities and achievements! </p>",
+        "title": "Recent Highlights",
+        "description": "<p>One of the main motivations behind the <strong>Perception</strong> System is to contribute to environmental preservation and the advancement of sustainable development. The project is an extension of the <strong>AlfaCrux</strong> space mission, evolving into an application focused on environmental monitoring and the development of a robust database to support the formulation of new public policies.</p> <p>Moreover, by being structured on modular platforms, Perception provides tools to support the continuous training of highly qualified human resources, both at undergraduate and graduate levels. It also promotes the exchange of researchers and specialists, strengthening national and international cooperation with research institutions and companies in the productive sector. Some recent highlights include:</p>",
         "more-news": {
           "text": "Do you want more news? Check out our Instagram to find out what the team has been doing",
           "cta": "Check more news"
         },
-        "cta-text": "",
+        "cta-text": "In this context, we invite you to take a moment of your time to learn more about our activities and recent achievements.",
         "list-1": {
-          "item-1": "",
-          "item-2": "",
-          "item-3": "",
-          "text": ""
+          "item-1": "Assembly of platforms for logical and functional analysis of subsystems;",
+          "item-2": "Simulation of the space environment;",
+          "item-3": "Setup, analysis, and management of user terminals.",
+          "text": "1. <strong>Modeling and simulation of a new satellite data collection system</strong>, including:"
         },
         "list-2": {
-          "item-1": "",
-          "item-2": "",
-          "text": ""
-        }
+          "item-1": "Development of solutions for data management and processing;",
+          "item-2": "Proposals for digital twins to monitor the environment and critical infrastructures.",
+          "text": "2. <strong>Investigation and analysis of data reliability in satellite-based systems</strong>, including:"
+        },
+        "recent-highlights-1": "Brazilian scientist leads space mission to scan the Amazon and the Cerrado",
+        "recent-highlights-2": "Mission led by Brazilian scientist will scan the Amazon and the Cerrado to fight climate change",
+        "recent-highlights-3": "Brazilian space mission aims to scan biomes in the Amazon and the Cerrado using AI",
+        "recent-highlights-4": "Space mission will scan the Amazon and the Cerrado to combat climate change",
+        "recent-highlights-5": "Space-based environmental monitoring platform"
       },
       "HomePage": {
         "Hero": {
-          "subtitle": "Transforming Data into Environmental Insights",
-          "description": "Empowering sustainable development with advanced data collection and analysis from critical monitoring towers across Brazil&apos;s ecosystems."
-        },
-        "FirstSection": {
-          "title": "Expanding Our Perception Everywhere",
-          "visibleContent": "When it comes to monitoring strategic assets that include our natural resources, the challenge goes beyond just tracking them to also perceive them. By perceiving them we mean understanding, learning and growing from their random and uncertain nature. It means empowering ourselves to deal with the unknown, understanding the impact of our actions and preparing ourselves to make decisions in complex scenarios. To achieve a high level of perception on a scale never seen before to monitor our strategic assets, we need to combine sensor networks, space technologies and data science. We need a team of experts, critical sense, and solid partnerships. This is the vision of the Perception project.",
-          "hiddenContent": "<p> The Perception System is a satellite data collection system, which, through new systems engineering approaches, new operating concepts, and proposed services based on CubeSats missions, aims to develop new technologies and satellite-based services for tracking and monitoring strategic assets, such as the Brazilian biomes and our critical infrastructure, leading Brazil into a new era of space and terrestrial data science. Satellite technologies and geospatial data have the potential to support the sustainable transition of the Brazilian productive sector and play a vital role in the implementation of the Sustainable Development Goals. The first deliverable of the Perception project is the concept of operation for the space segment, and a new ground segment for collecting and processing data from the K34 Tower of the Large-Scale Amazon Biosphere-Atmosphere (LBA) Program, as well as for unmanned aerial vehicles (UAVs) that support environmental monitoring activities. A first use of this data is to measure and monitor carbon flow. The K34 tower is located in the Amazon rainforest, approximately 64km from Manaus, for which a new concept of operation is proposed for the installation of satellite communication terminals compatible with the characteristics of the AlfaCrux satellite, as well as satellites from our partners and future missions. The AlfaCrux space mission marks the beginning of this journey, having allowed the demonstration of space technologies and the training of our team. As a second deliverable of the Perception project, it is expected the reactivation of the environmental data collection tower for the Brazilian Cerrado located at the Água Limpa Farm at the University of Brasília. The Água Limpa Farm has an area of approximately 4,500 hectares dedicated to scientific development and technological development and demonstration for the environment. </p> <p> Welcome to the Perception project and come with us to develop new technologies and satellite-based services for tracking and monitoring our strategic assets. </p>",
-          "buttonText": "Show more"
-        },
-        "Partners": {
-          "title": "Acknowledgments",
-          "firstGroupTitle": "Realization",
-          "secondGroupTitle": "Funder",
-          "thirdGroupTitle": "Partner and technical support"
-        },
-        "SecondSection": {
-          "title": "Learning through the senses and mind",
-          "content": "The word perception comes from the Latin word percepio, meaning receiving, collecting, become aware through the mind or senses. The project logo represents a door to infinity and captures the idea of the proposed system being the frontier to the unknown, the door to be opened to expand our vision and sense of our environment and reality. This is the meaning of the name, a poetic idea proposed and discussed over the centuries by philosophers, musicians and many others who chose to deeply feel the world in which we live.",
-          "hiddenContent": "The Perception project is an initiative that aims to create new technologies, business models and methods to optimize and expand our ability to perceive the environment and its modification throughout our evolution. We seek to expand the perception of our planet through the generation of data, its structuring and analysis as information, identification of trends and extrapolation to future scenarios.",
-          "buttonText": "Show more"
+          "subtitle": "Environmental intelligence for strategic decision-making",
+          "description": "An integrated environmental monitoring solution, based on satellite networks for advanced data collection and processing. A platform developed to strengthen environmental management and enhance the State's capacity to respond to climate and ecological challenges."
         }
       },
-      "Gallery": {
-        "title": "Comming soon."
-      },
-      "Members": {
-        "title": "Comming soon."
-      },
-      "Team": {
-        "membersSubTitle": "The project team is entirely composed of professors, staff and students from UnB and LBA, also counting on the participation of external collaborators.",
-        "Members": {
-          "RenatoBorges": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://images.prismic.io/lodestar/55243055-c76f-4b05-942e-341225a8b2df_renatoBorges.webp?auto=compress,format&rect=0,0,241,241&w=240&h=240"
-            },
-            "member_name": "Renato Borges",
-            "member_affiliation": "ENE/UnB",
-            "member_role": "Professor/Coordinator",
-            "member_research_area": "Control Systems",
-            "member_lattes": "http://lattes.cnpq.br/9986885788660516"
-          },
-          "DanielCafe": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://images.prismic.io/lodestar/716970cc-c508-46e5-bcaf-4ae9ccc646ac_danielCafe.webp?auto=compress,format&rect=0,0,241,241&w=240&h=240"
-            },
-            "member_name": "Daniel Café",
-            "member_affiliation": "ENE/UnB",
-            "member_role": "Professor",
-            "member_research_area": "Embbeded Systems",
-            "member_lattes": "http://lattes.cnpq.br/5467474463267175"
-          },
-          "JoaoPauloLeite": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://lodestar.cdn.prismic.io/lodestar/5d93dd65-a162-4d0f-a5f3-48392464a24b_avatar-male.svg"
-            },
-            "member_name": "João Paulo Leite",
-            "member_affiliation": "ENE/UnB",
-            "member_role": "Professor",
-            "member_research_area": "Telecommunication",
-            "member_lattes": "http://lattes.cnpq.br/9310657002482326"
-          },
-          "JoaoGondim": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://images.prismic.io/lodestar/bd815bc4-7d42-4ac8-8472-f0d66f0041cf_gondim.webp?auto=compress,format&rect=0,0,247,247&w=240&h=240"
-            },
-            "member_name": "João Gondim",
-            "member_affiliation": "CIC/UnB",
-            "member_role": "Professor",
-            "member_research_area": "Cybersecurity",
-            "member_lattes": "http://lattes.cnpq.br/1755987387907910"
-          },
-          "GeovanyBorges": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://images.prismic.io/lodestar/52774036-608d-4850-99d4-8123042acfb6_geovany.webp?auto=compress,format&rect=0,52,430,430&w=240&h=240"
-            },
-            "member_name": "Geovany Borges",
-            "member_affiliation": "ENE/UnB",
-            "member_role": "Professor",
-            "member_research_area": "Robotics",
-            "member_lattes": "http://lattes.cnpq.br/6103264336506171"
-          },
-          "ChantalCappelletti": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://lodestar.cdn.prismic.io/lodestar/d00f90e9-d040-482a-814a-cde8114fd482_avatar-female.svg"
-            },
-            "member_name": "Chantal Cappelletti",
-            "member_affiliation": "UoN/UK",
-            "member_role": "Professor",
-            "member_research_area": "Mission Analysis",
-            "member_lattes": "http://lattes.cnpq.br/4120937958034706"
-          },
-          "SimoneBattistini": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://images.prismic.io/lodestar/8d120a31-543b-458c-b2da-cfc515cc58a2_simoneBattistini.webp?auto=compress,format&rect=0,0,650,650&w=240&h=240"
-            },
-            "member_name": "Simone Battistini",
-            "member_affiliation": "SHU/UK",
-            "member_role": "Professor",
-            "member_research_area": "Control Systems",
-            "member_lattes": "http://lattes.cnpq.br/0151016853523965"
-          },
-          "AndreaSantos": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://images.prismic.io/lodestar/c77dac78-6f3e-4d0f-bde3-0ea4a5700b78_andreaSantos.webp?auto=compress,format&rect=0,82,675,675&w=240&h=240"
-            },
-            "member_name": "Andréa Santos",
-            "member_affiliation": "EPR/UnB",
-            "member_role": "Professor",
-            "member_research_area": "Systems Engineering",
-            "member_lattes": "http://lattes.cnpq.br/4558493368126565"
-          },
-          "WilliamReis": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://images.prismic.io/lodestar/ac94ccb2-6cc2-4b76-9d3d-2b0e868a00ae_williamReis.webp?auto=compress,format&rect=0,0,1080,1080&w=240&h=240"
-            },
-            "member_name": "William Reis",
-            "member_affiliation": "FGA/UnB",
-            "member_role": "Professor",
-            "member_research_area": "Orbital Dynamic",
-            "member_lattes": "http://lattes.cnpq.br/7752228013890691"
-          },
-          "LeonardoAguayo": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://images.prismic.io/lodestar/e0155783-1bc0-4e24-9e0e-2184cde69577_leonardoAguayo.webp?auto=compress,format&rect=0,40,307,307&w=240&h=240"
-            },
-            "member_name": "Leonardo Aguayo",
-            "member_affiliation": "ENE/UnB",
-            "member_role": "Professor",
-            "member_research_area": "Telecommunication",
-            "member_lattes": "http://lattes.cnpq.br/4815464320872808"
-          },
-          "MarceloKaram": {
-            "member_avatar": {
-              "width": 240,
-              "height": 240,
-              "url": "https://images.prismic.io/lodestar/78cb2edd-ad54-4afd-b4f0-a0597ca1c398_marceloKaram.webp?auto=compress,format&rect=0,0,241,241&w=240&h=240"
-            },
-            "member_name": "Marcelo Karam",
-            "member_affiliation": "STI/UnB",
-            "member_role": "Staff",
-            "member_research_area": "Data Security",
-            "member_lattes": "http://lattes.cnpq.br/0017208558479044"
-          },
-          "RogerioSousa": {
-            "member_avatar": {
-              "width": "240",
-              "height": "240",
-              "url": "https://images.prismic.io/lodestar/a9706ccc-8222-4a32-ba0a-67a92d6f4e87_rogerioSousa.webp?auto=compress,format&rect=0,0,1276,1276&w=240&h=240"
-            },
-            "member_name": "Rogério Sousa",
-            "member_affiliation": "STI/UnB",
-            "member_role": "Staff",
-            "member_research_area": "Data Security",
-            "member_lattes": "http://lattes.cnpq.br/1249648187708650"
-          },
-          "research": "Research Area: "
-        },
-        "title": "Our Team",
-        "footer": {
-          "title": "Interested?",
-          "description": "Come join our team and help us shape the future!",
-          "cta": "Join our team"
-        }
-      },
-      "Partners": {
-        "headerTitle": "Our partners",
-        "title": "Acknowledgments",
-        "firstGroupTitle": "Realization",
-        "secondGroupTitle": "Funder",
-        "thirdGroupTitle": "Partner and technical support",
+      "Who-we-are": {
+        "headerTitle": "Who we are",
+        "title": "We are those who have come together to expand our perception of the world we live in.",
         "footer": {
           "title": "Interested?",
           "description": "Be a partner and help us shape the future!",
           "cta": "Be a partner"
         },
-        "headerFirstDescription": "Perception is revolutionizing environmental monitoring and strategic data management in Brazil by combining innovative satellite technologies with sustainability. With integrated and accessible solutions, we are driving a new era of data collection and analysis in biomes like the Amazon and Cerrado, helping to protect our natural resources and critical infrastructures.",
-        "headerSecondDescription": "We deeply thank all our partners and investors, whose support is essential to making Perception a reality. Thanks to you, we are building a robust platform for environmental monitoring, promoting sustainability, and creating a positive global impact. You are a vital part of this journey of technological and environmental transformation.",
-        "p3": "",
-        "p4": "",
-        "p5": ""
+        "headerFirstDescription": "We are a multidisciplinary group of scientists, engineers, space technology specialists, and professionals dedicated to environmental innovation. We combine technical expertise, strategic vision, and a commitment to sustainability to develop advanced <strong>satellite-based environmental monitoring</strong> solutions.",
+        "headerSecondDescription": "The <strong>Perception Project</strong> was born from the integration of universities, research centers, government institutions, and strategic partners, with the aim of creating a <strong>national remote monitoring infrastructure</strong> capable of supporting real-time critical decision-making, protecting our ecosystems, and contributing to Brazil's sustainable development.",
+        "p3": "Our work is grounded in the principles of <strong>systems engineering, data science, Earth observation, and emerging technologies</strong>, applied to the tracking of <strong>biomes, natural resources, and critical infrastructures</strong>. We believe that to face the environmental challenges of today and tomorrow, it takes more than observation — it requires <strong>perception</strong>. And that perception guides every stage of our mission.",
+        "p4": "The project is carried out by the <strong>Laboratory of Simulation and Control of Aerospace Systems at the University of Brasília (UnB)</strong> and is currently <strong>associated with and integrated into the Large-Scale Biosphere-Atmosphere Experiment in Amazonia (LBA)</strong> — an initiative of the <strong>Ministry of Science, Technology, and Innovation (MCTI)</strong>, coordinated by the <strong>National Institute for Amazonian Research (INPA)</strong>. The team includes researchers from INPA itself, various academic units at UnB, with notable contributions from the Água Limpa Farm, the <strong>University of the State of Amazonas (UEA)</strong>, the <strong>University of Vigo (Spain)</strong>, and the <strong>University of Nottingham (United Kingdom)</strong>. Perception also benefits from the technical partnership of <strong>Alén Space</strong>, a company specialized in the development of space solutions focused on <strong>CubeSat missions</strong> and distributed systems architecture.",
+        "p5": "The project is primarily funded by the <strong>Research Support Foundation of the Federal District (FAPDF)</strong>, with additional support from the <strong>National Council for Scientific and Technological Development (CNPq)</strong> and the <strong>Coordination for the Improvement of Higher Education Personnel (CAPES)</strong>."
       },
       "Mission": {
         "FirstSection": {
           "title": "Expanding Our Perception Everywhere",
-          "first": "When it comes to monitoring strategic assets that include our natural resources, the challenge goes beyond just tracking them to also perceive them. By perceiving them we mean understanding, learning and growing from their random and uncertain nature. It means empowering ourselves to deal with the unknown, understanding the impact of our actions and preparing ourselves to make decisions in complex scenarios. To achieve a high level of perception on a scale never seen before to monitor our strategic assets, we need to combine sensor networks, space technologies and data science. We need a team of experts, critical sense, and solid partnerships. This is the vision of the Perception project.",
-          "second": "The Perception System is a satellite data collection system, which, through new systems engineering approaches, new operating concepts, and proposed services based on CubeSats missions, aims to develop new technologies and satellite-based services for tracking and monitoring strategic assets, such as the Brazilian biomes and our critical infrastructure, leading Brazil into a new era of space and terrestrial data science. Satellite technologies and geospatial data have the potential to support the sustainable transition of the Brazilian productive sector and play a vital role in the implementation of the Sustainable Development Goals. The first deliverable of the Perception project is the concept of operation for the space segment, and a new ground segment for collecting and processing data from the K34 Tower of the Large-Scale Amazon Biosphere-Atmosphere (LBA) Program, as well as for unmanned aerial vehicles (UAVs) that support environmental monitoring activities. A first use of this data is to measure and monitor carbon flow. The K34 tower is located in the Amazon rainforest, approximately 64km from Manaus, for which a new concept of operation is proposed for the installation of satellite communication terminals compatible with the characteristics of the AlfaCrux satellite, as well as satellites from our partners and future missions. The AlfaCrux space mission marks the beginning of this journey, having allowed the demonstration of space technologies and the training of our team. As a second deliverable of the Perception project, it is expected the reactivation of the environmental data collection tower for the Brazilian Cerrado located at the Água Limpa Farm at the University of Brasília. The Água Limpa Farm has an area of approximately 4,500 hectares dedicated to scientific development and technological development and demonstration for the environment.",
-          "third": "Welcome to the Perception project and come with us to develop new technologies and satellite-based services for tracking and monitoring our strategic assets.",
-          "p4": "",
-          "p5": "",
-          "p6": "",
-          "p7": "",
-          "p8": ""
+          "first": "Monitoring strategic assets — including our natural resources — requires more than simply tracking them: it requires <strong>perceiving</strong> them. To perceive means to understand, to learn, and to evolve from the random and uncertain nature of these systems. It means being prepared to deal with the unknown, to grasp the impacts of our actions, and to make decisions in complex scenarios.",
+          "second": "Achieving this elevated level of perception, on an unprecedented scale, demands the integration of <strong>sensor networks, space technologies, and data science</strong>. It requires a highly qualified team, sharp critical thinking, and strong institutional partnerships.",
+          "third": "This is the <strong>vision</strong> that guides the <strong>Perception</strong> Project: to make possible a new level of environmental intelligence for monitoring our strategic assets.",
+          "p4": "The <strong>Perception System</strong> is a data collection and integration architecture based on satellite infrastructure that proposes new systems engineering approaches, innovative operational concepts, and services rooted in space missions. Its goal is to develop space technologies and services aimed at tracking and monitoring strategic assets — such as Brazil's biomes and national critical infrastructure — propelling the country into a new era of terrestrial and space-based data science. Satellite technologies and geospatial data hold vast potential to support the sustainable transition of Brazil's productive sector, while also playing a key role in the implementation of the Sustainable Development Goals (SDGs).",
+          "p5": "The project's first major outcome is the Perception Data Platform, integrated with the HDL satellite communication network and the operational concept for the Perceive space segment — core components of the system architecture.",
+          "p6": "The <strong>structural units</strong> of the proposal are two pilot projects: the K34 Tower, integrated into the Large-Scale Biosphere-Atmosphere Program in the Amazon (LBA), and the Cerrado Tower, located at the Água Limpa Farm of the University of Brasília (UnB). The latter represents an experimental field of approximately 4,500 hectares, dedicated to scientific development, technological innovation, and demonstration of environmental solutions. The infrastructure of the Perception System expands through the use of unmanned aerial vehicles (UAVs) and fixed ground cameras, which support real-time environmental monitoring actions.",
+          "p7": "One of the first practical applications of this data is the measurement and monitoring of water resources and carbon flux — elements essential for understanding and protecting our ecosystems.",
+          "p8": "Welcome to the Perception Project. Join us in developing cutting-edge space technologies and innovative services to track and monitor Brazil's strategic assets."
         },
         "SecondSection": {
           "title": "Learning through the senses and mind",
@@ -244,31 +66,31 @@
         "title": "Our mission",
         "footer": {
           "title": "Interested?",
-          "description": "Check out our proposals",
-          "k34-system": {
-            "title": "K34 System",
-            "description": "Measure and monitor carbon flux in the Amazon biome"
+          "description": "Explore our initiatives",
+          "perception-system": {
+            "title": "Perception System",
+            "description": "Environmental intelligence for strategic decision-making"
           },
-          "cerrado-hotspot": {
-            "title": "Cerrado Hotspot (coming soon)",
-            "description": "Expand the capacity for autonomous data collection in reference areas"
+          "digital-twin": {
+            "title": "The Environmental Digital Twin (coming soon)",
+            "description": "Simulated Ecosystems for Real-World Decisions"
           }
         }
       },
       "Header": {
-        "Proposals": {
-          "title": "Proposals",
-          "k34 System": {
-            "title": "K34 System",
-            "description": "Measure and monitor carbon flux in the Amazon biome"
+        "Initiatives": {
+          "title": "Initiatives",
+          "perception System": {
+            "title": "Perception System",
+            "description": "Environmental intelligence for strategic decision-making"
           },
-          "cerrado hotspot": {
-            "title": "Cerrado Hotspot (coming soon)",
-            "description": "Expand the capacity for autonomous data collection in reference areas"
+          "digital twin": {
+            "title": "Environmental Digital Twin (coming soon)",
+            "description": "Simulated Ecosystems for Real-World Decisions"
           },
           "data platform structure": {
-            "description": "",
-            "title": ""
+            "title": "Perception Data Platform (coming soon)",
+            "description": "Integrated infrastructure for end-to-end orchestration of environmental data"
           }
         },
         "About": {
@@ -276,67 +98,66 @@
           "overview": {
             "title": "Overview",
             "link-1": "Mission",
-            "link-2": "Team"
+            "link-2": "Who we are"
           },
           "media": {
             "title": "Media",
-            "link-1": "Recent Activities",
-            "link-2": "Partners"
+            "link-1": "Recent Highlights"
           }
         },
         "contact": "Contact"
       },
       "Footer": {
-        "description": "Transforming data into environmental insights",
-        "Proposals": {
-          "title": "Proposals",
-          "k34 System": "K34 System",
-          "cerrado hotspot": "Cerrado Hotspot",
-          "data platform structure": ""
+        "description": "Environmental intelligence for strategic decision-making",
+        "Initiatives": {
+          "title": "Initiatives",
+          "link-1": "Perception System",
+          "link-2": "Environmental Digital Twin",
+          "link-3": "Perception Data Platform"
         },
         "ResearchGroup": {
           "title": "Research Group",
-          "team": "Team",
-          "mission": "Mission",
-          "partners": "Partners"
+          "link-1": "Mission",
+          "link-2": "Who we are"
         },
         "Media": {
           "title": "Media",
-          "recentActivies": "Recent Activities",
-          "contact": "Contact"
+          "link-1": "Recent Highlights",
+          "link-2": "Contact"
         }
       },
       "LP": {
-        "k34-system-section": {
-          "title": "K34 System",
-          "description": "The K34 Tower, located in the heart of the Amazon Rainforest, is a landmark for environmental monitoring. Integrated with the Perception system, it collects and transmits critical data on carbon flux, climate, and biodiversity. This infrastructure combines advanced satellite and IoT technologies to provide real-time insights, essential for preserving the Amazon biome and advancing sustainable practices.",
+        "perception-system-section": {
+          "title": "The Perception System",
+          "description": "An integrated architecture for real-time, large-scale monitoring, the <strong>Perception System</strong> uses two satellite communication networks to collect data from ground-based sensor arrays, forming a robust relay infrastructure that enables continuous observation of strategic ecosystems. This infrastructure combines advanced satellite and IoT technologies to deliver essential real-time information, encompassing:",
           "list": {
-            "first": "Clear and strategic planning for seamless data collection",
-            "second": "Timely project delivery with built-in flexibility",
-            "third": "High-impact monitoring for sustainable environmental management"
+            "first": "Strategic planning for continuous and high-quality data collection;",
+            "second": "Efficient and flexible execution, with timelines aligned to institutional demands;",
+            "third": "High-impact monitoring to support public policies and sustainable environmental management actions."
           },
           "cta": "Learn More"
         },
-        "cerrado-hotspot-section": {
-          "title": "Cerrado Hotspot",
-          "description": "The Cerrado biome, vital for Brazil's water resources, faces rapid environmental changes. The integration of the UMRs with the Perception system offers a groundbreaking solution for monitoring this unique ecosystem. Equipped with advanced IoT sensors and satellite communication, this system collects and transmits critical environmental data, enabling real-time insights into the Cerrado’s health and sustainability.",
+        "digital-twin-section": {
+          "title": "The Environmental Digital Twin",
+          "description": "To enable real-time monitoring and scenario forecasting, a Digital Twin framework is being developed that goes beyond physical assets, giving rise to the <strong>Environmental Digital Twin</strong> — an integration of environmental data and computational models capable of simulating ecosystem dynamics. This approach aligns with recent government initiatives, such as the European Union's Destination Earth and Ilia projects, and represents a strategic advancement for Brazil in building evidence-based environmental management. Key features of the proposal include:",
           "list": {
-            "first": "Advanced IoT and satellite technology for precise monitoring",
-            "second": "Real-time environmental data for informed decision-making",
-            "third": "Solutions for preserving the Cerrado biome"
+            "first": "A methodology to simplify the construction of complex systems;",
+            "second": "Real-time environmental data to support public decision-making;",
+            "third": "Flexibility and reliability for critical applications."
           },
           "cta": "Coming soon"
         },
+        "data-platform-structure-section": {
+          "cta": "Coming soon",
+          "description": "Designed as a modular and scalable architecture, structured into multiple integrated layers to manage the entire data lifecycle from heterogeneous sources. It begins with a data ingestion layer, capable of processing both real-time and batch data streams from satellites and ground-based sensors. Next, the storage layer adopts a hybrid model that combines compressed, unstructured data repositories with structured relational databases, ensuring durability and flexibility in information access. The data processing layer performs critical tasks such as calibration, transformation, and AI-assisted gap filling. The visualization layer provides interactive dashboards and real-time monitoring tools to support decision-making.",
+          "title": "The Perception Data Platform"
+        },
         "more": {
-          "our-team": {
-            "header": "Our team",
-            "body": "Meet the experts, engineers and visionaries working together to make Perception a reality."
-          },
           "our-mission": {
             "header": "Our mission",
             "body": "Discover how Perception is redefining environmental monitoring with innovative solutions for a sustainable future."
           },
-          "our-partners": {
+          "who-we-are": {
             "header": "Our partners",
             "body": "Explore the network of partners and investors helping us protect our planet and innovate for tomorrow."
           },
@@ -344,8 +165,8 @@
           "title": "Building connections for a better tomorrow",
           "description": "The Perception project goes beyond innovation. Learn more about our mission, meet the dedicated team behind it, and explore the partnerships driving impactful change."
         },
-        "recent-activities": {
-          "title": "Recent Activities",
+        "recent-highlights": {
+          "title": "Recent Highlights",
           "cta": "Check more"
         },
         "platform-data-structure-section": {
@@ -354,18 +175,43 @@
           "title": ""
         }
       },
-      "Proposals": {
-        "k34-system": {
-          "title": "K34 System",
-          "description": "Measure and monitor carbon flux in the Amazon biome",
+      "Data-Platform-Schema": {
+        "layer-1": {
+          "title": "Data Ingestion Layer",
+          "description": "Processes real-time and batch data streams from various sources"
+        },"layer-2": {
+          "title": "Storage</br>Layer",
+          "description": "Combines compressed, unstructured data repositories with structured databases"
+        },
+        "layer-3": {
+          "title": "Data</br>Processing</br>Layer",
+          "description": "Calibration, transformation, and AI-assisted gap-filling"
+        },
+        "layer-4": {
+          "title": "Analytics Layer",
+          "description": "Supports advanced modeling, machine learning, and Digital Twin simulations"
+        },
+        "layer-5": {
+          "title": "Visualization Layer",
+          "description": "Offers interactive dashboards and real-time monitoring tools"
+        },
+        "layer-6": {
+          "title": "Infrastructure Layer",
+          "description": "Leverages HPC, GPU acceleration, and distributed architectures"
+        }
+      },
+      "Initiatives": {
+        "perception-system": {
+          "title": "Perception System",
+          "description": "Environmental intelligence for strategic decision-making",
           "overview": {
             "title": "Overview",
-            "first-paragraph": "The K34 tower is located in the Amazon Rainforest, approximately 64km from Manaus, for which the proposed satellite data collection solution is compatible with the characteristics of the AlfaCrux satellite in cases of critical and restricted information traffic, also having data output via our partners' satellite networks, or other services available on the market, in cases of general information traffic that does not have confidentiality and secrecy restrictions. It is worth noting that the AlfaCrux space mission marks the beginning of command and control operations for the project team's own satellite network, having allowed the demonstration of space technologies and team training in the design cycle of a space mission.",
-            "second-paragraph": "The proposed system for collecting, transmitting, storing and processing data is the Perception strategic asset monitoring system. Perception is a satellite data collection system that, through new operational concepts and proposed services, is dedicated to monitoring Brazilian biomes and their critical infrastructures. Satellite technologies and geospatial data have the potential to support the sustainable transition of the Brazilian productive sector and play a vital role in implementing sustainable development goals. The first product of the Perception project is aimed at collecting and processing data from the K34 tower of the Large-Scale Amazon Biosphere-Atmosphere Program (LBA), which, among other applications, allows measuring and monitoring the flow of carbon in the Amazon biome.",
-            "fifth-paragraph": "",
-            "fourth-paragraph": "",
-            "sixth-paragraph": "",
-            "third-paragraph": ""
+            "first-paragraph": "The <strong>Perception System</strong> is an integrated and strategic architecture for <strong>real-time, large-scale environmental monitoring</strong>, designed to meet the challenges of continuous observation of critical ecosystems. Operating through two satellite communication networks, the system is capable of collecting and retransmitting data from field-installed sensors, ensuring remote coverage of environmentally significant areas.",
+            "second-paragraph": "At the core of Perception are the <strong>Remote Monitoring Units (RMUs)</strong>, composed of two main components: the <strong>Central Micrometeorological Tower (CMT)</strong>, dedicated to measuring atmospheric and surface variables such as solar radiation, turbulent energy fluxes, and carbon balance; and the <strong>Soil Monitoring Cell (SMC)</strong>, focused on capturing soil parameters such as temperature, moisture, and environmental quality indicators. These units feed a multi-layered IT architecture, composed of edge devices, real-time control panels, and a hierarchical structure for data storage, analysis, and visualization.",
+            "third-paragraph": "Based on this foundation, the system enables the creation of an <strong>Environmental Digital Twin</strong>, structured across five dimensions: physical elements, virtual elements, data descriptions, system services, and interconnections. This integrated model allows synchronization between real data and simulations, enabling <strong>predictive modeling, anomaly detection, and environmental scenario simulation</strong>. The entire Perception framework follows the principles of <strong>Model-Based Systems Engineering</strong>, using the Arcadia/Capella methodology and is organized into four main layers: operational, system, logical, and physical.",
+            "fourth-paragraph": "Communication between the RMUs and the satellite network adopts a <strong>dual-link</strong> approach: a high-data-rate (HDL) channel for transmitting large volumes of data, and a low-data-rate (LDL) channel, operated by the <strong>Perceive</strong> satellite network, focused on telemetry and the exchange of critical data in low-bandwidth environments.",
+            "fifth-paragraph": "The <strong>definition and development of the RMUs</strong> stem from two foundational pilot projects: the <strong>K34 Tower</strong>, located in the Amazon rainforest approximately 64 km from Manaus, and the <strong>Cerrado Tower</strong> at the Água Limpa Farm of the University of Brasília (UnB). Both represent strategic environments that serve as references for designing and validating the remote monitoring model. In the case of the K34 Tower, part of the <strong>Large-Scale Biosphere-Atmosphere Experiment in Amazonia (LBA)</strong>, Perception contributes to the collection and processing of telemetry data and environmental statistics using the Perceive satellite, conceived from the <strong>Alfacrux</strong> space mission. This mission marks the beginning of command and control operations of the project's satellite network, enabling secure communication of critical data, as well as technical training of teams in the full life cycle of a space mission.",
+            "sixth-paragraph": "The <strong>integration of the Perception System with the LBA Program</strong>, an initiative of the <strong>Ministry of Science, Technology, and Innovation (MCTI)</strong> coordinated by the <strong>National Institute for Amazonian Research (INPA)</strong>, in 2023, consolidates its role as a scientific and strategic instrument for the country. With 27 years of activity, LBA is one of the world’s leading references in data on biosphere-atmosphere interactions in tropical forests. In this context, Perception expands its contribution by providing <strong>technological solutions for environmental management, climate monitoring, and public policy development</strong>, based on high-quality, real-time data."
           },
           "key-features": {
             "title": "Key features",
@@ -377,21 +223,21 @@
             "cta": "Get in touch"
           },
           "markers": {
-            "k34-tower": {
-              "title": "K34 Tower",
-              "description": "The K34 Tower, located in the heart of the Amazon Rainforest, is a landmark for environmental monitoring. Integrated with the Perception system, it collects and transmits critical data on carbon flux, climate, and biodiversity"
+            "remote-monitoring-unit": {
+              "title": "Remote Monitoring Unit",
+              "description": "In its first version, the Perception System includes the K34 Tower, located in the heart of the Amazon rainforest—a landmark in environmental monitoring—and the Cerrado Tower, situated at the Água Limpa Farm of UnB, which functions as an open-air laboratory and a repository of strategic data. This infrastructure forms the central foundation of sensing instrumentation and represents the embryo of the Environmental Digital Twin."
             },
             "command-and-control": {
-              "description": "",
-              "title": ""
+              "description": "The operation, command, and control of the Perceive satellite—as well as the maintenance and management of the high-data-rate network, and the structuring of data and information for users during the pilot phase—are carried out at the Laboratory of Simulation and Control of Aerospace Systems (LODESTAR) at the University of Brasília. LODESTAR has comprehensive infrastructure and strategic partnerships, recently strengthened to support the Environmental Digital Twin initiative.",
+              "title": "Command, Control, and Data Station"
             },
             "public": {
-              "description": "",
-              "title": ""
+              "description": "The Perception Project addresses the environmental monitoring and strategic data needs of the Brazilian Government, contributing to the development of public policies and regulations. It also serves research and development institutions such as the National Institute for Amazonian Research (INPA), the University of the State of Amazonas (UEA), and the University of Brasília (UnB), as well as the scientific community dedicated to the study of climate change and environmental dynamics.",
+              "title": "Target Audience"
             },
             "transmission": {
-              "description": "",
-              "title": ""
+              "title": "Perception System Satellite Network",
+              "description": "Data collection from the sensor array follows a dual-link satellite communication strategy. A high-data-rate link is used for transmitting large volumes of data, while a low-data-rate link, operated by the Perceive satellite, is responsible for telemetry, system integrity monitoring, and the exchange of mission-critical data."
             }
           }
         }

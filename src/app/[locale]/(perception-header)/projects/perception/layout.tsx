@@ -48,20 +48,20 @@ export default function PerceptionHeaderLayout({
     Projects: {
       Perception: {
         LP: {
-          'recent-activities': get(
+          'recent-highlights': get(
             messages,
-            'Projects.Perception.LP.recent-activities',
+            'Projects.Perception.LP.recent-highlights',
           ) as AbstractIntlMessages,
         },
         RecentActivities: get(
           messages,
           'Projects.Perception.RecentActivities',
         ) as AbstractIntlMessages,
-        Proposals: {
-          'k34-system': {
+        Initiatives: {
+          'perception-system': {
             markers: get(
               messages,
-              'Projects.Perception.Proposals.k34-system.markers',
+              'Projects.Perception.Initiatives.perception-system.markers',
             ) as AbstractIntlMessages,
           },
         },

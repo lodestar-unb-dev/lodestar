@@ -12,7 +12,7 @@ const instagramPosts = [
 ]
 
 export function Instagram() {
-  const t = useTranslations('Projects.Perception.LP.recent-activities')
+  const t = useTranslations('Projects.Perception.LP.recent-highlights')
   const id = useId()
 
   return (

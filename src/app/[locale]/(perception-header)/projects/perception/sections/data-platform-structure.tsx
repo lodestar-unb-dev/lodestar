@@ -3,7 +3,7 @@ import { DataPlatformSvg } from '../components/data-platform-svg'
 
 export function DataPlatformStructure() {
   const t = useTranslations(
-    'Projects.Perception.LP.platform-data-structure-section',
+    'Projects.Perception.LP.data-platform-structure-section',
   )
 
   return (
@@ -17,14 +17,14 @@ export function DataPlatformStructure() {
 
             <div
               className="w-fit rounded border border-perceptionOrange-300 bg-unbBlack-0 px-4 py-3 text-lg font-medium text-perceptionOrange-300 transition-colors"
-              // href="/projects/perception/actions/k34-system"
+              // href="/projects/perception/initiatives/k34-system"
             >
               {t('cta')}
             </div>
           </div>
         </div>
 
-        <div className="w-full flex-[7] opacity-100">
+        <div className="w-full flex-[7]">
           <DataPlatformSvg />
         </div>
       </div>

@@ -28,12 +28,18 @@ export default function MissionPage() {
           </h2>
 
           <div className="space-y-5 text-unbBlack-100">
-            <p>{t('FirstSection.first')}</p>
-            <p>{t('FirstSection.second')}</p>
-            <p>{t('FirstSection.third')}</p>
-            <p>{t('FirstSection.p4')}</p>
+            <p
+              dangerouslySetInnerHTML={{ __html: t.raw('FirstSection.first') }}
+            />
+            <p
+              dangerouslySetInnerHTML={{ __html: t.raw('FirstSection.second') }}
+            />
+            <p
+              dangerouslySetInnerHTML={{ __html: t.raw('FirstSection.third') }}
+            />
+            <p dangerouslySetInnerHTML={{ __html: t.raw('FirstSection.p4') }} />
             <p>{t('FirstSection.p5')}</p>
-            <p>{t('FirstSection.p6')}</p>
+            <p dangerouslySetInnerHTML={{ __html: t.raw('FirstSection.p6') }} />
             <p>{t('FirstSection.p7')}</p>
             <p>{t('FirstSection.p8')}</p>
           </div>
@@ -69,20 +75,20 @@ export default function MissionPage() {
 
           <div className="flex flex-wrap items-center justify-center gap-5 md:gap-20">
             <Link
-              href="/projects/perception/actions/perception-system"
+              href="/projects/perception/initiatives/perception-system"
               className="group relative block h-[360px] w-[320px] overflow-hidden rounded-xl border border-perceptionOrange-300"
             >
               <Image
                 className="size-full object-cover"
                 src={k34SystemImg}
-                alt={t('footer.k34-system.title')}
+                alt={t('footer.perception-system.title')}
               />
               <div className="absolute inset-0 flex flex-col justify-end gap-2 bg-unbBlack-100/60 px-4 pb-6 opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100">
                 <strong className="text-2xl font-semibold text-perceptionOrange-300">
-                  {t('footer.k34-system.title')}
+                  {t('footer.perception-system.title')}
                 </strong>
                 <span className="text-sm">
-                  {t('footer.k34-system.description')}
+                  {t('footer.perception-system.description')}
                 </span>
               </div>
             </Link>
@@ -91,14 +97,14 @@ export default function MissionPage() {
               <Image
                 className="size-full object-cover"
                 src={k34SystemImg}
-                alt={t('footer.cerrado-hotspot.title')}
+                alt={t('footer.digital-twin.title')}
               />
               <div className="absolute inset-0 flex flex-col justify-end gap-2 bg-unbBlack-100/60 px-4 pb-6 opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100">
                 <strong className="text-2xl font-semibold text-perceptionOrange-300">
-                  {t('footer.cerrado-hotspot.title')}
+                  {t('footer.digital-twin.title')}
                 </strong>
                 <span className="text-sm">
-                  {t('footer.cerrado-hotspot.description')}
+                  {t('footer.digital-twin.description')}
                 </span>
               </div>
             </div>

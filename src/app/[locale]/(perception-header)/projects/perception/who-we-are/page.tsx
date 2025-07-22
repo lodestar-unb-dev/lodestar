@@ -64,8 +64,8 @@ const orbitImgs = [
   },
 ]
 
-export default function PartnersPage() {
-  const t = useTranslations('Projects.Perception.Partners')
+export default function WhoWeArePage() {
+  const t = useTranslations('Projects.Perception.Who-we-are')
 
   return (
     <main>
@@ -83,13 +83,35 @@ export default function PartnersPage() {
       <div className="bg-unbBlack-0 text-justify">
         <div className="bg-unbBlue-400">
           <div className="mx-auto max-w-[1200px] space-y-3 px-5 py-10 text-sm md:text-base lg:py-20">
-            <p>{t('headerFirstDescription')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('headerFirstDescription'),
+              }}
+            />
 
-            <p>{t('headerSecondDescription')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('headerSecondDescription'),
+              }}
+            />
 
-            <p>{t('p3')}</p>
-            <p>{t('p4')}</p>
-            <p>{t('p5')}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('p3'),
+              }}
+            />
+
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('p4'),
+              }}
+            />
+
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t.raw('p5'),
+              }}
+            />
           </div>
         </div>
         <section className="mx-auto flex max-w-[1200px] flex-col items-center gap-5 px-5 py-10 lg:gap-10 lg:py-20">

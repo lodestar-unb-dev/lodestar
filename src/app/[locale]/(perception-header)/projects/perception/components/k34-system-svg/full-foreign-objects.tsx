@@ -7,7 +7,9 @@ import { useState } from 'react'
 
 export function FullForeignObjects() {
   const [open, setOpen] = useState(false)
-  const t = useTranslations('Projects.Perception.Proposals.k34-system.markers')
+  const t = useTranslations(
+    'Projects.Perception.Initiatives.perception-system.markers',
+  )
 
   return (
     <foreignObject x="500" y="360" width="24" height="24">
@@ -21,9 +23,9 @@ export function FullForeignObjects() {
           </Tooltip.Trigger>
           <Tooltip.Portal>
             <Tooltip.Content className="z-[61] max-w-[321px] rounded border border-perceptionOrange-300 bg-unbBlack-100/95 p-3">
-              <strong>{t('k34-tower.title')}</strong>
+              <strong>{t('remote-monitoring-unit.title')}</strong>
 
-              <p>{t('k34-tower.description')}</p>
+              <p>{t('remote-monitoring-unit.description')}</p>
               <Tooltip.Arrow className="fill-perceptionOrange-300" />
             </Tooltip.Content>
           </Tooltip.Portal>
