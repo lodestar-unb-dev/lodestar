@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { InstagramEmbed } from 'react-social-media-embed'
 import { Link } from '@/i18n/routing'
-import { useId } from 'react'
+import { useEffect, useId, useState } from 'react'
 
 const instagramPosts = [
   'https://www.instagram.com/p/DKHNPjeOiSq/',
@@ -15,6 +15,14 @@ export function Instagram() {
   const t = useTranslations('Projects.Perception.LP.recent-highlights')
   const id = useId()
 
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsClient(true)
+    }
+  }, [])
+
   return (
     <section
       id={id}
@@ -25,9 +33,9 @@ export function Instagram() {
       </h2>
 
       <div className="flex w-full flex-wrap justify-center gap-5">
-        {instagramPosts.map((post) => (
-          <InstagramEmbed key={post} url={post} />
-        ))}
+        {instagramPosts.map((post) =>
+          isClient ? <InstagramEmbed key={post} url={post} /> : null,
+        )}
       </div>
 
       <Link

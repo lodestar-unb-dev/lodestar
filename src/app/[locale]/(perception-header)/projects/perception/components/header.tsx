@@ -13,19 +13,12 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border border-unbBlue-400 bg-unbBlue-400 font-montserrat">
       <section className="mx-auto flex max-w-[1200px] items-center justify-center px-5 py-4 min-[560px]:justify-between min-[560px]:gap-14">
-        <nav className="flex w-full items-center justify-center gap-6 min-[560px]:justify-between min-[960px]:gap-14">
-          <Link
-            href="/projects/perception"
-            className="hidden h-9 w-fit min-[560px]:block"
-          >
-            <Image
-              src={LogoIcon}
-              className="hidden h-9 w-fit min-[560px]:block"
-              alt="icon"
-            />
+        <nav className="flex w-full items-center justify-center gap-6 min-[560px]:justify-between md:gap-6 min-[960px]:gap-14">
+          <Link href="/projects/perception" className="h-5 w-fit md:h-9">
+            <Image src={LogoIcon} className="h-5 w-fit md:h-9" alt="icon" />
           </Link>
 
-          <div className="center flex list-none items-center gap-6 md:gap-16">
+          <div className="center flex list-none items-center gap-3 text-sm md:gap-16">
             <DropdownMenu.Root>
               <DropdownMenu.Trigger className="group flex items-center gap-1 hover:text-unbBlack-25 md:text-xl">
                 {t('Initiatives.title')}

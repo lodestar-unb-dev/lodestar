@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import { DotButton, useDotButton } from './carousel-dot-buttons'
 import {
@@ -30,6 +30,14 @@ export function Carousel(props: PropType) {
     onNextButtonClick,
   } = usePrevNextButtons(emblaApi)
 
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsClient(true)
+    }
+  }, [])
+
   return (
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
@@ -37,7 +45,7 @@ export function Carousel(props: PropType) {
           {slides.map((post) => (
             <div className="embla__slide" key={post}>
               <div className="embla__slide__number">
-                <InstagramEmbed url={post} />
+                {isClient ? <InstagramEmbed url={post} /> : null}
               </div>
             </div>
           ))}
