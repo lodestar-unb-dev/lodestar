@@ -1,7 +1,7 @@
 'use client'
 
 import { useLocale } from 'next-intl'
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
+import { DropdownMenu } from 'radix-ui'
 import { Link, routing, usePathname, useRouter } from '@/i18n/routing'
 import Image from 'next/image'
 
