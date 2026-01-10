@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-body {
-  @apply bg-unbBlack-5 text-unbBlack-5;
-}
-
 body,
 input,
 textarea,
