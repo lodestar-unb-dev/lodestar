@@ -74,7 +74,7 @@ export default function PerceptionHeaderLayout({
       <div
         className={twMerge(
           montserrat.variable,
-          'flex min-h-screen flex-col font-montserrat',
+          'font-montserrat bg-unbBlack-5 flex min-h-screen flex-col',
         )}
       >
         <Header />

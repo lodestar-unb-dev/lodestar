@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Layout id="home">
       <main className="relative">
-        <div className="absolute top-0 z-30 flex w-full flex-col items-center justify-center gap-1 bg-unbGreen-500/50 p-2 min-[560px]:flex-row">
+        <div className="bg-unbGreen-500/50 absolute top-0 z-30 flex w-full flex-col items-center justify-center gap-1 p-2 min-[560px]:flex-row">
           <span>{t('callout.title')}</span>
           <Link href="/projects/alfacrux" className="font-bold">
             {t('callout.link')}
@@ -19,22 +19,22 @@ export default function Home() {
         </div>
 
         <section className="relative flex items-center overflow-hidden">
-          <div className="absolute z-10 h-full w-full bg-gradient-to-b from-unbBlue-600/0 to-unbBlue-600" />
+          <div className="from-unbBlue-600/0 to-unbBlue-600 absolute z-10 h-full w-full bg-linear-to-b" />
 
-          <div className="z-20 mx-auto flex w-full max-w-[1120px] flex-col items-center justify-between px-5 pb-10 pt-20 min-[560px]:flex-row min-[560px]:pb-20 min-[960px]:gap-20">
+          <div className="z-20 mx-auto flex w-full max-w-280 flex-col items-center justify-between px-5 pt-20 pb-10 min-[560px]:flex-row min-[560px]:pb-20 min-[960px]:gap-20">
             <div className="flex flex-col items-center gap-10 min-[560px]:items-start">
               <h1 className="text-6xl font-bold uppercase min-[960px]:text-7xl">
                 {t('title')}
               </h1>
 
               <h3
-                className="text-2xl uppercase text-unbBlack-10 min-[960px]:text-4xl"
+                className="text-unbBlack-10 text-2xl uppercase min-[960px]:text-4xl"
                 dangerouslySetInnerHTML={{ __html: t.raw('subTitle') }}
               />
             </div>
 
             <Image
-              className="hidden min-[560px]:block min-[560px]:max-w-[15rem] min-[960px]:max-w-[19.75rem]"
+              className="hidden min-[560px]:block min-[560px]:max-w-60 min-[960px]:max-w-79"
               width={316}
               height={316}
               alt="lodestar logo"
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
 
           <Image
-            className="absolute left-0 top-0 h-[476px] w-full object-cover object-top"
+            className="absolute top-0 left-0 h-119 w-full object-cover object-top"
             width={1432}
             height={476}
             alt="earth"
@@ -52,14 +52,14 @@ export default function Home() {
         </section>
 
         <div className="bg-unbBlue-600">
-          <section className="mx-auto flex max-w-[1120px] justify-between gap-20 px-5 py-10 min-[560px]:py-20">
+          <section className="mx-auto flex max-w-280 justify-between gap-20 px-5 py-10 min-[560px]:py-20">
             <div className="flex flex-col items-start justify-between gap-10">
               <h2 className="text-4xl font-bold uppercase">
                 {t('firstSection.title')}
               </h2>
 
               <div
-                className="flex flex-col gap-4 text-justify text-unbBlack-10"
+                className="text-unbBlack-10 flex flex-col gap-4 text-justify"
                 dangerouslySetInnerHTML={{
                   __html: t.raw('firstSection.description'),
                 }}
@@ -88,7 +88,7 @@ export default function Home() {
               </div>
 
               <Link
-                className="rounded-xl bg-unbGreen-400 px-10 py-5 font-bold uppercase transition-all hover:bg-unbGreen-500"
+                className="bg-unbGreen-400 hover:bg-unbGreen-500 rounded-xl px-10 py-5 font-bold uppercase transition-all"
                 href="/projects#space-missions"
               >
                 {t('firstSection.link')}
@@ -106,7 +106,7 @@ export default function Home() {
         </div>
 
         <div>
-          <section className="mx-auto flex max-w-[1120px] justify-between gap-20 px-5 py-10 min-[560px]:py-20">
+          <section className="mx-auto flex max-w-280 justify-between gap-20 px-5 py-10 min-[560px]:py-20">
             <Image
               className="hidden min-[960px]:block"
               src="/images/small_sat_simulator_icon.svg"
@@ -115,8 +115,8 @@ export default function Home() {
               height={494}
             />
 
-            <div className="flex flex-col items-end justify-between gap-10 text-unbBlue-400">
-              <h2 className="text-4xl font-bold uppercase text-unbBlue-600">
+            <div className="text-unbBlue-400 flex flex-col items-end justify-between gap-10">
+              <h2 className="text-unbBlue-600 text-4xl font-bold uppercase">
                 {t('secondSection.title')}
               </h2>
 
@@ -135,7 +135,7 @@ export default function Home() {
               </div>
 
               <Link
-                className="rounded-xl bg-unbBlue-400 px-10 py-5 font-bold uppercase text-unbBlack-5 transition-all hover:bg-unbBlue-600"
+                className="bg-unbBlue-400 text-unbBlack-5 hover:bg-unbBlue-600 rounded-xl px-10 py-5 font-bold uppercase transition-all"
                 href="/projects#small-sat-simulator"
               >
                 {t('secondSection.link')}
@@ -145,14 +145,14 @@ export default function Home() {
         </div>
 
         <div className="bg-unbGreen-400">
-          <section className="mx-auto flex max-w-[1120px] justify-between gap-20 px-5 py-10 min-[560px]:py-20">
+          <section className="mx-auto flex max-w-280 justify-between gap-20 px-5 py-10 min-[560px]:py-20">
             <div className="flex flex-col items-start justify-between gap-10">
               <h2 className="text-4xl font-bold uppercase">
                 {t('thirdSection.title')}
               </h2>
 
               <div
-                className="flex flex-col gap-4 text-justify text-unbBlack-10"
+                className="text-unbBlack-10 flex flex-col gap-4 text-justify"
                 dangerouslySetInnerHTML={{
                   __html: t.raw('thirdSection.description'),
                 }}
@@ -171,7 +171,7 @@ export default function Home() {
               </div>
 
               <Link
-                className="rounded-xl bg-unbBlack-5 px-10 py-5 font-bold uppercase text-unbBlue-400 transition-all hover:bg-unbBlack-25"
+                className="bg-unbBlack-5 text-unbBlue-400 hover:bg-unbBlack-25 rounded-xl px-10 py-5 font-bold uppercase transition-all"
                 href="/projects#high-altitude-ballooning"
               >
                 {t('thirdSection.link')}

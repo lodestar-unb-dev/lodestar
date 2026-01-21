@@ -34,7 +34,7 @@ export function OrbitLayout({
 
   return (
     <div
-      className="relative -mb-[520px] origin-top scale-[35%] transform sm:-mb-[400px] sm:scale-50 md:-mb-[250px] md:scale-[70%] lg:mb-0 lg:scale-100"
+      className="relative -mb-130 origin-top scale-[35%] transform sm:-mb-100 sm:scale-50 md:-mb-62.5 md:scale-[70%] lg:mb-0 lg:scale-100"
       style={{ width: containerSize, height: containerSize }}
     >
       {/* SVG de fundo: círculo + linhas */}
@@ -80,7 +80,7 @@ export function OrbitLayout({
       <Image
         src={centerImage}
         alt="Central"
-        className="absolute rounded-xl bg-unbBlack-0"
+        className="bg-unbBlack-0 absolute rounded-xl"
         style={{
           width: centerSize,
           height: centerSize,
@@ -102,7 +102,7 @@ export function OrbitLayout({
             <Image
               src={src}
               alt={`Orbit ${idx}`}
-              className="absolute bg-unbBlack-0"
+              className="bg-unbBlack-0 absolute"
               style={{
                 width,
                 height: height ?? 'auto',

@@ -10,14 +10,14 @@ export function Hero() {
   return (
     <section className="relative h-full">
       <Image
-        className="aspect-[16/9] max-h-[90vh] w-full object-cover"
+        className="aspect-video max-h-[90vh] w-full object-cover"
         src={heroBg}
         alt=""
       />
 
-      <div className="absolute inset-0 bg-gradient-to-b from-unbBlack-100/0 to-unbBlack-100" />
+      <div className="from-unbBlack-100/0 to-unbBlack-100 absolute inset-0 bg-linear-to-b" />
 
-      <div className="absolute left-1/2 top-0 mx-auto flex h-full w-full max-w-[1200px] -translate-x-1/2 items-center px-5">
+      <div className="absolute top-0 left-1/2 mx-auto flex h-full w-full max-w-300 -translate-x-1/2 items-center px-5">
         <div className="space-y-4 md:space-y-14">
           <Image
             src={logoText}

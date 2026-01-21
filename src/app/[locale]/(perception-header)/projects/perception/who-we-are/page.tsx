@@ -69,20 +69,20 @@ export default function WhoWeArePage() {
 
   return (
     <main>
-      <section className="relative flex min-h-56 flex-col items-center justify-center bg-unbBlue-400 px-5 text-center md:min-h-[384px]">
+      <section className="bg-unbBlue-400 relative flex min-h-56 flex-col items-center justify-center px-5 text-center md:min-h-96">
         <h1 className="z-10 mt-80 text-2xl font-semibold uppercase md:text-4xl">
           {t('headerTitle')}
         </h1>
         <Image
-          className="absolute inset-0 mx-auto size-full max-w-[1160px] object-cover object-[50%_10%]"
+          className="absolute inset-0 mx-auto size-full max-w-290 object-cover object-[50%_10%]"
           src={whoWeAre}
           alt="quem somos"
         />
-        <div className="absolute inset-0 size-full bg-gradient-to-b from-unbBlack-100/0 to-unbBlue-400" />
+        <div className="from-unbBlack-100/0 to-unbBlue-400 absolute inset-0 size-full bg-linear-to-b" />
       </section>
       <div className="bg-unbBlack-0 text-justify">
         <div className="bg-unbBlue-400">
-          <div className="mx-auto max-w-[1200px] space-y-3 px-5 py-10 text-sm md:text-base lg:py-20">
+          <div className="mx-auto max-w-300 space-y-3 px-5 py-10 text-sm md:text-base lg:py-20">
             <p
               dangerouslySetInnerHTML={{
                 __html: t.raw('headerFirstDescription'),
@@ -114,8 +114,8 @@ export default function WhoWeArePage() {
             />
           </div>
         </div>
-        <section className="mx-auto flex max-w-[1200px] flex-col items-center gap-5 px-5 py-10 lg:gap-10 lg:py-20">
-          <h2 className="text-center font-semibold uppercase text-[#1A3E76] md:text-xl">
+        <section className="mx-auto flex max-w-300 flex-col items-center gap-5 px-5 py-10 lg:gap-10 lg:py-20">
+          <h2 className="text-center font-semibold text-[#1A3E76] uppercase md:text-xl">
             {t('title')}
           </h2>
 
@@ -129,9 +129,9 @@ export default function WhoWeArePage() {
           />
         </section>
       </div>
-      <section className="relative bg-unbBlack-100">
-        <div className="z-10 mx-auto flex max-w-[1200px] flex-col items-center justify-center gap-14 px-5 py-5 lg:py-10">
-          <div className="z-10 flex max-w-[400px] flex-col gap-4 text-center text-lg md:text-2xl">
+      <section className="bg-unbBlack-100 relative">
+        <div className="z-10 mx-auto flex max-w-300 flex-col items-center justify-center gap-14 px-5 py-5 lg:py-10">
+          <div className="z-10 flex max-w-100 flex-col gap-4 text-center text-lg md:text-2xl">
             <span>{t('footer.title')}</span>
             <span>{t('footer.description')}</span>
           </div>
@@ -140,17 +140,17 @@ export default function WhoWeArePage() {
             href="mailto:lodestar@aerospace.unb.br"
             target="_blank"
             rel="noopener noreferrer"
-            className="z-10 rounded bg-perceptionOrange-300 px-4 py-3 uppercase transition-colors hover:bg-unbBlack-0 hover:text-perceptionOrange-300"
+            className="bg-perceptionOrange-300 hover:bg-unbBlack-0 hover:text-perceptionOrange-300 z-10 rounded px-4 py-3 uppercase transition-colors"
           >
             {t('footer.cta')}
           </a>
         </div>
         <Image
-          className="absolute inset-0 mx-auto size-full max-w-[1160px] bg-unbBlack-100 object-cover object-top"
+          className="bg-unbBlack-100 absolute inset-0 mx-auto size-full max-w-290 object-cover object-top"
           src={beAPartnerImg}
           alt="be a partner"
         />
-        <div className="absolute inset-0 size-full bg-gradient-to-b from-unbBlack-100/40 to-unbBlack-100" />
+        <div className="from-unbBlack-100/40 to-unbBlack-100 absolute inset-0 size-full bg-linear-to-b" />
       </section>
     </main>
   )
