@@ -8,8 +8,8 @@ export function Footer() {
   const t = useTranslations('Projects.Perception.Footer')
 
   return (
-    <footer className="bg-unbBlack-100 ">
-      <div className="mx-auto max-w-[1200px] px-5 pb-7 pt-10">
+    <footer className="bg-unbBlack-100">
+      <div className="mx-auto max-w-300 px-5 pt-10 pb-7">
         <div className="flex justify-between">
           <Link
             href="/projects/perception"
@@ -19,7 +19,7 @@ export function Footer() {
 
             <span className="text-lg font-medium">Perception</span>
 
-            <span className="text-xs font-light text-unbBlack-25">
+            <span className="text-unbBlack-25 text-xs font-light">
               {t('description')}
             </span>
           </Link>
@@ -62,10 +62,10 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-11 h-px w-full bg-unbBlack-75" />
+        <div className="bg-unbBlack-75 mt-11 h-px w-full" />
 
         <div className="mt-4 flex justify-between">
-          <div className="text-[0.625rem] leading-normal text-unbBlack-50">
+          <div className="text-unbBlack-50 text-[0.625rem] leading-normal">
             2024 - LODESTAR UnB
           </div>
 

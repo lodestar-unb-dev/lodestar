@@ -62,12 +62,12 @@ export default function Projects() {
   return (
     <Layout id="projects">
       <main className="bg-unbBlack-10 pt-10 min-[560px]:pt-20">
-        <section className="mx-auto flex w-full max-w-[1120px] flex-col items-start justify-center gap-4 px-5 pb-10 min-[560px]:items-center min-[560px]:pb-20">
-          <h2 className="text-4xl uppercase text-unbBlue-400 min-[560px]:text-6xl">
+        <section className="mx-auto flex w-full max-w-280 flex-col items-start justify-center gap-4 px-5 pb-10 min-[560px]:items-center min-[560px]:pb-20">
+          <h2 className="text-unbBlue-400 text-4xl uppercase min-[560px]:text-6xl">
             {t('title')}
           </h2>
           <div>
-            <p className="flex flex-col gap-4 text-justify text-unbBlue-400">
+            <p className="text-unbBlue-400 flex flex-col gap-4 text-justify">
               {t('subTitle')}
             </p>
           </div>
@@ -75,16 +75,16 @@ export default function Projects() {
 
         <section
           id="space-missions"
-          className="flex flex-col items-center justify-center gap-8 bg-unbBlue-600 py-10 min-[560px]:gap-16 min-[560px]:py-20"
+          className="bg-unbBlue-600 flex flex-col items-center justify-center gap-8 py-10 min-[560px]:gap-16 min-[560px]:py-20"
         >
           <h3 className="text-center text-3xl uppercase min-[560px]:text-4xl">
             {t('firstSection.title')}
           </h3>
 
           <div className="flex flex-col items-center gap-8 min-[560px]:gap-16">
-            <article className="mx-auto flex w-full max-w-[1120px] flex-row-reverse items-center justify-between gap-20 px-5">
+            <article className="mx-auto flex w-full max-w-280 flex-row-reverse items-center justify-between gap-20 px-5">
               <Image
-                className="hidden max-h-[166px] w-full max-w-[200px] bg-white p-5 min-[560px]:block"
+                className="hidden max-h-41.5 w-full max-w-50 bg-white p-5 min-[560px]:block"
                 src={perceptionLogo}
                 width={200}
                 height={166}
@@ -101,7 +101,7 @@ export default function Projects() {
                 </div>
 
                 <Link
-                  className="rounded-xl bg-unbGreen-400 p-4 font-bold uppercase transition-all hover:bg-unbGreen-500 min-[560px]:px-12 min-[560px]:py-5"
+                  className="bg-unbGreen-400 hover:bg-unbGreen-500 rounded-xl p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5"
                   href="/projects/perception"
                 >
                   {t('firstSection.Perception.link')}
@@ -109,11 +109,11 @@ export default function Projects() {
               </div>
             </article>
 
-            <span className="block h-px w-full max-w-[1080px] bg-unbBlue-400" />
+            <span className="bg-unbBlue-400 block h-px w-full max-w-270" />
 
-            <article className="mx-auto flex w-full max-w-[1120px] items-center justify-between gap-20 px-5">
+            <article className="mx-auto flex w-full max-w-280 items-center justify-between gap-20 px-5">
               <Image
-                className="hidden max-h-[166px] w-full max-w-[200px] min-[560px]:block"
+                className="hidden max-h-41.5 w-full max-w-50 min-[560px]:block"
                 src="https://images.prismic.io/lodestar/7afc16e4-a88d-4e22-b8f4-e6e4b28ddb94_alfacrux_logo.webp"
                 width={200}
                 height={166}
@@ -130,7 +130,7 @@ export default function Projects() {
                 </div>
 
                 <Link
-                  className="rounded-xl bg-unbGreen-400 p-4 font-bold uppercase transition-all hover:bg-unbGreen-500 min-[560px]:px-12 min-[560px]:py-5"
+                  className="bg-unbGreen-400 hover:bg-unbGreen-500 rounded-xl p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5"
                   href="/projects/alfacrux"
                 >
                   {t('firstSection.AlfaCrux.link')}
@@ -138,11 +138,11 @@ export default function Projects() {
               </div>
             </article>
 
-            <span className="block h-px w-full max-w-[1080px] bg-unbBlue-400" />
+            <span className="bg-unbBlue-400 block h-px w-full max-w-270" />
 
-            <article className="mx-auto flex w-full max-w-[1120px] flex-row-reverse items-center justify-between gap-20 px-5">
+            <article className="mx-auto flex w-full max-w-280 flex-row-reverse items-center justify-between gap-20 px-5">
               <Image
-                className="hidden max-h-[200px] w-full max-w-[159px] min-[560px]:block"
+                className="hidden max-h-50 w-full max-w-39.75 min-[560px]:block"
                 src="https://images.prismic.io/lodestar/b088d583-caa2-49d3-b099-e5e89c9ed9bb_wormsail_logo.webp?auto=compress,format&rect=0,0,242,304&w=200&h=251"
                 height={200}
                 width={159}
@@ -158,17 +158,17 @@ export default function Projects() {
                   <p>{t('firstSection.WormSail.description')}</p>
                 </div>
 
-                <span className="rounded-xl border border-unbGreen-400 p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5">
+                <span className="border-unbGreen-400 rounded-xl border p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5">
                   {t('firstSection.WormSail.link')}
                 </span>
               </div>
             </article>
 
-            <span className="block h-px w-full max-w-[1080px] bg-unbBlue-400" />
+            <span className="bg-unbBlue-400 block h-px w-full max-w-270" />
 
-            <article className="mx-auto flex w-full max-w-[1120px] items-center justify-between gap-20 px-5">
+            <article className="mx-auto flex w-full max-w-280 items-center justify-between gap-20 px-5">
               <Image
-                className="hidden max-h-[200px] w-full max-w-[150px] min-[560px]:block"
+                className="hidden max-h-50 w-full max-w-37.5 min-[560px]:block"
                 src="https://images.prismic.io/lodestar/84ee5161-dba0-4806-b02e-67b1ca3034e5_WhatsApp_Image_2022-03-24_at_20.02.58-removebg-preview.png?auto=compress,format&rect=0,0,127,169&w=200&h=266"
                 width={150}
                 height={200}
@@ -185,7 +185,7 @@ export default function Projects() {
                 </div>
 
                 <a
-                  className="rounded-xl bg-unbGreen-400 p-4 font-bold uppercase transition-all hover:bg-unbGreen-500 min-[560px]:px-12 min-[560px]:py-5"
+                  className="bg-unbGreen-400 hover:bg-unbGreen-500 rounded-xl p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5"
                   href="https://www.nottingham.ac.uk/aerospace/space/cubesat-programme/cubesat-missions/index.aspx"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -195,11 +195,11 @@ export default function Projects() {
               </div>
             </article>
 
-            <span className="block h-px w-full max-w-[1080px] bg-unbBlue-400" />
+            <span className="bg-unbBlue-400 block h-px w-full max-w-270" />
 
-            <article className="mx-auto flex w-full max-w-[1120px] flex-row-reverse items-center justify-between gap-20 px-5">
+            <article className="mx-auto flex w-full max-w-280 flex-row-reverse items-center justify-between gap-20 px-5">
               <Image
-                className="hidden max-h-[200px] w-full max-w-[159px] min-[560px]:block"
+                className="hidden max-h-50 w-full max-w-39.75 min-[560px]:block"
                 src="https://images.prismic.io/lodestar/cfc2805c-6baa-4372-9eaa-16a0abe24b9e_glee_logo.webp?auto=compress,format&rect=0,0,251,251&w=200&h=200"
                 height={200}
                 width={200}
@@ -216,7 +216,7 @@ export default function Projects() {
                 </div>
 
                 <a
-                  className="rounded-xl bg-unbGreen-400 p-4 font-bold uppercase transition-all hover:bg-unbGreen-500 min-[560px]:px-12 min-[560px]:py-5"
+                  className="bg-unbGreen-400 hover:bg-unbGreen-500 rounded-xl p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5"
                   href="https://www.glee2023.org/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -232,14 +232,14 @@ export default function Projects() {
           className="flex flex-col items-center justify-center gap-16 py-10 min-[560px]:gap-8 min-[560px]:py-20"
           id="small-sat-simulator"
         >
-          <h3 className="text-center text-3xl uppercase text-unbBlue-600 min-[560px]:text-4xl">
+          <h3 className="text-unbBlue-600 text-center text-3xl uppercase min-[560px]:text-4xl">
             {t('secondSection.title')}
           </h3>
 
-          <div className="flex flex-col items-center gap-8 text-unbBlue-400 min-[560px]:gap-16">
-            <article className="mx-auto flex w-full max-w-[1120px] items-center justify-between gap-20 px-5">
+          <div className="text-unbBlue-400 flex flex-col items-center gap-8 min-[560px]:gap-16">
+            <article className="mx-auto flex w-full max-w-280 items-center justify-between gap-20 px-5">
               <Image
-                className="hidden max-h-[200px] w-full max-w-[168px] min-[560px]:block"
+                className="hidden max-h-50 w-full max-w-42 min-[560px]:block"
                 src="https://images.prismic.io/lodestar/30be7a6c-8ecc-4dd7-8544-cd6ead0ab760_logo.webp?auto=compress,format&rect=0,0,742,883&w=200&h=238"
                 width={168}
                 height={200}
@@ -255,7 +255,7 @@ export default function Projects() {
                   <p>{t('secondSection.Simulator.description')}</p>
                 </div>
 
-                <span className="rounded-xl border border-unbBlue-400 p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5">
+                <span className="border-unbBlue-400 rounded-xl border p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5">
                   {t('secondSection.Simulator.link')}
                 </span>
               </div>
@@ -264,7 +264,7 @@ export default function Projects() {
         </section>
 
         <section
-          className="flex flex-col items-center justify-center gap-16 bg-unbGreen-400 py-10 min-[560px]:gap-8 min-[560px]:py-20"
+          className="bg-unbGreen-400 flex flex-col items-center justify-center gap-16 py-10 min-[560px]:gap-8 min-[560px]:py-20"
           id="high-altitude-ballooning"
         >
           <h3 className="text-center text-3xl uppercase min-[560px]:text-4xl">
@@ -272,9 +272,9 @@ export default function Projects() {
           </h3>
 
           <div className="flex flex-col items-center gap-8 min-[560px]:gap-16">
-            <article className="mx-auto flex w-full max-w-[1120px] items-center justify-between gap-20 px-5">
+            <article className="mx-auto flex w-full max-w-280 items-center justify-between gap-20 px-5">
               <Image
-                className="hidden max-h-[200px] w-full max-w-[155px] min-[560px]:block"
+                className="hidden max-h-50 w-full max-w-38.75 min-[560px]:block"
                 width={155}
                 height={200}
                 alt="project logo"
@@ -291,7 +291,7 @@ export default function Projects() {
                 </div>
 
                 <a
-                  className="rounded-xl bg-unbBlack-0 p-4 font-bold uppercase text-unbBlue-400 transition-all hover:bg-unbBlack-10 min-[560px]:px-12 min-[560px]:py-5"
+                  className="bg-unbBlack-0 text-unbBlue-400 hover:bg-unbBlack-10 rounded-xl p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5"
                   href="https://www.youtube.com/channel/UCDbPHM1djZ8KOvkJh46NqRA"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -301,11 +301,11 @@ export default function Projects() {
               </div>
             </article>
 
-            <span className="block h-px w-full max-w-[1080px] bg-unbGreen-300" />
+            <span className="bg-unbGreen-300 block h-px w-full max-w-270" />
 
-            <article className="mx-auto flex w-full max-w-[1120px] flex-row-reverse items-center justify-between gap-20 px-5">
+            <article className="mx-auto flex w-full max-w-280 flex-row-reverse items-center justify-between gap-20 px-5">
               <Image
-                className="hidden max-h-[200px] w-full max-w-[159px] min-[560px]:block"
+                className="hidden max-h-50 w-full max-w-39.75 min-[560px]:block"
                 src="https://images.prismic.io/lodestar/feeb99b9-2446-46fd-a3dd-970750d2e766_kuaray_logo.webp?auto=compress,format&rect=0,0,778,634&w=200&h=163"
                 height={163}
                 width={200}
@@ -322,7 +322,7 @@ export default function Projects() {
                 </div>
 
                 <a
-                  className="rounded-xl bg-unbBlack-0 p-4 font-bold uppercase text-unbBlue-400 transition-all hover:bg-unbBlack-10 min-[560px]:px-12 min-[560px]:py-5"
+                  className="bg-unbBlack-0 text-unbBlue-400 hover:bg-unbBlack-10 rounded-xl p-4 font-bold uppercase transition-all min-[560px]:px-12 min-[560px]:py-5"
                   href="https://www.facebook.com/projetokuaray"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -30,8 +30,8 @@ export function HeaderLink({
   return (
     <Link
       className={twMerge(
-        'text-lg text-unbBlack-25 transition-colors hover:text-unbBlack-5',
-        isActive && 'font-bold text-unbBlack-5',
+        'text-unbBlack-25 hover:text-unbBlack-5 text-lg transition-colors',
+        isActive && 'text-unbBlack-5 font-bold',
         className,
       )}
       href={href}

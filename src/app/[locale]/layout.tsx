@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Barlow } from 'next/font/google'
-import { twMerge } from 'tailwind-merge'
 
-import './globals.css'
+import '../globals.css'
 import './embla.css'
 
 const barlow = Barlow({
@@ -41,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={locale}>
-      <body className={twMerge(barlow.variable, 'flex flex-col font-barlow')}>
+      <body className={`${barlow.variable} font-barlow flex flex-col`}>
         {children}
       </body>
     </html>

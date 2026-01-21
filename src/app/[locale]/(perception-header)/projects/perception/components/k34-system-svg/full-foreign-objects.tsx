@@ -17,12 +17,12 @@ export function FullForeignObjects() {
         <Tooltip.Root open={open} onOpenChange={(e) => setOpen(e)}>
           <Tooltip.Trigger
             onClick={() => setOpen((prevValue) => !prevValue)}
-            className="group cursor-default select-none transition-opacity"
+            className="group cursor-default transition-opacity select-none"
           >
-            <PlusSquareIcon className="fill-unbBlack-100/60 stroke-perceptionOrange-300 transition-colors group-hover:fill-unbBlack-100" />
+            <PlusSquareIcon className="fill-unbBlack-100/60 stroke-perceptionOrange-300 group-hover:fill-unbBlack-100 transition-colors" />
           </Tooltip.Trigger>
           <Tooltip.Portal>
-            <Tooltip.Content className="z-[61] max-w-[321px] rounded border border-perceptionOrange-300 bg-unbBlack-100/95 p-3">
+            <Tooltip.Content className="border-perceptionOrange-300 bg-unbBlack-100/95 z-61 max-w-80.25 rounded border p-3">
               <strong>{t('remote-monitoring-unit.title')}</strong>
 
               <p>{t('remote-monitoring-unit.description')}</p>

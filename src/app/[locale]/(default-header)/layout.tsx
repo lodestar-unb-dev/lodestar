@@ -10,7 +10,7 @@ export default function DefaultHeaderLayout({
     <>
       <Header />
 
-      <div className="flex-1">{children}</div>
+      <div className="bg-unbBlack-5 flex-1">{children}</div>
 
       <Footer />
     </>

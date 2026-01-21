@@ -36,16 +36,16 @@ export function TeamMemberCard({
 
   return (
     <a
-      className="flex w-64 flex-col justify-self-center rounded-xl bg-unbBlack-5 transition-all hover:opacity-80 min-[560px]:w-80"
+      className="bg-unbBlack-5 flex w-64 flex-col justify-self-center rounded-xl transition-all hover:opacity-80 min-[560px]:w-80"
       href={lattesUrl}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <section className="ml-3 mt-3 min-[560px]:ml-7 min-[560px]:mt-7">
+      <section className="mt-3 ml-3 min-[560px]:mt-7 min-[560px]:ml-7">
         <h3 className="mb-3 text-xl min-[560px]:text-3xl">{name}</h3>
         <span
           className={twMerge(
-            'inline-block rounded-xl p-2 text-sm text-unbBlack-5 min-[560px]:p-3',
+            'text-unbBlack-5 inline-block rounded-xl p-2 text-sm min-[560px]:p-3',
             highlightColor === 'black' && 'bg-unbBlack-100',
             highlightColor === 'blue' && 'bg-unbBlue-400',
             highlightColor === 'green' && 'bg-unbGreen-400',
@@ -56,7 +56,7 @@ export function TeamMemberCard({
       </section>
 
       <Image
-        className="mx-auto mt-3 h-48 w-48 object-cover object-top min-[560px]:-mt-8 min-[560px]:ml-auto min-[560px]:mr-0 min-[560px]:h-60 min-[560px]:w-60"
+        className="mx-auto mt-3 h-48 w-48 object-cover object-top min-[560px]:-mt-8 min-[560px]:mr-0 min-[560px]:ml-auto min-[560px]:h-60 min-[560px]:w-60"
         src={image.url}
         width={image.width}
         height={image.height}
@@ -65,7 +65,7 @@ export function TeamMemberCard({
 
       <div
         className={twMerge(
-          'h-full rounded-bl-xl rounded-br-xl p-3 text-unbBlack-5 min-[560px]:p-4',
+          'text-unbBlack-5 h-full rounded-br-xl rounded-bl-xl p-3 min-[560px]:p-4',
           highlightColor === 'black' && 'bg-unbBlack-100',
           highlightColor === 'blue' && 'bg-unbBlue-400',
           highlightColor === 'green' && 'bg-unbGreen-400',

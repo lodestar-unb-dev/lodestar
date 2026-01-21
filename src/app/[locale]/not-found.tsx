@@ -15,17 +15,17 @@ export default function NotFoundPage() {
           width={180}
           height={180}
         />
-        <h1 className="text-3xl font-medium uppercase text-unbBlue-700">
+        <h1 className="text-unbBlue-700 text-3xl font-medium uppercase">
           {t('title')}
         </h1>
-        <p className="max-w-xs text-pretty text-center text-unbBlue-400">
+        <p className="text-unbBlue-400 max-w-xs text-center text-pretty">
           {t('description')}
         </p>
         <Link
           href="/"
           locale={locale}
           replace
-          className="rounded-md bg-unbBlue-400 px-4 py-1 font-bold uppercase transition-colors hover:bg-unbBlue-700"
+          className="bg-unbBlue-400 hover:bg-unbBlue-700 rounded-md px-4 py-1 font-bold uppercase transition-colors"
         >
           {t('buttonText')}
         </Link>

@@ -33,7 +33,7 @@ export function LanguageSelector() {
 
       <DropdownMenu.Portal>
         <DropdownMenu.Content
-          className="z-50 rounded-md bg-white p-[5px] shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] will-change-[opacity,transform] data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade data-[side=right]:animate-slideLeftAndFade data-[side=top]:animate-slideDownAndFade"
+          className="data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade data-[side=right]:animate-slideLeftAndFade data-[side=top]:animate-slideDownAndFade z-50 rounded-md bg-white p-1.25 shadow-[0px_10px_38px_-10px_rgba(22,23,24,0.35),0px_10px_20px_-15px_rgba(22,23,24,0.2)] will-change-[opacity,transform]"
           sideOffset={5}
         >
           <DropdownMenu.RadioGroup
@@ -47,7 +47,7 @@ export function LanguageSelector() {
                 <DropdownMenu.RadioItem
                   key={key}
                   value={key}
-                  className="relative flex h-[25px] select-none items-center rounded-md px-[5px] leading-none outline-none hover:bg-unbBlue-200 focus:bg-unbBlue-200   data-[disabled]:pointer-events-none"
+                  className="hover:bg-unbBlue-200 focus:bg-unbBlue-200 relative flex h-6.25 items-center rounded-md px-1.25 leading-none outline-none select-none data-disabled:pointer-events-none"
                 >
                   <Link href={pathname} locale={key}>
                     {languages[key]}
