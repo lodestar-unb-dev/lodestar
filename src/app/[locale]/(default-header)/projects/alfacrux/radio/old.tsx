@@ -1,22 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
-'use client'
+"use client";
 
-import { useEffect, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 
-import { ComingNext, RadioBanner, RadioForm, RadioInfo } from './styles'
-import { AlfaCruxMissionControl } from '../styles'
-import { RichTextField } from '@prismicio/client'
-import { useTheme } from 'styled-components'
-import { useTranslations } from 'next-intl'
+import { ComingNext, RadioBanner, RadioForm, RadioInfo } from "./styles";
+import { AlfaCruxMissionControl } from "../styles";
+import { RichTextField } from "@prismicio/client";
+import { useTheme } from "styled-components";
+import { useTranslations } from "next-intl";
 
 const variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
-}
+};
 
-function Info({ value }: { value: 'sdr' | 'ttc' | 'ham' | 'basic' }) {
-  const t = useTranslations('Projects.AlfaCrux.Radio')
+function Info({ value }: { value: "sdr" | "ttc" | "ham" | "basic" }) {
+  const t = useTranslations("Projects.AlfaCrux.Radio");
 
   return (
     <motion.div
@@ -27,7 +27,7 @@ function Info({ value }: { value: 'sdr' | 'ttc' | 'ham' | 'basic' }) {
       transition={{ duration: 0.4 }}
       dangerouslySetInnerHTML={{ __html: t.raw(`radioInfo.${value}.info`) }}
     />
-  )
+  );
 }
 
 function CommingSoon() {
@@ -39,8 +39,8 @@ function CommingSoon() {
       variants={variants}
       transition={{ duration: 0.4 }}
       style={{
-        flexDirection: 'row',
-        justifyContent: 'center',
+        flexDirection: "row",
+        justifyContent: "center",
         paddingTop: 92,
         paddingBottom: 91,
       }}
@@ -48,115 +48,115 @@ function CommingSoon() {
       {/* <Tool /> */}
       <strong>More information comming soon...</strong>
     </motion.div>
-  )
+  );
 }
 
 export interface AlfaCruxRadioPrismicDocument {
   banner_image: {
     dimensions: {
-      width: number
-      height: number
-    }
-    alt: string
-    url: string
-  }
+      width: number;
+      height: number;
+    };
+    alt: string;
+    url: string;
+  };
   alfacrux_logo: {
     dimensions: {
-      width: number
-      height: number
-    }
-    alt: string
-    url: string
-  }
-  title: string
-  description: RichTextField
-  radio_info_title: string
+      width: number;
+      height: number;
+    };
+    alt: string;
+    url: string;
+  };
+  title: string;
+  description: RichTextField;
+  radio_info_title: string;
   basic_info: {
-    key: string
-    value: RichTextField
-  }[]
-  basic_description: RichTextField
+    key: string;
+    value: RichTextField;
+  }[];
+  basic_description: RichTextField;
   sdr_info: {
-    key: string
-    value: RichTextField
-  }[]
-  sdr_description: RichTextField
+    key: string;
+    value: RichTextField;
+  }[];
+  sdr_description: RichTextField;
   ham_info: {
-    key: string
-    value: RichTextField
-  }[]
-  ham_description: RichTextField
+    key: string;
+    value: RichTextField;
+  }[];
+  ham_description: RichTextField;
   ttc_info: {
-    key: string
-    value: RichTextField
-  }[]
-  ttc_description: RichTextField
-  telemetry_viewer_title: string
-  telemetry_viewer_description: RichTextField
-  coming_next_title: string
+    key: string;
+    value: RichTextField;
+  }[];
+  ttc_description: RichTextField;
+  telemetry_viewer_title: string;
+  telemetry_viewer_description: RichTextField;
+  coming_next_title: string;
   coming_next_group: {
     coming_next_image: {
       dimensions: {
-        width: number
-        height: number
-      }
-      alt: string
-      url: string
-    }
-    coming_next_description: RichTextField
-  }[]
+        width: number;
+        height: number;
+      };
+      alt: string;
+      url: string;
+    };
+    coming_next_description: RichTextField;
+  }[];
 }
 
 interface AlfaCruxRadioProps {
-  alfacruxRadioPrismicDocument: AlfaCruxRadioPrismicDocument | null
+  alfacruxRadioPrismicDocument: AlfaCruxRadioPrismicDocument | null;
 }
 
 export function OldAlfaCruxRadio({
   alfacruxRadioPrismicDocument,
 }: AlfaCruxRadioProps) {
   const [activeFilter, setActiveFilter] = useState<
-    'basic' | 'ham' | 'sdr' | 'ttc'
-  >('basic')
-  const theme = useTheme()
+    "basic" | "ham" | "sdr" | "ttc"
+  >("basic");
+  const theme = useTheme();
 
-  function handleFilterChange(filterNumber: 'basic' | 'ham' | 'sdr' | 'ttc') {
-    if (filterNumber === activeFilter) return
+  function handleFilterChange(filterNumber: "basic" | "ham" | "sdr" | "ttc") {
+    if (filterNumber === activeFilter) return;
 
-    setActiveFilter(filterNumber)
+    setActiveFilter(filterNumber);
   }
-  const t = useTranslations('Projects.AlfaCrux.Radio')
+  const t = useTranslations("Projects.AlfaCrux.Radio");
 
   useEffect(() => {
-    const path = window.location.hash
-    if (path && path.includes('#')) {
+    const path = window.location.hash;
+    if (path && path.includes("#")) {
       setTimeout(() => {
-        const id = path.replace('#', '')
-        const el = window.document.getElementById(id)
-        const r = el?.getBoundingClientRect()
+        const id = path.replace("#", "");
+        const el = window.document.getElementById(id);
+        const r = el?.getBoundingClientRect();
         if (r) {
           window?.top?.scroll({
             top: scrollY + r.top - 73,
-            behavior: 'smooth',
-          })
+            behavior: "smooth",
+          });
         }
-      }, 600)
+      }, 600);
     }
-  }, [])
+  }, []);
 
   if (!alfacruxRadioPrismicDocument) {
     return (
       <div
         style={{
-          color: 'black',
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+          color: "black",
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         Erro no carregamento das informações.
       </div>
-    )
+    );
   }
 
   const {
@@ -170,7 +170,7 @@ export function OldAlfaCruxRadio({
     sdr_description,
     ttc_info,
     ttc_description,
-  } = alfacruxRadioPrismicDocument
+  } = alfacruxRadioPrismicDocument;
 
   const info = {
     basic: {
@@ -189,85 +189,85 @@ export function OldAlfaCruxRadio({
       description: ttc_description,
       keyValue: ttc_info,
     },
-  }
+  };
 
   return (
     <div>
       <RadioBanner role="banner" bgImageUrl={banner_image.url}>
         <article>
           <img src={alfacrux_logo.url} alt={alfacrux_logo.alt} />
-          <h2>{t('title')}</h2>
+          <h2>{t("title")}</h2>
 
-          <div dangerouslySetInnerHTML={{ __html: t.raw('description') }} />
+          <div dangerouslySetInnerHTML={{ __html: t.raw("description") }} />
         </article>
       </RadioBanner>
 
       <RadioInfo>
-        <h3>{t('radioInfo.title')}</h3>
+        <h3>{t("radioInfo.title")}</h3>
 
         <nav>
           <button
             style={{
               backgroundColor:
-                activeFilter === 'basic'
+                activeFilter === "basic"
                   ? theme.colors.blue
                   : theme.colors.black0,
               color:
-                activeFilter === 'basic'
+                activeFilter === "basic"
                   ? theme.colors.black5
                   : theme.colors.blue,
             }}
-            onClick={() => handleFilterChange('basic')}
+            onClick={() => handleFilterChange("basic")}
           >
-            {t('radioInfo.basic.title')}
+            {t("radioInfo.basic.title")}
           </button>
 
           <button
             style={{
               backgroundColor:
-                activeFilter === 'sdr'
+                activeFilter === "sdr"
                   ? theme.colors.green
                   : theme.colors.black0,
               color:
-                activeFilter === 'sdr'
+                activeFilter === "sdr"
                   ? theme.colors.black5
                   : theme.colors.blue,
             }}
-            onClick={() => handleFilterChange('sdr')}
+            onClick={() => handleFilterChange("sdr")}
           >
-            {t('radioInfo.sdr.title')}
+            {t("radioInfo.sdr.title")}
           </button>
 
           <button
             style={{
               backgroundColor:
-                activeFilter === 'ham'
+                activeFilter === "ham"
                   ? theme.colors.black100
                   : theme.colors.black0,
               color:
-                activeFilter === 'ham'
+                activeFilter === "ham"
                   ? theme.colors.black5
                   : theme.colors.blue,
             }}
-            onClick={() => handleFilterChange('ham')}
+            onClick={() => handleFilterChange("ham")}
           >
-            {t('radioInfo.ham.title')}
+            {t("radioInfo.ham.title")}
           </button>
 
           <button
             style={{
               backgroundColor:
-                activeFilter === 'ttc'
+                activeFilter === "ttc"
                   ? theme.colors.blue
                   : theme.colors.black0,
               color:
-                activeFilter === 'ttc'
+                activeFilter === "ttc"
                   ? theme.colors.black5
                   : theme.colors.blue,
             }}
-            onClick={() => handleFilterChange('ttc')}
+            onClick={() => handleFilterChange("ttc")}
           >
-            {t('radioInfo.ttc.title')}
+            {t("radioInfo.ttc.title")}
           </button>
         </nav>
 
@@ -283,9 +283,9 @@ export function OldAlfaCruxRadio({
 
       <RadioForm>
         <div>
-          <h3>{t('radioForm.title')}</h3>
+          <h3>{t("radioForm.title")}</h3>
 
-          <h4>{t('radioForm.form')}</h4>
+          <h4>{t("radioForm.form")}</h4>
           <iframe
             className="form"
             src="https://dbgeolog.unb.br/lodestar/form.php"
@@ -294,7 +294,7 @@ export function OldAlfaCruxRadio({
 
           <h4
             dangerouslySetInnerHTML={{
-              __html: t.raw('radioForm.collaborators'),
+              __html: t.raw("radioForm.collaborators"),
             }}
           />
           <iframe
@@ -312,16 +312,16 @@ export function OldAlfaCruxRadio({
           </video>
 
           <div className="banner">
-            <h2>{t('missionControl.title')}</h2>
+            <h2>{t("missionControl.title")}</h2>
 
             <section>
               <aside
                 dangerouslySetInnerHTML={{
-                  __html: t.raw('missionControl.description'),
+                  __html: t.raw("missionControl.description"),
                 }}
               />
               <a href="https://mission-control.lodestar.aerospace.unb.br/">
-                {t('missionControl.link')}
+                {t("missionControl.link")}
               </a>
             </section>
 
@@ -331,7 +331,7 @@ export function OldAlfaCruxRadio({
       </AlfaCruxMissionControl>
 
       <ComingNext>
-        <h3>{t('comingNext.title')}</h3>
+        <h3>{t("comingNext.title")}</h3>
 
         <div>
           <article>
@@ -340,10 +340,10 @@ export function OldAlfaCruxRadio({
               alt=""
             />
 
-            <div>{t('comingNext.description')}</div>
+            <div>{t("comingNext.description")}</div>
           </article>
         </div>
       </ComingNext>
     </div>
-  )
+  );
 }

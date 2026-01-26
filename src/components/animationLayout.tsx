@@ -1,17 +1,17 @@
-'use client'
+"use client";
 
-import React, { ReactNode } from 'react'
-import { motion } from 'framer-motion'
+import React, { ReactNode } from "react";
+import { motion } from "motion/react";
 
 type Props = {
-  children: ReactNode
-  id: string
-}
+  children: ReactNode;
+  id: string;
+};
 
 const variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
-}
+};
 
 export function Layout({ children, id, ...rest }: Props) {
   return (
@@ -27,5 +27,5 @@ export function Layout({ children, id, ...rest }: Props) {
     >
       {children}
     </motion.div>
-  )
+  );
 }
