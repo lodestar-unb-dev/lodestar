@@ -1,77 +1,77 @@
-import { useTranslations } from 'next-intl'
-import Image from 'next/image'
-import beAPartnerImg from '../assets/images/join-our-team.jpg'
-import whoWeAre from '../assets/images/who-we-are-2.png'
-import logo from '../assets/icons/logo-alt.svg'
-import unbLogo from '../assets/images/unb.jpg'
-import fapLogo from '../assets/images/fap.avif'
-import lbaLogo from '../assets/images/lba.png'
-import ueaLogo from '../assets/images/uea.png'
-import vigoLogo from '../assets/images/vigo.png'
-import alenLogo from '../assets/images/alen.png'
-import capesLogo from '../assets/images/capes.png'
-import cnpqLogo from '../assets/images/cnpq.png'
-import { OrbitLayout } from '../components/partners'
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import beAPartnerImg from "../assets/images/join-our-team.jpg";
+import whoWeAre from "../assets/images/who-we-are-2.png";
+import logo from "../assets/icons/logo-alt.svg";
+import unbLogo from "../assets/images/unb.jpg";
+import fapLogo from "../assets/images/fap.webp";
+import lbaLogo from "../assets/images/lba.png";
+import ueaLogo from "../assets/images/uea.png";
+import vigoLogo from "../assets/images/vigo.png";
+import alenLogo from "../assets/images/alen.png";
+import capesLogo from "../assets/images/capes.png";
+import cnpqLogo from "../assets/images/cnpq.png";
+import { OrbitLayout } from "../components/partners";
 
 const orbitImgs = [
   {
     src: alenLogo,
     width: 168,
     height: 73,
-    url: 'https://alen.space/',
+    url: "https://alen.space/",
   },
   {
     src: capesLogo,
     width: 70,
     height: 64,
-    url: 'https://www.gov.br/capes/pt-br',
+    url: "https://www.gov.br/capes/pt-br",
   },
   {
     src: fapLogo,
     width: 266,
     height: 148,
-    url: 'https://www.fap.df.gov.br/',
+    url: "https://www.fap.df.gov.br/",
   },
   {
     src: cnpqLogo,
     width: 154,
     height: 48,
-    url: 'https://www.gov.br/cnpq/pt-br',
+    url: "https://www.gov.br/cnpq/pt-br",
   },
   {
     src: vigoLogo,
     width: 210,
     height: 210,
-    url: 'https://www.uvigo.gal/',
+    url: "https://www.uvigo.gal/",
   },
   {
     src: ueaLogo,
     width: 112,
     height: 105,
-    url: 'http://www.uea.edu.br/',
+    url: "http://www.uea.edu.br/",
   },
   {
     src: unbLogo,
     width: 122,
     height: 112,
-    url: 'https://www.unb.br/',
+    url: "https://www.unb.br/",
   },
   {
     src: lbaLogo,
     width: 112,
     height: 112,
-    url: 'https://lba.inpa.gov.br/',
+    url: "https://lba.inpa.gov.br/",
   },
-]
+];
 
 export default function WhoWeArePage() {
-  const t = useTranslations('Projects.Perception.Who-we-are')
+  const t = useTranslations("Projects.Perception.Who-we-are");
 
   return (
     <main>
       <section className="bg-unbBlue-400 relative flex min-h-56 flex-col items-center justify-center px-5 text-center md:min-h-96">
         <h1 className="z-10 mt-80 text-2xl font-semibold uppercase md:text-4xl">
-          {t('headerTitle')}
+          {t("headerTitle")}
         </h1>
         <Image
           className="absolute inset-0 mx-auto size-full max-w-290 object-cover object-[50%_10%]"
@@ -85,38 +85,38 @@ export default function WhoWeArePage() {
           <div className="mx-auto max-w-300 space-y-3 px-5 py-10 text-sm md:text-base lg:py-20">
             <p
               dangerouslySetInnerHTML={{
-                __html: t.raw('headerFirstDescription'),
+                __html: t.raw("headerFirstDescription"),
               }}
             />
 
             <p
               dangerouslySetInnerHTML={{
-                __html: t.raw('headerSecondDescription'),
+                __html: t.raw("headerSecondDescription"),
               }}
             />
 
             <p
               dangerouslySetInnerHTML={{
-                __html: t.raw('p3'),
+                __html: t.raw("p3"),
               }}
             />
 
             <p
               dangerouslySetInnerHTML={{
-                __html: t.raw('p4'),
+                __html: t.raw("p4"),
               }}
             />
 
             <p
               dangerouslySetInnerHTML={{
-                __html: t.raw('p5'),
+                __html: t.raw("p5"),
               }}
             />
           </div>
         </div>
         <section className="mx-auto flex max-w-300 flex-col items-center gap-5 px-5 py-10 lg:gap-10 lg:py-20">
           <h2 className="text-center font-semibold text-[#1A3E76] uppercase md:text-xl">
-            {t('title')}
+            {t("title")}
           </h2>
 
           <OrbitLayout
@@ -132,8 +132,8 @@ export default function WhoWeArePage() {
       <section className="bg-unbBlack-100 relative">
         <div className="z-10 mx-auto flex max-w-300 flex-col items-center justify-center gap-14 px-5 py-5 lg:py-10">
           <div className="z-10 flex max-w-100 flex-col gap-4 text-center text-lg md:text-2xl">
-            <span>{t('footer.title')}</span>
-            <span>{t('footer.description')}</span>
+            <span>{t("footer.title")}</span>
+            <span>{t("footer.description")}</span>
           </div>
 
           <a
@@ -142,7 +142,7 @@ export default function WhoWeArePage() {
             rel="noopener noreferrer"
             className="bg-perceptionOrange-300 hover:bg-unbBlack-0 hover:text-perceptionOrange-300 z-10 rounded px-4 py-3 uppercase transition-colors"
           >
-            {t('footer.cta')}
+            {t("footer.cta")}
           </a>
         </div>
         <Image
@@ -153,5 +153,5 @@ export default function WhoWeArePage() {
         <div className="from-unbBlack-100/40 to-unbBlack-100 absolute inset-0 size-full bg-linear-to-b" />
       </section>
     </main>
-  )
+  );
 }
