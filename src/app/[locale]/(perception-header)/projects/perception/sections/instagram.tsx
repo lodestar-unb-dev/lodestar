@@ -19,6 +19,7 @@ export function Instagram() {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsClient(true)
     }
   }, [])
