@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "typecheck": "tsc",
     "lint:fix": "eslint ./src --fix"
   },
@@ -33,7 +33,6 @@
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.3",
     "@rocketseat/eslint-config": "^2.1.0",
     "@types/lodash.get": "^4.4.9",
     "@types/lodash.pick": "^4.4.9",

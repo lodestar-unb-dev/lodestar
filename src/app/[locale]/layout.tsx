@@ -31,13 +31,22 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
-  children,
-  params: { locale },
-}: {
-  children: React.ReactNode
-  params: { locale: string }
-}) {
+export default async function RootLayout(
+  props: {
+    children: React.ReactNode
+    params: Promise<{ locale: string }>
+  }
+) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
+  const {
+    children
+  } = props;
+
   return (
     <html lang={locale}>
       <body className={`${barlow.variable} font-barlow flex flex-col`}>
