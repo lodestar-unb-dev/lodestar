@@ -1,32 +1,17 @@
-import { Layout } from '@/components/animationLayout'
-import { prismic } from '@/lib/prismic'
-import { AlfaCruxRadioPrismicDocument, OldAlfaCruxRadio } from './old'
-import get from 'lodash.get'
-import { getMessages } from 'next-intl/server'
-import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl'
+import { Layout } from "@/components/animationLayout";
+import { prismic } from "@/lib/prismic";
+import { AlfaCruxRadioPrismicDocument, OldAlfaCruxRadio } from "./old";
 
 export default async function AlfaCrux() {
   const alfacruxRadioPrismicDocument = (
-    await prismic.getSingle('alfacrux_radio_amateur')
-  ).data as AlfaCruxRadioPrismicDocument
-
-  const messages = await getMessages()
-
-  const translationMessages = {
-    Projects: {
-      AlfaCrux: {
-        Radio: get(messages, 'Projects.AlfaCrux.Radio') as AbstractIntlMessages,
-      },
-    },
-  }
+    await prismic.getSingle("alfacrux_radio_amateur")
+  ).data as AlfaCruxRadioPrismicDocument;
 
   return (
     <Layout id="alfacrux">
-      <NextIntlClientProvider messages={translationMessages}>
-        <OldAlfaCruxRadio
-          alfacruxRadioPrismicDocument={alfacruxRadioPrismicDocument}
-        />
-      </NextIntlClientProvider>
+      <OldAlfaCruxRadio
+        alfacruxRadioPrismicDocument={alfacruxRadioPrismicDocument}
+      />
     </Layout>
-  )
+  );
 }
