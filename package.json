@@ -34,7 +34,7 @@
     "@rocketseat/eslint-config": "^2.1.0",
     "@types/lodash.get": "^4.4.9",
     "@types/lodash.pick": "^4.4.9",
-    "@types/node": "^20",
+    "@types/node": "^24.0.0",
     "@types/react": "19.2.9",
     "@types/react-dom": "19.2.3",
     "@types/react-slick": "^0.23.13",
