@@ -1516,7 +1516,7 @@ export function K34SystemSVG() {
               </g>
             </g>
             <g id="_3" data-name="3">
-              <g className="origin-center animate-pulseAndScale cursor-pointer">
+              <g className="animate-pulseAndScale origin-center cursor-pointer">
                 <path
                   className="cls-51"
                   d="m379.98,248.39c-.23,0-.46-.12-.59-.34-.19-.32-.08-.74.25-.92l25.03-14.45c.33-.19.74-.08.92.25.19.32.08.74-.25.92l-25.03,14.45c-.11.06-.22.09-.34.09Z"

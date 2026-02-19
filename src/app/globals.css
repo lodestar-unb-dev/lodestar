@@ -1,0 +1,183 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-perceptionOrange-300: #EE761B;
+  --color-unbBlue-700: #00244B;
+  --color-unbBlue-600: #002A59;
+  --color-unbBlue-400: #003A7A;
+  --color-unbBlue-200: #014FA5;
+  --color-unbGreen-500: #006e25;
+  --color-unbGreen-400: #00822D;
+  --color-unbGreen-300: #00AB3B;
+  --color-unbBlack-100: #1D1D1D;
+  --color-unbBlack-75: #5D5D5D;
+  --color-unbBlack-50: #989898;
+  --color-unbBlack-25: #D0D0D0;
+  --color-unbBlack-10: #EEEEEE;
+  --color-unbBlack-5: #F5F5F5;
+  --color-unbBlack-0: #FFFFFF;
+
+  --font-barlow: var(--font-barlow);
+  --font-montserrat: var(--font-montserrat);
+
+  --animate-slideDownAndFade: slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slideLeftAndFade: slideLeftAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slideUpAndFade: slideUpAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slideRightAndFade: slideRightAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slideDown: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  --animate-slideUp: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  --animate-pulseOff: pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-pulseOff2: pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) 0.2s infinite;
+  --animate-pulseOff3: pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) 0.4s infinite;
+  --animate-pulseOff4: pulseOff 2s cubic-bezier(0.4, 0, 0.6, 1) 0.6s infinite;
+  --animate-isometricMove: isometricMove 4s ease-in-out infinite;
+  --animate-isometricMoveReverse: isometricMoveReverse 4s ease-in-out infinite;
+  --animate-isometricMoveVertical: isometricMoveVertical 2s ease-in-out infinite;
+  --animate-isometricMoveVerticalMin: isometricMoveVerticalMin 2s ease-in-out infinite;
+  --animate-isometricMoveHorizontal: isometricMoveHorizontal 4s ease-in-out infinite;
+  --animate-isometricMoveVerticalMin2: isometricMoveVerticalMin 2s ease-in-out 0.2s infinite;
+  --animate-isometricMoveVerticalMin3: isometricMoveVerticalMin 2s ease-in-out 0.4s infinite;
+  --animate-isometricMoveVerticalMin4: isometricMoveVerticalMin 2s ease-in-out 0.6s infinite;
+  --animate-isometricMoveVerticalMin5: isometricMoveVerticalMin 2s ease-in-out 0.8s infinite;
+  --animate-isometricMoveVerticalMin6: isometricMoveVerticalMin 2s ease-in-out 1s infinite;
+  --animate-pulseAndScale: pulseAndScale 4s ease-in-out infinite;
+}
+
+@keyframes slideDownAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeftAndFade {
+  from {
+    opacity: 0;
+    transform: translateX(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUpAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRightAndFade {
+  from {
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes pulseOff {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulseAndScale {
+  50% {
+    opacity: 0.5;
+    transform: scale(0.98);
+  }
+}
+
+@keyframes isometricMove {
+  0% {
+    transform: translate(6px, -3px);
+  }
+  50% {
+    transform: translate(-6px, 3px);
+  }
+  100% {
+    transform: translate(6px, -3px);
+  }
+}
+
+@keyframes isometricMoveReverse {
+  0% {
+    transform: translate(-6px, 3px);
+  }
+  50% {
+    transform: translate(6px, -3px);
+  }
+  100% {
+    transform: translate(-6px, 3px);
+  }
+}
+
+@keyframes isometricMoveVertical {
+  0% {
+    transform: translate(0, 3px);
+  }
+  50% {
+    transform: translate(0, -3px);
+  }
+  100% {
+    transform: translate(0, 3px);
+  }
+}
+
+@keyframes isometricMoveVerticalMin {
+  0% {
+    transform: translate(0, 1px);
+  }
+  50% {
+    transform: translate(0, -1px);
+  }
+  100% {
+    transform: translate(0, 1px);
+  }
+}
+
+@keyframes isometricMoveHorizontal {
+  0% {
+    transform: translate(1px, 0);
+  }
+  50% {
+    transform: translate(-1px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+
+html {
+  @apply text-unbBlack-0;
+}

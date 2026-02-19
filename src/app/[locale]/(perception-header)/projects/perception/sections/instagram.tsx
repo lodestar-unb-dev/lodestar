@@ -19,6 +19,7 @@ export function Instagram() {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsClient(true)
     }
   }, [])
@@ -26,9 +27,9 @@ export function Instagram() {
   return (
     <section
       id={id}
-      className="mx-auto flex w-full max-w-[1200px] flex-col items-center gap-10 px-5 pb-10 lg:pb-20"
+      className="mx-auto flex w-full max-w-300 flex-col items-center gap-10 px-5 pb-10 lg:pb-20"
     >
-      <h2 className="text-xl font-semibold uppercase text-unbBlack-100 lg:text-3xl">
+      <h2 className="text-unbBlack-100 text-xl font-semibold uppercase lg:text-3xl">
         {t('title')}
       </h2>
 
@@ -39,7 +40,7 @@ export function Instagram() {
       </div>
 
       <Link
-        className="rounded bg-perceptionOrange-300 px-4 py-3 uppercase transition-colors hover:bg-unbBlack-0 hover:text-perceptionOrange-300"
+        className="bg-perceptionOrange-300 hover:bg-unbBlack-0 hover:text-perceptionOrange-300 rounded px-4 py-3 uppercase transition-colors"
         href="/projects/perception/recent-activities"
       >
         {t('cta')}

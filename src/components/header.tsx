@@ -8,7 +8,7 @@ export function Header() {
   const t = useTranslations('Header')
 
   return (
-    <header className="sticky top-0 z-50 border border-unbBlue-200 bg-unbBlue-600">
+    <header className="border-unbBlue-200 bg-unbBlue-600 sticky top-0 z-50 border">
       <section className="mx-auto flex max-w-[1120px] items-center justify-center gap-7 px-5 py-4 min-[560px]:justify-between min-[560px]:gap-14">
         <nav className="flex gap-7 min-[960px]:gap-14">
           <HeaderLink href="/">{t('home')}</HeaderLink>

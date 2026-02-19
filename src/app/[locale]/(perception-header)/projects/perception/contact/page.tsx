@@ -8,13 +8,13 @@ export default function Contact() {
 
   return (
     <Layout id="contact">
-      <main className="flex h-full flex-col gap-10 bg-unbBlack-10 py-10 text-unbBlue-400 min-[560px]:gap-20 min-[560px]:py-20">
-        <section className="mx-auto flex w-full max-w-[1120px] flex-col items-start gap-6 px-5 min-[560px]:items-center">
+      <main className="bg-unbBlack-10 text-unbBlue-400 flex h-full flex-col gap-10 py-10 min-[560px]:gap-20 min-[560px]:py-20">
+        <section className="mx-auto flex w-full max-w-280 flex-col items-start gap-6 px-5 min-[560px]:items-center">
           <h2 className="text-4xl min-[560px]:text-6xl">{t('title')}</h2>
           <p>{t('subTitle')}</p>
         </section>
 
-        <section className="mx-auto flex w-full max-w-[1120px] flex-col items-center justify-between gap-10 px-5 min-[960px]:flex-row">
+        <section className="mx-auto flex w-full max-w-280 flex-col items-center justify-between gap-10 px-5 min-[960px]:flex-row">
           <ul className="flex flex-col gap-2">
             <li className="flex items-center gap-4">
               <MapPin size={20} className="text-unbBlue-600" />
